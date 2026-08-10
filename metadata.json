@@ -1,0 +1,6 @@
+{
+  "name": "BYOM - Be Your Own Marketer",
+  "description": "Empowering Nepali Marketers with practical hands-on training in content creation, video editing, and digital marketing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

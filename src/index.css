@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-nepali: 'Mukta', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fcf9f8;
+    color: #1b1c1c;
+    overflow-x: hidden;
+  }
+
+  /* When language is Nepali, adjust line height for Devanagari script accents */
+  [lang="np"] {
+    font-family: var(--font-nepali);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  [lang="np"] h1, [lang="np"] h2, [lang="np"] h3, [lang="np"] h4, [lang="np"] h5, [lang="np"] h6 {
+    font-family: var(--font-nepali);
+  }
+}
+
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(38, 92, 179, 0.15);
+}
+
+.card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0px 12px 32px rgba(8, 26, 58, 0.1);
+}
+
+/* Custom Seat Buttons */
+.seat-btn {
+  transition: all 0.2s ease;
+}
+.seat-btn.available:hover {
+  background-color: #f0eded;
+  border-color: #c5c6cf;
+  transform: scale(1.1);
+}
+.seat-btn.selected {
+  background-color: #f6b996;
+  border-color: #ac7859;
+  color: #321300;
+  font-weight: 700;
+}
+.seat-btn.booked {
+  background-color: #091b3b;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+.seat-btn.vip {
+  border: 2px solid #ac7859;
+}
+
+/* Smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
