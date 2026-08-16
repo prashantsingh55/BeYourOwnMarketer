@@ -1,6 +1,6 @@
 export type Language = 'en' | 'np';
 
-export type PageRoute = 'home' | 'programs' | 'book' | 'contact' | 'blog' | 'gallery' | 'login';
+export type PageRoute = 'home' | 'programs' | 'book' | 'contact' | 'blog' | 'gallery' | 'login' | 'dashboard';
 
 export interface SessionSlot {
   time: string;
@@ -114,12 +114,24 @@ export interface GalleryItem {
 export type SeatStatus = 'available' | 'selected' | 'booked' | 'vip';
 
 export interface Seat {
-  id: string; // e.g. "A1", "B4"
-  row: string; // e.g. "A"
-  number: number; // e.g. 1
+  id: string;        // composite DB key e.g. "Kathmandu Hub-batch-A1"
+  seatLabel: string; // short display label e.g. "A1"
+  row: string;       // e.g. "A"
+  number: number;    // e.g. 1
   status: SeatStatus;
   isVip?: boolean;
   priceNpr: number;
+}
+
+export interface ClassSession {
+  id: string;
+  name: { en: string; np: string };
+  startDate: string;   // ISO date string YYYY-MM-DD
+  endDate: string;
+  city: string;
+  batch: string;
+  availableSeats: number;
+  totalSeats: number;
 }
 
 export interface BookingState {

@@ -10,26 +10,58 @@ interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentLang: Language;
+  onLoginSuccess?: () => void;
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLang }) => {
+export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLang, onLoginSuccess }) => {
   const t = translations.auth;
 
   const [activeTab, setActiveTab] = useState<'login' | 'register'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
+  const [phone, setPhone] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoggedIn(true);
-    setTimeout(() => {
-      setLoggedIn(false);
-      onClose();
-    }, 1500);
+    setLoading(true);
+    setErrorMsg('');
+
+    try {
+      const endpoint = activeTab === 'login' ? '/api/auth/login' : '/api/auth/register';
+      const body = activeTab === 'login' ? { email, password } : { name: fullName, email, password, phone };
+
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Authentication failed');
+      }
+
+      setLoggedIn(true);
+      setTimeout(() => {
+        setLoggedIn(false);
+        if (onLoginSuccess) {
+          onLoginSuccess();
+        } else {
+          onClose();
+        }
+      }, 1200);
+    } catch (err: any) {
+      setErrorMsg(err.message || 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -63,7 +95,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
             {/* Login / Register Switch */}
             <div className="grid grid-cols-2 p-1 bg-[#ebe7e5] rounded-xl text-xs font-bold border border-[#d6d0cc]">
               <button
-                onClick={() => setActiveTab('login')}
+                onClick={() => { setActiveTab('login'); setErrorMsg(''); }}
                 className={`py-2 rounded-lg transition-all ${
                   activeTab === 'login' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'
                 }`}
@@ -71,7 +103,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
                 {t.loginTab[currentLang]}
               </button>
               <button
-                onClick={() => setActiveTab('register')}
+                onClick={() => { setActiveTab('register'); setErrorMsg(''); }}
                 className={`py-2 rounded-lg transition-all ${
                   activeTab === 'register' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'
                 }`}
@@ -79,6 +111,12 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
                 {t.createAccountTab[currentLang]}
               </button>
             </div>
+
+            {errorMsg && (
+              <div className="p-3 text-xs bg-rose-50 border border-rose-200 text-rose-600 rounded-xl text-center font-bold">
+                {errorMsg}
+              </div>
+            )}
 
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -145,9 +183,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
 
               <button
                 type="submit"
-                className="w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover shadow-md"
+                disabled={loading}
+                className="w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
               >
-                {activeTab === 'login' ? t.signInBtn[currentLang] : t.signUpBtn[currentLang]}
+                {loading ? 'Processing...' : (activeTab === 'login' ? t.signInBtn[currentLang] : t.signUpBtn[currentLang])}
               </button>
             </form>
 
@@ -160,22 +199,23 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="py-2.5 rounded-xl border border-[#d6d0cc] hover:bg-[#fcf9f8] text-xs font-bold text-[#091b3b] flex items-center justify-center gap-2"
-              >
-                <span>{t.google[currentLang]}</span>
-              </button>
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="py-2.5 rounded-xl border border-[#d6d0cc] hover:bg-[#fcf9f8] text-xs font-bold text-[#091b3b] flex items-center justify-center gap-2"
-              >
-                <span>{t.facebook[currentLang]}</span>
-              </button>
-            </div>
+            {/* Google OAuth — real redirect flow */}
+            <a
+              href="/api/auth/google"
+              className="w-full py-2.5 rounded-xl border border-[#d6d0cc] hover:bg-[#f8f8f8] hover:border-[#4285F4]/40 text-xs font-bold text-[#3c3e44] flex items-center justify-center gap-2.5 transition-all group"
+            >
+              {/* Official Google G logo */}
+              <svg width="18" height="18" viewBox="0 0 48 48" className="flex-shrink-0">
+                <path fill="#EA4335" d="M24 9.5c3.14 0 5.95 1.08 8.17 2.86l6.1-6.1C34.37 3.02 29.45 1 24 1 14.82 1 6.97 6.48 3.18 14.31l7.1 5.52C12.06 13.84 17.59 9.5 24 9.5z"/>
+                <path fill="#4285F4" d="M46.52 24.5c0-1.6-.15-3.15-.42-4.65H24v9.3h12.65c-.55 2.95-2.2 5.45-4.7 7.12l7.3 5.68c4.27-3.94 6.77-9.74 6.77-17.45z"/>
+                <path fill="#FBBC05" d="M10.28 28.17A14.56 14.56 0 0 1 9.5 24c0-1.45.2-2.85.56-4.17l-7.1-5.52A23.94 23.94 0 0 0 0 24c0 3.87.93 7.54 2.57 10.77l7.71-6.6z"/>
+                <path fill="#34A853" d="M24 47c5.45 0 10.02-1.8 13.35-4.9l-7.3-5.68c-1.84 1.23-4.2 1.95-6.05 1.95-6.41 0-11.85-4.34-13.72-10.2l-7.71 6.6C6.97 41.52 14.82 47 24 47z"/>
+                <path fill="none" d="M0 0h48v48H0z"/>
+              </svg>
+              <span className="group-hover:text-[#1a1a1a]">
+                {currentLang === 'en' ? 'Continue with Google' : 'Google मार्फत जारी राख्नुहोस्'}
+              </span>
+            </a>
           </>
         ) : (
           <div className="py-8 text-center space-y-3">
@@ -192,3 +232,4 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
     </div>
   );
 };
+

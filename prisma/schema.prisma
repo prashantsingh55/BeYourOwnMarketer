@@ -1,0 +1,152 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(uuid())
+  name         String
+  email        String    @unique
+  passwordHash String
+  phone        String?
+  avatar       String?   // Google profile picture URL
+  role         String    @default("user") // "user" | "admin"
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  bookings     Booking[]
+}
+
+model Course {
+  id               String   @id @default(uuid())
+  slug             String   @unique
+  titleEn          String
+  titleNp          String
+  categoryEn       String
+  categoryNp       String
+  priceNpr         Float
+  originalPriceNpr Float?
+  duration         String
+  levelEn          String
+  levelNp          String
+  rating           Float    @default(5.0)
+  reviewCount      Int      @default(0)
+  badgeEn          String?
+  badgeNp          String?
+  image            String
+  descriptionEn    String
+  descriptionNp    String
+  createdAt        DateTime @default(now())
+}
+
+model Seat {
+  id         String   @id // e.g., "Kathmandu Hub-Daytime-A1"
+  city       String
+  batch      String
+  seatNumber String
+  row        String
+  status     String   @default("available") // "available" | "reserved" | "booked" | "vip"
+  isVip      Boolean  @default(false)
+  priceNpr   Float    @default(15000)
+  updatedAt  DateTime @updatedAt
+
+  bookings Booking[]
+}
+
+model Booking {
+  id             String   @id @default(uuid())
+  userId         String?
+  user           User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  seatId         String?
+  seat           Seat?    @relation(fields: [seatId], references: [id], onDelete: SetNull)
+  city           String
+  batch          String
+  selectedSeatId String
+  fullName       String
+  email          String
+  phone          String
+  organization   String?
+  amount         Float
+  paymentMethod  String   // "esewa" | "khalti" | "fonepay" | "bank"
+  paymentStatus  String   @default("pending") // "pending" | "completed" | "failed"
+  createdAt      DateTime @default(now())
+
+  paymentTransactions PaymentTransaction[]
+}
+
+model PaymentTransaction {
+  id              String   @id @default(uuid())
+  bookingId       String
+  booking         Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  gateway         String   // "esewa" | "khalti"
+  transactionUuid String   @unique
+  refId           String?
+  amount          Float
+  status          String   @default("PENDING") // "PENDING" | "COMPLETE" | "FAILED"
+  rawPayload      String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model ContactSubmission {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  status    String   @default("new") // "new" | "read" | "replied"
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id           String   @id @default(uuid())
+  slug         String   @unique
+  titleEn      String
+  titleNp      String
+  categorySlug String   // "digital-marketing" | "facebook-ads" | "ai-tools" | "branding"
+  categoryEn   String
+  categoryNp   String
+  summaryEn    String
+  summaryNp    String
+  contentEn    String
+  contentNp    String
+  readTime     String   @default("5 min read")
+  date         String
+  authorName   String   @default("Anish Sharma")
+  authorRole   String   @default("Founder & Lead Trainer")
+  authorAvatar String   @default("https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80")
+  image        String
+  featured     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}
+
+model GalleryItem {
+  id        String   @id @default(uuid())
+  titleEn   String
+  titleNp   String
+  category  String   // "training" | "workshops" | "events" | "students" | "videos"
+  image     String
+  aspect    String   @default("landscape") // "portrait" | "square" | "landscape"
+  videoUrl  String?
+  date      String
+  createdAt DateTime @default(now())
+}
+
+model ClassSession {
+  id             String   @id @default(uuid())
+  nameEn         String   @default("7-Day Marketing Mastery Cohort")
+  nameNp         String   @default("७-दिने मार्केटिङ मास्टरी")
+  city           String   @default("Kathmandu Hub")
+  batch          String   @default("Daytime / Afternoon (12:00 PM - 3:00 PM)")
+  startDate      String   // e.g. "2026-09-01"
+  endDate        String   // e.g. "2026-09-07"
+  totalSeats     Int      @default(25)
+  availableSeats Int      @default(25)
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}

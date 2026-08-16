@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Language, PageRoute, OnlineCourse } from '../types';
 import { translations } from '../data/translations';
-import { curriculumDays, onlineCourses, WORKSHOP_IMAGE } from '../data/content';
+import { curriculumDays,  WORKSHOP_IMAGE } from '../data/content';
 import {
   Calendar,
   MapPin,
@@ -36,6 +36,14 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [expandedDay, setExpandedDay] = useState<number | null>(1);
   const [activeShift, setActiveShift] = useState<'daytime' | 'morning'>('daytime');
+  const [sessions, setSessions] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch('/api/sessions')
+      .then((r) => r.json())
+      .then((d) => { if (d.sessions) setSessions(d.sessions); })
+      .catch(() => {});
+  }, []);
 
   const t = translations.programs;
 
@@ -46,10 +54,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
     { id: 'Meta Ads', label: { en: 'Meta Ads', np: 'मेटा विज्ञापन' } },
   ];
 
-  const filteredCourses = onlineCourses.filter((course) => {
-    if (selectedCategory === 'all') return true;
-    return course.category.en === selectedCategory;
-  });
+
 
   return (
     <div className="py-12 md:py-20 bg-[#fcf9f8]">
@@ -57,9 +62,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-          <span className="text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20">
-            {currentLang === 'en' ? 'Practical & Online Learning' : 'व्यावहारिक तथा अनलाइन सिकाइ'}
-          </span>
+          
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight">
             {t.headerTitle[currentLang]}
           </h1>
@@ -71,7 +74,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
           <div className="inline-flex p-1.5 bg-[#ebe7e5] rounded-2xl border border-[#d6d0cc] mt-4">
             <button
               onClick={() => setActiveTab('physical')}
-              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
+              className={`px-16 py-2.5 rounded-xl text-sm font-bold transition-all ${
                 activeTab === 'physical'
                   ? 'bg-[#091b3b] text-white shadow-md'
                   : 'text-[#5c5d63] hover:text-[#091b3b]'
@@ -79,16 +82,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
             >
               {t.tabPhysical[currentLang]}
             </button>
-            <button
-              onClick={() => setActiveTab('online')}
-              className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
-                activeTab === 'online'
-                  ? 'bg-[#091b3b] text-white shadow-md'
-                  : 'text-[#5c5d63] hover:text-[#091b3b]'
-              }`}
-            >
-              {t.tabOnline[currentLang]}
-            </button>
+            
           </div>
         </div>
 
@@ -116,7 +110,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                     {t.flagshipDesc[currentLang]}
                   </p>
 
-                  <div className="flex flex-wrap items-center gap-6 text-sm font-semibold text-[#091b3b] pt-2">
+                  <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-[#091b3b] pt-2">
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-[#265cb3]" />
                       <span>{t.flagshipDuration[currentLang]}</span>
@@ -125,17 +119,35 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                       <MapPin className="w-4 h-4 text-[#ac7859]" />
                       <span>{t.flagshipLocation[currentLang]}</span>
                     </div>
+                    {sessions.length > 0 && (() => {
+                      const s = sessions[0];
+                      const fmt = (d: string) => new Date(d + 'T00:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+                      return (
+                        <div className="flex items-center gap-2 bg-[#265cb3]/10 px-3 py-1.5 rounded-xl border border-[#265cb3]/20">
+                          <Calendar className="w-4 h-4 text-[#265cb3] flex-shrink-0" />
+                          <span className="text-[#265cb3] font-extrabold text-xs">
+                            {fmt(s.startDate)} to {fmt(s.endDate)}
+                          </span>
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
 
                 <div className="pt-6 border-t border-[#e2dedc] flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
-                  <div>
+                  <div className="space-y-1">
                     <span className="block text-xs font-semibold text-[#5c5d63] uppercase">
-                      {currentLang === 'en' ? 'Registration Fee' : 'रजिस्ट्रेशन शुल्क'}
+                      {currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'}
                     </span>
                     <span className="text-2xl font-extrabold text-[#091b3b] font-heading">
                       Rs. 15,000
                     </span>
+                    <div className="flex items-center gap-2 flex-wrap text-xs">
+                      <span className="text-[#10b981] font-bold bg-[#10b981]/10 px-2 py-0.5 rounded-full border border-[#10b981]/20">
+                        Pay Rs. 5,000 now
+                      </span>
+                      <span className="text-[#5c5d63]">+ Rs. 10,000 after session</span>
+                    </div>
                   </div>
 
                   <button
@@ -176,6 +188,17 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
 
                   {/* Shift Selector Switcher */}
                   <div className="flex flex-wrap items-center gap-2 bg-white/10 p-1.5 rounded-2xl border border-white/15 self-start lg:self-auto">
+                       <button
+                      onClick={() => setActiveShift('morning')}
+                      className={`px-3.5 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${
+                        activeShift === 'morning'
+                          ? 'bg-[#f6b996] text-[#321300] shadow-sm'
+                          : 'text-white hover:bg-white/10'
+                      }`}
+                    >
+                      <Sunrise className="w-4 h-4 text-[#321300]" />
+                      <span>{currentLang === 'en' ? 'Morning Shift (6 am - 9 am)' : 'बिहानी सत्र (६ बजे - ९ बजे)'}</span>
+                    </button>
                     <button
                       onClick={() => setActiveShift('daytime')}
                       className={`px-3.5 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${
@@ -187,17 +210,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
                       <Sun className="w-4 h-4 text-[#321300]" />
                       <span>{currentLang === 'en' ? 'Daytime Shift (12 noon - 3pm)' : 'दिवा सत्र (१२ बजे - ३ बजे)'}</span>
                     </button>
-                    <button
-                      onClick={() => setActiveShift('morning')}
-                      className={`px-3.5 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${
-                        activeShift === 'morning'
-                          ? 'bg-[#f6b996] text-[#321300] shadow-sm'
-                          : 'text-white hover:bg-white/10'
-                      }`}
-                    >
-                      <Sunrise className="w-4 h-4 text-[#321300]" />
-                      <span>{currentLang === 'en' ? 'Morning Shift (6 am - 9 am)' : 'बिहानी सत्र (६ बजे - ९ बजे)'}</span>
-                    </button>
+                 
                   </div>
                 </div>
 
@@ -370,113 +383,8 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({
             </div>
           </motion.div>
         )}
-
-        {/* Tab 2: Online Courses */}
-        {activeTab === 'online' && (
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="space-y-8"
-          >
-            {/* Category Filter Pills */}
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              {categories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-                    selectedCategory === cat.id
-                      ? 'bg-[#091b3b] text-white shadow-sm'
-                      : 'bg-white text-[#5c5d63] border border-[#e2dedc] hover:bg-[#ebe7e5]'
-                  }`}
-                >
-                  {cat.label[currentLang]}
-                </button>
-              ))}
-            </div>
-
-            {/* Courses Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredCourses.map((course) => (
-                <div
-                  key={course.id}
-                  className="bg-white rounded-3xl border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all card-hover overflow-hidden flex flex-col justify-between"
-                >
-                  <div className="space-y-4">
-                    {/* Course Image */}
-                    <div className="relative h-48 overflow-hidden bg-[#e2dedc]">
-                      <img
-                        src={course.image}
-                        alt={course.title[currentLang]}
-                        className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                        referrerPolicy="no-referrer"
-                      />
-                      {course.badge && (
-                        <span className="absolute top-3 right-3 bg-[#091b3b] text-[#f6b996] px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider shadow-md">
-                          {course.badge[currentLang]}
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 space-y-3">
-                      <div className="flex items-center justify-between text-xs font-semibold text-[#5c5d63]">
-                        <span className="bg-[#265cb3]/10 text-[#265cb3] px-2.5 py-0.5 rounded-md font-bold">
-                          {course.category[currentLang]}
-                        </span>
-                        <div className="flex items-center gap-1 text-[#f59e0b]">
-                          <Star className="w-3.5 h-3.5 fill-current" />
-                          <span className="font-bold text-[#091b3b]">{course.rating}</span>
-                          <span className="text-[#61626a]">({course.reviewCount})</span>
-                        </div>
-                      </div>
-
-                      <h3 className="text-xl font-bold text-[#091b3b] font-heading leading-snug">
-                        {course.title[currentLang]}
-                      </h3>
-
-                      <p className="text-xs text-[#5c5d63] line-clamp-2">
-                        {course.description[currentLang]}
-                      </p>
-
-                      <div className="flex items-center justify-between text-xs font-semibold text-[#5c5d63] pt-2 border-t border-[#e2dedc]">
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-3.5 h-3.5 text-[#265cb3]" />
-                          <span>{course.duration}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <BookOpen className="w-3.5 h-3.5 text-[#ac7859]" />
-                          <span>{course.level[currentLang]}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Card Footer Price & Enroll */}
-                  <div className="p-6 pt-0 flex items-center justify-between border-t border-[#e2dedc]/60 mt-4">
-                    <div>
-                      <span className="text-xl font-extrabold text-[#091b3b] font-heading">
-                        Rs. {course.priceNpr.toLocaleString()}
-                      </span>
-                      {course.originalPriceNpr && (
-                        <span className="block text-xs text-[#8e8f99] line-through">
-                          Rs. {course.originalPriceNpr.toLocaleString()}
-                        </span>
-                      )}
-                    </div>
-
-                    <button
-                      onClick={() => onSelectCourseEnroll(course)}
-                      className="px-5 py-2.5 rounded-xl bg-[#265cb3] text-white text-xs font-bold hover:bg-[#1a4488] transition-colors shadow-sm"
-                    >
-                      {t.enrollNow[currentLang]}
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        )}
+       
+        
 
       </div>
     </div>

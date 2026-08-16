@@ -195,8 +195,8 @@ export const curriculumDays: CurriculumDay[] = [
   {
     day: 6,
     title: {
-      en: 'Meta Boosting Mastery',
-      np: 'मेटा बुस्टिङ मास्टरी',
+      en: 'Introduction to Meta Boosting ',
+      np: 'मेटा बुस्टिङको परिचय ',
     },
     description: {
       en: 'Setting up Meta ad boosts, audience location & interest targeting, open-up feedback, and practical live ad setup.',
@@ -268,98 +268,7 @@ export const curriculumDays: CurriculumDay[] = [
   },
 ];
 
-export const onlineCourses: OnlineCourse[] = [
-  {
-    id: 'canva-business',
-    title: {
-      en: 'Mastering Canva for Nepali Businesses',
-      np: 'नेपाली व्यवसायका लागि क्यान्भा मास्टरी',
-    },
-    category: {
-      en: 'Content Creation',
-      np: 'सामग्री सिर्जना',
-    },
-    priceNpr: 2500,
-    originalPriceNpr: 4500,
-    duration: '4h 30m',
-    level: {
-      en: 'Beginner',
-      np: 'आधारभूत',
-    },
-    rating: 4.9,
-    reviewCount: 128,
-    badge: {
-      en: 'Bestseller',
-      np: 'सर्वोत्कृष्ट बिक्रेता',
-    },
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDOSUJwb9ZhpjTbZSbitk_8l64Dct3qUz-Lu7Fi1FWL3RFql6Jcv7WMO7k-joe7wHOBeK5Mlre8lt4FP7fiI_n_TT9NtGHM-EHPpHFJ4i71yASHGkyTX5bM0PxWhA5YKFAo9I2Q1gc0X8HMMHv8wBZKt8o0gGMwv9G767Nz2zUc5Dse7_UNp-0oCxlGDUCC1LV8s458HRWjYsqSpGndP1HM0AqDF7QnlSi56CbDRtRDmKo-doEKD9WS',
-    description: {
-      en: 'Design professional social graphics, banners, and logos tailored for the local Nepali market without hiring a graphic designer.',
-      np: 'ग्राफिक डिजाइनर नराखीकनै स्थानीय नेपाली बजारका लागि उपयुक्त व्यावसायिक सामाजिक मिडिया डिजाइन, ब्यानर र लोगो तयार पार्नुहोस्।',
-    },
-  },
-  {
-    id: 'capcut-editing',
-    title: {
-      en: 'Short-Form Video Editing (Reels & TikTok)',
-      np: 'सर्ट-फर्म भिडियो सम्पादन (रिल्स र टिकटक)',
-    },
-    category: {
-      en: 'Video Editing',
-      np: 'भिडियो सम्पादन',
-    },
-    priceNpr: 3200,
-    originalPriceNpr: 5000,
-    duration: '6h 15m',
-    level: {
-      en: 'Intermediate',
-      np: 'मध्यम',
-    },
-    rating: 4.95,
-    reviewCount: 210,
-    badge: {
-      en: 'Popular',
-      np: 'लोकप्रिय',
-    },
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAXovczP63BSPJ0gPO0eEcRD6_bdNSGVe8j5Rpx-iyMZqDeAhbAmn20wBgxnHcGxoEgL2F7bv-OELT5c6DGul9WgUELS6viitsy2ZAKjze2TI1oIBt42PmUI5dEL8rFAR9fcTZZmzy-Bk3_wy0RWkCRfBBlS6u_OMYAirdotOdTKKzgQ24X-BzTHZMUAhbfchNw9PC2WHJjxi-m4JTbEUXJwcd7i9ff2m_bRZX875Z3UvPf-VteIKQN',
-    description: {
-      en: 'Learn cutting-edge editing tricks, sound design, sound effects, and subtitle placement for viral TikTok and Instagram Reels.',
-      np: 'भाइरल टिकटक र इन्स्टाग्राम रिल्सका लागि अत्याधुनिक सम्पादन रणनीति, ध्वनि प्रभाव र सबटाइटल राख्ने कला सिक्नुहोस्।',
-    },
-  },
-  {
-    id: 'meta-ads-mastery',
-    title: {
-      en: 'Meta Ads Blueprint for E-Commerce',
-      np: 'इ-कमर्सका लागि मेटा विज्ञापन ब्लूप्रिन्ट',
-    },
-    category: {
-      en: 'Meta Ads',
-      np: 'मेटा विज्ञापनहरू',
-    },
-    priceNpr: 4500,
-    originalPriceNpr: 8000,
-    duration: '8h 00m',
-    level: {
-      en: 'Advanced',
-      np: 'उच्च',
-    },
-    rating: 4.88,
-    reviewCount: 175,
-    badge: {
-      en: 'High ROI',
-      np: 'उच्च नाफा',
-    },
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBx4KlfOvOAZaWvSUIIWGS24MekC52djhLxH0ILtophrpWy-orufqCtSTLUESzgL4NiItAxUtT9VwIboWB6wPMFeYUeesknNY4NYaWaLS2yf9M4zPsROFciDeJHqvGCfRVgwmAvOz3b3NrnsYC0zEYYD-HwX22YXHmUbOZP8RrpXhb4FnZBgkZvldFBlyf_q8gE9kHcSFt-Q1pGZmMhQluHkuk5LXAfSjRT4SqRrG2rF1kKkITUQ0ha',
-    description: {
-      en: 'Scale your online store sales using high-converting Facebook/Instagram ad funnels, custom retargeting, and pixel optimization.',
-      np: 'उच्च रूपान्तरण फेसबुक/इन्स्टाग्राम विज्ञापन फनेल, कस्टम रिटार्गेटिङ र पिक्सेल अप्टिमाइजेसन प्रयोग गरी आफ्नो स्टोरको बिक्री बढाउनुहोस्।',
-    },
-  },
-];
+
 
 export const blogPosts: BlogPost[] = [
   {
@@ -597,30 +506,42 @@ export const galleryItems: GalleryItem[] = [
 ];
 
 export const initialSeatData: Seat[] = [
-  // Row A (VIP)
-  { id: 'A1', row: 'A', number: 1, status: 'available', isVip: true, priceNpr: 18000 },
-  { id: 'A2', row: 'A', number: 2, status: 'available', isVip: true, priceNpr: 18000 },
-  { id: 'A3', row: 'A', number: 3, status: 'booked', isVip: true, priceNpr: 18000 },
-  { id: 'A4', row: 'A', number: 4, status: 'booked', isVip: true, priceNpr: 18000 },
-  { id: 'A5', row: 'A', number: 5, status: 'available', isVip: true, priceNpr: 18000 },
-  { id: 'A6', row: 'A', number: 6, status: 'available', isVip: true, priceNpr: 18000 },
+  // Row A (VIP — front row)
+  { id: 'A1', seatLabel: 'A1', row: 'A', number: 1, status: 'available', isVip: true, priceNpr: 15000 },
+  { id: 'A2', seatLabel: 'A2', row: 'A', number: 2, status: 'available', isVip: true, priceNpr: 15000 },
+  { id: 'A3', seatLabel: 'A3', row: 'A', number: 3, status: 'booked',    isVip: true, priceNpr: 15000 },
+  { id: 'A4', seatLabel: 'A4', row: 'A', number: 4, status: 'booked',    isVip: true, priceNpr: 15000 },
+  { id: 'A5', seatLabel: 'A5', row: 'A', number: 5, status: 'available', isVip: true, priceNpr: 15000 },
 
   // Row B
-  { id: 'B1', row: 'B', number: 1, status: 'available', priceNpr: 15000 },
-  { id: 'B2', row: 'B', number: 2, status: 'available', priceNpr: 15000 },
-  { id: 'B3', row: 'B', number: 3, status: 'available', priceNpr: 15000 },
-  { id: 'B4', row: 'B', number: 4, status: 'selected', priceNpr: 15000 },
-  { id: 'B5', row: 'B', number: 5, status: 'booked', priceNpr: 15000 },
-  { id: 'B6', row: 'B', number: 6, status: 'booked', priceNpr: 15000 },
+  { id: 'B1', seatLabel: 'B1', row: 'B', number: 1, status: 'available', priceNpr: 15000 },
+  { id: 'B2', seatLabel: 'B2', row: 'B', number: 2, status: 'available', priceNpr: 15000 },
+  { id: 'B3', seatLabel: 'B3', row: 'B', number: 3, status: 'available', priceNpr: 15000 },
+  { id: 'B4', seatLabel: 'B4', row: 'B', number: 4, status: 'selected',  priceNpr: 15000 },
+  { id: 'B5', seatLabel: 'B5', row: 'B', number: 5, status: 'booked',    priceNpr: 15000 },
 
   // Row C
-  { id: 'C1', row: 'C', number: 1, status: 'available', priceNpr: 15000 },
-  { id: 'C2', row: 'C', number: 2, status: 'available', priceNpr: 15000 },
-  { id: 'C3', row: 'C', number: 3, status: 'available', priceNpr: 15000 },
-  { id: 'C4', row: 'C', number: 4, status: 'available', priceNpr: 15000 },
-  { id: 'C5', row: 'C', number: 5, status: 'available', priceNpr: 15000 },
-  { id: 'C6', row: 'C', number: 6, status: 'available', priceNpr: 15000 },
+  { id: 'C1', seatLabel: 'C1', row: 'C', number: 1, status: 'available', priceNpr: 15000 },
+  { id: 'C2', seatLabel: 'C2', row: 'C', number: 2, status: 'available', priceNpr: 15000 },
+  { id: 'C3', seatLabel: 'C3', row: 'C', number: 3, status: 'available', priceNpr: 15000 },
+  { id: 'C4', seatLabel: 'C4', row: 'C', number: 4, status: 'available', priceNpr: 15000 },
+  { id: 'C5', seatLabel: 'C5', row: 'C', number: 5, status: 'available', priceNpr: 15000 },
+
+  // Row D
+  { id: 'D1', seatLabel: 'D1', row: 'D', number: 1, status: 'available', priceNpr: 15000 },
+  { id: 'D2', seatLabel: 'D2', row: 'D', number: 2, status: 'available', priceNpr: 15000 },
+  { id: 'D3', seatLabel: 'D3', row: 'D', number: 3, status: 'available', priceNpr: 15000 },
+  { id: 'D4', seatLabel: 'D4', row: 'D', number: 4, status: 'available', priceNpr: 15000 },
+  { id: 'D5', seatLabel: 'D5', row: 'D', number: 5, status: 'available', priceNpr: 15000 },
+
+  // Row E (back row)
+  { id: 'E1', seatLabel: 'E1', row: 'E', number: 1, status: 'available', priceNpr: 15000 },
+  { id: 'E2', seatLabel: 'E2', row: 'E', number: 2, status: 'available', priceNpr: 15000 },
+  { id: 'E3', seatLabel: 'E3', row: 'E', number: 3, status: 'available', priceNpr: 15000 },
+  { id: 'E4', seatLabel: 'E4', row: 'E', number: 4, status: 'available', priceNpr: 15000 },
+  { id: 'E5', seatLabel: 'E5', row: 'E', number: 5, status: 'available', priceNpr: 15000 },
 ];
+
 
 export const mentors: Mentor[] = [
   {

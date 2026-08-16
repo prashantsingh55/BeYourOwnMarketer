@@ -14,6 +14,7 @@ interface BlogPageProps {
 export const BlogPage: React.FC<BlogPageProps> = ({ currentLang }) => {
   const t = translations.blog;
 
+  const [posts, setPosts] = useState<BlogPost[]>(blogPosts);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTopic, setSelectedTopic] = useState<'all' | string>('all');
   const [activeArticle, setActiveArticle] = useState<BlogPost | null>(null);
@@ -21,6 +22,21 @@ export const BlogPage: React.FC<BlogPageProps> = ({ currentLang }) => {
   // Newsletter
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+
+  React.useEffect(() => {
+    async function loadDynamicBlogs() {
+      try {
+        const res = await fetch('/api/blogs');
+        const data = await res.json();
+        if (res.ok && data.blogs && data.blogs.length > 0) {
+          setPosts(data.blogs);
+        }
+      } catch (err) {
+        console.error('Failed to load dynamic blogs:', err);
+      }
+    }
+    loadDynamicBlogs();
+  }, []);
 
   const topics = [
     { id: 'all', label: t.allTopics[currentLang] },
@@ -30,9 +46,9 @@ export const BlogPage: React.FC<BlogPageProps> = ({ currentLang }) => {
     { id: 'branding', label: { en: 'Branding', np: 'ब्रान्डिङ' }[currentLang] },
   ];
 
-  const featuredPost = blogPosts.find((p) => p.featured) || blogPosts[0];
+  const featuredPost = posts.find((p) => p.featured) || posts[0];
 
-  const filteredPosts = blogPosts.filter((post) => {
+  const filteredPosts = posts.filter((post) => {
     const matchesSearch =
       post.title[currentLang].toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.summary[currentLang].toLowerCase().includes(searchQuery.toLowerCase());

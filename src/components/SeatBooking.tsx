@@ -39,9 +39,39 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
   const [phone, setPhone] = useState<string>('');
   const [organization, setOrganization] = useState<string>('');
 
-  // Payment
-  const [paymentMethod, setPaymentMethod] = useState<'esewa' | 'khalti' | 'fonepay' | 'bank'>('esewa');
+  // Payment State — Fonepay only
+  const [paymentMethod, setPaymentMethod] = useState<'fonepay'>('fonepay');
   const [isCompleted, setIsCompleted] = useState<boolean>(false);
+  const [isProcessing, setIsProcessing] = useState<boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<string>('');
+
+  // Fee split constants
+  const DEPOSIT_AMOUNT = 5000;
+  const REMAINING_AMOUNT = 10000;
+  const TOTAL_FEE = 15000;
+  const [createdBookingId, setCreatedBookingId] = useState<string>('');
+
+  // Fetch seats dynamically from backend whenever city or batch changes
+  React.useEffect(() => {
+    async function fetchSeats() {
+      try {
+        const res = await fetch(`/api/seats?city=${encodeURIComponent(selectedCity)}&batch=${encodeURIComponent(selectedBatch)}`);
+        const data = await res.json();
+        if (res.ok && data.seats && data.seats.length > 0) {
+          setSeats(data.seats);
+          // Set first available seat if current selected is invalid
+          const found = data.seats.find((s: Seat) => s.id === selectedSeatId);
+          if (!found || found.status === 'booked') {
+            const avail = data.seats.find((s: Seat) => s.status === 'available' || s.status === 'vip');
+            if (avail) setSelectedSeatId(avail.id);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to fetch dynamic seats:', err);
+      }
+    }
+    fetchSeats();
+  }, [selectedCity, selectedBatch]);
 
   const cities = [
     { name: 'Kathmandu Hub', address: 'Tech Park, Baneshwor' },
@@ -51,12 +81,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
   ];
 
   const batches = [
-    { id: 'daytime', label: 'Daytime / Afternoon (12:00 PM - 3:00 PM)', slots: '3 Seats Left' },
     { id: 'morning', label: 'Morning (6:00 AM - 9:00 AM)', slots: '4 Seats Left' },
+    { id: 'daytime', label: 'Daytime / Afternoon (12:00 PM - 3:00 PM)', slots: '3 Seats Left' },
+    
   ];
 
   const selectedSeatObj = seats.find((s) => s.id === selectedSeatId);
-  const totalAmount = selectedSeatObj ? selectedSeatObj.priceNpr : 15000;
+  const totalAmount = selectedSeatObj ? selectedSeatObj.priceNpr : TOTAL_FEE;
+  const depositAmount = selectedSeatObj?.isVip ? 6000 : DEPOSIT_AMOUNT;
 
   const handleSeatClick = (seat: Seat) => {
     if (seat.status === 'booked') return;
@@ -64,7 +96,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
     setSeats((prev) =>
       prev.map((s) => {
         if (s.id === seat.id) return { ...s, status: 'selected' };
-        if (s.id === selectedSeatId) return { ...s, status: s.isVip ? 'available' : 'available' };
+        if (s.id === selectedSeatId) return { ...s, status: s.isVip ? 'vip' : 'available' };
         return s;
       })
     );
@@ -73,15 +105,48 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
 
   const handleProceedToPayment = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!fullName || !phone) {
-      alert(currentLang === 'en' ? 'Please fill in your name and phone number.' : 'कृपया आफ्नो नाम र फोन नम्बर भर्नुहोस्।');
+    if (!fullName || !phone || !email) {
+      alert(currentLang === 'en' ? 'Please fill in your full name, phone number, and email address.' : 'कृपया आफ्नो पूरा नाम, फोन नम्बर र इमेल ठेगाना भर्नुहोस्।');
       return;
     }
     setActiveStep(5);
   };
 
-  const handleConfirmPay = () => {
-    setIsCompleted(true);
+  const handleConfirmPay = async () => {
+    setIsProcessing(true);
+    setErrorMsg('');
+
+    try {
+      // Create Pending Booking Record in Backend DB (Fonepay — manual verification)
+      const bookingRes = await fetch('/api/bookings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          city: selectedCity,
+          batch: selectedBatch,
+          selectedSeatId,
+          fullName,
+          email,
+          phone,
+          organization,
+          paymentMethod: 'fonepay',
+          depositAmount,
+        }),
+      });
+
+      const bookingData = await bookingRes.json();
+      if (!bookingRes.ok) {
+        throw new Error(bookingData.error || 'Failed to create booking');
+      }
+
+      setCreatedBookingId(bookingData.bookingId);
+      setIsCompleted(true);
+    } catch (err: any) {
+      console.error('Booking error:', err);
+      setErrorMsg(err.message || 'Booking failed. Please try again.');
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   return (
@@ -159,13 +224,17 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {cities.map((c) => {
+                      const isKathmandu = c.name === 'Kathmandu Hub';
                       const isSel = selectedCity === c.name;
                       return (
                         <button
                           key={c.name}
-                          onClick={() => setSelectedCity(c.name)}
-                          className={`p-5 rounded-2xl border text-left transition-all ${
-                            isSel
+                          onClick={() => isKathmandu && setSelectedCity(c.name)}
+                          disabled={!isKathmandu}
+                          className={`p-5 rounded-2xl border text-left transition-all relative ${
+                            !isKathmandu
+                              ? 'border-[#e2dedc] bg-[#f5f5f5] opacity-60 cursor-not-allowed'
+                              : isSel
                               ? 'border-[#265cb3] bg-[#265cb3]/5 shadow-sm ring-2 ring-[#265cb3]/30'
                               : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'
                           }`}
@@ -175,6 +244,11 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                             <MapPin className={`w-5 h-5 ${isSel ? 'text-[#265cb3]' : 'text-[#8e8f99]'}`} />
                           </div>
                           <span className="text-xs text-[#5c5d63]">{c.address}</span>
+                          {!isKathmandu && (
+                            <span className="mt-2 inline-block text-[10px] font-extrabold uppercase tracking-wider bg-[#f6b996]/40 text-[#ac7859] px-2 py-0.5 rounded-full border border-[#ac7859]/30">
+                              Coming Soon
+                            </span>
+                          )}
                         </button>
                       );
                     })}
@@ -250,7 +324,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                       {t.selectSeatTitle[currentLang]}
                     </h3>
                     <span className="text-xs text-[#5c5d63] font-semibold">
-                      {currentLang === 'en' ? 'Capacity: 18 Seats' : 'क्षमता: १८ सिट'}
+                      {currentLang === 'en' ? 'Capacity: 25 Seats' : 'क्षमता: २५ सिट'}
                     </span>
                   </div>
 
@@ -260,13 +334,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   </div>
 
                   {/* Seat Map Grid */}
-                  <div className="bg-[#fcf9f8] p-6 rounded-2xl border border-[#e2dedc] space-y-6">
-                    {['A', 'B', 'C'].map((rowLetter) => {
+                  <div className="bg-[#fcf9f8] p-4 rounded-2xl border border-[#e2dedc] space-y-4">
+                    {['A', 'B', 'C', 'D', 'E'].map((rowLetter) => {
                       const rowSeats = seats.filter((s) => s.row === rowLetter);
                       return (
-                        <div key={rowLetter} className="flex items-center justify-center space-x-3">
-                          <span className="w-6 text-sm font-bold text-[#5c5d63] text-center">{rowLetter}</span>
-                          <div className="grid grid-cols-6 gap-2 sm:gap-3">
+                        <div key={rowLetter} className="flex items-center justify-center gap-2 sm:gap-3">
+                          <span className="w-5 text-xs font-bold text-[#5c5d63] text-center flex-shrink-0">{rowLetter}</span>
+                          <div className="flex gap-2 sm:gap-3">
                             {rowSeats.map((seat) => {
                               const isSel = selectedSeatId === seat.id;
                               return (
@@ -274,7 +348,8 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                                   key={seat.id}
                                   onClick={() => handleSeatClick(seat)}
                                   disabled={seat.status === 'booked'}
-                                  className={`seat-btn w-10 h-10 sm:w-12 sm:h-12 rounded-xl text-xs sm:text-sm font-bold flex flex-col items-center justify-center border shadow-sm ${
+                                  title={seat.isVip ? `VIP – Rs.${seat.priceNpr.toLocaleString()}` : `Rs.${seat.priceNpr.toLocaleString()}`}
+                                  className={`seat-btn w-11 h-11 sm:w-12 sm:h-12 rounded-xl text-xs font-bold flex flex-col items-center justify-center border shadow-sm transition-all ${
                                     seat.status === 'booked'
                                       ? 'booked'
                                       : isSel
@@ -284,7 +359,9 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                                       : 'bg-white border-[#d6d0cc] text-[#091b3b] hover:bg-[#f0eded]'
                                   }`}
                                 >
-                                  <span>{seat.id}</span>
+                                  <span className="text-[11px] font-extrabold leading-none">
+                                    {seat.seatLabel || `${seat.row}${seat.number}`}
+                                  </span>
                                 </button>
                               );
                             })}
@@ -378,12 +455,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
 
                       <div>
                         <label className="block text-xs font-bold text-[#091b3b] mb-1.5">
-                          {currentLang === 'en' ? 'Email Address' : 'इमेल ठेगाना'}
+                          {currentLang === 'en' ? 'Email Address *' : 'इमेल ठेगाना *'}
                         </label>
                         <div className="relative">
                           <Mail className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
                           <input
                             type="email"
+                            required
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="ramesh@gmail.com"
@@ -428,64 +506,88 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                 </form>
               )}
 
-              {/* Step 5: Local Nepal Payment Options */}
+              {/* Step 5: Fonepay QR Payment */}
               {activeStep === 5 && (
                 <div className="space-y-6">
                   <div className="border-b border-[#e2dedc] pb-4">
                     <h3 className="text-xl font-bold text-[#091b3b] font-heading">
-                      {currentLang === 'en' ? 'Step 5: Select Payment Method' : 'चरण ५: भुक्तानी विधि छान्नुहोस्'}
+                      {currentLang === 'en' ? 'Step 5: Pay via Fonepay QR' : 'चरण ५: Fonepay QR बाट भुक्तानी गर्नुहोस्'}
                     </h3>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      { id: 'esewa', label: 'eSewa Wallet', color: 'bg-emerald-600' },
-                      { id: 'khalti', label: 'Khalti Digital Wallet', color: 'bg-purple-700' },
-                      { id: 'fonepay', label: 'Fonepay QR', color: 'bg-red-600' },
-                      { id: 'bank', label: 'Bank Direct Transfer', color: 'bg-blue-700' },
-                    ].map((pm) => {
-                      const isSel = paymentMethod === pm.id;
-                      return (
-                        <button
-                          key={pm.id}
-                          type="button"
-                          onClick={() => setPaymentMethod(pm.id as any)}
-                          className={`p-4 rounded-2xl border text-left flex items-center justify-between transition-all ${
-                            isSel
-                              ? 'border-[#265cb3] bg-[#265cb3]/5 ring-2 ring-[#265cb3]/30'
-                              : 'border-[#e2dedc] bg-[#fcf9f8]'
-                          }`}
-                        >
-                          <span className="font-bold text-xs sm:text-sm text-[#091b3b]">{pm.label}</span>
-                          <div className={`w-3 h-3 rounded-full ${pm.color}`} />
-                        </button>
-                      );
-                    })}
+                  {/* Fonepay QR Box */}
+                  <div className="bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-2xl p-6 text-center space-y-4">
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-full bg-[#e63329] flex items-center justify-center">
+                        <span className="text-white font-extrabold text-xs">F</span>
+                      </div>
+                      <span className="font-extrabold text-lg text-[#091b3b]">Fonepay</span>
+                    </div>
+
+                    {/* QR Placeholder */}
+                    <div className="mx-auto w-44 h-44 bg-white rounded-2xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-inner">
+                      <div className="text-center space-y-2">
+                        <div className="w-32 h-32 bg-[#091b3b] rounded-lg mx-auto flex items-center justify-center">
+                          {/* QR pattern placeholder */}
+                          <div className="grid grid-cols-5 gap-0.5 p-2">
+                            {Array.from({ length: 25 }).map((_, i) => (
+                              <div key={i} className={`w-4 h-4 rounded-sm ${[0,1,2,5,10,12,14,19,22,23,24].includes(i) ? 'bg-white' : 'bg-transparent'}`} />
+                            ))}
+                          </div>
+                        </div>
+                        <span className="text-[10px] text-[#5c5d63] font-semibold">Scan QR Code</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="text-sm font-extrabold text-[#091b3b]">
+                        {currentLang === 'en' ? 'Deposit Amount' : 'भुक्तानी रकम'}
+                      </p>
+                      <p className="text-3xl font-extrabold text-[#e63329]">
+                        Rs. {depositAmount.toLocaleString()}
+                      </p>
+                      <p className="text-xs text-[#5c5d63]">
+                        {currentLang === 'en'
+                          ? 'Scan with any banking or Fonepay app'
+                          : 'जुनसुकै बैंकिङ वा Fonepay एपबाट स्क्यान गर्नुहोस्'}
+                      </p>
+                    </div>
                   </div>
 
-                  {/* Gateway Notice Box */}
-                  <div className="p-4 rounded-2xl bg-[#ebe7e5] border border-[#d6d0cc] flex items-start gap-3">
-                    <ShieldCheck className="w-5 h-5 text-[#10b981] flex-shrink-0 mt-0.5" />
-                    <p className="text-xs text-[#5c5d63] leading-relaxed">
-                      {currentLang === 'en'
-                        ? 'All payments in NPR are secured with instant digital receipt generation. Your seat will be guaranteed immediately.'
-                        : 'नेपाली रुपैयाँको सबै भुक्तानी तत्काल डिजिटल रसिदको साथ सुरक्षित गरिन्छ। तपाईंको सिट तुरून्त सुरक्षित हुनेछ।'}
+                  {/* Payment instructions */}
+                  <div className="p-4 rounded-2xl bg-[#ebe7e5] border border-[#d6d0cc] space-y-2">
+                    <p className="text-xs font-bold text-[#091b3b]">
+                      {currentLang === 'en' ? '📋 Payment Instructions:' : '📋 भुक्तानी निर्देशनहरू:'}
                     </p>
+                    <ol className="text-xs text-[#5c5d63] space-y-1 list-decimal list-inside">
+                      <li>{currentLang === 'en' ? `Scan the QR and pay Rs. ${depositAmount.toLocaleString()} deposit` : `QR स्क्यान गरी Rs. ${depositAmount.toLocaleString()} डिपोजिट तिर्नुहोस्`}</li>
+                      <li>{currentLang === 'en' ? 'Take a screenshot of the payment receipt' : 'भुक्तानी रसिदको स्क्रिनसट लिनुहोस्'}</li>
+                      <li>{currentLang === 'en' ? 'Click "I have Paid" to submit your booking' : '"मैले तिरें" थिचेर बुकिङ पेश गर्नुहोस्'}</li>
+                      <li>{currentLang === 'en' ? 'Remaining Rs. 10,000 is due after session starts' : 'बाँकी Rs. 10,000 सत्र सुरु भएपछि तिर्नुहोस्'}</li>
+                    </ol>
                   </div>
+
+                  {errorMsg && (
+                    <div className="p-3 text-xs bg-rose-50 border border-rose-200 text-rose-600 rounded-xl text-center font-bold">
+                      {errorMsg}
+                    </div>
+                  )}
 
                   <div className="pt-4 flex justify-between">
                     <button
                       onClick={() => setActiveStep(4)}
-                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm"
+                      disabled={isProcessing}
+                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm disabled:opacity-50"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       onClick={handleConfirmPay}
-                      className="px-8 py-3.5 rounded-xl bg-[#10b981] text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2"
+                      disabled={isProcessing}
+                      className="px-8 py-3.5 rounded-xl bg-[#10b981] text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50"
                     >
-                      <CreditCard className="w-4 h-4" />
-                      <span>{t.confirmBooking[currentLang]}</span>
+                      <ShieldCheck className="w-4 h-4" />
+                      <span>{isProcessing ? (currentLang === 'en' ? 'Submitting...' : 'पेश गर्दैछ...') : (currentLang === 'en' ? 'I have Paid — Confirm Booking' : 'मैले तिरें — बुकिङ पुष्टि गर्नुहोस्')}</span>
                     </button>
                   </div>
                 </div>
@@ -518,14 +620,22 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                 <div className="flex items-center justify-between">
                   <span className="text-[#c5c6cf]">{t.selectedSeat[currentLang]}</span>
                   <span className="font-extrabold text-[#f6b996] bg-white/10 px-3 py-1 rounded-lg">
-                    {selectedSeatId} {selectedSeatObj?.isVip ? '(VIP)' : ''}
+                    {selectedSeatObj?.seatLabel || selectedSeatId} {selectedSeatObj?.isVip ? '⭐ VIP' : ''}
                   </span>
                 </div>
 
                 <div className="border-t border-white/10 pt-4 space-y-2">
                   <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
-                    <span>{t.standardSeatPrice[currentLang]}</span>
+                    <span>{currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'}</span>
                     <span>Rs. {totalAmount.toLocaleString()}</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-[#f6b996] font-bold">{currentLang === 'en' ? '✓ Pay Now (Deposit)' : '✓ अहिले तिर्नुहोस् (डिपोजिट)'}</span>
+                    <span className="text-[#f6b996] font-extrabold">Rs. {depositAmount.toLocaleString()}</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
+                    <span>{currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरु भएपछि'}</span>
+                    <span>Rs. {(totalAmount - depositAmount).toLocaleString()}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
                     <span>{currentLang === 'en' ? 'Course Kit & Workbook' : 'पाठ्यक्रम किट र पुस्तक'}</span>
@@ -533,11 +643,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-4 flex items-center justify-between">
-                  <span className="font-bold text-base">{t.totalPayable[currentLang]}</span>
-                  <span className="text-2xl font-extrabold text-[#f6b996] font-heading">
-                    Rs. {totalAmount.toLocaleString()}
-                  </span>
+                <div className="border-t border-white/10 pt-4 space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-[#c5c6cf]">{currentLang === 'en' ? 'Due Now' : 'अहिले तिर्नुपर्ने'}</span>
+                    <span className="text-2xl font-extrabold text-[#f6b996] font-heading">
+                      Rs. {depositAmount.toLocaleString()}
+                    </span>
+                  </div>
+                  <p className="text-[10px] text-[#8e9ab0]">{currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि`}</p>
                 </div>
               </div>
 

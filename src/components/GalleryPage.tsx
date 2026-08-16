@@ -14,8 +14,24 @@ interface GalleryPageProps {
 export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
   const t = translations.gallery;
 
+  const [items, setItems] = useState<GalleryItem[]>(galleryItems);
   const [activeFilter, setActiveFilter] = useState<'all' | string>('all');
   const [selectedMedia, setSelectedMedia] = useState<GalleryItem | null>(null);
+
+  React.useEffect(() => {
+    async function loadDynamicGallery() {
+      try {
+        const res = await fetch('/api/gallery');
+        const data = await res.json();
+        if (res.ok && data.gallery && data.gallery.length > 0) {
+          setItems(data.gallery);
+        }
+      } catch (err) {
+        console.error('Failed to load dynamic gallery:', err);
+      }
+    }
+    loadDynamicGallery();
+  }, []);
 
   const filterTabs = [
     { id: 'all', label: t.filters.all[currentLang] },
@@ -26,7 +42,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
     { id: 'videos', label: t.filters.videos[currentLang] },
   ];
 
-  const filteredItems = galleryItems.filter((item) => {
+  const filteredItems = items.filter((item) => {
     if (activeFilter === 'all') return true;
     return item.category === activeFilter;
   });
