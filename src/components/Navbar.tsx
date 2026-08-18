@@ -151,14 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* Admin Portal Link */}
-            <a
-              href="/admin"
-              className="px-3 py-2 text-xs font-bold text-[#ea580c] hover:bg-[#fff7ed] rounded-xl transition-colors flex items-center gap-1.5 border border-[#fed7aa]"
-              title="Open Admin Dashboard"
-            >
-              <FileText className="w-3.5 h-3.5 text-[#ea580c]" />
-              <span>Admin</span>
-            </a>
+         
 
             {/* ── Logged IN: Profile Avatar Dropdown ── */}
             {authUser ? (
