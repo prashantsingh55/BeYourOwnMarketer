@@ -6,12 +6,22 @@
     --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-nepali: 'Mukta', 'Inter', sans-serif;
+
+    /* BYOM Brand Colors from Logo */
+    --color-sky-primary: #0284c7;
+    --color-sky-light: #38bdf8;
+    --color-sky-tint: #f0f9ff;
+    --color-orange-primary: #f97316;
+    --color-orange-vibrant: #ff6b00;
+    --color-orange-tint: #fff7ed;
+    --color-slate-dark: #0b132b;
+    --color-slate-text: #0f172a;
   }
 
   body {
     font-family: var(--font-body);
-    background-color: #fcf9f8;
-    color: #1b1c1c;
+    background-color: #f8fafc;
+    color: #0f172a;
     overflow-x: hidden;
   }
 
@@ -30,16 +40,16 @@
 }
 
 .glass-nav {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .btn-hover {
@@ -47,7 +57,15 @@
 }
 .btn-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(38, 92, 179, 0.15);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.2);
+}
+
+.btn-orange-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-orange-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.25);
 }
 
 .card-hover {
@@ -55,33 +73,38 @@
 }
 .card-hover:hover {
   transform: translateY(-3px) scale(1.01);
-  box-shadow: 0px 12px 32px rgba(8, 26, 58, 0.1);
+  box-shadow: 0px 14px 36px rgba(11, 19, 43, 0.08);
 }
 
 .seat-btn {
   transition: all 0.2s ease;
 }
 .seat-btn.available:hover {
-  background-color: #f0eded;
-  border-color: #c5c6cf;
+  background-color: #f0f9ff;
+  border-color: #0284c7;
+  color: #0284c7;
   transform: scale(1.1);
 }
 .seat-btn.selected {
-  background-color: #f6b996;
-  border-color: #ac7859;
-  color: #321300;
-  font-weight: 700;
+  background: linear-gradient(135deg, #ff6b00 0%, #f97316 100%);
+  border-color: #ea580c;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
 }
 .seat-btn.booked {
-  background-color: #091b3b;
-  color: #ffffff;
+  background-color: #1e293b;
+  color: #64748b;
   cursor: not-allowed;
   opacity: 0.85;
 }
 .seat-btn.vip {
-  border: 2px solid #ac7859;
+  border: 2px solid #0284c7;
+  background-color: #f0f9ff;
+  color: #0369a1;
 }
 
 * {
   box-sizing: border-box;
 }
+

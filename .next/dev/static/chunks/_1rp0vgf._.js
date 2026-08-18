@@ -246,7 +246,7 @@ function Home() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                    className: "py-20 bg-[#f4eee9] border-y border-[#e2dedc]",
+                                    className: "py-20 bg-gradient-to-b from-[#f8fafc] via-[#f0f9ff]/30 to-[#f8fafc] border-y border-slate-200/80",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12",
                                         children: [
@@ -254,7 +254,7 @@ function Home() {
                                                 className: "text-center max-w-2xl mx-auto space-y-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1 rounded-full border border-[#ac7859]/30",
+                                                        className: "text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1.5 rounded-full border border-[#fed7aa] shadow-sm",
                                                         children: currentLang === 'en' ? '★ Real Student Stories' : '★ वास्तविक विद्यार्थीका अनुभव'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
@@ -262,7 +262,7 @@ function Home() {
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-3xl sm:text-4xl font-extrabold text-[#091b3b] font-heading",
+                                                        className: "text-3xl sm:text-4xl font-extrabold text-[#0f172a] font-heading",
                                                         children: currentLang === 'en' ? 'What Our Graduates Say' : 'हाम्रा स्नातकहरूको भनाइ'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
@@ -270,7 +270,7 @@ function Home() {
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-sm text-[#5c5d63] max-w-xl mx-auto",
+                                                        className: "text-sm text-[#64748b] max-w-xl mx-auto",
                                                         children: currentLang === 'en' ? 'Over 200+ entrepreneurs and professionals have transformed their marketing with BYOM.' : '२०० भन्दा बढी उद्यमी र व्यवसायीहरूले BYOM मार्फत आफ्नो मार्केटिङ रूपान्तरण गरेका छन्।'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
@@ -361,13 +361,13 @@ function Home() {
                                                         viewport: {
                                                             once: true
                                                         },
-                                                        className: "bg-white p-6 rounded-2xl border border-[#e2dedc] shadow-sm space-y-4 flex flex-col justify-between hover:shadow-md transition-shadow",
+                                                        className: "bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-4 flex flex-col justify-between hover:shadow-lg transition-all",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "space-y-3",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "flex items-center space-x-1 text-[#f59e0b]",
+                                                                        className: "flex items-center space-x-1 text-amber-400",
                                                                         children: [
                                                                             ...Array(story.stars)
                                                                         ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
@@ -383,14 +383,14 @@ function Home() {
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
-                                                                        className: "w-7 h-7 text-[#f6b996] opacity-50"
+                                                                        className: "w-7 h-7 text-[#f97316]/40"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/page.tsx",
                                                                         lineNumber: 260,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-xs sm:text-sm text-[#3c3e44] leading-relaxed italic",
+                                                                        className: "text-xs sm:text-sm text-[#334155] leading-relaxed italic",
                                                                         children: [
                                                                             '"',
                                                                             story.text[currentLang],
@@ -408,12 +408,12 @@ function Home() {
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center space-x-3 pt-4 border-t border-[#e2dedc]",
+                                                                className: "flex items-center space-x-3 pt-4 border-t border-slate-100",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                                         src: story.avatar,
                                                                         alt: story.name,
-                                                                        className: "w-10 h-10 rounded-full object-cover"
+                                                                        className: "w-10 h-10 rounded-full object-cover ring-2 ring-slate-100"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/page.tsx",
                                                                         lineNumber: 267,
@@ -422,7 +422,7 @@ function Home() {
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "block font-bold text-xs text-[#091b3b]",
+                                                                                className: "block font-bold text-xs text-[#0f172a]",
                                                                                 children: story.name
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/page.tsx",
@@ -430,7 +430,7 @@ function Home() {
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-[11px] text-[#5c5d63]",
+                                                                                className: "text-[11px] text-[#64748b]",
                                                                                 children: story.role
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/page.tsx",
@@ -472,80 +472,96 @@ function Home() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                    className: "py-16 bg-[#091b3b] text-white text-center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "max-w-4xl mx-auto px-4 space-y-6",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[#f6b996] text-xs font-bold uppercase",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                        className: "w-3.5 h-3.5"
-                                                    }, void 0, false, {
+                                    className: "py-20 bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0284c7] text-white text-center relative overflow-hidden",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute top-0 right-1/3 w-80 h-80 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 289,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "max-w-4xl mx-auto px-4 space-y-6 relative z-10",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 text-amber-200 text-xs font-extrabold uppercase tracking-wide backdrop-blur-sm",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                                            className: "w-3.5 h-3.5 text-amber-300"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 292,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: currentLang === 'en' ? 'Limited Capacity • Only 25 Seats' : 'सीमित स्थान • केवल २५ सिट'
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/page.tsx",
+                                                            lineNumber: 293,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 291,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                    className: "text-3xl sm:text-5xl font-extrabold font-heading tracking-tight",
+                                                    children: currentLang === 'en' ? 'Ready to Become Your Own Marketer?' : 'के तपाईं आफैँ मार्केटर बन्न तयार हुनुहुन्छ?'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 295,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed",
+                                                    children: currentLang === 'en' ? 'Reserve your seat for the upcoming 7-day physical cohort in Kathmandu.' : 'काठमाडौँमा हुने आगामी ७-दिने भौतिक टोलीका लागि आफ्नो सिट सुरक्षित गर्नुहोस्।'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 300,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "pt-2",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>handleNavigate('book'),
+                                                        className: "px-9 py-4 rounded-2xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-base btn-orange-hover shadow-2xl shadow-orange-500/30 inline-flex items-center gap-2 transition-all",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: currentLang === 'en' ? 'Book Your Spot Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 310,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                                className: "w-5 h-5 text-amber-200"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/page.tsx",
+                                                                lineNumber: 311,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 291,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: currentLang === 'en' ? 'Limited Capacity' : 'सीमित स्थान'
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 292,
+                                                        lineNumber: 306,
                                                         columnNumber: 21
                                                     }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 290,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-3xl sm:text-4xl font-extrabold font-heading",
-                                                children: currentLang === 'en' ? 'Ready to Become Your Own Marketer?' : 'के तपाईं आफैँ मार्केटर बन्न तयार हुनुहुन्छ?'
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 294,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm sm:text-base text-[#c5c6cf] max-w-xl mx-auto",
-                                                children: currentLang === 'en' ? 'Reserve your seat for the upcoming 7-day physical cohort in Kathmandu.' : 'काठमाडौँमा हुने आगामी ७-दिने भौतिक टोलीका लागि आफ्नो सिट सुरक्षित गर्नुहोस्।'
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 299,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: ()=>handleNavigate('book'),
-                                                className: "px-8 py-4 rounded-xl bg-[#f6b996] text-[#321300] font-extrabold text-base btn-hover shadow-lg inline-flex items-center gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: currentLang === 'en' ? 'Book Your Spot Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 308,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        className: "w-5 h-5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 309,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 304,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/page.tsx",
-                                        lineNumber: 289,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/page.tsx",
+                                                    lineNumber: 305,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 290,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 288,
                                     columnNumber: 15
@@ -575,12 +591,12 @@ function Home() {
                                 onSelectCourseEnroll: handleSelectCourseEnroll
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 325,
+                                lineNumber: 328,
                                 columnNumber: 15
                             }, this)
                         }, "programs", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 318,
+                            lineNumber: 321,
                             columnNumber: 13
                         }, this),
                         currentPage === 'book' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -600,12 +616,12 @@ function Home() {
                                 currentLang: currentLang
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 342,
+                                lineNumber: 345,
                                 columnNumber: 15
                             }, this)
                         }, "book", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 335,
+                            lineNumber: 338,
                             columnNumber: 13
                         }, this),
                         currentPage === 'contact' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -626,12 +642,12 @@ function Home() {
                                 onOpenMentorModal: ()=>setMentorModalOpen(true)
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 355,
+                                lineNumber: 358,
                                 columnNumber: 15
                             }, this)
                         }, "contact", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 348,
+                            lineNumber: 351,
                             columnNumber: 13
                         }, this),
                         currentPage === 'blog' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -651,12 +667,12 @@ function Home() {
                                 currentLang: currentLang
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 371,
+                                lineNumber: 374,
                                 columnNumber: 15
                             }, this)
                         }, "blog", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 364,
+                            lineNumber: 367,
                             columnNumber: 13
                         }, this),
                         currentPage === 'gallery' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -676,12 +692,12 @@ function Home() {
                                 currentLang: currentLang
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 384,
+                                lineNumber: 387,
                                 columnNumber: 15
                             }, this)
                         }, "gallery", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 377,
+                            lineNumber: 380,
                             columnNumber: 13
                         }, this)
                     ]
@@ -701,7 +717,7 @@ function Home() {
                 onLanguageChange: setCurrentLang
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 392,
+                lineNumber: 395,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AuthModal"], {
@@ -711,7 +727,7 @@ function Home() {
                 onLoginSuccess: handleLoginSuccess
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 399,
+                lineNumber: 402,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MentorModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MentorModal"], {
@@ -720,7 +736,7 @@ function Home() {
                 currentLang: currentLang
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 406,
+                lineNumber: 409,
                 columnNumber: 7
             }, this)
         ]
@@ -852,7 +868,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                             className: "space-y-1 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-2xl font-extrabold text-[#091b3b] font-heading",
+                                    className: "text-2xl font-extrabold text-[#0f172a] font-heading",
                                     children: t.empoweringHeading[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -860,7 +876,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-[#5c5d63]",
+                                    className: "text-xs text-[#64748b]",
                                     children: t.empoweringSub[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -874,14 +890,14 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-2 p-1 bg-[#ebe7e5] rounded-xl text-xs font-bold border border-[#d6d0cc]",
+                            className: "grid grid-cols-2 p-1 bg-slate-100 rounded-2xl text-xs font-bold border border-slate-200",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>{
                                         setActiveTab('login');
                                         setErrorMsg('');
                                     },
-                                    className: `py-2 rounded-lg transition-all ${activeTab === 'login' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'}`,
+                                    className: `py-2.5 rounded-xl transition-all ${activeTab === 'login' ? 'bg-[#0284c7] text-white shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'}`,
                                     children: t.loginTab[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -893,7 +909,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                         setActiveTab('register');
                                         setErrorMsg('');
                                     },
-                                    className: `py-2 rounded-lg transition-all ${activeTab === 'register' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'}`,
+                                    className: `py-2.5 rounded-xl transition-all ${activeTab === 'register' ? 'bg-[#0284c7] text-white shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'}`,
                                     children: t.createAccountTab[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -921,7 +937,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                 activeTab === 'register' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                            className: "block text-xs font-bold text-[#0f172a] mb-1",
                                             children: "Full Name"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AuthModal.tsx",
@@ -932,7 +948,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                             className: "relative",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                    className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                    className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 129,
@@ -944,7 +960,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                                     value: fullName,
                                                     onChange: (e)=>setFullName(e.target.value),
                                                     placeholder: "Anish Sharma",
-                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 130,
@@ -965,7 +981,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                            className: "block text-xs font-bold text-[#0f172a] mb-1",
                                             children: t.emailLabel[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AuthModal.tsx",
@@ -976,7 +992,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                             className: "relative",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                    className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                    className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 147,
@@ -988,7 +1004,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                                     value: email,
                                                     onChange: (e)=>setEmail(e.target.value),
                                                     placeholder: "student@byom.com.np",
-                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 148,
@@ -1009,7 +1025,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                            className: "block text-xs font-bold text-[#0f172a] mb-1",
                                             children: t.passwordLabel[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/AuthModal.tsx",
@@ -1020,7 +1036,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                             className: "relative",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                                    className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                    className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 164,
@@ -1032,7 +1048,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                                     value: password,
                                                     onChange: (e)=>setPassword(e.target.value),
                                                     placeholder: "••••••••",
-                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                                                    className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/AuthModal.tsx",
                                                     lineNumber: 165,
@@ -1054,7 +1070,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                     className: "flex justify-end",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "#",
-                                        className: "text-xs text-[#265cb3] font-bold hover:underline",
+                                        className: "text-xs text-[#0284c7] font-bold hover:underline",
                                         children: t.forgotPassword[currentLang]
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AuthModal.tsx",
@@ -1069,7 +1085,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "submit",
                                     disabled: loading,
-                                    className: "w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover shadow-md flex items-center justify-center gap-2 disabled:opacity-50",
+                                    className: "w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25 flex items-center justify-center gap-2 disabled:opacity-50 transition-all",
                                     children: loading ? 'Processing...' : activeTab === 'login' ? t.signInBtn[currentLang] : t.signUpBtn[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -1088,7 +1104,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 flex items-center",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-full border-t border-[#e2dedc]"
+                                        className: "w-full border-t border-slate-200"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/AuthModal.tsx",
                                         lineNumber: 195,
@@ -1100,7 +1116,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "relative bg-white px-3 text-[11px] font-bold text-[#8e8f99]",
+                                    className: "relative bg-white px-3 text-[11px] font-bold text-slate-400",
                                     children: t.orContinueWith[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -1115,7 +1131,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "/api/auth/google",
-                            className: "w-full py-2.5 rounded-xl border border-[#d6d0cc] hover:bg-[#f8f8f8] hover:border-[#4285F4]/40 text-xs font-bold text-[#3c3e44] flex items-center justify-center gap-2.5 transition-all group",
+                            className: "w-full py-3 rounded-xl border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-xs font-bold text-slate-700 flex items-center justify-center gap-2.5 transition-all group shadow-sm",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                     width: "18",
@@ -1170,7 +1186,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "group-hover:text-[#1a1a1a]",
+                                    className: "group-hover:text-slate-900",
                                     children: currentLang === 'en' ? 'Continue with Google' : 'Google मार्फत जारी राख्नुहोस्'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/AuthModal.tsx",
@@ -1192,14 +1208,14 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                     className: "py-8 text-center space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                            className: "w-12 h-12 text-[#10b981] mx-auto"
+                            className: "w-12 h-12 text-emerald-500 mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/components/AuthModal.tsx",
                             lineNumber: 222,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                            className: "text-xl font-bold text-[#091b3b]",
+                            className: "text-xl font-bold text-[#0f172a]",
                             children: currentLang === 'en' ? 'Welcome Back!' : 'पुनः स्वागत छ!'
                         }, void 0, false, {
                             fileName: "[project]/src/components/AuthModal.tsx",
@@ -1207,7 +1223,7 @@ const AuthModal = ({ isOpen, onClose, currentLang, onLoginSuccess })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xs text-[#5c5d63]",
+                            className: "text-xs text-[#64748b]",
                             children: currentLang === 'en' ? 'Redirecting to your student dashboard...' : 'तपाईंको ड्यासबोर्डमा लाँदैछ...'
                         }, void 0, false, {
                             fileName: "[project]/src/components/AuthModal.tsx",
@@ -1272,15 +1288,15 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                     className: "text-center max-w-3xl mx-auto mb-12 space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1 rounded-full border border-[#265cb3]/20",
-                            children: currentLang === 'en' ? 'Core Curriculum' : 'मुख्य पाठ्यक्रम्'
+                            className: "text-xs font-bold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
+                            children: currentLang === 'en' ? 'Core Curriculum' : 'मुख्य पाठ्यक्रम'
                         }, void 0, false, {
                             fileName: "[project]/src/components/BentoGrid.tsx",
                             lineNumber: 23,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-3xl sm:text-4xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-3xl sm:text-4xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.title[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1288,7 +1304,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63] leading-relaxed",
+                            className: "text-base text-[#64748b] leading-relaxed",
                             children: t.subtitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1308,15 +1324,15 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                             whileHover: {
                                 y: -4
                             },
-                            className: "md:col-span-2 bg-gradient-to-br from-[#fcf9f8] to-[#f4eee9] p-8 rounded-3xl border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden",
+                            className: "md:col-span-2 bg-gradient-to-br from-[#f0f9ff]/70 via-white to-[#fff7ed]/40 p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-4 max-w-xl relative z-10",
+                                    className: "space-y-5 max-w-xl relative z-10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-12 h-12 rounded-2xl bg-[#091b3b] text-white flex items-center justify-center shadow-md",
+                                            className: "w-12 h-12 rounded-2xl bg-[#0284c7] text-white flex items-center justify-center shadow-md shadow-sky-500/20",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$palette$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Palette$3e$__["Palette"], {
-                                                className: "w-6 h-6 text-[#f6b996]"
+                                                className: "w-6 h-6 text-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/BentoGrid.tsx",
                                                 lineNumber: 44,
@@ -1328,7 +1344,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-2xl font-bold text-[#091b3b] font-heading",
+                                            className: "text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading",
                                             children: t.card1Title[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1336,7 +1352,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm sm:text-base text-[#5c5d63] leading-relaxed",
+                                            className: "text-sm sm:text-base text-[#475569] leading-relaxed",
                                             children: t.card1Desc[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1344,13 +1360,13 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs font-semibold text-[#1b1c1c]",
+                                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-semibold text-[#1e293b]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                            className: "w-4 h-4 text-[#265cb3]"
+                                                            className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BentoGrid.tsx",
                                                             lineNumber: 56,
@@ -1373,7 +1389,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                            className: "w-4 h-4 text-[#265cb3]"
+                                                            className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BentoGrid.tsx",
                                                             lineNumber: 60,
@@ -1396,7 +1412,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                            className: "w-4 h-4 text-[#265cb3]"
+                                                            className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BentoGrid.tsx",
                                                             lineNumber: 64,
@@ -1419,7 +1435,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                            className: "w-4 h-4 text-[#265cb3]"
+                                                            className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BentoGrid.tsx",
                                                             lineNumber: 68,
@@ -1448,7 +1464,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             className: "pt-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>onNavigate('programs'),
-                                                className: "inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover shadow-sm",
+                                                className: "inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover shadow-md transition-colors",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: t.card1Cta[currentLang]
@@ -1458,7 +1474,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        className: "w-4 h-4 text-[#f6b996]"
+                                                        className: "w-4 h-4 text-amber-200"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/BentoGrid.tsx",
                                                         lineNumber: 79,
@@ -1482,7 +1498,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-8 md:mt-0 pt-6 border-t border-[#e2dedc] flex items-center justify-between text-xs text-[#5c5d63]",
+                                    className: "mt-8 md:mt-0 pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-[#64748b]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "font-semibold",
@@ -1493,7 +1509,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-bold text-[#265cb3]",
+                                            className: "font-bold text-[#0284c7]",
                                             children: currentLang === 'en' ? 'Hands-on Scripting' : 'व्यावहारिक स्क्रिप्टिङ'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1516,13 +1532,13 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                             whileHover: {
                                 y: -4
                             },
-                            className: "bg-[#091b3b] text-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden",
+                            className: "bg-[#0b132b] text-white p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-md hover:shadow-2xl transition-all flex flex-col justify-between relative overflow-hidden",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-4 relative z-10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-12 h-12 rounded-2xl bg-white/10 text-[#f6b996] flex items-center justify-center backdrop-blur-md",
+                                            className: "w-12 h-12 rounded-2xl bg-white/10 text-[#f97316] flex items-center justify-center backdrop-blur-md",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
                                                 className: "w-6 h-6"
                                             }, void 0, false, {
@@ -1544,7 +1560,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-[#c5c6cf] leading-relaxed",
+                                            className: "text-sm text-slate-300 leading-relaxed",
                                             children: t.card2Desc[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1552,13 +1568,13 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "p-4 rounded-xl bg-white/5 border border-white/10 space-y-2",
+                                            className: "p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center justify-between text-xs",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[#f6b996] font-bold",
+                                                            className: "text-[#f97316] font-bold",
                                                             children: "CapCut & Premiere"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1579,9 +1595,9 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-full bg-white/20 h-1.5 rounded-full overflow-hidden",
+                                                    className: "w-full bg-white/20 h-2 rounded-full overflow-hidden",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "bg-[#f6b996] h-full w-4/5 rounded-full"
+                                                        className: "bg-gradient-to-r from-[#ff6b00] to-[#f97316] h-full w-4/5 rounded-full"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/BentoGrid.tsx",
                                                         lineNumber: 113,
@@ -1605,7 +1621,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-[#c5c6cf]",
+                                    className: "pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: currentLang === 'en' ? 'Module 02' : 'मोड्युल ०२'
@@ -1615,7 +1631,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-bold text-[#f6b996]",
+                                            className: "font-bold text-[#f97316]",
                                             children: currentLang === 'en' ? 'Vertical Reels & TikTok' : 'रिल्स र टिकटक भिडियो'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1638,16 +1654,16 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                             whileHover: {
                                 y: -4
                             },
-                            className: "md:col-span-3 bg-gradient-to-r from-[#265cb3] to-[#1a4488] text-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all flex flex-col md:flex-row items-center justify-between gap-6",
+                            className: "md:col-span-3 bg-gradient-to-r from-[#0284c7] via-[#0369a1] to-[#0b132b] text-white p-8 sm:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all flex flex-col md:flex-row items-center justify-between gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-3 max-w-xl",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-bold tracking-wide",
+                                            className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 text-xs font-extrabold tracking-wide backdrop-blur-sm",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
-                                                    className: "w-4 h-4 text-[#f6b996]"
+                                                    className: "w-4 h-4 text-amber-200"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/BentoGrid.tsx",
                                                     lineNumber: 131,
@@ -1675,7 +1691,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm sm:text-base text-white/80 leading-relaxed",
+                                            className: "text-sm sm:text-base text-white/85 leading-relaxed",
                                             children: t.card3Desc[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BentoGrid.tsx",
@@ -1692,7 +1708,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                     className: "flex-shrink-0 w-full md:w-auto",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>onNavigate('programs'),
-                                        className: "w-full md:w-auto px-7 py-3.5 rounded-2xl bg-white text-[#091b3b] font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-lg",
+                                        className: "w-full md:w-auto px-8 py-4 rounded-2xl bg-white text-[#0f172a] hover:bg-[#fff7ed] hover:text-[#ea580c] font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-xl transition-all",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: currentLang === 'en' ? 'Master Mobile Videography' : 'मोबाइल भिडियोग्राफी सिक्नुहोस्'
@@ -1702,7 +1718,7 @@ const BentoGrid = ({ currentLang, onNavigate })=>{
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                className: "w-4 h-4 text-[#265cb3]"
+                                                className: "w-4 h-4 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/BentoGrid.tsx",
                                                 lineNumber: 148,
@@ -1849,7 +1865,7 @@ const BlogPage = ({ currentLang })=>{
         if (newsletterEmail) setSubscribed(true);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12 md:py-20 bg-[#fcf9f8]",
+        className: "py-12 md:py-20 bg-[#f8fafc]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12",
             children: [
@@ -1857,7 +1873,7 @@ const BlogPage = ({ currentLang })=>{
                     className: "text-center max-w-3xl mx-auto space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20",
+                            className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
                             children: currentLang === 'en' ? 'Knowledge Base' : 'ज्ञान भण्डार'
                         }, void 0, false, {
                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1865,7 +1881,7 @@ const BlogPage = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1873,7 +1889,7 @@ const BlogPage = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63] leading-relaxed",
+                            className: "text-base text-[#64748b] leading-relaxed",
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1887,7 +1903,7 @@ const BlogPage = ({ currentLang })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 featuredPost && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-3xl border border-[#e2dedc] shadow-lg overflow-hidden grid grid-cols-1 lg:grid-cols-12",
+                    className: "bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "lg:col-span-7 p-8 sm:p-12 space-y-6 flex flex-col justify-between",
@@ -1896,7 +1912,7 @@ const BlogPage = ({ currentLang })=>{
                                     className: "space-y-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#091b3b] text-[#f6b996] text-xs font-extrabold uppercase",
+                                            className: "inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0b132b] text-amber-200 text-xs font-extrabold uppercase",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
                                                     className: "w-3.5 h-3.5"
@@ -1919,7 +1935,7 @@ const BlogPage = ({ currentLang })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "text-2xl sm:text-3xl font-extrabold text-[#091b3b] font-heading leading-tight",
+                                            className: "text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading leading-tight",
                                             children: featuredPost.title[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1927,7 +1943,7 @@ const BlogPage = ({ currentLang })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm sm:text-base text-[#5c5d63] leading-relaxed line-clamp-3",
+                                            className: "text-sm sm:text-base text-[#475569] leading-relaxed line-clamp-3",
                                             children: featuredPost.summary[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1941,13 +1957,13 @@ const BlogPage = ({ currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pt-6 border-t border-[#e2dedc] flex items-center justify-between",
+                                    className: "pt-6 border-t border-slate-100 flex items-center justify-between",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center space-x-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-10 h-10 rounded-full bg-[#265cb3] text-white font-bold text-sm flex items-center justify-center",
+                                                    className: "w-10 h-10 rounded-full bg-[#0284c7] text-white font-bold text-sm flex items-center justify-center shadow-sm",
                                                     children: featuredPost.author.avatar
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/BlogPage.tsx",
@@ -1957,7 +1973,7 @@ const BlogPage = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "block text-xs font-bold text-[#091b3b]",
+                                                            className: "block text-xs font-bold text-[#0f172a]",
                                                             children: featuredPost.author.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -1965,7 +1981,7 @@ const BlogPage = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[11px] text-[#5c5d63]",
+                                                            className: "text-[11px] text-[#64748b]",
                                                             children: [
                                                                 featuredPost.date,
                                                                 " • ",
@@ -1990,7 +2006,7 @@ const BlogPage = ({ currentLang })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setActiveArticle(featuredPost),
-                                            className: "px-5 py-2.5 rounded-xl bg-[#091b3b] text-white text-xs font-bold btn-hover flex items-center gap-2 shadow-sm",
+                                            className: "px-6 py-3 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white text-xs font-extrabold btn-orange-hover flex items-center gap-2 shadow-md shadow-orange-500/20 transition-all",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: t.readMore[currentLang]
@@ -2000,7 +2016,7 @@ const BlogPage = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                    className: "w-4 h-4 text-[#f6b996]"
+                                                    className: "w-4 h-4 text-amber-200"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/BlogPage.tsx",
                                                     lineNumber: 120,
@@ -2057,7 +2073,7 @@ const BlogPage = ({ currentLang })=>{
                                     className: "relative w-full md:w-80",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                            className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                            className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
                                             lineNumber: 141,
@@ -2068,7 +2084,7 @@ const BlogPage = ({ currentLang })=>{
                                             value: searchQuery,
                                             onChange: (e)=>setSearchQuery(e.target.value),
                                             placeholder: t.searchPlaceholder[currentLang],
-                                            className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] bg-white text-sm font-semibold outline-none focus:border-[#265cb3]"
+                                            className: "w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
                                             lineNumber: 142,
@@ -2084,7 +2100,7 @@ const BlogPage = ({ currentLang })=>{
                                     className: "flex flex-wrap items-center gap-2 w-full md:w-auto",
                                     children: topics.map((topic)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setSelectedTopic(topic.id),
-                                            className: `px-4 py-2 rounded-xl text-xs font-bold transition-all ${selectedTopic === topic.id ? 'bg-[#091b3b] text-white shadow-sm' : 'bg-white text-[#5c5d63] border border-[#e2dedc] hover:bg-[#ebe7e5]'}`,
+                                            className: `px-4 py-2 rounded-xl text-xs font-bold transition-all ${selectedTopic === topic.id ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/20' : 'bg-white text-[#475569] border border-slate-200 hover:bg-slate-50'}`,
                                             children: topic.label
                                         }, topic.id, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2105,13 +2121,13 @@ const BlogPage = ({ currentLang })=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
                             children: filteredPosts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                                    className: "bg-white rounded-3xl border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all card-hover overflow-hidden flex flex-col justify-between",
+                                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all card-hover overflow-hidden flex flex-col justify-between",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "h-48 overflow-hidden bg-[#e2dedc] relative",
+                                                    className: "h-48 overflow-hidden bg-slate-100 relative",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                             src: post.image,
@@ -2124,7 +2140,7 @@ const BlogPage = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "absolute top-3 left-3 bg-[#091b3b]/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm",
+                                                            className: "absolute top-3 left-3 bg-[#080e1a]/90 text-white text-[10px] font-bold px-3 py-1 rounded-full backdrop-blur-sm",
                                                             children: post.category[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2141,10 +2157,10 @@ const BlogPage = ({ currentLang })=>{
                                                     className: "p-6 space-y-3",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-2 text-xs text-[#5c5d63] font-semibold",
+                                                            className: "flex items-center gap-2 text-xs text-[#64748b] font-semibold",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                    className: "w-3.5 h-3.5 text-[#265cb3]"
+                                                                    className: "w-3.5 h-3.5 text-[#0284c7]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/BlogPage.tsx",
                                                                     lineNumber: 191,
@@ -2178,7 +2194,7 @@ const BlogPage = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-lg font-bold text-[#091b3b] font-heading leading-snug",
+                                                            className: "text-lg font-bold text-[#0f172a] font-heading leading-snug",
                                                             children: post.title[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2186,7 +2202,7 @@ const BlogPage = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs text-[#5c5d63] line-clamp-2",
+                                                            className: "text-xs text-[#475569] line-clamp-2 leading-relaxed",
                                                             children: post.summary[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2206,13 +2222,13 @@ const BlogPage = ({ currentLang })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "p-6 pt-0 border-t border-[#e2dedc]/60 mt-4 flex items-center justify-between",
+                                            className: "p-6 pt-0 border-t border-slate-100 mt-4 flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center space-x-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-7 h-7 rounded-full bg-[#265cb3] text-white font-bold text-xs flex items-center justify-center",
+                                                            className: "w-7 h-7 rounded-full bg-[#0284c7] text-white font-bold text-xs flex items-center justify-center",
                                                             children: post.author.avatar
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2220,7 +2236,7 @@ const BlogPage = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs font-semibold text-[#091b3b]",
+                                                            className: "text-xs font-semibold text-[#0f172a]",
                                                             children: post.author.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2235,7 +2251,7 @@ const BlogPage = ({ currentLang })=>{
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveArticle(post),
-                                                    className: "text-xs font-bold text-[#265cb3] hover:text-[#091b3b] transition-colors flex items-center gap-1",
+                                                    className: "text-xs font-extrabold text-[#0284c7] hover:text-[#0369a1] transition-colors flex items-center gap-1",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: t.readMore[currentLang]
@@ -2281,10 +2297,10 @@ const BlogPage = ({ currentLang })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-[#091b3b] text-white p-8 sm:p-12 rounded-3xl shadow-xl max-w-4xl mx-auto text-center space-y-6",
+                    className: "bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0284c7] text-white p-8 sm:p-12 rounded-3xl shadow-2xl max-w-4xl mx-auto text-center space-y-6 relative overflow-hidden",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-12 h-12 rounded-2xl bg-white/10 text-[#f6b996] mx-auto flex items-center justify-center",
+                            className: "w-12 h-12 rounded-2xl bg-white/10 text-amber-200 mx-auto flex items-center justify-center backdrop-blur-sm",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
                                 className: "w-6 h-6"
                             }, void 0, false, {
@@ -2309,7 +2325,7 @@ const BlogPage = ({ currentLang })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-[#c5c6cf]",
+                                    className: "text-sm text-slate-300",
                                     children: t.newsletterSub[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BlogPage.tsx",
@@ -2332,7 +2348,7 @@ const BlogPage = ({ currentLang })=>{
                                     value: newsletterEmail,
                                     onChange: (e)=>setNewsletterEmail(e.target.value),
                                     placeholder: t.workEmailPlaceholder[currentLang],
-                                    className: "w-full sm:w-72 px-4 py-3 rounded-xl bg-white text-[#091b3b] font-semibold text-sm outline-none placeholder:text-[#8e8f99]"
+                                    className: "w-full sm:w-72 px-4 py-3 rounded-xl bg-white text-[#0f172a] font-semibold text-sm outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-[#0284c7]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/BlogPage.tsx",
                                     lineNumber: 245,
@@ -2340,7 +2356,7 @@ const BlogPage = ({ currentLang })=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "submit",
-                                    className: "w-full sm:w-auto px-6 py-3 rounded-xl bg-[#f6b996] text-[#321300] font-extrabold text-sm btn-hover flex items-center justify-center gap-2",
+                                    className: "w-full sm:w-auto px-7 py-3 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 transition-all",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.subscribeBtn[currentLang]
@@ -2368,7 +2384,7 @@ const BlogPage = ({ currentLang })=>{
                             lineNumber: 244,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "p-4 rounded-xl bg-white/10 text-[#f6b996] text-sm font-bold",
+                            className: "p-4 rounded-2xl bg-white/10 text-amber-200 text-sm font-bold backdrop-blur-sm border border-white/15",
                             children: currentLang === 'en' ? 'Thank you for subscribing!' : 'सदस्यता लिनुभएकोमा धन्यवाद!'
                         }, void 0, false, {
                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2376,7 +2392,7 @@ const BlogPage = ({ currentLang })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[11px] text-[#8e8f99]",
+                            className: "text-[11px] text-slate-400",
                             children: t.noSpamNotice[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2408,10 +2424,10 @@ const BlogPage = ({ currentLang })=>{
                             className: "bg-white max-w-3xl w-full rounded-3xl shadow-2xl overflow-hidden my-8 max-h-[90vh] flex flex-col",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6 border-b border-[#e2dedc] flex items-center justify-between bg-[#fcf9f8]",
+                                    className: "p-6 border-b border-slate-200 flex items-center justify-between bg-slate-50",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1 rounded-full",
+                                            className: "text-xs font-bold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3 py-1 rounded-full border border-[#0284c7]/20",
                                             children: activeArticle.category[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2420,7 +2436,7 @@ const BlogPage = ({ currentLang })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setActiveArticle(null),
-                                            className: "p-2 rounded-xl text-[#091b3b] hover:bg-[#ebe7e5]",
+                                            className: "p-2 rounded-xl text-[#0f172a] hover:bg-slate-200/60",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                                 className: "w-6 h-6"
                                             }, void 0, false, {
@@ -2443,7 +2459,7 @@ const BlogPage = ({ currentLang })=>{
                                     className: "p-8 space-y-6 overflow-y-auto",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "text-2xl sm:text-3xl font-extrabold text-[#091b3b] font-heading leading-tight",
+                                            className: "text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading leading-tight",
                                             children: activeArticle.title[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2451,7 +2467,7 @@ const BlogPage = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center space-x-3 text-xs text-[#5c5d63] font-semibold border-b border-[#e2dedc] pb-4",
+                                            className: "flex items-center space-x-3 text-xs text-[#64748b] font-semibold border-b border-slate-100 pb-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: [
@@ -2510,7 +2526,7 @@ const BlogPage = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "prose prose-slate max-w-none text-sm sm:text-base text-[#3c3e44] leading-relaxed whitespace-pre-line space-y-4",
+                                            className: "prose prose-slate max-w-none text-sm sm:text-base text-[#334155] leading-relaxed whitespace-pre-line space-y-4",
                                             children: activeArticle.content[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BlogPage.tsx",
@@ -2524,10 +2540,10 @@ const BlogPage = ({ currentLang })=>{
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6 border-t border-[#e2dedc] bg-[#fcf9f8] flex justify-end",
+                                    className: "p-6 border-t border-slate-200 bg-slate-50 flex justify-end",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveArticle(null),
-                                        className: "px-6 py-2.5 rounded-xl bg-[#091b3b] text-white font-bold text-xs",
+                                        className: "px-6 py-2.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-bold text-xs transition-colors",
                                         children: currentLang === 'en' ? 'Close Reader' : 'बन्द गर्नुहोस्'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BlogPage.tsx",
@@ -2640,10 +2656,6 @@ const ContactPage = ({ currentLang, onOpenMentorModal })=>{
             if (!res.ok) {
                 throw new Error(data.error || 'Failed to submit contact message');
             }
-            // After form submission, also open WhatsApp with pre-filled message
-            const waMessage = encodeURIComponent(`Hi BYOM! I'm ${formData.name} (${formData.phone}).
-${formData.message || 'I\'m interested in the BYOM program.'}`);
-            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`, '_blank');
             setSubmitted(true);
         } catch (err) {
             setErrorMsg(err.message || 'Something went wrong while sending message');
@@ -2652,7 +2664,7 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12 md:py-20 bg-[#fcf9f8]",
+        className: "py-12 md:py-20 bg-[#f8fafc]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
@@ -2660,63 +2672,71 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                     className: "text-center max-w-3xl mx-auto mb-12 space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20",
+                            className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
                             children: currentLang === 'en' ? 'Kathmandu Office & Mentors' : 'काठमाडौँ कार्यालय र मेन्टरहरू'
                         }, void 0, false, {
                             fileName: "[project]/src/components/ContactPage.tsx",
-                            lineNumber: 78,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/ContactPage.tsx",
-                            lineNumber: 81,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63] leading-relaxed",
+                            className: "text-base text-[#64748b] leading-relaxed",
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/ContactPage.tsx",
-                            lineNumber: 84,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ContactPage.tsx",
-                    lineNumber: 77,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 lg:grid-cols-12 gap-10 items-start",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-[#e2dedc] shadow-sm space-y-6",
+                            className: "lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6",
                             children: !submitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 onSubmit: handleSubmit,
                                 className: "space-y-5",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold text-[#091b3b] font-heading border-b border-[#e2dedc] pb-4",
+                                        className: "text-2xl font-bold text-[#0f172a] font-heading border-b border-slate-200 pb-4",
                                         children: t.formTitle[currentLang]
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 95,
+                                        lineNumber: 88,
                                         columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    errorMsg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "p-3.5 bg-rose-50 border border-rose-200 text-rose-600 rounded-xl text-xs font-bold text-center",
+                                        children: errorMsg
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/ContactPage.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                 children: [
                                                     t.fullName[currentLang],
                                                     " *"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 99,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2728,16 +2748,16 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                         name: e.target.value
                                                     }),
                                                 placeholder: "e.g. Anish Gurung",
-                                                className: "w-full px-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                className: "w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 102,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 98,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2746,37 +2766,41 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-xs font-bold text-[#091b3b] mb-1.5",
-                                                        children: t.emailAddress[currentLang]
-                                                    }, void 0, false, {
+                                                        className: "block text-xs font-bold text-[#0f172a] mb-1.5",
+                                                        children: [
+                                                            t.emailAddress[currentLang],
+                                                            " *"
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                                        lineNumber: 115,
+                                                        lineNumber: 114,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                         type: "email",
+                                                        required: true,
                                                         value: formData.email,
                                                         onChange: (e)=>setFormData({
                                                                 ...formData,
                                                                 email: e.target.value
                                                             }),
                                                         placeholder: "anish@gmail.com",
-                                                        className: "w-full px-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                        className: "w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 117,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 113,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                        className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                         children: [
                                                             t.phoneNumber[currentLang],
                                                             " *"
@@ -2795,7 +2819,7 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                                 phone: e.target.value
                                                             }),
                                                         placeholder: "9801234567",
-                                                        className: "w-full px-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                        className: "w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ContactPage.tsx",
                                                         lineNumber: 131,
@@ -2810,13 +2834,13 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 112,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                 children: t.businessOrg[currentLang]
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
@@ -2831,7 +2855,7 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                         org: e.target.value
                                                     }),
                                                 placeholder: "e.g. Kathmandu Coffee Co.",
-                                                className: "w-full px-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                className: "w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
                                                 lineNumber: 146,
@@ -2846,22 +2870,26 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                className: "block text-xs font-bold text-[#091b3b] mb-1.5",
-                                                children: t.yourMessage[currentLang]
-                                            }, void 0, false, {
+                                                className: "block text-xs font-bold text-[#0f172a] mb-1.5",
+                                                children: [
+                                                    t.yourMessage[currentLang],
+                                                    " *"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
                                                 lineNumber: 156,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                                 rows: 4,
+                                                required: true,
                                                 value: formData.message,
                                                 onChange: (e)=>setFormData({
                                                         ...formData,
                                                         message: e.target.value
                                                     }),
                                                 placeholder: currentLang === 'en' ? 'How can our mentors help your growth?' : 'हाम्रा मेन्टरहरूले तपाईंको व्यवसाय बढाउन कसरी सहयोग गर्न सक्छन्?',
-                                                className: "w-full px-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                className: "w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
                                                 lineNumber: 159,
@@ -2879,34 +2907,34 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "submit",
                                                 disabled: loading,
-                                                className: "flex-1 py-3.5 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-md disabled:opacity-60",
+                                                className: "flex-1 py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 disabled:opacity-60 transition-all",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
-                                                        className: "w-4 h-4 text-[#f6b996]"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/ContactPage.tsx",
-                                                        lineNumber: 174,
-                                                        columnNumber: 21
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: loading ? currentLang === 'en' ? 'Sending...' : 'पठाउँदैछ...' : t.sendMsgBtn[currentLang]
+                                                        className: "w-4 h-4 text-white"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ContactPage.tsx",
                                                         lineNumber: 175,
+                                                        columnNumber: 21
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: loading ? currentLang === 'en' ? 'Sending via Email...' : 'इमेल पठाउँदैछ...' : t.sendMsgBtn[currentLang]
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/ContactPage.tsx",
+                                                        lineNumber: 176,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                lineNumber: 169,
+                                                lineNumber: 170,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: `https://wa.me/9779808193078?text=${encodeURIComponent(`Hi BYOM! I'm ${formData.name || 'interested'}.`)}`,
+                                                href: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi BYOM! I'm ${formData.name || 'interested in BYOM'}.`)}`,
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
-                                                className: "px-4 py-3.5 rounded-xl bg-[#25D366] text-white font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#1db955] transition-colors shadow-md",
-                                                title: "Chat on WhatsApp",
+                                                className: "px-5 py-3.5 rounded-xl bg-[#25D366] text-white font-bold text-sm flex items-center justify-center gap-2 hover:bg-[#1db955] transition-colors shadow-md hover:scale-105",
+                                                title: "Chat directly on WhatsApp",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                     viewBox: "0 0 24 24",
                                                     fill: "currentColor",
@@ -2915,29 +2943,29 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                         d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 188,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 187,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 180,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 169,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                lineNumber: 94,
+                                lineNumber: 87,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
                                 initial: {
@@ -2951,67 +2979,76 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                 className: "py-12 text-center space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-16 h-16 rounded-full bg-[#10b981]/10 text-[#10b981] mx-auto flex items-center justify-center",
+                                        className: "w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 mx-auto flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                                             className: "w-8 h-8"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 199,
+                                            lineNumber: 200,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 198,
+                                        lineNumber: 199,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold text-[#091b3b] font-heading",
-                                        children: currentLang === 'en' ? 'Message Sent Successfully!' : 'सन्देश सफलतापूर्वक पठाइयो!'
+                                        className: "text-2xl font-bold text-[#0f172a] font-heading",
+                                        children: currentLang === 'en' ? 'Message Sent & Email Delivered!' : 'सन्देश पठाइयो र इमेल डेलिभर भयो!'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 202,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-[#5c5d63] max-w-md mx-auto",
-                                        children: currentLang === 'en' ? 'Our team in Kathmandu will contact you via WhatsApp/Phone within 2 hours.' : 'हाम्रो काठमाडौँ टोलीले २ घण्टाभित्र ह्वाट्सएप/फोनमार्फत सम्पर्क गर्नेछ।'
+                                        className: "text-sm text-[#64748b] max-w-md mx-auto leading-relaxed",
+                                        children: currentLang === 'en' ? `A confirmation email has been sent to ${formData.email}. Our team will review your message and reach out shortly.` : `${formData.email} मा पुष्टिकरण इमेल पठाइएको छ। हाम्रो टोलीले चाँडै सम्पर्क गर्नेछ।`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 205,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setSubmitted(false),
-                                        className: "px-6 py-2.5 rounded-xl border border-[#091b3b] text-[#091b3b] font-bold text-xs",
+                                        onClick: ()=>{
+                                            setSubmitted(false);
+                                            setFormData({
+                                                name: '',
+                                                email: '',
+                                                phone: '',
+                                                org: '',
+                                                message: ''
+                                            });
+                                        },
+                                        className: "px-6 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-xs hover:bg-slate-50 transition-colors",
                                         children: currentLang === 'en' ? 'Send Another Message' : 'अर्को सन्देश पठाउनुहोस्'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
-                                        lineNumber: 209,
+                                        lineNumber: 210,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                lineNumber: 193,
+                                lineNumber: 194,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ContactPage.tsx",
-                            lineNumber: 92,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "lg:col-span-5 space-y-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-[#091b3b] text-white p-8 rounded-3xl shadow-xl space-y-6",
+                                    className: "bg-[#080e1a] text-white p-8 rounded-3xl shadow-xl border border-slate-800 space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "text-xl font-bold font-heading border-b border-white/10 pb-4",
                                             children: t.contactInfoTitle[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 224,
+                                            lineNumber: 228,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3021,27 +3058,27 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                     className: "flex items-start space-x-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "p-3 rounded-xl bg-white/10 text-[#f6b996]",
+                                                            className: "p-3 rounded-2xl bg-white/10 text-amber-200",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
                                                                 className: "w-5 h-5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                                lineNumber: 231,
+                                                                lineNumber: 235,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 230,
+                                                            lineNumber: 234,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "block text-xs font-bold text-[#c5c6cf] uppercase",
+                                                                    className: "block text-xs font-bold text-slate-400 uppercase",
                                                                     children: t.officeAddressLabel[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 234,
+                                                                    lineNumber: 238,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3049,46 +3086,46 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                                     children: t.officeAddressValue[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 237,
+                                                                    lineNumber: 241,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 233,
+                                                            lineNumber: 237,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 229,
+                                                    lineNumber: 233,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-start space-x-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "p-3 rounded-xl bg-white/10 text-[#f6b996]",
+                                                            className: "p-3 rounded-2xl bg-white/10 text-amber-200",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
                                                                 className: "w-5 h-5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 249,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 244,
+                                                            lineNumber: 248,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "block text-xs font-bold text-[#c5c6cf] uppercase",
+                                                                    className: "block text-xs font-bold text-slate-400 uppercase",
                                                                     children: t.emailLabel[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 248,
+                                                                    lineNumber: 252,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3096,46 +3133,46 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                                     children: t.emailValue[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 251,
+                                                                    lineNumber: 255,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 247,
+                                                            lineNumber: 251,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 247,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-start space-x-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "p-3 rounded-xl bg-white/10 text-[#f6b996]",
+                                                            className: "p-3 rounded-2xl bg-white/10 text-amber-200",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                                                 className: "w-5 h-5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ContactPage.tsx",
-                                                                lineNumber: 257,
+                                                                lineNumber: 261,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 256,
+                                                            lineNumber: 260,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "block text-xs font-bold text-[#c5c6cf] uppercase",
+                                                                    className: "block text-xs font-bold text-slate-400 uppercase",
                                                                     children: t.phoneLabel[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 260,
+                                                                    lineNumber: 264,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3143,44 +3180,44 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                                     children: t.phoneValue[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                                    lineNumber: 263,
+                                                                    lineNumber: 267,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 259,
+                                                            lineNumber: 263,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 255,
+                                                    lineNumber: 259,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 228,
+                                            lineNumber: 232,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                    lineNumber: 223,
+                                    lineNumber: 227,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-white p-8 rounded-3xl border border-[#e2dedc] shadow-sm space-y-6",
+                                    className: "bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center space-x-3 text-[#091b3b]",
+                                            className: "flex items-center space-x-3 text-[#0f172a]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                    className: "w-5 h-5 text-[#265cb3]"
+                                                    className: "w-5 h-5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 272,
+                                                    lineNumber: 276,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3188,91 +3225,91 @@ ${formData.message || 'I\'m interested in the BYOM program.'}`);
                                                     children: t.officeHoursTitle[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 273,
+                                                    lineNumber: 277,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 271,
+                                            lineNumber: 275,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-[#5c5d63] whitespace-pre-line leading-relaxed font-semibold",
+                                            className: "text-xs text-[#475569] whitespace-pre-line leading-relaxed font-semibold",
                                             children: t.officeHoursDays[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 276,
+                                            lineNumber: 280,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "pt-4 border-t border-[#e2dedc] space-y-3",
+                                            className: "pt-4 border-t border-slate-100 space-y-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs font-bold text-[#091b3b]",
+                                                    className: "text-xs font-bold text-[#0f172a]",
                                                     children: t.mentorPrompt[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 281,
+                                                    lineNumber: 285,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: onOpenMentorModal,
-                                                    className: "w-full py-3 rounded-xl bg-[#265cb3] text-white text-xs font-bold hover:bg-[#1a4488] transition-colors shadow-sm flex items-center justify-center gap-2",
+                                                    className: "w-full py-3.5 rounded-xl bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-extrabold transition-colors shadow-md shadow-sky-500/20 flex items-center justify-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCheck$3e$__["UserCheck"], {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 288,
+                                                            lineNumber: 292,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: t.talkToMentorBtn[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 293,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                                    lineNumber: 284,
+                                                    lineNumber: 288,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ContactPage.tsx",
-                                            lineNumber: 280,
+                                            lineNumber: 284,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ContactPage.tsx",
-                                    lineNumber: 270,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ContactPage.tsx",
-                            lineNumber: 220,
+                            lineNumber: 224,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ContactPage.tsx",
-                    lineNumber: 89,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ContactPage.tsx",
-            lineNumber: 74,
+            lineNumber: 67,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ContactPage.tsx",
-        lineNumber: 73,
+        lineNumber: 66,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3356,7 +3393,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
     const t = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$translations$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["translations"].footer;
     const navT = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$translations$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["translations"].nav;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "bg-[#091b3b] text-white pt-16 pb-12 border-t border-white/10",
+        className: "bg-[#080e1a] text-white pt-16 pb-12 border-t border-slate-800",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12",
             children: [
@@ -3392,7 +3429,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-[#c5c6cf] leading-relaxed",
+                                    className: "text-xs text-slate-400 leading-relaxed",
                                     children: currentLang === 'en' ? 'Empowering Nepali entrepreneurs and professionals with practical hands-on marketing skills.' : 'नेपाली उद्यमी र व्यवसायीहरूलाई व्यावहारिक मार्केटिङ सीपका साथ सशक्त बनाउँदै।'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.tsx",
@@ -3403,7 +3440,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                     className: "pt-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs font-bold uppercase tracking-wider text-[#f6b996] mb-3",
+                                            className: "text-xs font-extrabold uppercase tracking-wider text-[#f97316] mb-3",
                                             children: currentLang === 'en' ? 'Follow Us' : 'हामीलाई फलो गर्नुहोस्'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Footer.tsx",
@@ -3477,7 +3514,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                             className: "space-y-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "text-xs font-bold uppercase tracking-wider text-[#f6b996]",
+                                    className: "text-xs font-extrabold uppercase tracking-wider text-[#f97316]",
                                     children: currentLang === 'en' ? 'Programs' : 'कार्यक्रमहरू'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.tsx",
@@ -3485,7 +3522,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                    className: "space-y-2 text-xs text-[#c5c6cf]",
+                                    className: "space-y-2 text-xs text-slate-400",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3563,7 +3600,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                             className: "space-y-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "text-xs font-bold uppercase tracking-wider text-[#f6b996]",
+                                    className: "text-xs font-extrabold uppercase tracking-wider text-[#f97316]",
                                     children: currentLang === 'en' ? 'Kathmandu Hub' : 'काठमाडौँ हब'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.tsx",
@@ -3571,13 +3608,13 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                    className: "space-y-2 text-xs text-[#c5c6cf]",
+                                    className: "space-y-2.5 text-xs text-slate-400",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                    className: "w-3.5 h-3.5 text-[#265cb3]"
+                                                    className: "w-3.5 h-3.5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
                                                     lineNumber: 136,
@@ -3600,7 +3637,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                             className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                    className: "w-3.5 h-3.5 text-[#265cb3]"
+                                                    className: "w-3.5 h-3.5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
                                                     lineNumber: 140,
@@ -3623,7 +3660,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                             className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                    className: "w-3.5 h-3.5 text-[#265cb3]"
+                                                    className: "w-3.5 h-3.5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
                                                     lineNumber: 144,
@@ -3658,7 +3695,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                             className: "space-y-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "text-xs font-bold uppercase tracking-wider text-[#f6b996]",
+                                    className: "text-xs font-extrabold uppercase tracking-wider text-[#f97316]",
                                     children: currentLang === 'en' ? 'Language' : 'भाषा'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.tsx",
@@ -3670,7 +3707,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>onLanguageChange('en'),
-                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${currentLang === 'en' ? 'bg-white text-[#091b3b]' : 'text-white/70 hover:text-white'}`,
+                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${currentLang === 'en' ? 'bg-white text-[#0f172a]' : 'text-white/70 hover:text-white'}`,
                                             children: "English"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Footer.tsx",
@@ -3679,7 +3716,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>onLanguageChange('np'),
-                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${currentLang === 'np' ? 'bg-[#265cb3] text-white' : 'text-white/70 hover:text-white'}`,
+                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${currentLang === 'np' ? 'bg-[#0284c7] text-white' : 'text-white/70 hover:text-white'}`,
                                             children: "नेपाली"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Footer.tsx",
@@ -3705,7 +3742,7 @@ const Footer = ({ currentLang, onNavigate, onLanguageChange })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8e8f99] gap-4",
+                    className: "pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: t.tagline[currentLang]
@@ -3856,7 +3893,7 @@ const GalleryPage = ({ currentLang })=>{
         return item.category === activeFilter;
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12 md:py-20 bg-[#fcf9f8]",
+        className: "py-12 md:py-20 bg-[#f8fafc]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12",
             children: [
@@ -3864,7 +3901,7 @@ const GalleryPage = ({ currentLang })=>{
                     className: "text-center max-w-3xl mx-auto space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20",
+                            className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
                             children: currentLang === 'en' ? 'Life at BYOM' : 'BYOM का गतिविधिहरू'
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPage.tsx",
@@ -3872,7 +3909,7 @@ const GalleryPage = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPage.tsx",
@@ -3880,7 +3917,7 @@ const GalleryPage = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63] leading-relaxed",
+                            className: "text-base text-[#64748b] leading-relaxed",
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/GalleryPage.tsx",
@@ -3897,7 +3934,7 @@ const GalleryPage = ({ currentLang })=>{
                     className: "flex flex-wrap items-center justify-center gap-2",
                     children: filterTabs.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveFilter(tab.id),
-                            className: `px-5 py-2 rounded-xl text-xs font-bold transition-all ${activeFilter === tab.id ? 'bg-[#091b3b] text-white shadow-sm' : 'bg-white text-[#5c5d63] border border-[#e2dedc] hover:bg-[#ebe7e5]'}`,
+                            className: `px-5 py-2 rounded-xl text-xs font-bold transition-all ${activeFilter === tab.id ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/20' : 'bg-white text-[#475569] border border-slate-200 hover:bg-slate-50'}`,
                             children: tab.label
                         }, tab.id, false, {
                             fileName: "[project]/src/components/GalleryPage.tsx",
@@ -3926,7 +3963,7 @@ const GalleryPage = ({ currentLang })=>{
                                 scale: 0.9
                             },
                             onClick: ()=>setSelectedMedia(item),
-                            className: "group relative bg-white rounded-3xl overflow-hidden border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all cursor-pointer h-72",
+                            className: "group relative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer h-72",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: item.image,
@@ -3939,7 +3976,7 @@ const GalleryPage = ({ currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 bg-gradient-to-t from-[#091b3b]/90 via-transparent to-transparent opacity-80 group-hover:opacity-95 transition-opacity"
+                                    className: "absolute inset-0 bg-gradient-to-t from-[#080e1a]/90 via-[#080e1a]/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/GalleryPage.tsx",
                                     lineNumber: 104,
@@ -3963,7 +4000,7 @@ const GalleryPage = ({ currentLang })=>{
                                     className: "absolute bottom-0 left-0 right-0 p-6 text-white space-y-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-1.5 text-[11px] text-[#f6b996] font-bold",
+                                            className: "flex items-center gap-1.5 text-[11px] text-amber-300 font-bold",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
                                                     className: "w-3 h-3"
@@ -4091,12 +4128,12 @@ const GalleryPage = ({ currentLang })=>{
                                     columnNumber: 19
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6 bg-white flex items-center justify-between border-t border-[#e2dedc]",
+                                    className: "p-6 bg-white flex items-center justify-between border-t border-slate-200",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs font-bold text-[#265cb3] uppercase",
+                                                    className: "text-xs font-bold text-[#0284c7] uppercase",
                                                     children: selectedMedia.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPage.tsx",
@@ -4104,7 +4141,7 @@ const GalleryPage = ({ currentLang })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-xl font-bold text-[#091b3b] font-heading mt-0.5",
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading mt-0.5",
                                                     children: selectedMedia.title[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GalleryPage.tsx",
@@ -4118,7 +4155,7 @@ const GalleryPage = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xs font-semibold text-[#8e8f99]",
+                                            className: "text-xs font-semibold text-[#64748b]",
                                             children: selectedMedia.date
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/GalleryPage.tsx",
@@ -4196,18 +4233,18 @@ const HeroSection = ({ currentLang, onNavigate })=>{
     const statIcons = [
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
-            color: 'text-[#265cb3]',
-            bg: 'bg-[#265cb3]/10'
+            color: 'text-[#0284c7]',
+            bg: 'bg-[#0284c7]/10'
         },
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"],
-            color: 'text-[#ac7859]',
-            bg: 'bg-[#f6b996]/20'
+            color: 'text-[#f97316]',
+            bg: 'bg-[#f97316]/10'
         },
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"],
-            color: 'text-[#091b3b]',
-            bg: 'bg-[#091b3b]/10'
+            color: 'text-[#0284c7]',
+            bg: 'bg-[#0284c7]/10'
         },
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"],
@@ -4222,17 +4259,17 @@ const HeroSection = ({ currentLang, onNavigate })=>{
         t.stats.satisfaction
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative overflow-hidden pt-10 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-[#fdfbfb] via-[#fcf9f8] to-[#f6f2ef]",
+        className: "relative overflow-hidden pt-10 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-[#f0f9ff]/60 via-[#f8fafc] to-[#fff7ed]/50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-0 right-1/4 w-96 h-96 bg-[#f6b996]/20 rounded-full blur-3xl pointer-events-none"
+                className: "absolute top-0 right-1/4 w-96 h-96 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/HeroSection.tsx",
                 lineNumber: 35,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-0 left-10 w-80 h-80 bg-[#265cb3]/10 rounded-full blur-3xl pointer-events-none"
+                className: "absolute bottom-0 left-10 w-96 h-96 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/HeroSection.tsx",
                 lineNumber: 36,
@@ -4259,10 +4296,10 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                 className: "lg:col-span-7 space-y-6 text-left",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f6b996]/30 border border-[#ac7859]/30 text-[#422108] text-xs font-bold tracking-wide",
+                                        className: "inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fff7ed] border border-[#fed7aa] text-[#ea580c] text-xs font-extrabold tracking-wide shadow-sm",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                className: "w-3.5 h-3.5 text-[#ac7859]"
+                                                className: "w-3.5 h-3.5 text-[#f97316]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
                                                 lineNumber: 50,
@@ -4282,7 +4319,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#091b3b] tracking-tight leading-[1.12]",
+                                        className: "text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-[1.12]",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "block",
@@ -4293,7 +4330,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "block text-[#265cb3]",
+                                                className: "block text-[#0284c7]",
                                                 children: t.headingPart2[currentLang]
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
@@ -4301,7 +4338,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "block text-[#ac7859]",
+                                                className: "block text-[#f97316]",
                                                 children: t.headingPart3[currentLang]
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
@@ -4315,7 +4352,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-base sm:text-lg text-[#5c5d63] max-w-2xl font-normal leading-relaxed",
+                                        className: "text-base sm:text-lg text-[#475569] max-w-2xl font-normal leading-relaxed",
                                         children: t.description[currentLang]
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/HeroSection.tsx",
@@ -4327,7 +4364,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>onNavigate('book'),
-                                                className: "px-8 py-4 rounded-xl bg-[#091b3b] text-white font-extrabold text-base btn-hover flex items-center justify-center gap-3 shadow-lg shadow-[#091b3b]/20",
+                                                className: "px-8 py-4 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-base btn-orange-hover flex items-center justify-center gap-3 shadow-lg shadow-orange-500/25",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: t.ctaBook[currentLang]
@@ -4337,7 +4374,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        className: "w-5 h-5 text-[#f6b996]"
+                                                        className: "w-5 h-5 text-amber-200"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
                                                         lineNumber: 77,
@@ -4351,7 +4388,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>onNavigate('programs'),
-                                                className: "px-7 py-4 rounded-xl bg-white text-[#091b3b] border-2 border-[#d6d0cc] hover:border-[#091b3b] font-bold text-base transition-colors flex items-center justify-center gap-2",
+                                                className: "px-7 py-4 rounded-xl bg-white text-[#0f172a] border-2 border-slate-200 hover:border-[#0284c7] hover:text-[#0284c7] font-bold text-base transition-all flex items-center justify-center gap-2 shadow-sm",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: t.ctaPrograms[currentLang]
                                                 }, void 0, false, {
@@ -4371,7 +4408,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "pt-4 flex items-center gap-6 text-xs font-semibold text-[#61626a]",
+                                        className: "pt-4 flex items-center gap-6 text-xs font-semibold text-[#64748b]",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-1.5",
@@ -4447,7 +4484,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                 className: "lg:col-span-5 relative",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white",
+                                        className: "relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white ring-1 ring-slate-900/5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HERO_IMAGE"],
@@ -4460,7 +4497,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-gradient-to-t from-[#091b3b]/80 via-transparent to-transparent"
+                                                className: "absolute inset-0 bg-gradient-to-t from-[#080e1a]/80 via-transparent to-transparent"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/HeroSection.tsx",
                                                 lineNumber: 115,
@@ -4470,7 +4507,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                 className: "absolute bottom-0 left-0 right-0 p-6 text-white space-y-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#265cb3]/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-sm",
+                                                        className: "inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#0284c7]/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-sm",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
                                                                 className: "w-3.5 h-3.5"
@@ -4525,12 +4562,12 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                             duration: 4,
                                             ease: 'easeInOut'
                                         },
-                                        className: "absolute -top-4 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-[#e2dedc] flex items-center gap-3",
+                                        className: "absolute -top-4 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-10 h-10 rounded-xl bg-[#f6b996]/40 flex items-center justify-center text-[#522900]",
+                                                className: "w-10 h-10 rounded-xl bg-[#fff7ed] flex items-center justify-center",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                    className: "w-5 h-5 text-[#ac7859]"
+                                                    className: "w-5 h-5 text-[#f97316]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.tsx",
                                                     lineNumber: 138,
@@ -4544,7 +4581,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-xs font-bold text-[#5c5d63] uppercase tracking-wider",
+                                                        className: "text-xs font-bold text-[#64748b] uppercase tracking-wider",
                                                         children: currentLang === 'en' ? 'Next Cohort' : 'अर्को टोली'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
@@ -4552,7 +4589,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-sm font-extrabold text-[#091b3b]",
+                                                        className: "text-sm font-extrabold text-[#0f172a]",
                                                         children: currentLang === 'en' ? 'Limited Seats Open' : 'सीमित सिटहरू बाँकी'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/HeroSection.tsx",
@@ -4584,13 +4621,13 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-16 pt-10 border-t border-[#e2dedc]",
+                        className: "mt-16 pt-10 border-t border-slate-200",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8",
                             children: stats.map((stat, idx)=>{
                                 const Icon = statIcons[idx].icon;
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-white p-6 rounded-2xl border border-[#e2dedc] shadow-sm hover:shadow-md transition-shadow flex items-center space-x-4",
+                                    className: "bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex items-center space-x-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: `p-3 rounded-xl ${statIcons[idx].bg}`,
@@ -4609,7 +4646,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-2xl sm:text-3xl font-extrabold text-[#091b3b] font-heading",
+                                                    className: "block text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading",
                                                     children: stat.count
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.tsx",
@@ -4617,7 +4654,7 @@ const HeroSection = ({ currentLang, onNavigate })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs sm:text-sm font-semibold text-[#5c5d63]",
+                                                    className: "text-xs sm:text-sm font-semibold text-[#64748b]",
                                                     children: stat.label[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/HeroSection.tsx",
@@ -4721,7 +4758,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: onClose,
-                    className: "absolute top-5 right-5 p-2 rounded-xl text-[#091b3b] hover:bg-[#ebe7e5]",
+                    className: "absolute top-5 right-5 p-2 rounded-xl text-[#0f172a] hover:bg-slate-100 transition-colors",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                         className: "w-5 h-5"
                     }, void 0, false, {
@@ -4740,7 +4777,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                             className: "space-y-1",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1 rounded-full",
+                                    className: "text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1 rounded-full border border-[#fed7aa]",
                                     children: "1-on-1 Consultation"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4748,7 +4785,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-2xl font-extrabold text-[#091b3b] font-heading pt-2",
+                                    className: "text-2xl font-extrabold text-[#0f172a] font-heading pt-2",
                                     children: currentLang === 'en' ? 'Talk to a BYOM Mentor' : 'BYOM मेन्टरसँग कुरा गर्नुहोस्'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4756,7 +4793,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-[#5c5d63]",
+                                    className: "text-xs text-[#64748b]",
                                     children: currentLang === 'en' ? 'Get personalized marketing career or business growth advice.' : 'व्यक्तिगत मार्केटिङ करियर वा व्यापार वृद्धिका लागि सल्लाह लिनुहोस्।'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4773,7 +4810,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                             className: "space-y-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-xs font-bold text-[#091b3b]",
+                                    className: "block text-xs font-bold text-[#0f172a]",
                                     children: currentLang === 'en' ? 'Select Mentor' : 'मेन्टर छान्नुहोस्'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4786,7 +4823,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                         const isSel = selectedMentor === m.id;
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setSelectedMentor(m.id),
-                                            className: `p-3 rounded-2xl border text-center transition-all ${isSel ? 'border-[#265cb3] bg-[#265cb3]/5 ring-2 ring-[#265cb3]/30' : 'border-[#e2dedc] bg-[#fcf9f8]'}`,
+                                            className: `p-3 rounded-2xl border text-center transition-all ${isSel ? 'border-[#0284c7] bg-[#0284c7]/5 ring-2 ring-[#0284c7]/30 shadow-sm' : 'border-slate-200 bg-slate-50 hover:bg-slate-100/70'}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: m.avatar,
@@ -4798,7 +4835,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                                     columnNumber: 23
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block font-bold text-xs text-[#091b3b]",
+                                                    className: "block font-bold text-xs text-[#0f172a]",
                                                     children: m.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4806,7 +4843,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                                     columnNumber: 23
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] text-[#5c5d63] line-clamp-1",
+                                                    className: "block text-[10px] text-[#64748b] line-clamp-1",
                                                     children: m.role[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4832,10 +4869,10 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "p-4 rounded-2xl bg-[#fcf9f8] border border-[#d6d0cc] space-y-2",
+                            className: "p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs font-bold text-[#091b3b]",
+                                    className: "text-xs font-bold text-[#0f172a]",
                                     children: [
                                         mentorObj.name,
                                         " Bio"
@@ -4846,7 +4883,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-[#5c5d63]",
+                                    className: "text-xs text-[#475569] leading-relaxed",
                                     children: mentorObj.bio[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4869,7 +4906,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                                    className: "block text-xs font-bold text-[#0f172a] mb-1",
                                                     children: currentLang === 'en' ? 'Preferred Date' : 'मनपर्ने मिति'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4879,7 +4916,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "date",
                                                     required: true,
-                                                    className: "w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                                                    className: "w-full px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MentorModal.tsx",
                                                     lineNumber: 106,
@@ -4894,7 +4931,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                                    className: "block text-xs font-bold text-[#0f172a] mb-1",
                                                     children: currentLang === 'en' ? 'Preferred Time' : 'मनपर्ने समय'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MentorModal.tsx",
@@ -4902,7 +4939,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                                    className: "w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]",
+                                                    className: "w-full px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                             children: "10:00 AM - 10:30 AM"
@@ -4945,10 +4982,10 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "submit",
-                                    className: "w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-md",
+                                    className: "w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 transition-all",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2d$call$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PhoneCall$3e$__["PhoneCall"], {
-                                            className: "w-4 h-4 text-[#f6b996]"
+                                            className: "w-4 h-4 text-amber-200"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MentorModal.tsx",
                                             lineNumber: 128,
@@ -4982,14 +5019,14 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                     className: "py-8 text-center space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                            className: "w-12 h-12 text-[#10b981] mx-auto"
+                            className: "w-12 h-12 text-emerald-500 mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/components/MentorModal.tsx",
                             lineNumber: 135,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                            className: "text-xl font-bold text-[#091b3b]",
+                            className: "text-xl font-bold text-[#0f172a]",
                             children: currentLang === 'en' ? 'Call Scheduled!' : 'कल निश्चित भयो!'
                         }, void 0, false, {
                             fileName: "[project]/src/components/MentorModal.tsx",
@@ -4997,7 +5034,7 @@ const MentorModal = ({ isOpen, onClose, currentLang })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xs text-[#5c5d63]",
+                            className: "text-xs text-[#64748b]",
                             children: currentLang === 'en' ? `A Google Meet invitation with ${mentorObj.name} has been sent to your calendar.` : `गूगल मिटको निमन्त्रणा इमेल पठाइएको छ।`
                         }, void 0, false, {
                             fileName: "[project]/src/components/MentorModal.tsx",
@@ -5046,6 +5083,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutDashboard$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layout-dashboard.js [app-client] (ecmascript) <export default as LayoutDashboard>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
@@ -5153,12 +5191,12 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                 const isActive = currentPage === item.route;
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>handleNavClick(item.route),
-                                    className: `px-3.5 py-2 rounded-lg text-sm font-semibold transition-all relative ${isActive ? 'text-[#265cb3] bg-[#265cb3]/10 font-bold' : 'text-[#3c3e44] hover:text-[#091b3b] hover:bg-[#f0eded]'}`,
+                                    className: `px-3.5 py-2 rounded-xl text-sm font-semibold transition-all relative ${isActive ? 'text-[#0284c7] bg-[#0284c7]/10 font-bold' : 'text-[#475569] hover:text-[#0f172a] hover:bg-slate-100'}`,
                                     children: [
                                         item.label,
                                         isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
                                             layoutId: "activeNavIndicator",
-                                            className: "absolute bottom-0 left-3 right-3 h-0.5 bg-[#265cb3] rounded-full"
+                                            className: "absolute bottom-0 left-3 right-3 h-0.5 bg-[#0284c7] rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
                                             lineNumber: 113,
@@ -5180,11 +5218,11 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                             className: "hidden md:flex items-center space-x-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative bg-[#ebe7e5] p-1 rounded-xl flex items-center border border-[#d6d0cc]",
+                                    className: "relative bg-slate-100 p-1 rounded-xl flex items-center border border-slate-200",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>onLanguageChange('en'),
-                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${currentLang === 'en' ? 'bg-white text-[#091b3b] shadow-sm' : 'text-[#61626a] hover:text-[#091b3b]'}`,
+                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${currentLang === 'en' ? 'bg-white text-[#0f172a] shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'}`,
                                             "aria-label": "Switch to English",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "English"
@@ -5200,7 +5238,7 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>onLanguageChange('np'),
-                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${currentLang === 'np' ? 'bg-[#265cb3] text-white shadow-sm' : 'text-[#61626a] hover:text-[#091b3b]'}`,
+                                            className: `px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${currentLang === 'np' ? 'bg-[#0284c7] text-white shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'}`,
                                             "aria-label": "नेपालीमा फेर्नुहोस्",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
@@ -5229,13 +5267,38 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                     lineNumber: 127,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "/admin",
+                                    className: "px-3 py-2 text-xs font-bold text-[#ea580c] hover:bg-[#fff7ed] rounded-xl transition-colors flex items-center gap-1.5 border border-[#fed7aa]",
+                                    title: "Open Admin Dashboard",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                            className: "w-3.5 h-3.5 text-[#ea580c]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Navbar.tsx",
+                                            lineNumber: 159,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: "Admin"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Navbar.tsx",
+                                            lineNumber: 160,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Navbar.tsx",
+                                    lineNumber: 154,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 authUser ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "relative",
                                     ref: dropdownRef,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setProfileDropdownOpen((p)=>!p),
-                                            className: "flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-[#ebe7e5] hover:bg-[#e0dbd7] border border-[#d6d0cc] transition-all group",
+                                            className: "flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200/80 border border-slate-200 transition-all group",
                                             "aria-label": "Open profile menu",
                                             children: [
                                                 authUser.avatar ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -5245,35 +5308,35 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                     className: "w-8 h-8 rounded-full object-cover ring-2 ring-white"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 173,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-8 h-8 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-xs font-extrabold",
+                                                    className: "w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold shadow-sm",
                                                     children: getInitials(authUser.name)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 173,
+                                                    lineNumber: 180,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-sm font-semibold text-[#091b3b] max-w-[100px] truncate",
+                                                    className: "text-sm font-semibold text-[#0f172a] max-w-[100px] truncate",
                                                     children: authUser.name.split(' ')[0]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 177,
+                                                    lineNumber: 184,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                    className: `w-3.5 h-3.5 text-[#5c5d63] transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`
+                                                    className: `w-3.5 h-3.5 text-[#64748b] transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 187,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 166,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -5296,10 +5359,10 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                 transition: {
                                                     duration: 0.15
                                                 },
-                                                className: "absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-[#e2dedc] shadow-xl overflow-hidden z-50",
+                                                className: "absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden z-50",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "px-4 py-3 border-b border-[#f0eded] bg-[#fcf9f8]",
+                                                        className: "px-4 py-3 border-b border-slate-100 bg-slate-50",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center gap-3",
                                                             children: [
@@ -5307,53 +5370,53 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                                     src: authUser.avatar,
                                                                     alt: authUser.name,
                                                                     referrerPolicy: "no-referrer",
-                                                                    className: "w-10 h-10 rounded-full object-cover ring-2 ring-[#265cb3]/20"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/Navbar.tsx",
-                                                                    lineNumber: 199,
-                                                                    columnNumber: 29
-                                                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "w-10 h-10 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0",
-                                                                    children: getInitials(authUser.name)
+                                                                    className: "w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Navbar.tsx",
                                                                     lineNumber: 206,
+                                                                    columnNumber: 29
+                                                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0",
+                                                                    children: getInitials(authUser.name)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/Navbar.tsx",
+                                                                    lineNumber: 213,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "min-w-0",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                            className: "text-sm font-extrabold text-[#091b3b] truncate",
+                                                                            className: "text-sm font-extrabold text-[#0f172a] truncate",
                                                                             children: authUser.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Navbar.tsx",
-                                                                            lineNumber: 211,
+                                                                            lineNumber: 218,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                            className: "text-[11px] text-[#8e8f99] truncate",
+                                                                            className: "text-[11px] text-[#64748b] truncate",
                                                                             children: authUser.email
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Navbar.tsx",
-                                                                            lineNumber: 212,
+                                                                            lineNumber: 219,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                                    lineNumber: 210,
+                                                                    lineNumber: 217,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Navbar.tsx",
-                                                            lineNumber: 197,
+                                                            lineNumber: 204,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Navbar.tsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 203,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5363,20 +5426,20 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                                 onClick: ()=>{
                                                                     handleNavClick('dashboard');
                                                                 },
-                                                                className: "w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-[#091b3b] hover:bg-[#f0eded] transition-colors text-left",
+                                                                className: "w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-[#0f172a] hover:bg-slate-50 transition-colors text-left",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutDashboard$3e$__["LayoutDashboard"], {
-                                                                        className: "w-4 h-4 text-[#265cb3]"
+                                                                        className: "w-4 h-4 text-[#0284c7]"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Navbar.tsx",
-                                                                        lineNumber: 223,
+                                                                        lineNumber: 230,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Navbar.tsx",
-                                                                lineNumber: 219,
+                                                                lineNumber: 226,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5387,84 +5450,84 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                                         className: "w-4 h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Navbar.tsx",
-                                                                        lineNumber: 231,
+                                                                        lineNumber: 238,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     currentLang === 'en' ? 'Sign Out' : 'साइन आउट'
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Navbar.tsx",
-                                                                lineNumber: 227,
+                                                                lineNumber: 234,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Navbar.tsx",
-                                                        lineNumber: 218,
+                                                        lineNumber: 225,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Navbar.tsx",
-                                                lineNumber: 188,
+                                                lineNumber: 195,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 193,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 158,
+                                    lineNumber: 165,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)) : /* ── Logged OUT: Login Button ── */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: onOpenAuth,
-                                    className: "px-4 py-2 text-sm font-semibold text-[#091b3b] hover:bg-[#ebe7e5] rounded-xl transition-colors flex items-center gap-1.5",
+                                    className: "px-4 py-2 text-sm font-semibold text-[#0f172a] hover:bg-slate-100 rounded-xl transition-colors flex items-center gap-1.5",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                            className: "w-4 h-4 text-[#265cb3]"
+                                            className: "w-4 h-4 text-[#0284c7]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 245,
+                                            lineNumber: 252,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.login[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 253,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 241,
+                                    lineNumber: 248,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>handleNavClick('book'),
-                                    className: "px-5 py-2.5 rounded-xl bg-[#091b3b] text-white text-sm font-bold btn-hover flex items-center gap-2 shadow-sm",
+                                    className: "px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white text-sm font-bold btn-orange-hover flex items-center gap-2 shadow-md shadow-orange-500/20",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                            className: "w-4 h-4 text-[#f6b996]"
+                                            className: "w-4 h-4 text-amber-200"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 255,
+                                            lineNumber: 262,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.bookSeat[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 256,
+                                            lineNumber: 263,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 258,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
@@ -5484,74 +5547,74 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                         src: authUser.avatar,
                                         alt: authUser.name,
                                         referrerPolicy: "no-referrer",
-                                        className: "w-8 h-8 rounded-full object-cover ring-2 ring-[#265cb3]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 271,
-                                        columnNumber: 19
-                                    }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-8 h-8 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-xs font-extrabold",
-                                        children: getInitials(authUser.name)
+                                        className: "w-8 h-8 rounded-full object-cover ring-2 ring-[#0284c7]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
                                         lineNumber: 278,
                                         columnNumber: 19
+                                    }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold",
+                                        children: getInitials(authUser.name)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Navbar.tsx",
+                                        lineNumber: 285,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 265,
+                                    lineNumber: 272,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>onLanguageChange(currentLang === 'en' ? 'np' : 'en'),
-                                    className: "px-2.5 py-1.5 rounded-lg bg-[#ebe7e5] text-xs font-bold text-[#091b3b] border border-[#d6d0cc] flex items-center gap-1",
+                                    className: "px-2.5 py-1.5 rounded-lg bg-slate-100 text-xs font-bold text-[#0f172a] border border-slate-200 flex items-center gap-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
-                                            className: "w-3.5 h-3.5 text-[#265cb3]"
+                                            className: "w-3.5 h-3.5 text-[#0284c7]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 290,
+                                            lineNumber: 297,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: currentLang === 'en' ? 'नेपाली' : 'EN'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 291,
+                                            lineNumber: 298,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 293,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMobileMenuOpen(!mobileMenuOpen),
-                                    className: "p-2 rounded-xl text-[#091b3b] hover:bg-[#ebe7e5] focus:outline-none",
+                                    className: "p-2 rounded-xl text-[#0f172a] hover:bg-slate-100 focus:outline-none",
                                     "aria-label": "Toggle Navigation Menu",
                                     children: mobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                         className: "w-6 h-6"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 300,
+                                        lineNumber: 307,
                                         columnNumber: 33
                                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                         className: "w-6 h-6"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 300,
+                                        lineNumber: 307,
                                         columnNumber: 61
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 302,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 261,
+                            lineNumber: 268,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -5579,125 +5642,125 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                         opacity: 0,
                         height: 0
                     },
-                    className: "md:hidden border-t border-[#e2dedc] bg-white px-4 pt-3 pb-6 shadow-xl space-y-3",
+                    className: "md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col space-y-1",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>handleNavClick('home'),
-                                    className: `text-left px-4 py-3 rounded-xl text-base font-bold transition-colors ${currentPage === 'home' ? 'bg-[#265cb3]/10 text-[#265cb3]' : 'text-[#1b1c1c] hover:bg-[#f0eded]'}`,
+                                    className: `text-left px-4 py-3 rounded-xl text-base font-bold transition-colors ${currentPage === 'home' ? 'bg-[#0284c7]/10 text-[#0284c7]' : 'text-[#0f172a] hover:bg-slate-50'}`,
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 316,
+                                    lineNumber: 323,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 navItems.map((item)=>{
                                     const isActive = currentPage === item.route;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>handleNavClick(item.route),
-                                        className: `text-left px-4 py-3 rounded-xl text-base font-semibold transition-colors flex items-center justify-between ${isActive ? 'bg-[#265cb3]/10 text-[#265cb3] font-bold' : 'text-[#3c3e44] hover:bg-[#f0eded]'}`,
+                                        className: `text-left px-4 py-3 rounded-xl text-base font-semibold transition-colors flex items-center justify-between ${isActive ? 'bg-[#0284c7]/10 text-[#0284c7] font-bold' : 'text-[#475569] hover:bg-slate-50'}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar.tsx",
-                                                lineNumber: 338,
+                                                lineNumber: 345,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 className: "w-4 h-4 opacity-50"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar.tsx",
-                                                lineNumber: 339,
+                                                lineNumber: 346,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, item.route, true, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 329,
+                                        lineNumber: 336,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0));
                                 })
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 315,
+                            lineNumber: 322,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "pt-2 border-t border-[#e2dedc] space-y-2",
+                            className: "pt-2 border-t border-slate-200 space-y-2",
                             children: [
                                 authUser ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3 px-4 py-3 bg-[#fcf9f8] rounded-xl border border-[#e2dedc]",
+                                            className: "flex items-center gap-3 px-4 py-3 bg-slate-50 rounded-xl border border-slate-200",
                                             children: [
                                                 authUser.avatar ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: authUser.avatar,
                                                     alt: authUser.name,
                                                     referrerPolicy: "no-referrer",
-                                                    className: "w-10 h-10 rounded-full object-cover ring-2 ring-[#265cb3]/20"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 351,
-                                                    columnNumber: 23
-                                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-10 h-10 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0",
-                                                    children: getInitials(authUser.name)
+                                                    className: "w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
                                                     lineNumber: 358,
+                                                    columnNumber: 23
+                                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0",
+                                                    children: getInitials(authUser.name)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Navbar.tsx",
+                                                    lineNumber: 365,
                                                     columnNumber: 23
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "min-w-0",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm font-extrabold text-[#091b3b] truncate",
+                                                            className: "text-sm font-extrabold text-[#0f172a] truncate",
                                                             children: authUser.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Navbar.tsx",
-                                                            lineNumber: 363,
+                                                            lineNumber: 370,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[11px] text-[#8e8f99] truncate",
+                                                            className: "text-[11px] text-[#64748b] truncate",
                                                             children: authUser.email
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Navbar.tsx",
-                                                            lineNumber: 364,
+                                                            lineNumber: 371,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 362,
+                                                    lineNumber: 369,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 349,
+                                            lineNumber: 356,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>handleNavClick('dashboard'),
-                                            className: "w-full py-3 rounded-xl border border-[#265cb3]/30 bg-[#265cb3]/5 text-[#265cb3] font-bold text-center flex items-center justify-center gap-2",
+                                            className: "w-full py-3 rounded-xl border border-[#0284c7]/30 bg-[#0284c7]/5 text-[#0284c7] font-bold text-center flex items-center justify-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutDashboard$3e$__["LayoutDashboard"], {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 371,
+                                                    lineNumber: 378,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 367,
+                                            lineNumber: 374,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5708,87 +5771,87 @@ const Navbar = ({ currentLang, onLanguageChange, currentPage, onNavigate, onOpen
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 378,
+                                                    lineNumber: 385,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 currentLang === 'en' ? 'Sign Out' : 'साइन आउट'
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 374,
+                                            lineNumber: 381,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 347,
+                                    lineNumber: 354,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>{
                                         onOpenAuth();
                                         setMobileMenuOpen(false);
                                     },
-                                    className: "w-full py-3 rounded-xl border border-[#c5c6cf] text-[#091b3b] font-bold text-center flex items-center justify-center gap-2",
+                                    className: "w-full py-3 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-center flex items-center justify-center gap-2 hover:bg-slate-50",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                            className: "w-4 h-4"
+                                            className: "w-4 h-4 text-[#0284c7]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 390,
+                                            lineNumber: 397,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.login[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 391,
+                                            lineNumber: 398,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 383,
+                                    lineNumber: 390,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>handleNavClick('book'),
-                                    className: "w-full py-3.5 rounded-xl bg-[#091b3b] text-white font-bold text-center shadow-md flex items-center justify-center gap-2",
+                                    className: "w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] text-white font-bold text-center shadow-md flex items-center justify-center gap-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                            className: "w-4 h-4 text-[#f6b996]"
+                                            className: "w-4 h-4 text-amber-200"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 399,
+                                            lineNumber: 406,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: t.bookSeat[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 400,
+                                            lineNumber: 407,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 395,
+                                    lineNumber: 402,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 345,
+                            lineNumber: 352,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Navbar.tsx",
-                    lineNumber: 309,
+                    lineNumber: 316,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 307,
+                lineNumber: 314,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -5890,15 +5953,23 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12 md:py-20 bg-[#fcf9f8]",
+        className: "py-12 md:py-20 bg-[#f8fafc]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "text-center max-w-3xl mx-auto mb-12 space-y-4",
                     children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
+                            children: currentLang === 'en' ? 'Practical & Online Learning' : 'व्यावहारिक तथा अनलाइन सिकाइ'
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/ProgramsPage.tsx",
+                            lineNumber: 63,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProgramsPage.tsx",
@@ -5906,7 +5977,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63] leading-relaxed",
+                            className: "text-base text-[#64748b] leading-relaxed",
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProgramsPage.tsx",
@@ -5914,10 +5985,10 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "inline-flex p-1.5 bg-[#ebe7e5] rounded-2xl border border-[#d6d0cc] mt-4",
+                            className: "inline-flex p-1.5 bg-slate-100 rounded-2xl border border-slate-200 mt-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveTab('physical'),
-                                className: `px-16 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === 'physical' ? 'bg-[#091b3b] text-white shadow-md' : 'text-[#5c5d63] hover:text-[#091b3b]'}`,
+                                className: `px-16 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === 'physical' ? 'bg-[#0f172a] text-white shadow-md' : 'text-[#64748b] hover:text-[#0f172a]'}`,
                                 children: t.tabPhysical[currentLang]
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProgramsPage.tsx",
@@ -5932,7 +6003,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                    lineNumber: 64,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 activeTab === 'physical' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -5947,7 +6018,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                     className: "space-y-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-3xl border border-[#e2dedc] shadow-lg overflow-hidden grid grid-cols-1 lg:grid-cols-12",
+                            className: "bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "lg:col-span-7 p-8 sm:p-10 space-y-6 flex flex-col justify-between",
@@ -5956,91 +6027,91 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                             className: "space-y-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f6b996]/30 border border-[#ac7859]/30 text-[#422108] text-xs font-bold",
+                                                    className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] border border-[#fed7aa] text-[#ea580c] text-xs font-extrabold shadow-sm",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                            className: "w-3.5 h-3.5 text-[#ac7859]"
+                                                            className: "w-3.5 h-3.5 text-[#f97316]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 101,
+                                                            lineNumber: 100,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: t.flagshipBadge[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 101,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 99,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "text-2xl sm:text-3xl font-extrabold text-[#091b3b] font-heading",
+                                                    className: "text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading",
                                                     children: t.flagshipTitle[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 105,
+                                                    lineNumber: 104,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-base text-[#5c5d63] leading-relaxed",
+                                                    className: "text-base text-[#475569] leading-relaxed",
                                                     children: t.flagshipDesc[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 108,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-wrap items-center gap-4 text-sm font-semibold text-[#091b3b] pt-2",
+                                                    className: "flex flex-wrap items-center gap-4 text-sm font-semibold text-[#0f172a] pt-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center gap-2",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                    className: "w-4 h-4 text-[#265cb3]"
+                                                                    className: "w-4 h-4 text-[#0284c7]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 115,
+                                                                    lineNumber: 114,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: t.flagshipDuration[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 116,
+                                                                    lineNumber: 115,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 114,
+                                                            lineNumber: 113,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center gap-2",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                    className: "w-4 h-4 text-[#ac7859]"
+                                                                    className: "w-4 h-4 text-[#f97316]"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 119,
+                                                                    lineNumber: 118,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: t.flagshipLocation[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 120,
+                                                                    lineNumber: 119,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 118,
+                                                            lineNumber: 117,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         sessions.length > 0 && (()=>{
@@ -6051,17 +6122,17 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                     year: 'numeric'
                                                                 });
                                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-2 bg-[#265cb3]/10 px-3 py-1.5 rounded-xl border border-[#265cb3]/20",
+                                                                className: "flex items-center gap-2 bg-[#0284c7]/10 px-3 py-1.5 rounded-xl border border-[#0284c7]/20",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                                        className: "w-4 h-4 text-[#265cb3] flex-shrink-0"
+                                                                        className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 127,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[#265cb3] font-extrabold text-xs",
+                                                                        className: "text-[#0284c7] font-extrabold text-xs",
                                                                         children: [
                                                                             fmt(s.startDate),
                                                                             " to ",
@@ -6069,115 +6140,115 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 128,
+                                                                        lineNumber: 127,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                lineNumber: 126,
+                                                                lineNumber: 125,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0));
                                                         })()
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 113,
+                                                    lineNumber: 112,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 98,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "pt-6 border-t border-[#e2dedc] flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4",
+                                            className: "pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "space-y-1",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "block text-xs font-semibold text-[#5c5d63] uppercase",
+                                                            className: "block text-xs font-semibold text-[#64748b] uppercase",
                                                             children: currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 138,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-2xl font-extrabold text-[#091b3b] font-heading",
+                                                            className: "text-2xl font-extrabold text-[#0f172a] font-heading",
                                                             children: "Rs. 15,000"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 141,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center gap-2 flex-wrap text-xs",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[#10b981] font-bold bg-[#10b981]/10 px-2 py-0.5 rounded-full border border-[#10b981]/20",
+                                                                    className: "text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200",
                                                                     children: "Pay Rs. 5,000 now"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 146,
+                                                                    lineNumber: 145,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-[#5c5d63]",
+                                                                    className: "text-[#64748b]",
                                                                     children: "+ Rs. 10,000 after session"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 149,
+                                                                    lineNumber: 148,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 145,
+                                                            lineNumber: 144,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 138,
+                                                    lineNumber: 137,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>onNavigate('book'),
-                                                    className: "px-8 py-3.5 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-md",
+                                                    className: "px-8 py-4 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: currentLang === 'en' ? 'Book Your Spot' : 'सिट सुरक्षित गर्नुहोस्'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 156,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                            className: "w-4 h-4 text-[#f6b996]"
+                                                            className: "w-4 h-4 text-amber-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 158,
+                                                            lineNumber: 157,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 152,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 136,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 97,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6190,33 +6261,33 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                             referrerPolicy: "no-referrer"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 163,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent lg:hidden"
+                                            className: "absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent lg:hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 170,
+                                            lineNumber: 169,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 162,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                            lineNumber: 97,
+                            lineNumber: 96,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white p-6 sm:p-10 rounded-3xl border border-[#e2dedc] shadow-sm space-y-8",
+                            className: "bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-8",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-r from-[#091b3b] to-[#1e3a6a] text-white p-6 sm:p-8 rounded-2xl space-y-5 shadow-md",
+                                    className: "bg-gradient-to-r from-[#0b132b] via-[#0f172a] to-[#0284c7] text-white p-6 sm:p-8 rounded-3xl space-y-5 shadow-xl",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-white/10 pb-4",
@@ -6225,11 +6296,11 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     className: "space-y-1",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[11px] font-extrabold uppercase tracking-widest text-[#f6b996] bg-white/10 px-3 py-1 rounded-full inline-block",
+                                                            className: "text-[11px] font-extrabold uppercase tracking-widest text-amber-300 bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur-sm",
                                                             children: currentLang === 'en' ? '7 Days Workshop Routine' : '७-दिने कार्यशाला समय तालिका'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 181,
+                                                            lineNumber: 180,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6237,76 +6308,76 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                             children: "Be Your Own Marketer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 184,
+                                                            lineNumber: 183,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 179,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-wrap items-center gap-2 bg-white/10 p-1.5 rounded-2xl border border-white/15 self-start lg:self-auto",
+                                                    className: "flex flex-wrap items-center gap-2 bg-white/10 p-1.5 rounded-2xl border border-white/15 self-start lg:self-auto backdrop-blur-sm",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                             onClick: ()=>setActiveShift('morning'),
-                                                            className: `px-3.5 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${activeShift === 'morning' ? 'bg-[#f6b996] text-[#321300] shadow-sm' : 'text-white hover:bg-white/10'}`,
+                                                            className: `px-4 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${activeShift === 'morning' ? 'bg-[#ff6b00] text-white shadow-md' : 'text-white/80 hover:bg-white/10 hover:text-white'}`,
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sunrise$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sunrise$3e$__["Sunrise"], {
-                                                                    className: "w-4 h-4 text-[#321300]"
+                                                                    className: "w-4 h-4 text-amber-200"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProgramsPage.tsx",
+                                                                    lineNumber: 198,
+                                                                    columnNumber: 23
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: currentLang === 'en' ? 'Morning (6 am - 9 am)' : 'बिहानी (६ बजे - ९ बजे)'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
                                                                     lineNumber: 199,
                                                                     columnNumber: 23
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    children: currentLang === 'en' ? 'Morning Shift (6 am - 9 am)' : 'बिहानी सत्र (६ बजे - ९ बजे)'
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 200,
-                                                                    columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 191,
-                                                            columnNumber: 24
+                                                            lineNumber: 190,
+                                                            columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                             onClick: ()=>setActiveShift('daytime'),
-                                                            className: `px-3.5 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${activeShift === 'daytime' ? 'bg-[#f6b996] text-[#321300] shadow-sm' : 'text-white hover:bg-white/10'}`,
+                                                            className: `px-4 py-2 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 ${activeShift === 'daytime' ? 'bg-[#ff6b00] text-white shadow-md' : 'text-white/80 hover:bg-white/10 hover:text-white'}`,
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
-                                                                    className: "w-4 h-4 text-[#321300]"
+                                                                    className: "w-4 h-4 text-amber-200"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/ProgramsPage.tsx",
+                                                                    lineNumber: 209,
+                                                                    columnNumber: 23
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: currentLang === 'en' ? 'Daytime (12 noon - 3 pm)' : 'दिवा (१२ बजे - ३ बजे)'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
                                                                     lineNumber: 210,
                                                                     columnNumber: 23
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    children: currentLang === 'en' ? 'Daytime Shift (12 noon - 3pm)' : 'दिवा सत्र (१२ बजे - ३ बजे)'
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 211,
-                                                                    columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 201,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 189,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 178,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6316,71 +6387,71 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     className: "px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/20 font-bold text-white flex items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                            className: "w-4 h-4 text-[#f6b996]"
+                                                            className: "w-4 h-4 text-amber-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 219,
+                                                            lineNumber: 217,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "ROKPA Guest House, Boudha"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 218,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 218,
+                                                    lineNumber: 216,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "px-3.5 py-1.5 rounded-xl bg-[#f6b996] text-[#321300] font-extrabold flex items-center gap-1.5 shadow-sm",
+                                                    className: "px-3.5 py-1.5 rounded-xl bg-[#ff6b00] text-white font-extrabold flex items-center gap-1.5 shadow-md",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 223,
+                                                            lineNumber: 221,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: activeShift === 'daytime' ? '12 noon - 3pm' : '6:00 am - 9:00 am'
+                                                            children: activeShift === 'daytime' ? '12:00 PM - 3:00 PM' : '6:00 AM - 9:00 AM'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 224,
+                                                            lineNumber: 222,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 220,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 217,
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs sm:text-sm text-[#c5c6cf] leading-relaxed",
+                                            className: "text-xs sm:text-sm text-slate-300 leading-relaxed",
                                             children: currentLang === 'en' ? 'Hands-on daily sessions with warm-ups, expert instructor-led sessions, Raw & Real / Open-Up dialogues, and practical labs.' : 'न्यानो-अप, विज्ञ प्रशिक्षक सत्रहरू, रो र रियल / ओपन-अप संवादहरू, र व्यावहारिक अभ्यासका साथ दैनिक सत्रहरू।'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 228,
+                                            lineNumber: 226,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "pt-2 flex flex-wrap items-center gap-2 text-xs",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[#f6b996] font-bold mr-1",
+                                                    className: "text-amber-300 font-bold mr-1",
                                                     children: currentLang === 'en' ? 'Instructors:' : 'प्रशिक्षकहरू:'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 234,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6388,7 +6459,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     children: "Chris Gurung"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 237,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6396,7 +6467,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     children: "Umesh Tamang"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 240,
+                                                    lineNumber: 238,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6404,7 +6475,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     children: "Prashant Ghimire"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 241,
+                                                    lineNumber: 239,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6412,19 +6483,19 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                     children: "Prashant B. Singh"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 242,
+                                                    lineNumber: 240,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 233,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                    lineNumber: 178,
+                                    lineNumber: 177,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6434,25 +6505,25 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                             className: "flex items-center justify-between px-1",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "text-xl font-extrabold text-[#091b3b] font-heading",
+                                                    className: "text-xl font-extrabold text-[#0f172a] font-heading",
                                                     children: t.curriculumTitle[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 249,
+                                                    lineNumber: 247,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs text-[#5c5d63] font-semibold",
+                                                    className: "text-xs text-[#64748b] font-semibold",
                                                     children: currentLang === 'en' ? 'Click day to view sessions' : 'सत्रहरू हेर्न दिनमा क्लिक गर्नुहोस्'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 250,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                            lineNumber: 248,
+                                            lineNumber: 246,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["curriculumDays"].map((item)=>{
@@ -6460,7 +6531,7 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                             const currentSessions = activeShift === 'daytime' ? item.sessionsDaytime || item.sessions : item.sessionsMorning || item.sessions;
                                             const currentRange = activeShift === 'daytime' ? item.timeRangeDaytime || '12:00 pm - 3:00 pm' : item.timeRangeMorning || '6:00 am - 9:00 am';
                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `rounded-2xl border transition-all overflow-hidden ${isOpen ? 'border-[#265cb3] bg-white shadow-md ring-1 ring-[#265cb3]/20' : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'}`,
+                                                className: `rounded-2xl border transition-all overflow-hidden ${isOpen ? 'border-[#0284c7] bg-white shadow-md ring-1 ring-[#0284c7]/20' : 'border-slate-200 bg-[#f8fafc] hover:border-slate-300'}`,
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>setExpandedDay(isOpen ? null : item.day),
@@ -6470,17 +6541,17 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                 className: "flex items-center space-x-4",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: `w-14 h-11 rounded-2xl font-extrabold text-xs flex items-center justify-center flex-shrink-0 transition-all ${isOpen ? 'bg-[#091b3b] text-white shadow-sm' : 'bg-[#e2dedc] text-[#091b3b]'}`,
+                                                                        className: `w-14 h-11 rounded-2xl font-extrabold text-xs flex items-center justify-center flex-shrink-0 transition-all ${isOpen ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/20' : 'bg-slate-200 text-[#0f172a]'}`,
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: currentLang === 'en' ? `Day ${item.day}` : `दिन ${item.day}`
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 287,
+                                                                            lineNumber: 285,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 280,
+                                                                        lineNumber: 278,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6489,60 +6560,60 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                                 className: "flex items-center gap-2",
                                                                                 children: [
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-xs font-bold text-[#265cb3] uppercase tracking-wide",
+                                                                                        className: "text-xs font-bold text-[#0284c7] uppercase tracking-wide",
                                                                                         children: currentLang === 'en' ? `Day ${item.day}` : `दिन ${item.day}`
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                        lineNumber: 291,
+                                                                                        lineNumber: 289,
                                                                                         columnNumber: 31
                                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-[#8e8f99]",
+                                                                                        className: "text-slate-400",
                                                                                         children: "•"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                        lineNumber: 294,
+                                                                                        lineNumber: 292,
                                                                                         columnNumber: 31
                                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: "text-xs font-semibold text-[#5c5d63]",
+                                                                                        className: "text-xs font-semibold text-[#64748b]",
                                                                                         children: currentRange
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                        lineNumber: 295,
+                                                                                        lineNumber: 293,
                                                                                         columnNumber: 31
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                lineNumber: 290,
+                                                                                lineNumber: 288,
                                                                                 columnNumber: 29
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                className: "text-base sm:text-lg font-bold text-[#091b3b] font-heading mt-0.5",
+                                                                                className: "text-base sm:text-lg font-bold text-[#0f172a] font-heading mt-0.5",
                                                                                 children: item.title[currentLang]
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                lineNumber: 299,
+                                                                                lineNumber: 297,
                                                                                 columnNumber: 29
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 289,
+                                                                        lineNumber: 287,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                lineNumber: 279,
+                                                                lineNumber: 277,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex items-center gap-3",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "hidden sm:inline-block text-xs font-bold text-[#265cb3] bg-[#265cb3]/10 px-3 py-1 rounded-full",
+                                                                        className: "hidden sm:inline-block text-xs font-bold text-[#0284c7] bg-[#0284c7]/10 px-3 py-1 rounded-full",
                                                                         children: [
                                                                             currentSessions.length,
                                                                             " ",
@@ -6550,39 +6621,39 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 306,
+                                                                        lineNumber: 304,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "p-2 rounded-xl bg-white border border-[#e2dedc] text-[#091b3b]",
+                                                                        className: "p-2 rounded-xl bg-white border border-slate-200 text-[#0f172a]",
                                                                         children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
                                                                             className: "w-5 h-5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 310,
+                                                                            lineNumber: 308,
                                                                             columnNumber: 39
                                                                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                                             className: "w-5 h-5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 310,
+                                                                            lineNumber: 308,
                                                                             columnNumber: 75
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                        lineNumber: 309,
+                                                                        lineNumber: 307,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                lineNumber: 305,
+                                                                lineNumber: 303,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                        lineNumber: 275,
+                                                        lineNumber: 273,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -6599,44 +6670,44 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                 opacity: 0,
                                                                 height: 0
                                                             },
-                                                            className: "px-5 pb-6 pt-2 border-t border-[#e2dedc] space-y-6",
+                                                            className: "px-5 pb-6 pt-2 border-t border-slate-100 space-y-6",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-xs sm:text-sm text-[#5c5d63] leading-relaxed",
+                                                                    className: "text-xs sm:text-sm text-[#475569] leading-relaxed",
                                                                     children: item.description[currentLang]
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 323,
+                                                                    lineNumber: 321,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "space-y-2",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                            className: "text-xs font-bold uppercase tracking-wider text-[#091b3b] mb-3 flex items-center gap-2",
+                                                                            className: "text-xs font-bold uppercase tracking-wider text-[#0f172a] mb-3 flex items-center gap-2",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                                    className: "w-3.5 h-3.5 text-[#265cb3]"
+                                                                                    className: "w-3.5 h-3.5 text-[#0284c7]"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                    lineNumber: 330,
+                                                                                    lineNumber: 328,
                                                                                     columnNumber: 33
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: currentLang === 'en' ? 'Detailed Session Breakdown' : 'विस्तृत सत्र तालिका'
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                    lineNumber: 331,
+                                                                                    lineNumber: 329,
                                                                                     columnNumber: 33
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 329,
+                                                                            lineNumber: 327,
                                                                             columnNumber: 31
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "divide-y divide-[#e2dedc] border border-[#e2dedc] rounded-2xl overflow-hidden bg-[#fcf9f8]",
+                                                                            className: "divide-y divide-slate-200/80 border border-slate-200/80 rounded-2xl overflow-hidden bg-[#f8fafc]",
                                                                             children: currentSessions.map((sess, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "p-3.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4 hover:bg-white transition-colors",
                                                                                     children: [
@@ -6644,35 +6715,35 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                                             className: "flex items-center gap-3",
                                                                                             children: [
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                    className: "px-2.5 py-1 rounded-lg bg-[#091b3b] text-white font-mono text-[11px] font-bold flex-shrink-0",
+                                                                                                    className: "px-2.5 py-1 rounded-lg bg-[#0f172a] text-white font-mono text-[11px] font-bold flex-shrink-0",
                                                                                                     children: sess.time
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                                    lineNumber: 341,
+                                                                                                    lineNumber: 339,
                                                                                                     columnNumber: 39
                                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                    className: "font-bold text-xs sm:text-sm text-[#091b3b]",
+                                                                                                    className: "font-bold text-xs sm:text-sm text-[#0f172a]",
                                                                                                     children: sess.title[currentLang]
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                                    lineNumber: 344,
+                                                                                                    lineNumber: 342,
                                                                                                     columnNumber: 39
                                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                            lineNumber: 340,
+                                                                                            lineNumber: 338,
                                                                                             columnNumber: 37
                                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                                         sess.instructor && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                            className: "flex items-center gap-1.5 text-xs font-semibold text-[#265cb3] bg-[#265cb3]/10 px-3 py-1 rounded-full self-start sm:self-auto",
+                                                                                            className: "flex items-center gap-1.5 text-xs font-semibold text-[#0284c7] bg-[#0284c7]/10 px-3 py-1 rounded-full self-start sm:self-auto",
                                                                                             children: [
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
                                                                                                     className: "w-3.5 h-3.5"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                                    lineNumber: 351,
+                                                                                                    lineNumber: 349,
                                                                                                     columnNumber: 41
                                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6682,124 +6753,124 @@ const ProgramsPage = ({ currentLang, onNavigate, onSelectCourseEnroll })=>{
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                                    lineNumber: 352,
+                                                                                                    lineNumber: 350,
                                                                                                     columnNumber: 41
                                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                            lineNumber: 350,
+                                                                                            lineNumber: 348,
                                                                                             columnNumber: 39
                                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                                     ]
                                                                                 }, idx, true, {
                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                    lineNumber: 336,
+                                                                                    lineNumber: 334,
                                                                                     columnNumber: 35
                                                                                 }, ("TURBOPACK compile-time value", void 0)))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 334,
+                                                                            lineNumber: 332,
                                                                             columnNumber: 31
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 328,
+                                                                    lineNumber: 326,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 item.topics && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "pt-2",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                                            className: "text-xs font-bold text-[#091b3b] mb-2.5",
+                                                                            className: "text-xs font-bold text-[#0f172a] mb-2.5",
                                                                             children: currentLang === 'en' ? 'Key Practical Takeaways:' : 'मुख्य व्यावहारिक उपलब्धिहरू:'
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 363,
+                                                                            lineNumber: 361,
                                                                             columnNumber: 33
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             className: "grid grid-cols-1 sm:grid-cols-2 gap-2",
                                                                             children: item.topics[currentLang].map((topic, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "flex items-center gap-2 text-xs font-semibold text-[#091b3b] bg-white p-2.5 rounded-xl border border-[#e2dedc]",
+                                                                                    className: "flex items-center gap-2 text-xs font-semibold text-[#0f172a] bg-white p-2.5 rounded-xl border border-slate-200",
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                                                            className: "w-4 h-4 text-[#265cb3] flex-shrink-0"
+                                                                                            className: "w-4 h-4 text-[#0284c7] flex-shrink-0"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                            lineNumber: 369,
+                                                                                            lineNumber: 367,
                                                                                             columnNumber: 39
                                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                             children: topic
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                            lineNumber: 370,
+                                                                                            lineNumber: 368,
                                                                                             columnNumber: 39
                                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                                     ]
                                                                                 }, idx, true, {
                                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                                    lineNumber: 368,
+                                                                                    lineNumber: 366,
                                                                                     columnNumber: 37
                                                                                 }, ("TURBOPACK compile-time value", void 0)))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                            lineNumber: 366,
+                                                                            lineNumber: 364,
                                                                             columnNumber: 33
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                                    lineNumber: 362,
+                                                                    lineNumber: 360,
                                                                     columnNumber: 31
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                            lineNumber: 317,
+                                                            lineNumber: 315,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                        lineNumber: 315,
+                                                        lineNumber: 313,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, item.day, true, {
                                                 fileName: "[project]/src/components/ProgramsPage.tsx",
-                                                lineNumber: 267,
+                                                lineNumber: 265,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0));
                                         })
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                                    lineNumber: 247,
+                                    lineNumber: 245,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ProgramsPage.tsx",
-                            lineNumber: 175,
+                            lineNumber: 174,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProgramsPage.tsx",
-                    lineNumber: 91,
+                    lineNumber: 90,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ProgramsPage.tsx",
-            lineNumber: 61,
+            lineNumber: 59,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ProgramsPage.tsx",
-        lineNumber: 60,
+        lineNumber: 58,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -6987,7 +7058,7 @@ const SeatBooking = ({ currentLang })=>{
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12 md:py-20 bg-[#fcf9f8]",
+        className: "py-12 md:py-20 bg-[#f8fafc]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
@@ -6995,7 +7066,7 @@ const SeatBooking = ({ currentLang })=>{
                     className: "text-center max-w-3xl mx-auto mb-10 space-y-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1.5 rounded-full border border-[#ac7859]/30",
+                            className: "text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1.5 rounded-full border border-[#fed7aa] shadow-sm",
                             children: currentLang === 'en' ? 'Physical Classroom Reservation' : 'भौतिक कक्षाकोठा आरक्षण'
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7003,7 +7074,7 @@ const SeatBooking = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight",
+                            className: "text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight",
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7011,7 +7082,7 @@ const SeatBooking = ({ currentLang })=>{
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-base text-[#5c5d63]",
+                            className: "text-base text-[#64748b]",
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7030,7 +7101,7 @@ const SeatBooking = ({ currentLang })=>{
                         className: "flex items-center justify-between relative",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-[#e2dedc] -z-10"
+                                className: "absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-slate-200 -z-10"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SeatBooking.tsx",
                                 lineNumber: 172,
@@ -7066,7 +7137,7 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "flex flex-col items-center gap-1.5 focus:outline-none",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `w-9 h-9 sm:w-10 sm:h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ${isPast ? 'bg-[#10b981] text-white shadow-sm' : isCurrent ? 'bg-[#091b3b] text-white shadow-md ring-4 ring-[#091b3b]/20' : 'bg-white text-[#5c5d63] border-2 border-[#e2dedc]'}`,
+                                            className: `w-9 h-9 sm:w-10 sm:h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ${isPast ? 'bg-emerald-500 text-white shadow-sm' : isCurrent ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/25 ring-4 ring-[#0284c7]/20' : 'bg-white text-[#64748b] border-2 border-slate-200'}`,
                                             children: isPast ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
@@ -7080,7 +7151,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: `text-xs font-semibold ${isCurrent ? 'text-[#091b3b] font-bold' : 'text-[#8e8f99]'}`,
+                                            className: `text-xs font-semibold ${isCurrent ? 'text-[#0f172a] font-bold' : 'text-[#64748b]'}`,
                                             children: step.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7109,15 +7180,15 @@ const SeatBooking = ({ currentLang })=>{
                     className: "grid grid-cols-1 lg:grid-cols-12 gap-8 items-start",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-[#e2dedc] shadow-sm space-y-8",
+                            className: "lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-8",
                             children: [
                                 activeStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-[#e2dedc] pb-4",
+                                            className: "border-b border-slate-200 pb-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#091b3b] font-heading",
+                                                className: "text-xl font-bold text-[#0f172a] font-heading",
                                                 children: currentLang === 'en' ? 'Step 1: Choose City & Campus' : 'चरण १: शहर र क्याम्पस छान्नुहोस्'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7137,13 +7208,13 @@ const SeatBooking = ({ currentLang })=>{
                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>isKathmandu && setSelectedCity(c.name),
                                                     disabled: !isKathmandu,
-                                                    className: `p-5 rounded-2xl border text-left transition-all relative ${!isKathmandu ? 'border-[#e2dedc] bg-[#f5f5f5] opacity-60 cursor-not-allowed' : isSel ? 'border-[#265cb3] bg-[#265cb3]/5 shadow-sm ring-2 ring-[#265cb3]/30' : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'}`,
+                                                    className: `p-5 rounded-2xl border text-left transition-all relative ${!isKathmandu ? 'border-slate-200 bg-slate-100/70 opacity-60 cursor-not-allowed' : isSel ? 'border-[#0284c7] bg-[#0284c7]/5 shadow-sm ring-2 ring-[#0284c7]/30' : 'border-slate-200 bg-[#f8fafc] hover:border-slate-300'}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center justify-between mb-2",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "font-bold text-base text-[#091b3b]",
+                                                                    className: "font-bold text-base text-[#0f172a]",
                                                                     children: c.name
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7151,7 +7222,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                    className: `w-5 h-5 ${isSel ? 'text-[#265cb3]' : 'text-[#8e8f99]'}`
+                                                                    className: `w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 244,
@@ -7164,7 +7235,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs text-[#5c5d63]",
+                                                            className: "text-xs text-[#64748b]",
                                                             children: c.address
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7172,7 +7243,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         !isKathmandu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "mt-2 inline-block text-[10px] font-extrabold uppercase tracking-wider bg-[#f6b996]/40 text-[#ac7859] px-2 py-0.5 rounded-full border border-[#ac7859]/30",
+                                                            className: "mt-2 inline-block text-[10px] font-extrabold uppercase tracking-wider bg-[#fff7ed] text-[#ea580c] px-2 py-0.5 rounded-full border border-[#fed7aa]",
                                                             children: "Coming Soon"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7195,7 +7266,7 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "pt-4 flex justify-end",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>setActiveStep(2),
-                                                className: "px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover",
+                                                className: "px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm",
                                                 children: currentLang === 'en' ? 'Next: Choose Batch' : 'अर्को: ब्याच छान्नुहोस्'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7217,9 +7288,9 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-[#e2dedc] pb-4",
+                                            className: "border-b border-slate-200 pb-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#091b3b] font-heading",
+                                                className: "text-xl font-bold text-[#0f172a] font-heading",
                                                 children: currentLang === 'en' ? 'Step 2: Select Preferred Batch Time' : 'चरण २: मनपर्ने ब्याच समय छान्नुहोस्'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7237,20 +7308,20 @@ const SeatBooking = ({ currentLang })=>{
                                                 const isSel = selectedBatch === b.label;
                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setSelectedBatch(b.label),
-                                                    className: `w-full p-5 rounded-2xl border text-left transition-all flex items-center justify-between ${isSel ? 'border-[#265cb3] bg-[#265cb3]/5 shadow-sm ring-2 ring-[#265cb3]/30' : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'}`,
+                                                    className: `w-full p-5 rounded-2xl border text-left transition-all flex items-center justify-between ${isSel ? 'border-[#0284c7] bg-[#0284c7]/5 shadow-sm ring-2 ring-[#0284c7]/30' : 'border-slate-200 bg-[#f8fafc] hover:border-slate-300'}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center space-x-3",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                    className: `w-5 h-5 ${isSel ? 'text-[#265cb3]' : 'text-[#8e8f99]'}`
+                                                                    className: `w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 291,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "font-bold text-sm text-[#091b3b]",
+                                                                    className: "font-bold text-sm text-[#0f172a]",
                                                                     children: b.label
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7264,7 +7335,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs font-extrabold bg-[#f6b996]/30 text-[#522900] px-3 py-1 rounded-full",
+                                                            className: "text-xs font-extrabold bg-[#fff7ed] text-[#ea580c] border border-[#fed7aa] px-3 py-1 rounded-full",
                                                             children: b.slots
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7288,7 +7359,7 @@ const SeatBooking = ({ currentLang })=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(1),
-                                                    className: "px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm",
+                                                    className: "px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50",
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7297,7 +7368,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(3),
-                                                    className: "px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover",
+                                                    className: "px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm",
                                                     children: currentLang === 'en' ? 'Next: Pick Seat' : 'अर्को: सिट छान्नुहोस्'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7320,10 +7391,10 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-[#e2dedc] pb-4 flex items-center justify-between",
+                                            className: "border-b border-slate-200 pb-4 flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-xl font-bold text-[#091b3b] font-heading",
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
                                                     children: t.selectSeatTitle[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7331,7 +7402,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs text-[#5c5d63] font-semibold",
+                                                    className: "text-xs text-[#64748b] font-semibold",
                                                     children: currentLang === 'en' ? 'Capacity: 25 Seats' : 'क्षमता: २५ सिट'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7345,7 +7416,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-full bg-[#091b3b] text-[#f6b996] py-2 rounded-xl text-center text-xs font-extrabold uppercase tracking-widest shadow-inner",
+                                            className: "w-full bg-[#0b132b] text-amber-200 py-2.5 rounded-2xl text-center text-xs font-extrabold uppercase tracking-widest shadow-inner",
                                             children: t.stageLabel[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7353,7 +7424,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-[#fcf9f8] p-4 rounded-2xl border border-[#e2dedc] space-y-4",
+                                            className: "bg-[#f8fafc] p-5 rounded-3xl border border-slate-200 space-y-4",
                                             children: [
                                                 'A',
                                                 'B',
@@ -7366,7 +7437,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center justify-center gap-2 sm:gap-3",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "w-5 text-xs font-bold text-[#5c5d63] text-center flex-shrink-0",
+                                                            className: "w-5 text-xs font-bold text-[#64748b] text-center flex-shrink-0",
                                                             children: rowLetter
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7381,7 +7452,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     onClick: ()=>handleSeatClick(seat),
                                                                     disabled: seat.status === 'booked',
                                                                     title: seat.isVip ? `VIP – Rs.${seat.priceNpr.toLocaleString()}` : `Rs.${seat.priceNpr.toLocaleString()}`,
-                                                                    className: `seat-btn w-11 h-11 sm:w-12 sm:h-12 rounded-xl text-xs font-bold flex flex-col items-center justify-center border shadow-sm transition-all ${seat.status === 'booked' ? 'booked' : isSel ? 'selected ring-2 ring-[#ac7859]' : seat.isVip ? 'bg-amber-50 border-amber-400 text-amber-900 hover:bg-amber-100' : 'bg-white border-[#d6d0cc] text-[#091b3b] hover:bg-[#f0eded]'}`,
+                                                                    className: `seat-btn w-11 h-11 sm:w-12 sm:h-12 rounded-xl text-xs font-bold flex flex-col items-center justify-center border shadow-sm transition-all ${seat.status === 'booked' ? 'booked' : isSel ? 'selected ring-2 ring-[#ea580c]' : seat.isVip ? 'bg-[#f0f9ff] border-2 border-[#0284c7] text-[#0369a1] hover:bg-[#e0f2fe]' : 'bg-white border-slate-200 text-[#0f172a] hover:bg-[#f0f9ff] hover:border-[#0284c7] hover:text-[#0284c7]'}`,
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-[11px] font-extrabold leading-none",
                                                                         children: seat.seatLabel || `${seat.row}${seat.number}`
@@ -7414,13 +7485,13 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-[#5c5d63] pt-2",
+                                            className: "flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-[#64748b] pt-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded bg-white border border-[#d6d0cc]"
+                                                            className: "w-4 h-4 rounded-md bg-white border border-slate-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 377,
@@ -7443,13 +7514,14 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded bg-[#f6b996] border border-[#ac7859]"
+                                                            className: "w-4 h-4 rounded-md bg-gradient-to-r from-[#ff6b00] to-[#f97316] border border-[#ea580c]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 381,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[#ea580c] font-bold",
                                                             children: t.legendSelected[currentLang]
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7466,7 +7538,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded bg-[#091b3b]"
+                                                            className: "w-4 h-4 rounded-md bg-[#1e293b]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 385,
@@ -7489,7 +7561,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded bg-amber-50 border-2 border-amber-400"
+                                                            className: "w-4 h-4 rounded-md bg-[#f0f9ff] border-2 border-[#0284c7]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 389,
@@ -7519,7 +7591,7 @@ const SeatBooking = ({ currentLang })=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(2),
-                                                    className: "px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm",
+                                                    className: "px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50",
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7528,7 +7600,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(4),
-                                                    className: "px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover",
+                                                    className: "px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm",
                                                     children: currentLang === 'en' ? 'Next: Enter Details' : 'अर्को: विवरण भर्नुहोस्'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7552,9 +7624,9 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-[#e2dedc] pb-4",
+                                            className: "border-b border-slate-200 pb-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#091b3b] font-heading",
+                                                className: "text-xl font-bold text-[#0f172a] font-heading",
                                                 children: currentLang === 'en' ? 'Step 4: Contact & Student Information' : 'चरण ४: सम्पर्क तथा विद्यार्थी विवरण'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7572,7 +7644,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                            className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                             children: currentLang === 'en' ? 'Full Name *' : 'पूरा नाम *'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7583,7 +7655,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             className: "relative",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                                    className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                                    className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 426,
@@ -7595,7 +7667,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     value: fullName,
                                                                     onChange: (e)=>setFullName(e.target.value),
                                                                     placeholder: "e.g. Ramesh Bikram Thapa",
-                                                                    className: "w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                                    className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 427,
@@ -7619,7 +7691,7 @@ const SeatBooking = ({ currentLang })=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                                    className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                                     children: currentLang === 'en' ? 'Phone Number *' : 'फोन नम्बर *'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7630,7 +7702,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     className: "relative",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                                            className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                                            className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                                             lineNumber: 444,
@@ -7642,7 +7714,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                             value: phone,
                                                                             onChange: (e)=>setPhone(e.target.value),
                                                                             placeholder: "9800000000",
-                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                                             lineNumber: 445,
@@ -7663,7 +7735,7 @@ const SeatBooking = ({ currentLang })=>{
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                                    className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                                     children: currentLang === 'en' ? 'Email Address *' : 'इमेल ठेगाना *'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7674,7 +7746,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     className: "relative",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                                            className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                                            className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                                             lineNumber: 461,
@@ -7686,7 +7758,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                             value: email,
                                                                             onChange: (e)=>setEmail(e.target.value),
                                                                             placeholder: "ramesh@gmail.com",
-                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                                             lineNumber: 462,
@@ -7713,7 +7785,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                            className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                            className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                             children: currentLang === 'en' ? 'Business / Brand Name (Optional)' : 'व्यापार / ब्रान्डको नाम (ऐच्छिक)'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7724,7 +7796,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             className: "relative",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building$3e$__["Building"], {
-                                                                    className: "w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5"
+                                                                    className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 479,
@@ -7735,7 +7807,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     value: organization,
                                                                     onChange: (e)=>setOrganization(e.target.value),
                                                                     placeholder: "e.g. Everest Handicrafts",
-                                                                    className: "w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                                                                    className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                                     lineNumber: 480,
@@ -7765,7 +7837,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "button",
                                                     onClick: ()=>setActiveStep(3),
-                                                    className: "px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm",
+                                                    className: "px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50",
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7774,7 +7846,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "submit",
-                                                    className: "px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover",
+                                                    className: "px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25",
                                                     children: t.proceedPayBtn[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7797,9 +7869,9 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-[#e2dedc] pb-4",
+                                            className: "border-b border-slate-200 pb-4",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#091b3b] font-heading",
+                                                className: "text-xl font-bold text-[#0f172a] font-heading",
                                                 children: currentLang === 'en' ? 'Step 5: Pay via Fonepay QR' : 'चरण ५: Fonepay QR बाट भुक्तानी गर्नुहोस्'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7812,7 +7884,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-2xl p-6 text-center space-y-4",
+                                            className: "bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-sm",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-center justify-center gap-2 mb-2",
@@ -7833,7 +7905,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-extrabold text-lg text-[#091b3b]",
+                                                            className: "font-extrabold text-lg text-[#0f172a]",
                                                             children: "Fonepay"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7847,14 +7919,14 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mx-auto w-44 h-44 bg-white rounded-2xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-inner",
+                                                    className: "mx-auto w-48 h-48 bg-white rounded-3xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-md",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-center space-y-2",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-32 h-32 bg-[#091b3b] rounded-lg mx-auto flex items-center justify-center",
+                                                                className: "w-32 h-32 bg-[#0b132b] rounded-xl mx-auto flex items-center justify-center",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "grid grid-cols-5 gap-0.5 p-2",
+                                                                    className: "grid grid-cols-5 gap-1 p-2",
                                                                     children: Array.from({
                                                                         length: 25
                                                                     }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7887,7 +7959,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] text-[#5c5d63] font-semibold",
+                                                                className: "text-[10px] text-[#64748b] font-bold tracking-wider uppercase",
                                                                 children: "Scan QR Code"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7906,18 +7978,18 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "space-y-1",
+                                                    className: "space-y-1 pt-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm font-extrabold text-[#091b3b]",
-                                                            children: currentLang === 'en' ? 'Deposit Amount' : 'भुक्तानी रकम'
+                                                            className: "text-xs font-bold text-[#64748b] uppercase tracking-wider",
+                                                            children: currentLang === 'en' ? 'Deposit Amount Due' : 'भुक्तानी डिपोजिट रकम'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 543,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-3xl font-extrabold text-[#e63329]",
+                                                            className: "text-3xl sm:text-4xl font-extrabold text-[#e63329]",
                                                             children: [
                                                                 "Rs. ",
                                                                 depositAmount.toLocaleString()
@@ -7928,8 +8000,8 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs text-[#5c5d63]",
-                                                            children: currentLang === 'en' ? 'Scan with any banking or Fonepay app' : 'जुनसुकै बैंकिङ वा Fonepay एपबाट स्क्यान गर्नुहोस्'
+                                                            className: "text-xs text-[#64748b]",
+                                                            children: currentLang === 'en' ? 'Scan with any mobile banking or Fonepay app' : 'जुनसुकै बैंकिङ वा Fonepay एपबाट स्क्यान गर्नुहोस्'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                                             lineNumber: 549,
@@ -7948,10 +8020,10 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "p-4 rounded-2xl bg-[#ebe7e5] border border-[#d6d0cc] space-y-2",
+                                            className: "p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs font-bold text-[#091b3b]",
+                                                    className: "text-xs font-extrabold text-[#0f172a] uppercase tracking-wider",
                                                     children: currentLang === 'en' ? '📋 Payment Instructions:' : '📋 भुक्तानी निर्देशनहरू:'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -7959,7 +8031,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
-                                                    className: "text-xs text-[#5c5d63] space-y-1 list-decimal list-inside",
+                                                    className: "text-xs text-[#475569] space-y-1.5 list-decimal list-inside font-medium",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                             children: currentLang === 'en' ? `Scan the QR and pay Rs. ${depositAmount.toLocaleString()} deposit` : `QR स्क्यान गरी Rs. ${depositAmount.toLocaleString()} डिपोजिट तिर्नुहोस्`
@@ -8015,7 +8087,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(4),
                                                     disabled: isProcessing,
-                                                    className: "px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm disabled:opacity-50",
+                                                    className: "px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm disabled:opacity-50 hover:bg-slate-50",
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8025,7 +8097,7 @@ const SeatBooking = ({ currentLang })=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: handleConfirmPay,
                                                     disabled: isProcessing,
-                                                    className: "px-8 py-3.5 rounded-xl bg-[#10b981] text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50",
+                                                    className: "px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
                                                             className: "w-4 h-4"
@@ -8066,13 +8138,13 @@ const SeatBooking = ({ currentLang })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "lg:col-span-5 bg-[#091b3b] text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-6 sticky top-24",
+                            className: "lg:col-span-5 bg-gradient-to-b from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-800 space-y-6 sticky top-24",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center justify-between border-b border-white/10 pb-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold font-heading text-white",
+                                            className: "text-xl font-extrabold font-heading text-white",
                                             children: t.summaryTitle[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8080,7 +8152,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xs bg-[#f6b996]/20 text-[#f6b996] px-2.5 py-1 rounded-md font-bold",
+                                            className: "text-xs bg-[#ff6b00]/20 text-amber-300 border border-[#ff6b00]/30 px-3 py-1 rounded-full font-extrabold",
                                             children: "7-Day Mastery"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8100,7 +8172,7 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[#c5c6cf]",
+                                                    className: "text-slate-400",
                                                     children: t.campus[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8125,7 +8197,7 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[#c5c6cf]",
+                                                    className: "text-slate-400",
                                                     children: t.batch[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8150,7 +8222,7 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[#c5c6cf]",
+                                                    className: "text-slate-400",
                                                     children: t.selectedSeat[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8158,7 +8230,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-extrabold text-[#f6b996] bg-white/10 px-3 py-1 rounded-lg",
+                                                    className: "font-extrabold text-white bg-gradient-to-r from-[#ff6b00] to-[#f97316] px-3.5 py-1 rounded-xl shadow-sm",
                                                     children: [
                                                         selectedSeatObj?.seatLabel || selectedSeatId,
                                                         " ",
@@ -8179,7 +8251,7 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "border-t border-white/10 pt-4 space-y-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between text-xs text-[#c5c6cf]",
+                                                    className: "flex items-center justify-between text-xs text-slate-400",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'
@@ -8208,7 +8280,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center justify-between text-xs",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[#f6b996] font-bold",
+                                                            className: "text-[#38bdf8] font-bold",
                                                             children: currentLang === 'en' ? '✓ Pay Now (Deposit)' : '✓ अहिले तिर्नुहोस् (डिपोजिट)'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8216,7 +8288,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[#f6b996] font-extrabold",
+                                                            className: "text-[#38bdf8] font-extrabold",
                                                             children: [
                                                                 "Rs. ",
                                                                 depositAmount.toLocaleString()
@@ -8233,7 +8305,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between text-xs text-[#c5c6cf]",
+                                                    className: "flex items-center justify-between text-xs text-slate-400",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरु भएपछि'
@@ -8259,7 +8331,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between text-xs text-[#c5c6cf]",
+                                                    className: "flex items-center justify-between text-xs text-slate-400",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: currentLang === 'en' ? 'Course Kit & Workbook' : 'पाठ्यक्रम किट र पुस्तक'
@@ -8269,7 +8341,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[#10b981] font-bold",
+                                                            className: "text-emerald-400 font-bold",
                                                             children: "Included"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8295,7 +8367,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "flex items-center justify-between",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs text-[#c5c6cf]",
+                                                            className: "text-xs text-slate-400",
                                                             children: currentLang === 'en' ? 'Due Now' : 'अहिले तिर्नुपर्ने'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8303,7 +8375,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-2xl font-extrabold text-[#f6b996] font-heading",
+                                                            className: "text-2xl font-extrabold text-amber-300 font-heading",
                                                             children: [
                                                                 "Rs. ",
                                                                 depositAmount.toLocaleString()
@@ -8320,7 +8392,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] text-[#8e9ab0]",
+                                                    className: "text-[10px] text-slate-400",
                                                     children: currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8340,10 +8412,10 @@ const SeatBooking = ({ currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-3 text-xs text-[#c5c6cf]",
+                                    className: "p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3 text-xs text-slate-300",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                            className: "w-5 h-5 text-[#f6b996] flex-shrink-0"
+                                            className: "w-5 h-5 text-amber-300 flex-shrink-0"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
                                             lineNumber: 658,
@@ -8382,10 +8454,10 @@ const SeatBooking = ({ currentLang })=>{
                         opacity: 1,
                         scale: 1
                     },
-                    className: "max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-[#e2dedc] shadow-2xl text-center space-y-6",
+                    className: "max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-2xl text-center space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-20 h-20 rounded-full bg-[#10b981]/10 text-[#10b981] mx-auto flex items-center justify-center",
+                            className: "w-20 h-20 rounded-full bg-emerald-50 text-emerald-600 mx-auto flex items-center justify-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                                 className: "w-10 h-10"
                             }, void 0, false, {
@@ -8402,7 +8474,7 @@ const SeatBooking = ({ currentLang })=>{
                             className: "space-y-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-extrabold text-[#091b3b] font-heading",
+                                    className: "text-3xl font-extrabold text-[#0f172a] font-heading",
                                     children: t.successMsg[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8410,7 +8482,7 @@ const SeatBooking = ({ currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-[#5c5d63]",
+                                    className: "text-sm text-[#64748b]",
                                     children: t.successDesc[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8424,23 +8496,23 @@ const SeatBooking = ({ currentLang })=>{
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-[#fcf9f8] p-6 rounded-2xl border border-[#d6d0cc] text-left space-y-4 relative overflow-hidden",
+                            className: "bg-[#f8fafc] p-6 rounded-3xl border border-slate-200 text-left space-y-4 relative overflow-hidden",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center justify-between border-b border-[#e2dedc] pb-3",
+                                    className: "flex items-center justify-between border-b border-slate-200 pb-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                                    className: "w-5 h-5 text-[#265cb3]"
+                                                    className: "w-5 h-5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
                                                     lineNumber: 692,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-sm text-[#091b3b]",
+                                                    className: "font-extrabold text-sm text-[#0f172a]",
                                                     children: "BYOM DIGITAL TICKET"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8454,7 +8526,7 @@ const SeatBooking = ({ currentLang })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-xs font-mono font-bold text-[#ac7859]",
+                                            className: "text-xs font-mono font-bold text-[#ea580c]",
                                             children: "#BYOM-8924"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8468,12 +8540,12 @@ const SeatBooking = ({ currentLang })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 gap-4 text-xs font-semibold text-[#5c5d63]",
+                                    className: "grid grid-cols-2 gap-4 text-xs font-semibold text-[#64748b]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] text-[#8e8f99] uppercase",
+                                                    className: "block text-[10px] text-slate-400 uppercase",
                                                     children: "Student"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8481,7 +8553,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm",
+                                                    className: "font-bold text-[#0f172a] text-sm",
                                                     children: fullName || 'Ramesh Thapa'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8497,7 +8569,7 @@ const SeatBooking = ({ currentLang })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] text-[#8e8f99] uppercase",
+                                                    className: "block text-[10px] text-slate-400 uppercase",
                                                     children: "Campus"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8505,7 +8577,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm",
+                                                    className: "font-bold text-[#0f172a] text-sm",
                                                     children: selectedCity
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8521,7 +8593,7 @@ const SeatBooking = ({ currentLang })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] text-[#8e8f99] uppercase",
+                                                    className: "block text-[10px] text-slate-400 uppercase",
                                                     children: "Batch Time"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8529,7 +8601,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b]",
+                                                    className: "font-bold text-[#0f172a]",
                                                     children: selectedBatch
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8545,7 +8617,7 @@ const SeatBooking = ({ currentLang })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] text-[#8e8f99] uppercase",
+                                                    className: "block text-[10px] text-slate-400 uppercase",
                                                     children: "Assigned Seat"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8553,7 +8625,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-extrabold text-[#265cb3] text-sm",
+                                                    className: "font-extrabold text-[#0284c7] text-sm",
                                                     children: selectedSeatId
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8583,7 +8655,7 @@ const SeatBooking = ({ currentLang })=>{
                                 setIsCompleted(false);
                                 setActiveStep(1);
                             },
-                            className: "px-8 py-3.5 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover",
+                            className: "px-8 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors",
                             children: currentLang === 'en' ? 'Book Another Seat' : 'अर्को सिट बुक गर्नुहोस्'
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
@@ -8684,9 +8756,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
     };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "min-h-screen bg-[#fcf9f8] flex items-center justify-center",
+            className: "min-h-screen bg-[#f8fafc] flex items-center justify-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-8 h-8 border-4 border-[#265cb3]/30 border-t-[#265cb3] rounded-full animate-spin"
+                className: "w-8 h-8 border-4 border-[#0284c7]/30 border-t-[#0284c7] rounded-full animate-spin"
             }, void 0, false, {
                 fileName: "[project]/src/components/UserDashboard.tsx",
                 lineNumber: 72,
@@ -8707,7 +8779,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
             opacity: 1,
             y: 0
         },
-        className: "py-12 md:py-20 bg-[#fcf9f8] min-h-screen",
+        className: "py-12 md:py-20 bg-[#f8fafc] min-h-screen",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8",
             children: [
@@ -8717,7 +8789,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20",
+                                    className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
                                     children: currentLang === 'en' ? 'Student Portal' : 'विद्यार्थी पोर्टल'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8725,7 +8797,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-3xl font-extrabold text-[#091b3b] font-heading mt-2",
+                                    className: "text-3xl font-extrabold text-[#0f172a] font-heading mt-2",
                                     children: currentLang === 'en' ? `Welcome back${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!` : `पुनः स्वागत छ${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8740,7 +8812,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: handleLogout,
-                            className: "flex items-center gap-2 px-4 py-2 rounded-xl border border-[#e2dedc] text-[#5c5d63] hover:bg-[#ebe7e5] text-xs font-bold transition-colors",
+                            className: "flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-100 text-xs font-bold transition-colors",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
                                     className: "w-4 h-4"
@@ -8763,10 +8835,10 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-8",
+                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-base font-extrabold text-[#091b3b] mb-6 pb-3 border-b border-[#e2dedc]",
+                            className: "text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200",
                             children: currentLang === 'en' ? 'Your Profile' : 'तपाईंको प्रोफाइल'
                         }, void 0, false, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8780,9 +8852,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     className: "flex items-center gap-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center",
+                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                className: "w-5 h-5 text-[#265cb3]"
+                                                className: "w-5 h-5 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/UserDashboard.tsx",
                                                 lineNumber: 113,
@@ -8796,7 +8868,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider",
+                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
                                                     children: currentLang === 'en' ? 'Full Name' : 'पूरा नाम'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8804,7 +8876,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm",
+                                                    className: "font-bold text-[#0f172a] text-sm",
                                                     children: userData?.name || '—'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8827,9 +8899,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     className: "flex items-center gap-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center",
+                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                className: "w-5 h-5 text-[#265cb3]"
+                                                className: "w-5 h-5 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/UserDashboard.tsx",
                                                 lineNumber: 127,
@@ -8843,7 +8915,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider",
+                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
                                                     children: currentLang === 'en' ? 'Email Address' : 'इमेल ठेगाना'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8851,7 +8923,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm",
+                                                    className: "font-bold text-[#0f172a] text-sm",
                                                     children: userData?.email || '—'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8874,9 +8946,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     className: "flex items-center gap-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center",
+                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                className: "w-5 h-5 text-[#265cb3]"
+                                                className: "w-5 h-5 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/UserDashboard.tsx",
                                                 lineNumber: 141,
@@ -8890,7 +8962,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider",
+                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
                                                     children: currentLang === 'en' ? 'Phone Number' : 'फोन नम्बर'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8898,8 +8970,8 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm",
-                                                    children: userData?.phone || currentLang === 'en' ? '—' : '—'
+                                                    className: "font-bold text-[#0f172a] text-sm",
+                                                    children: userData?.phone || '—'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
                                                     lineNumber: 147,
@@ -8921,9 +8993,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     className: "flex items-center gap-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center",
+                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                                className: "w-5 h-5 text-[#265cb3]"
+                                                className: "w-5 h-5 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/UserDashboard.tsx",
                                                 lineNumber: 155,
@@ -8937,7 +9009,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider",
+                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
                                                     children: currentLang === 'en' ? 'Account Type' : 'खाता प्रकार'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8945,7 +9017,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#091b3b] text-sm capitalize",
+                                                    className: "font-bold text-[#0f172a] text-sm capitalize",
                                                     children: userData?.role || 'Student'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -8977,13 +9049,13 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-8",
+                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-base font-extrabold text-[#091b3b] mb-6 pb-3 border-b border-[#e2dedc] flex items-center gap-2",
+                            className: "text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200 flex items-center gap-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                    className: "w-4 h-4 text-[#265cb3]"
+                                    className: "w-4 h-4 text-[#0284c7]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
                                     lineNumber: 172,
@@ -9000,9 +9072,9 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                             className: "text-center py-12 space-y-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-16 h-16 rounded-full bg-[#f0eded] flex items-center justify-center mx-auto",
+                                    className: "w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mx-auto",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                        className: "w-8 h-8 text-[#c5c6cf]"
+                                        className: "w-8 h-8 text-slate-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UserDashboard.tsx",
                                         lineNumber: 179,
@@ -9014,7 +9086,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-[#5c5d63] font-semibold",
+                                    className: "text-sm text-slate-600 font-semibold",
                                     children: currentLang === 'en' ? 'No bookings yet' : 'अहिलेसम्म कुनै बुकिङ छैन'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9022,7 +9094,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-[#8e8f99]",
+                                    className: "text-xs text-slate-400",
                                     children: currentLang === 'en' ? 'Reserve your seat in the upcoming cohort' : 'आगामी ब्याचमा आफ्नो सिट सुरक्षित गर्नुहोस्'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9037,7 +9109,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
                             children: bookings.map((booking)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-5 rounded-2xl border border-[#e2dedc] bg-[#fcf9f8] flex items-start justify-between gap-4",
+                                    className: "p-5 rounded-2xl border border-slate-200 bg-[#f8fafc] flex items-start justify-between gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-2",
@@ -9046,14 +9118,14 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     className: "flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                            className: "w-4 h-4 text-[#265cb3]"
+                                                            className: "w-4 h-4 text-[#0284c7]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/UserDashboard.tsx",
                                                             lineNumber: 196,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold text-sm text-[#091b3b]",
+                                                            className: "font-bold text-sm text-[#0f172a]",
                                                             children: booking.city
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9067,7 +9139,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs text-[#5c5d63]",
+                                                    className: "text-xs text-slate-600",
                                                     children: booking.batch
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9075,13 +9147,13 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-3 text-xs text-[#8e8f99]",
+                                                    className: "flex items-center gap-3 text-xs text-slate-400",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: [
                                                                 "Seat: ",
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                    className: "text-[#265cb3]",
+                                                                    className: "text-[#0284c7]",
                                                                     children: booking.seatId
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9098,7 +9170,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                                             children: [
                                                                 "Deposit: ",
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                    className: "text-[#091b3b]",
+                                                                    className: "text-[#0f172a]",
                                                                     children: [
                                                                         "Rs. ",
                                                                         booking.depositAmount.toLocaleString()
@@ -9184,7 +9256,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-[#091b3b] text-white rounded-3xl p-8 space-y-4",
+                    className: "bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white rounded-3xl p-8 space-y-4 border border-slate-800 shadow-xl",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "font-extrabold text-base border-b border-white/10 pb-3",
@@ -9216,7 +9288,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     className: "bg-white/5 rounded-2xl p-4 border border-white/10 space-y-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-[#c5c6cf]",
+                                            className: "text-xs text-slate-400",
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9224,7 +9296,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xl font-extrabold text-[#f6b996]",
+                                            className: "text-xl font-extrabold text-amber-300",
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
@@ -9232,7 +9304,7 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         item.sub && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[10px] text-[#8e9ab0]",
+                                            className: "text-[10px] text-slate-400",
                                             children: item.sub
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",

@@ -84,28 +84,28 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
           <>
             {/* Header Banner */}
             <div className="space-y-1 text-center">
-              <h3 className="text-2xl font-extrabold text-[#091b3b] font-heading">
+              <h3 className="text-2xl font-extrabold text-[#0f172a] font-heading">
                 {t.empoweringHeading[currentLang]}
               </h3>
-              <p className="text-xs text-[#5c5d63]">
+              <p className="text-xs text-[#64748b]">
                 {t.empoweringSub[currentLang]}
               </p>
             </div>
 
             {/* Login / Register Switch */}
-            <div className="grid grid-cols-2 p-1 bg-[#ebe7e5] rounded-xl text-xs font-bold border border-[#d6d0cc]">
+            <div className="grid grid-cols-2 p-1 bg-slate-100 rounded-2xl text-xs font-bold border border-slate-200">
               <button
                 onClick={() => { setActiveTab('login'); setErrorMsg(''); }}
-                className={`py-2 rounded-lg transition-all ${
-                  activeTab === 'login' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'
+                className={`py-2.5 rounded-xl transition-all ${
+                  activeTab === 'login' ? 'bg-[#0284c7] text-white shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'
                 }`}
               >
                 {t.loginTab[currentLang]}
               </button>
               <button
                 onClick={() => { setActiveTab('register'); setErrorMsg(''); }}
-                className={`py-2 rounded-lg transition-all ${
-                  activeTab === 'register' ? 'bg-[#091b3b] text-white shadow-sm' : 'text-[#5c5d63]'
+                className={`py-2.5 rounded-xl transition-all ${
+                  activeTab === 'register' ? 'bg-[#0284c7] text-white shadow-sm' : 'text-[#64748b] hover:text-[#0f172a]'
                 }`}
               >
                 {t.createAccountTab[currentLang]}
@@ -122,60 +122,60 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
             <form onSubmit={handleSubmit} className="space-y-4">
               {activeTab === 'register' && (
                 <div>
-                  <label className="block text-xs font-bold text-[#091b3b] mb-1">
+                  <label className="block text-xs font-bold text-[#0f172a] mb-1">
                     Full Name
                   </label>
                   <div className="relative">
-                    <User className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                    <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                     <input
                       type="text"
                       required
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="Anish Sharma"
-                      className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                      className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                     />
                   </div>
                 </div>
               )}
 
               <div>
-                <label className="block text-xs font-bold text-[#091b3b] mb-1">
+                <label className="block text-xs font-bold text-[#0f172a] mb-1">
                   {t.emailLabel[currentLang]}
                 </label>
                 <div className="relative">
-                  <Mail className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                  <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                   <input
                     type="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="student@byom.com.np"
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[#091b3b] mb-1">
+                <label className="block text-xs font-bold text-[#0f172a] mb-1">
                   {t.passwordLabel[currentLang]}
                 </label>
                 <div className="relative">
-                  <Lock className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                  <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                   <input
                     type="password"
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="••••••••"
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#d6d0cc] text-sm outline-none focus:border-[#265cb3]"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                   />
                 </div>
               </div>
 
               {activeTab === 'login' && (
                 <div className="flex justify-end">
-                  <a href="#" className="text-xs text-[#265cb3] font-bold hover:underline">
+                  <a href="#" className="text-xs text-[#0284c7] font-bold hover:underline">
                     {t.forgotPassword[currentLang]}
                   </a>
                 </div>
@@ -184,7 +184,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25 flex items-center justify-center gap-2 disabled:opacity-50 transition-all"
               >
                 {loading ? 'Processing...' : (activeTab === 'login' ? t.signInBtn[currentLang] : t.signUpBtn[currentLang])}
               </button>
@@ -192,9 +192,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
 
             <div className="relative text-center my-4">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-[#e2dedc]" />
+                <div className="w-full border-t border-slate-200" />
               </div>
-              <span className="relative bg-white px-3 text-[11px] font-bold text-[#8e8f99]">
+              <span className="relative bg-white px-3 text-[11px] font-bold text-slate-400">
                 {t.orContinueWith[currentLang]}
               </span>
             </div>
@@ -202,7 +202,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
             {/* Google OAuth — real redirect flow */}
             <a
               href="/api/auth/google"
-              className="w-full py-2.5 rounded-xl border border-[#d6d0cc] hover:bg-[#f8f8f8] hover:border-[#4285F4]/40 text-xs font-bold text-[#3c3e44] flex items-center justify-center gap-2.5 transition-all group"
+              className="w-full py-3 rounded-xl border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-xs font-bold text-slate-700 flex items-center justify-center gap-2.5 transition-all group shadow-sm"
             >
               {/* Official Google G logo */}
               <svg width="18" height="18" viewBox="0 0 48 48" className="flex-shrink-0">
@@ -212,18 +212,18 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
                 <path fill="#34A853" d="M24 47c5.45 0 10.02-1.8 13.35-4.9l-7.3-5.68c-1.84 1.23-4.2 1.95-6.05 1.95-6.41 0-11.85-4.34-13.72-10.2l-7.71 6.6C6.97 41.52 14.82 47 24 47z"/>
                 <path fill="none" d="M0 0h48v48H0z"/>
               </svg>
-              <span className="group-hover:text-[#1a1a1a]">
+              <span className="group-hover:text-slate-900">
                 {currentLang === 'en' ? 'Continue with Google' : 'Google मार्फत जारी राख्नुहोस्'}
               </span>
             </a>
           </>
         ) : (
           <div className="py-8 text-center space-y-3">
-            <CheckCircle2 className="w-12 h-12 text-[#10b981] mx-auto" />
-            <h4 className="text-xl font-bold text-[#091b3b]">
+            <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
+            <h4 className="text-xl font-bold text-[#0f172a]">
               {currentLang === 'en' ? 'Welcome Back!' : 'पुनः स्वागत छ!'}
             </h4>
-            <p className="text-xs text-[#5c5d63]">
+            <p className="text-xs text-[#64748b]">
               {currentLang === 'en' ? 'Redirecting to your student dashboard...' : 'तपाईंको ड्यासबोर्डमा लाँदैछ...'}
             </p>
           </div>

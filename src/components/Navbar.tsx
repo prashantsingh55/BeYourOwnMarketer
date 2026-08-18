@@ -102,17 +102,17 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <button
                   key={item.route}
                   onClick={() => handleNavClick(item.route)}
-                  className={`px-3.5 py-2 rounded-lg text-sm font-semibold transition-all relative ${
+                  className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all relative ${
                     isActive
-                      ? 'text-[#265cb3] bg-[#265cb3]/10 font-bold'
-                      : 'text-[#3c3e44] hover:text-[#091b3b] hover:bg-[#f0eded]'
+                      ? 'text-[#0284c7] bg-[#0284c7]/10 font-bold'
+                      : 'text-[#475569] hover:text-[#0f172a] hover:bg-slate-100'
                   }`}
                 >
                   {item.label}
                   {isActive && (
                     <motion.div
                       layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#265cb3] rounded-full"
+                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#0284c7] rounded-full"
                     />
                   )}
                 </button>
@@ -124,13 +124,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="hidden md:flex items-center space-x-3">
 
             {/* Dual Language Toggle Button */}
-            <div className="relative bg-[#ebe7e5] p-1 rounded-xl flex items-center border border-[#d6d0cc]">
+            <div className="relative bg-slate-100 p-1 rounded-xl flex items-center border border-slate-200">
               <button
                 onClick={() => onLanguageChange('en')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${
                   currentLang === 'en'
-                    ? 'bg-white text-[#091b3b] shadow-sm'
-                    : 'text-[#61626a] hover:text-[#091b3b]'
+                    ? 'bg-white text-[#0f172a] shadow-sm'
+                    : 'text-[#64748b] hover:text-[#0f172a]'
                 }`}
                 aria-label="Switch to English"
               >
@@ -140,8 +140,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => onLanguageChange('np')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${
                   currentLang === 'np'
-                    ? 'bg-[#265cb3] text-white shadow-sm'
-                    : 'text-[#61626a] hover:text-[#091b3b]'
+                    ? 'bg-[#0284c7] text-white shadow-sm'
+                    : 'text-[#64748b] hover:text-[#0f172a]'
                 }`}
                 aria-label="नेपालीमा फेर्नुहोस्"
               >
@@ -151,14 +151,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* Admin Portal Link */}
-         
+            <a
+              href="/admin"
+              className="px-3 py-2 text-xs font-bold text-[#ea580c] hover:bg-[#fff7ed] rounded-xl transition-colors flex items-center gap-1.5 border border-[#fed7aa]"
+              title="Open Admin Dashboard"
+            >
+              <FileText className="w-3.5 h-3.5 text-[#ea580c]" />
+              <span>Admin</span>
+            </a>
 
             {/* ── Logged IN: Profile Avatar Dropdown ── */}
             {authUser ? (
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setProfileDropdownOpen((p) => !p)}
-                  className="flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-[#ebe7e5] hover:bg-[#e0dbd7] border border-[#d6d0cc] transition-all group"
+                  className="flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200/80 border border-slate-200 transition-all group"
                   aria-label="Open profile menu"
                 >
                   {/* Avatar */}
@@ -170,15 +177,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                       className="w-8 h-8 rounded-full object-cover ring-2 ring-white"
                     />
                   ) : (
-                    <div className="w-8 h-8 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-xs font-extrabold">
+                    <div className="w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold shadow-sm">
                       {getInitials(authUser.name)}
                     </div>
                   )}
-                  <span className="text-sm font-semibold text-[#091b3b] max-w-[100px] truncate">
+                  <span className="text-sm font-semibold text-[#0f172a] max-w-[100px] truncate">
                     {authUser.name.split(' ')[0]}
                   </span>
                   <ChevronDown
-                    className={`w-3.5 h-3.5 text-[#5c5d63] transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`}
+                    className={`w-3.5 h-3.5 text-[#64748b] transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`}
                   />
                 </button>
 
@@ -190,26 +197,26 @@ export const Navbar: React.FC<NavbarProps> = ({
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 6, scale: 0.96 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-[#e2dedc] shadow-xl overflow-hidden z-50"
+                      className="absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden z-50"
                     >
                       {/* User Info Header */}
-                      <div className="px-4 py-3 border-b border-[#f0eded] bg-[#fcf9f8]">
+                      <div className="px-4 py-3 border-b border-slate-100 bg-slate-50">
                         <div className="flex items-center gap-3">
                           {authUser.avatar ? (
                             <img
                               src={authUser.avatar}
                               alt={authUser.name}
                               referrerPolicy="no-referrer"
-                              className="w-10 h-10 rounded-full object-cover ring-2 ring-[#265cb3]/20"
+                              className="w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
                             />
                           ) : (
-                            <div className="w-10 h-10 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
                               {getInitials(authUser.name)}
                             </div>
                           )}
                           <div className="min-w-0">
-                            <p className="text-sm font-extrabold text-[#091b3b] truncate">{authUser.name}</p>
-                            <p className="text-[11px] text-[#8e8f99] truncate">{authUser.email}</p>
+                            <p className="text-sm font-extrabold text-[#0f172a] truncate">{authUser.name}</p>
+                            <p className="text-[11px] text-[#64748b] truncate">{authUser.email}</p>
                           </div>
                         </div>
                       </div>
@@ -218,9 +225,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <div className="py-1.5">
                         <button
                           onClick={() => { handleNavClick('dashboard' as PageRoute); }}
-                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-[#091b3b] hover:bg-[#f0eded] transition-colors text-left"
+                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-[#0f172a] hover:bg-slate-50 transition-colors text-left"
                         >
-                          <LayoutDashboard className="w-4 h-4 text-[#265cb3]" />
+                          <LayoutDashboard className="w-4 h-4 text-[#0284c7]" />
                           {currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'}
                         </button>
 
@@ -240,19 +247,19 @@ export const Navbar: React.FC<NavbarProps> = ({
               /* ── Logged OUT: Login Button ── */
               <button
                 onClick={onOpenAuth}
-                className="px-4 py-2 text-sm font-semibold text-[#091b3b] hover:bg-[#ebe7e5] rounded-xl transition-colors flex items-center gap-1.5"
+                className="px-4 py-2 text-sm font-semibold text-[#0f172a] hover:bg-slate-100 rounded-xl transition-colors flex items-center gap-1.5"
               >
-                <User className="w-4 h-4 text-[#265cb3]" />
+                <User className="w-4 h-4 text-[#0284c7]" />
                 <span>{t.login[currentLang]}</span>
               </button>
             )}
 
-            {/* Book Seat Primary CTA */}
+            {/* Book Seat Primary CTA — Vibrant Orange Gradient with Sky highlight */}
             <button
               onClick={() => handleNavClick('book')}
-              className="px-5 py-2.5 rounded-xl bg-[#091b3b] text-white text-sm font-bold btn-hover flex items-center gap-2 shadow-sm"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white text-sm font-bold btn-orange-hover flex items-center gap-2 shadow-md shadow-orange-500/20"
             >
-              <Sparkles className="w-4 h-4 text-[#f6b996]" />
+              <Sparkles className="w-4 h-4 text-amber-200" />
               <span>{t.bookSeat[currentLang]}</span>
             </button>
           </div>
@@ -272,10 +279,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                     src={authUser.avatar}
                     alt={authUser.name}
                     referrerPolicy="no-referrer"
-                    className="w-8 h-8 rounded-full object-cover ring-2 ring-[#265cb3]"
+                    className="w-8 h-8 rounded-full object-cover ring-2 ring-[#0284c7]"
                   />
                 ) : (
-                  <div className="w-8 h-8 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-xs font-extrabold">
+                  <div className="w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold">
                     {getInitials(authUser.name)}
                   </div>
                 )}
@@ -285,16 +292,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Compact Mobile Language Switcher */}
             <button
               onClick={() => onLanguageChange(currentLang === 'en' ? 'np' : 'en')}
-              className="px-2.5 py-1.5 rounded-lg bg-[#ebe7e5] text-xs font-bold text-[#091b3b] border border-[#d6d0cc] flex items-center gap-1"
+              className="px-2.5 py-1.5 rounded-lg bg-slate-100 text-xs font-bold text-[#0f172a] border border-slate-200 flex items-center gap-1"
             >
-              <Globe className="w-3.5 h-3.5 text-[#265cb3]" />
+              <Globe className="w-3.5 h-3.5 text-[#0284c7]" />
               <span>{currentLang === 'en' ? 'नेपाली' : 'EN'}</span>
             </button>
 
             {/* Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-[#091b3b] hover:bg-[#ebe7e5] focus:outline-none"
+              className="p-2 rounded-xl text-[#0f172a] hover:bg-slate-100 focus:outline-none"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -310,15 +317,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-[#e2dedc] bg-white px-4 pt-3 pb-6 shadow-xl space-y-3"
+            className="md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl space-y-3"
           >
             <div className="flex flex-col space-y-1">
               <button
                 onClick={() => handleNavClick('home')}
                 className={`text-left px-4 py-3 rounded-xl text-base font-bold transition-colors ${
                   currentPage === 'home'
-                    ? 'bg-[#265cb3]/10 text-[#265cb3]'
-                    : 'text-[#1b1c1c] hover:bg-[#f0eded]'
+                    ? 'bg-[#0284c7]/10 text-[#0284c7]'
+                    : 'text-[#0f172a] hover:bg-slate-50'
                 }`}
               >
                 Home
@@ -331,8 +338,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                     onClick={() => handleNavClick(item.route)}
                     className={`text-left px-4 py-3 rounded-xl text-base font-semibold transition-colors flex items-center justify-between ${
                       isActive
-                        ? 'bg-[#265cb3]/10 text-[#265cb3] font-bold'
-                        : 'text-[#3c3e44] hover:bg-[#f0eded]'
+                        ? 'bg-[#0284c7]/10 text-[#0284c7] font-bold'
+                        : 'text-[#475569] hover:bg-slate-50'
                     }`}
                   >
                     <span>{item.label}</span>
@@ -342,31 +349,31 @@ export const Navbar: React.FC<NavbarProps> = ({
               })}
             </div>
 
-            <div className="pt-2 border-t border-[#e2dedc] space-y-2">
+            <div className="pt-2 border-t border-slate-200 space-y-2">
               {authUser ? (
                 <>
                   {/* Mobile: User Info */}
-                  <div className="flex items-center gap-3 px-4 py-3 bg-[#fcf9f8] rounded-xl border border-[#e2dedc]">
+                  <div className="flex items-center gap-3 px-4 py-3 bg-slate-50 rounded-xl border border-slate-200">
                     {authUser.avatar ? (
                       <img
                         src={authUser.avatar}
                         alt={authUser.name}
                         referrerPolicy="no-referrer"
-                        className="w-10 h-10 rounded-full object-cover ring-2 ring-[#265cb3]/20"
+                        className="w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
                       />
                     ) : (
-                      <div className="w-10 h-10 rounded-full bg-[#265cb3] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
                         {getInitials(authUser.name)}
                       </div>
                     )}
                     <div className="min-w-0">
-                      <p className="text-sm font-extrabold text-[#091b3b] truncate">{authUser.name}</p>
-                      <p className="text-[11px] text-[#8e8f99] truncate">{authUser.email}</p>
+                      <p className="text-sm font-extrabold text-[#0f172a] truncate">{authUser.name}</p>
+                      <p className="text-[11px] text-[#64748b] truncate">{authUser.email}</p>
                     </div>
                   </div>
                   <button
                     onClick={() => handleNavClick('dashboard' as PageRoute)}
-                    className="w-full py-3 rounded-xl border border-[#265cb3]/30 bg-[#265cb3]/5 text-[#265cb3] font-bold text-center flex items-center justify-center gap-2"
+                    className="w-full py-3 rounded-xl border border-[#0284c7]/30 bg-[#0284c7]/5 text-[#0284c7] font-bold text-center flex items-center justify-center gap-2"
                   >
                     <LayoutDashboard className="w-4 h-4" />
                     {currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'}
@@ -385,18 +392,18 @@ export const Navbar: React.FC<NavbarProps> = ({
                     onOpenAuth();
                     setMobileMenuOpen(false);
                   }}
-                  className="w-full py-3 rounded-xl border border-[#c5c6cf] text-[#091b3b] font-bold text-center flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-center flex items-center justify-center gap-2 hover:bg-slate-50"
                 >
-                  <User className="w-4 h-4" />
+                  <User className="w-4 h-4 text-[#0284c7]" />
                   <span>{t.login[currentLang]}</span>
                 </button>
               )}
 
               <button
                 onClick={() => handleNavClick('book')}
-                className="w-full py-3.5 rounded-xl bg-[#091b3b] text-white font-bold text-center shadow-md flex items-center justify-center gap-2"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] text-white font-bold text-center shadow-md flex items-center justify-center gap-2"
               >
-                <Sparkles className="w-4 h-4 text-[#f6b996]" />
+                <Sparkles className="w-4 h-4 text-amber-200" />
                 <span>{t.bookSeat[currentLang]}</span>
               </button>
             </div>

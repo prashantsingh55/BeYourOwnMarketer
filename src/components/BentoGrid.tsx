@@ -20,13 +20,13 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1 rounded-full border border-[#265cb3]/20">
-            {currentLang === 'en' ? 'Core Curriculum' : 'मुख्य पाठ्यक्रम्'}
+          <span className="text-xs font-bold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20">
+            {currentLang === 'en' ? 'Core Curriculum' : 'मुख्य पाठ्यक्रम'}
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#091b3b] font-heading tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f172a] font-heading tracking-tight">
             {t.title[currentLang]}
           </h2>
-          <p className="text-base text-[#5c5d63] leading-relaxed">
+          <p className="text-base text-[#64748b] leading-relaxed">
             {t.subtitle[currentLang]}
           </p>
         </div>
@@ -37,35 +37,35 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
           {/* Card 1 (Large Span) - Content Creation */}
           <motion.div
             whileHover={{ y: -4 }}
-            className="md:col-span-2 bg-gradient-to-br from-[#fcf9f8] to-[#f4eee9] p-8 rounded-3xl border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden"
+            className="md:col-span-2 bg-gradient-to-br from-[#f0f9ff]/70 via-white to-[#fff7ed]/40 p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden"
           >
-            <div className="space-y-4 max-w-xl relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-[#091b3b] text-white flex items-center justify-center shadow-md">
-                <Palette className="w-6 h-6 text-[#f6b996]" />
+            <div className="space-y-5 max-w-xl relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-[#0284c7] text-white flex items-center justify-center shadow-md shadow-sky-500/20">
+                <Palette className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#091b3b] font-heading">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading">
                 {t.card1Title[currentLang]}
               </h3>
-              <p className="text-sm sm:text-base text-[#5c5d63] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
                 {t.card1Desc[currentLang]}
               </p>
 
               {/* Bullet Highlights */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs font-semibold text-[#1b1c1c]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-semibold text-[#1e293b]">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#265cb3]" />
+                  <CheckCircle className="w-4 h-4 text-[#0284c7] flex-shrink-0" />
                   <span>{currentLang === 'en' ? '30-Day Content Planner' : '३०-दिने सामग्री क्यालेन्डर'}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#265cb3]" />
+                  <CheckCircle className="w-4 h-4 text-[#0284c7] flex-shrink-0" />
                   <span>{currentLang === 'en' ? 'Nepali Hook Writing' : 'नेपाली भाषामा हुक लेखन'}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#265cb3]" />
+                  <CheckCircle className="w-4 h-4 text-[#0284c7] flex-shrink-0" />
                   <span>{currentLang === 'en' ? 'Brand Aesthetics & Tone' : 'ब्रान्ड शैली र टोन'}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#265cb3]" />
+                  <CheckCircle className="w-4 h-4 text-[#0284c7] flex-shrink-0" />
                   <span>{currentLang === 'en' ? 'Copywriting Frameworks' : 'कपिट्राइटिङ ढाँचा'}</span>
                 </div>
               </div>
@@ -73,68 +73,68 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
               <div className="pt-4">
                 <button
                   onClick={() => onNavigate('programs')}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover shadow-md transition-colors"
                 >
                   <span>{t.card1Cta[currentLang]}</span>
-                  <ArrowRight className="w-4 h-4 text-[#f6b996]" />
+                  <ArrowRight className="w-4 h-4 text-amber-200" />
                 </button>
               </div>
             </div>
 
             {/* Decorative Card Illustration Preview */}
-            <div className="mt-8 md:mt-0 pt-6 border-t border-[#e2dedc] flex items-center justify-between text-xs text-[#5c5d63]">
+            <div className="mt-8 md:mt-0 pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-[#64748b]">
               <span className="font-semibold">{currentLang === 'en' ? 'Module 01' : 'मोड्युल ०१'}</span>
-              <span className="font-bold text-[#265cb3]">{currentLang === 'en' ? 'Hands-on Scripting' : 'व्यावहारिक स्क्रिप्टिङ'}</span>
+              <span className="font-bold text-[#0284c7]">{currentLang === 'en' ? 'Hands-on Scripting' : 'व्यावहारिक स्क्रिप्टिङ'}</span>
             </div>
           </motion.div>
 
           {/* Card 2 - Video Editing */}
           <motion.div
             whileHover={{ y: -4 }}
-            className="bg-[#091b3b] text-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden"
+            className="bg-[#0b132b] text-white p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-md hover:shadow-2xl transition-all flex flex-col justify-between relative overflow-hidden"
           >
             <div className="space-y-4 relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 text-[#f6b996] flex items-center justify-center backdrop-blur-md">
+              <div className="w-12 h-12 rounded-2xl bg-white/10 text-[#f97316] flex items-center justify-center backdrop-blur-md">
                 <Video className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold font-heading text-white">
                 {t.card2Title[currentLang]}
               </h3>
-              <p className="text-sm text-[#c5c6cf] leading-relaxed">
+              <p className="text-sm text-slate-300 leading-relaxed">
                 {t.card2Desc[currentLang]}
               </p>
 
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-[#f6b996] font-bold">CapCut & Premiere</span>
+                  <span className="text-[#f97316] font-bold">CapCut & Premiere</span>
                   <Play className="w-3.5 h-3.5 text-white" />
                 </div>
-                <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-[#f6b996] h-full w-4/5 rounded-full" />
+                <div className="w-full bg-white/20 h-2 rounded-full overflow-hidden">
+                  <div className="bg-gradient-to-r from-[#ff6b00] to-[#f97316] h-full w-4/5 rounded-full" />
                 </div>
               </div>
             </div>
 
-            <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-[#c5c6cf]">
+            <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
               <span>{currentLang === 'en' ? 'Module 02' : 'मोड्युल ०२'}</span>
-              <span className="font-bold text-[#f6b996]">{currentLang === 'en' ? 'Vertical Reels & TikTok' : 'रिल्स र टिकटक भिडियो'}</span>
+              <span className="font-bold text-[#f97316]">{currentLang === 'en' ? 'Vertical Reels & TikTok' : 'रिल्स र टिकटक भिडियो'}</span>
             </div>
           </motion.div>
 
           {/* Card 3 - Master Mobile Videography */}
           <motion.div
             whileHover={{ y: -4 }}
-            className="md:col-span-3 bg-gradient-to-r from-[#265cb3] to-[#1a4488] text-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all flex flex-col md:flex-row items-center justify-between gap-6"
+            className="md:col-span-3 bg-gradient-to-r from-[#0284c7] via-[#0369a1] to-[#0b132b] text-white p-8 sm:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all flex flex-col md:flex-row items-center justify-between gap-6"
           >
             <div className="space-y-3 max-w-xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-bold tracking-wide">
-                <Camera className="w-4 h-4 text-[#f6b996]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 text-xs font-extrabold tracking-wide backdrop-blur-sm">
+                <Camera className="w-4 h-4 text-amber-200" />
                 <span>{currentLang === 'en' ? 'Mobile Cinema & Production' : 'मोबाइल भिडियोग्राफी र प्रोडक्सन'}</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold font-heading">
                 {t.card3Title[currentLang]}
               </h3>
-              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+              <p className="text-sm sm:text-base text-white/85 leading-relaxed">
                 {t.card3Desc[currentLang]}
               </p>
             </div>
@@ -142,10 +142,10 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
             <div className="flex-shrink-0 w-full md:w-auto">
               <button
                 onClick={() => onNavigate('programs')}
-                className="w-full md:w-auto px-7 py-3.5 rounded-2xl bg-white text-[#091b3b] font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-lg"
+                className="w-full md:w-auto px-8 py-4 rounded-2xl bg-white text-[#0f172a] hover:bg-[#fff7ed] hover:text-[#ea580c] font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-xl transition-all"
               >
                 <span>{currentLang === 'en' ? 'Master Mobile Videography' : 'मोबाइल भिडियोग्राफी सिक्नुहोस्'}</span>
-                <ArrowRight className="w-4 h-4 text-[#265cb3]" />
+                <ArrowRight className="w-4 h-4 text-[#0284c7]" />
               </button>
             </div>
           </motion.div>
@@ -155,3 +155,4 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
     </section>
   );
 };
+

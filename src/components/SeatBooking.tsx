@@ -150,18 +150,18 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
   };
 
   return (
-    <div className="py-12 md:py-20 bg-[#fcf9f8]">
+    <div className="py-12 md:py-20 bg-[#f8fafc]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
-          <span className="text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1.5 rounded-full border border-[#ac7859]/30">
+          <span className="text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1.5 rounded-full border border-[#fed7aa] shadow-sm">
             {currentLang === 'en' ? 'Physical Classroom Reservation' : 'भौतिक कक्षाकोठा आरक्षण'}
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight">
             {t.headerTitle[currentLang]}
           </h1>
-          <p className="text-base text-[#5c5d63]">
+          <p className="text-base text-[#64748b]">
             {t.headerSub[currentLang]}
           </p>
         </div>
@@ -169,7 +169,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
         {/* Stepper Navigation */}
         <div className="max-w-3xl mx-auto mb-10">
           <div className="flex items-center justify-between relative">
-            <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-[#e2dedc] -z-10" />
+            <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-slate-200 -z-10" />
             {[
               { num: 1, label: t.steps.step1[currentLang] },
               { num: 2, label: t.steps.step2[currentLang] },
@@ -189,15 +189,15 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   <div
                     className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ${
                       isPast
-                        ? 'bg-[#10b981] text-white shadow-sm'
+                        ? 'bg-emerald-500 text-white shadow-sm'
                         : isCurrent
-                        ? 'bg-[#091b3b] text-white shadow-md ring-4 ring-[#091b3b]/20'
-                        : 'bg-white text-[#5c5d63] border-2 border-[#e2dedc]'
+                        ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/25 ring-4 ring-[#0284c7]/20'
+                        : 'bg-white text-[#64748b] border-2 border-slate-200'
                     }`}
                   >
                     {isPast ? <Check className="w-5 h-5" /> : step.num}
                   </div>
-                  <span className={`text-xs font-semibold ${isCurrent ? 'text-[#091b3b] font-bold' : 'text-[#8e8f99]'}`}>
+                  <span className={`text-xs font-semibold ${isCurrent ? 'text-[#0f172a] font-bold' : 'text-[#64748b]'}`}>
                     {step.label}
                   </span>
                 </button>
@@ -211,13 +211,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left Column: Active Step Controls */}
-            <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-[#e2dedc] shadow-sm space-y-8">
+            <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-8">
               
               {/* Step 1: City Selection */}
               {activeStep === 1 && (
                 <div className="space-y-6">
-                  <div className="border-b border-[#e2dedc] pb-4">
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading">
+                  <div className="border-b border-slate-200 pb-4">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading">
                       {currentLang === 'en' ? 'Step 1: Choose City & Campus' : 'चरण १: शहर र क्याम्पस छान्नुहोस्'}
                     </h3>
                   </div>
@@ -233,19 +233,19 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                           disabled={!isKathmandu}
                           className={`p-5 rounded-2xl border text-left transition-all relative ${
                             !isKathmandu
-                              ? 'border-[#e2dedc] bg-[#f5f5f5] opacity-60 cursor-not-allowed'
+                              ? 'border-slate-200 bg-slate-100/70 opacity-60 cursor-not-allowed'
                               : isSel
-                              ? 'border-[#265cb3] bg-[#265cb3]/5 shadow-sm ring-2 ring-[#265cb3]/30'
-                              : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'
+                              ? 'border-[#0284c7] bg-[#0284c7]/5 shadow-sm ring-2 ring-[#0284c7]/30'
+                              : 'border-slate-200 bg-[#f8fafc] hover:border-slate-300'
                           }`}
                         >
                           <div className="flex items-center justify-between mb-2">
-                            <span className="font-bold text-base text-[#091b3b]">{c.name}</span>
-                            <MapPin className={`w-5 h-5 ${isSel ? 'text-[#265cb3]' : 'text-[#8e8f99]'}`} />
+                            <span className="font-bold text-base text-[#0f172a]">{c.name}</span>
+                            <MapPin className={`w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`} />
                           </div>
-                          <span className="text-xs text-[#5c5d63]">{c.address}</span>
+                          <span className="text-xs text-[#64748b]">{c.address}</span>
                           {!isKathmandu && (
-                            <span className="mt-2 inline-block text-[10px] font-extrabold uppercase tracking-wider bg-[#f6b996]/40 text-[#ac7859] px-2 py-0.5 rounded-full border border-[#ac7859]/30">
+                            <span className="mt-2 inline-block text-[10px] font-extrabold uppercase tracking-wider bg-[#fff7ed] text-[#ea580c] px-2 py-0.5 rounded-full border border-[#fed7aa]">
                               Coming Soon
                             </span>
                           )}
@@ -257,7 +257,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   <div className="pt-4 flex justify-end">
                     <button
                       onClick={() => setActiveStep(2)}
-                      className="px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover"
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
                     >
                       {currentLang === 'en' ? 'Next: Choose Batch' : 'अर्को: ब्याच छान्नुहोस्'}
                     </button>
@@ -268,8 +268,8 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
               {/* Step 2: Batch Selection */}
               {activeStep === 2 && (
                 <div className="space-y-6">
-                  <div className="border-b border-[#e2dedc] pb-4">
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading">
+                  <div className="border-b border-slate-200 pb-4">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading">
                       {currentLang === 'en' ? 'Step 2: Select Preferred Batch Time' : 'चरण २: मनपर्ने ब्याच समय छान्नुहोस्'}
                     </h3>
                   </div>
@@ -283,15 +283,15 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                           onClick={() => setSelectedBatch(b.label)}
                           className={`w-full p-5 rounded-2xl border text-left transition-all flex items-center justify-between ${
                             isSel
-                              ? 'border-[#265cb3] bg-[#265cb3]/5 shadow-sm ring-2 ring-[#265cb3]/30'
-                              : 'border-[#e2dedc] bg-[#fcf9f8] hover:border-[#c5c6cf]'
+                              ? 'border-[#0284c7] bg-[#0284c7]/5 shadow-sm ring-2 ring-[#0284c7]/30'
+                              : 'border-slate-200 bg-[#f8fafc] hover:border-slate-300'
                           }`}
                         >
                           <div className="flex items-center space-x-3">
-                            <Clock className={`w-5 h-5 ${isSel ? 'text-[#265cb3]' : 'text-[#8e8f99]'}`} />
-                            <span className="font-bold text-sm text-[#091b3b]">{b.label}</span>
+                            <Clock className={`w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`} />
+                            <span className="font-bold text-sm text-[#0f172a]">{b.label}</span>
                           </div>
-                          <span className="text-xs font-extrabold bg-[#f6b996]/30 text-[#522900] px-3 py-1 rounded-full">
+                          <span className="text-xs font-extrabold bg-[#fff7ed] text-[#ea580c] border border-[#fed7aa] px-3 py-1 rounded-full">
                             {b.slots}
                           </span>
                         </button>
@@ -302,13 +302,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   <div className="pt-4 flex justify-between">
                     <button
                       onClick={() => setActiveStep(1)}
-                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm"
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       onClick={() => setActiveStep(3)}
-                      className="px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover"
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
                     >
                       {currentLang === 'en' ? 'Next: Pick Seat' : 'अर्को: सिट छान्नुहोस्'}
                     </button>
@@ -319,27 +319,27 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
               {/* Step 3: Visual Interactive Seat Selector */}
               {activeStep === 3 && (
                 <div className="space-y-6">
-                  <div className="border-b border-[#e2dedc] pb-4 flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading">
+                  <div className="border-b border-slate-200 pb-4 flex items-center justify-between">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading">
                       {t.selectSeatTitle[currentLang]}
                     </h3>
-                    <span className="text-xs text-[#5c5d63] font-semibold">
+                    <span className="text-xs text-[#64748b] font-semibold">
                       {currentLang === 'en' ? 'Capacity: 25 Seats' : 'क्षमता: २५ सिट'}
                     </span>
                   </div>
 
                   {/* Stage Banner */}
-                  <div className="w-full bg-[#091b3b] text-[#f6b996] py-2 rounded-xl text-center text-xs font-extrabold uppercase tracking-widest shadow-inner">
+                  <div className="w-full bg-[#0b132b] text-amber-200 py-2.5 rounded-2xl text-center text-xs font-extrabold uppercase tracking-widest shadow-inner">
                     {t.stageLabel[currentLang]}
                   </div>
 
                   {/* Seat Map Grid */}
-                  <div className="bg-[#fcf9f8] p-4 rounded-2xl border border-[#e2dedc] space-y-4">
+                  <div className="bg-[#f8fafc] p-5 rounded-3xl border border-slate-200 space-y-4">
                     {['A', 'B', 'C', 'D', 'E'].map((rowLetter) => {
                       const rowSeats = seats.filter((s) => s.row === rowLetter);
                       return (
                         <div key={rowLetter} className="flex items-center justify-center gap-2 sm:gap-3">
-                          <span className="w-5 text-xs font-bold text-[#5c5d63] text-center flex-shrink-0">{rowLetter}</span>
+                          <span className="w-5 text-xs font-bold text-[#64748b] text-center flex-shrink-0">{rowLetter}</span>
                           <div className="flex gap-2 sm:gap-3">
                             {rowSeats.map((seat) => {
                               const isSel = selectedSeatId === seat.id;
@@ -353,10 +353,10 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                                     seat.status === 'booked'
                                       ? 'booked'
                                       : isSel
-                                      ? 'selected ring-2 ring-[#ac7859]'
+                                      ? 'selected ring-2 ring-[#ea580c]'
                                       : seat.isVip
-                                      ? 'bg-amber-50 border-amber-400 text-amber-900 hover:bg-amber-100'
-                                      : 'bg-white border-[#d6d0cc] text-[#091b3b] hover:bg-[#f0eded]'
+                                      ? 'bg-[#f0f9ff] border-2 border-[#0284c7] text-[#0369a1] hover:bg-[#e0f2fe]'
+                                      : 'bg-white border-slate-200 text-[#0f172a] hover:bg-[#f0f9ff] hover:border-[#0284c7] hover:text-[#0284c7]'
                                   }`}
                                 >
                                   <span className="text-[11px] font-extrabold leading-none">
@@ -372,21 +372,21 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   </div>
 
                   {/* Seat Map Legend */}
-                  <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-[#5c5d63] pt-2">
+                  <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-[#64748b] pt-2">
                     <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded bg-white border border-[#d6d0cc]" />
+                      <div className="w-4 h-4 rounded-md bg-white border border-slate-300" />
                       <span>{t.legendAvailable[currentLang]}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded bg-[#f6b996] border border-[#ac7859]" />
-                      <span>{t.legendSelected[currentLang]}</span>
+                      <div className="w-4 h-4 rounded-md bg-gradient-to-r from-[#ff6b00] to-[#f97316] border border-[#ea580c]" />
+                      <span className="text-[#ea580c] font-bold">{t.legendSelected[currentLang]}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded bg-[#091b3b]" />
+                      <div className="w-4 h-4 rounded-md bg-[#1e293b]" />
                       <span>{t.legendBooked[currentLang]}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded bg-amber-50 border-2 border-amber-400" />
+                      <div className="w-4 h-4 rounded-md bg-[#f0f9ff] border-2 border-[#0284c7]" />
                       <span>{t.legendVip[currentLang]}</span>
                     </div>
                   </div>
@@ -394,13 +394,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                   <div className="pt-4 flex justify-between">
                     <button
                       onClick={() => setActiveStep(2)}
-                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm"
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       onClick={() => setActiveStep(4)}
-                      className="px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover"
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
                     >
                       {currentLang === 'en' ? 'Next: Enter Details' : 'अर्को: विवरण भर्नुहोस्'}
                     </button>
@@ -411,78 +411,78 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
               {/* Step 4: Contact & Business Details Form */}
               {activeStep === 4 && (
                 <form onSubmit={handleProceedToPayment} className="space-y-6">
-                  <div className="border-b border-[#e2dedc] pb-4">
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading">
+                  <div className="border-b border-slate-200 pb-4">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading">
                       {currentLang === 'en' ? 'Step 4: Contact & Student Information' : 'चरण ४: सम्पर्क तथा विद्यार्थी विवरण'}
                     </h3>
                   </div>
 
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-xs font-bold text-[#091b3b] mb-1.5">
+                      <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
                         {currentLang === 'en' ? 'Full Name *' : 'पूरा नाम *'}
                       </label>
                       <div className="relative">
-                        <User className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                        <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                         <input
                           type="text"
                           required
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
                           placeholder="e.g. Ramesh Bikram Thapa"
-                          className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                          className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-xs font-bold text-[#091b3b] mb-1.5">
+                        <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
                           {currentLang === 'en' ? 'Phone Number *' : 'फोन नम्बर *'}
                         </label>
                         <div className="relative">
-                          <Phone className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                          <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                           <input
                             type="tel"
                             required
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                             placeholder="9800000000"
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-xs font-bold text-[#091b3b] mb-1.5">
+                        <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
                           {currentLang === 'en' ? 'Email Address *' : 'इमेल ठेगाना *'}
                         </label>
                         <div className="relative">
-                          <Mail className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                          <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                           <input
                             type="email"
                             required
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="ramesh@gmail.com"
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                           />
                         </div>
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-[#091b3b] mb-1.5">
+                      <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
                         {currentLang === 'en' ? 'Business / Brand Name (Optional)' : 'व्यापार / ब्रान्डको नाम (ऐच्छिक)'}
                       </label>
                       <div className="relative">
-                        <Building className="w-4 h-4 text-[#8e8f99] absolute left-3.5 top-3.5" />
+                        <Building className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                         <input
                           type="text"
                           value={organization}
                           onChange={(e) => setOrganization(e.target.value)}
                           placeholder="e.g. Everest Handicrafts"
-                          className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#d6d0cc] focus:border-[#265cb3] focus:ring-2 focus:ring-[#265cb3]/20 text-sm font-semibold outline-none"
+                          className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                         />
                       </div>
                     </div>
@@ -492,13 +492,13 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                     <button
                       type="button"
                       onClick={() => setActiveStep(3)}
-                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm"
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       type="submit"
-                      className="px-6 py-3 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover"
+                      className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25"
                     >
                       {t.proceedPayBtn[currentLang]}
                     </button>
@@ -509,57 +509,57 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
               {/* Step 5: Fonepay QR Payment */}
               {activeStep === 5 && (
                 <div className="space-y-6">
-                  <div className="border-b border-[#e2dedc] pb-4">
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading">
+                  <div className="border-b border-slate-200 pb-4">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading">
                       {currentLang === 'en' ? 'Step 5: Pay via Fonepay QR' : 'चरण ५: Fonepay QR बाट भुक्तानी गर्नुहोस्'}
                     </h3>
                   </div>
 
                   {/* Fonepay QR Box */}
-                  <div className="bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-2xl p-6 text-center space-y-4">
+                  <div className="bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-sm">
                     <div className="flex items-center justify-center gap-2 mb-2">
                       <div className="w-8 h-8 rounded-full bg-[#e63329] flex items-center justify-center">
                         <span className="text-white font-extrabold text-xs">F</span>
                       </div>
-                      <span className="font-extrabold text-lg text-[#091b3b]">Fonepay</span>
+                      <span className="font-extrabold text-lg text-[#0f172a]">Fonepay</span>
                     </div>
 
                     {/* QR Placeholder */}
-                    <div className="mx-auto w-44 h-44 bg-white rounded-2xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-inner">
+                    <div className="mx-auto w-48 h-48 bg-white rounded-3xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-md">
                       <div className="text-center space-y-2">
-                        <div className="w-32 h-32 bg-[#091b3b] rounded-lg mx-auto flex items-center justify-center">
+                        <div className="w-32 h-32 bg-[#0b132b] rounded-xl mx-auto flex items-center justify-center">
                           {/* QR pattern placeholder */}
-                          <div className="grid grid-cols-5 gap-0.5 p-2">
+                          <div className="grid grid-cols-5 gap-1 p-2">
                             {Array.from({ length: 25 }).map((_, i) => (
                               <div key={i} className={`w-4 h-4 rounded-sm ${[0,1,2,5,10,12,14,19,22,23,24].includes(i) ? 'bg-white' : 'bg-transparent'}`} />
                             ))}
                           </div>
                         </div>
-                        <span className="text-[10px] text-[#5c5d63] font-semibold">Scan QR Code</span>
+                        <span className="text-[10px] text-[#64748b] font-bold tracking-wider uppercase">Scan QR Code</span>
                       </div>
                     </div>
 
-                    <div className="space-y-1">
-                      <p className="text-sm font-extrabold text-[#091b3b]">
-                        {currentLang === 'en' ? 'Deposit Amount' : 'भुक्तानी रकम'}
+                    <div className="space-y-1 pt-2">
+                      <p className="text-xs font-bold text-[#64748b] uppercase tracking-wider">
+                        {currentLang === 'en' ? 'Deposit Amount Due' : 'भुक्तानी डिपोजिट रकम'}
                       </p>
-                      <p className="text-3xl font-extrabold text-[#e63329]">
+                      <p className="text-3xl sm:text-4xl font-extrabold text-[#e63329]">
                         Rs. {depositAmount.toLocaleString()}
                       </p>
-                      <p className="text-xs text-[#5c5d63]">
+                      <p className="text-xs text-[#64748b]">
                         {currentLang === 'en'
-                          ? 'Scan with any banking or Fonepay app'
+                          ? 'Scan with any mobile banking or Fonepay app'
                           : 'जुनसुकै बैंकिङ वा Fonepay एपबाट स्क्यान गर्नुहोस्'}
                       </p>
                     </div>
                   </div>
 
                   {/* Payment instructions */}
-                  <div className="p-4 rounded-2xl bg-[#ebe7e5] border border-[#d6d0cc] space-y-2">
-                    <p className="text-xs font-bold text-[#091b3b]">
+                  <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <p className="text-xs font-extrabold text-[#0f172a] uppercase tracking-wider">
                       {currentLang === 'en' ? '📋 Payment Instructions:' : '📋 भुक्तानी निर्देशनहरू:'}
                     </p>
-                    <ol className="text-xs text-[#5c5d63] space-y-1 list-decimal list-inside">
+                    <ol className="text-xs text-[#475569] space-y-1.5 list-decimal list-inside font-medium">
                       <li>{currentLang === 'en' ? `Scan the QR and pay Rs. ${depositAmount.toLocaleString()} deposit` : `QR स्क्यान गरी Rs. ${depositAmount.toLocaleString()} डिपोजिट तिर्नुहोस्`}</li>
                       <li>{currentLang === 'en' ? 'Take a screenshot of the payment receipt' : 'भुक्तानी रसिदको स्क्रिनसट लिनुहोस्'}</li>
                       <li>{currentLang === 'en' ? 'Click "I have Paid" to submit your booking' : '"मैले तिरें" थिचेर बुकिङ पेश गर्नुहोस्'}</li>
@@ -577,14 +577,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                     <button
                       onClick={() => setActiveStep(4)}
                       disabled={isProcessing}
-                      className="px-5 py-2.5 rounded-xl border border-[#e2dedc] text-[#091b3b] font-bold text-sm disabled:opacity-50"
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm disabled:opacity-50 hover:bg-slate-50"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       onClick={handleConfirmPay}
                       disabled={isProcessing}
-                      className="px-8 py-3.5 rounded-xl bg-[#10b981] text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50"
+                      className="px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all"
                     >
                       <ShieldCheck className="w-4 h-4" />
                       <span>{isProcessing ? (currentLang === 'en' ? 'Submitting...' : 'पेश गर्दैछ...') : (currentLang === 'en' ? 'I have Paid — Confirm Booking' : 'मैले तिरें — बुकिङ पुष्टि गर्नुहोस्')}</span>
@@ -596,66 +596,66 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
             </div>
 
             {/* Right Column: Dynamic Real-time Booking Summary Panel */}
-            <div className="lg:col-span-5 bg-[#091b3b] text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-6 sticky top-24">
+            <div className="lg:col-span-5 bg-gradient-to-b from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-800 space-y-6 sticky top-24">
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <h3 className="text-xl font-bold font-heading text-white">
+                <h3 className="text-xl font-extrabold font-heading text-white">
                   {t.summaryTitle[currentLang]}
                 </h3>
-                <span className="text-xs bg-[#f6b996]/20 text-[#f6b996] px-2.5 py-1 rounded-md font-bold">
+                <span className="text-xs bg-[#ff6b00]/20 text-amber-300 border border-[#ff6b00]/30 px-3 py-1 rounded-full font-extrabold">
                   7-Day Mastery
                 </span>
               </div>
 
               <div className="space-y-4 text-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-[#c5c6cf]">{t.campus[currentLang]}</span>
+                  <span className="text-slate-400">{t.campus[currentLang]}</span>
                   <span className="font-bold text-white">{selectedCity}</span>
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-[#c5c6cf]">{t.batch[currentLang]}</span>
+                  <span className="text-slate-400">{t.batch[currentLang]}</span>
                   <span className="font-bold text-white text-xs">{selectedBatch}</span>
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-[#c5c6cf]">{t.selectedSeat[currentLang]}</span>
-                  <span className="font-extrabold text-[#f6b996] bg-white/10 px-3 py-1 rounded-lg">
+                  <span className="text-slate-400">{t.selectedSeat[currentLang]}</span>
+                  <span className="font-extrabold text-white bg-gradient-to-r from-[#ff6b00] to-[#f97316] px-3.5 py-1 rounded-xl shadow-sm">
                     {selectedSeatObj?.seatLabel || selectedSeatId} {selectedSeatObj?.isVip ? '⭐ VIP' : ''}
                   </span>
                 </div>
 
                 <div className="border-t border-white/10 pt-4 space-y-2">
-                  <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
+                  <div className="flex items-center justify-between text-xs text-slate-400">
                     <span>{currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'}</span>
                     <span>Rs. {totalAmount.toLocaleString()}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-[#f6b996] font-bold">{currentLang === 'en' ? '✓ Pay Now (Deposit)' : '✓ अहिले तिर्नुहोस् (डिपोजिट)'}</span>
-                    <span className="text-[#f6b996] font-extrabold">Rs. {depositAmount.toLocaleString()}</span>
+                    <span className="text-[#38bdf8] font-bold">{currentLang === 'en' ? '✓ Pay Now (Deposit)' : '✓ अहिले तिर्नुहोस् (डिपोजिट)'}</span>
+                    <span className="text-[#38bdf8] font-extrabold">Rs. {depositAmount.toLocaleString()}</span>
                   </div>
-                  <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
+                  <div className="flex items-center justify-between text-xs text-slate-400">
                     <span>{currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरु भएपछि'}</span>
                     <span>Rs. {(totalAmount - depositAmount).toLocaleString()}</span>
                   </div>
-                  <div className="flex items-center justify-between text-xs text-[#c5c6cf]">
+                  <div className="flex items-center justify-between text-xs text-slate-400">
                     <span>{currentLang === 'en' ? 'Course Kit & Workbook' : 'पाठ्यक्रम किट र पुस्तक'}</span>
-                    <span className="text-[#10b981] font-bold">Included</span>
+                    <span className="text-emerald-400 font-bold">Included</span>
                   </div>
                 </div>
 
                 <div className="border-t border-white/10 pt-4 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-[#c5c6cf]">{currentLang === 'en' ? 'Due Now' : 'अहिले तिर्नुपर्ने'}</span>
-                    <span className="text-2xl font-extrabold text-[#f6b996] font-heading">
+                    <span className="text-xs text-slate-400">{currentLang === 'en' ? 'Due Now' : 'अहिले तिर्नुपर्ने'}</span>
+                    <span className="text-2xl font-extrabold text-amber-300 font-heading">
                       Rs. {depositAmount.toLocaleString()}
                     </span>
                   </div>
-                  <p className="text-[10px] text-[#8e9ab0]">{currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि`}</p>
+                  <p className="text-[10px] text-slate-400">{currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि`}</p>
                 </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center gap-3 text-xs text-[#c5c6cf]">
-                <Sparkles className="w-5 h-5 text-[#f6b996] flex-shrink-0" />
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3 text-xs text-slate-300">
+                <Sparkles className="w-5 h-5 text-amber-300 flex-shrink-0" />
                 <span>
                   {currentLang === 'en'
                     ? 'Includes 1-on-1 mentor guidance & graduation certificate.'
@@ -670,47 +670,47 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-[#e2dedc] shadow-2xl text-center space-y-6"
+            className="max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-2xl text-center space-y-6"
           >
-            <div className="w-20 h-20 rounded-full bg-[#10b981]/10 text-[#10b981] mx-auto flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-emerald-50 text-emerald-600 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-10 h-10" />
             </div>
 
             <div className="space-y-2">
-              <h2 className="text-3xl font-extrabold text-[#091b3b] font-heading">
+              <h2 className="text-3xl font-extrabold text-[#0f172a] font-heading">
                 {t.successMsg[currentLang]}
               </h2>
-              <p className="text-sm text-[#5c5d63]">
+              <p className="text-sm text-[#64748b]">
                 {t.successDesc[currentLang]}
               </p>
             </div>
 
             {/* Ticket Graphic */}
-            <div className="bg-[#fcf9f8] p-6 rounded-2xl border border-[#d6d0cc] text-left space-y-4 relative overflow-hidden">
-              <div className="flex items-center justify-between border-b border-[#e2dedc] pb-3">
+            <div className="bg-[#f8fafc] p-6 rounded-3xl border border-slate-200 text-left space-y-4 relative overflow-hidden">
+              <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <div className="flex items-center gap-2">
-                  <Ticket className="w-5 h-5 text-[#265cb3]" />
-                  <span className="font-bold text-sm text-[#091b3b]">BYOM DIGITAL TICKET</span>
+                  <Ticket className="w-5 h-5 text-[#0284c7]" />
+                  <span className="font-extrabold text-sm text-[#0f172a]">BYOM DIGITAL TICKET</span>
                 </div>
-                <span className="text-xs font-mono font-bold text-[#ac7859]">#BYOM-8924</span>
+                <span className="text-xs font-mono font-bold text-[#ea580c]">#BYOM-8924</span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 text-xs font-semibold text-[#5c5d63]">
+              <div className="grid grid-cols-2 gap-4 text-xs font-semibold text-[#64748b]">
                 <div>
-                  <span className="block text-[10px] text-[#8e8f99] uppercase">Student</span>
-                  <span className="font-bold text-[#091b3b] text-sm">{fullName || 'Ramesh Thapa'}</span>
+                  <span className="block text-[10px] text-slate-400 uppercase">Student</span>
+                  <span className="font-bold text-[#0f172a] text-sm">{fullName || 'Ramesh Thapa'}</span>
                 </div>
                 <div>
-                  <span className="block text-[10px] text-[#8e8f99] uppercase">Campus</span>
-                  <span className="font-bold text-[#091b3b] text-sm">{selectedCity}</span>
+                  <span className="block text-[10px] text-slate-400 uppercase">Campus</span>
+                  <span className="font-bold text-[#0f172a] text-sm">{selectedCity}</span>
                 </div>
                 <div>
-                  <span className="block text-[10px] text-[#8e8f99] uppercase">Batch Time</span>
-                  <span className="font-bold text-[#091b3b]">{selectedBatch}</span>
+                  <span className="block text-[10px] text-slate-400 uppercase">Batch Time</span>
+                  <span className="font-bold text-[#0f172a]">{selectedBatch}</span>
                 </div>
                 <div>
-                  <span className="block text-[10px] text-[#8e8f99] uppercase">Assigned Seat</span>
-                  <span className="font-extrabold text-[#265cb3] text-sm">{selectedSeatId}</span>
+                  <span className="block text-[10px] text-slate-400 uppercase">Assigned Seat</span>
+                  <span className="font-extrabold text-[#0284c7] text-sm">{selectedSeatId}</span>
                 </div>
               </div>
             </div>
@@ -720,7 +720,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
                 setIsCompleted(false);
                 setActiveStep(1);
               }}
-              className="px-8 py-3.5 rounded-xl bg-[#091b3b] text-white font-bold text-sm btn-hover"
+              className="px-8 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors"
             >
               {currentLang === 'en' ? 'Book Another Seat' : 'अर्को सिट बुक गर्नुहोस्'}
             </button>
@@ -731,3 +731,4 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({ currentLang }) => {
     </div>
   );
 };
+

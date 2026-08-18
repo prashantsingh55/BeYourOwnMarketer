@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({
   const navT = translations.nav;
 
   return (
-    <footer className="bg-[#091b3b] text-white pt-16 pb-12 border-t border-white/10">
+    <footer className="bg-[#080e1a] text-white pt-16 pb-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -60,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({
                 />
               </div>
             </button>
-            <p className="text-xs text-[#c5c6cf] leading-relaxed">
+            <p className="text-xs text-slate-400 leading-relaxed">
               {currentLang === 'en'
                 ? 'Empowering Nepali entrepreneurs and professionals with practical hands-on marketing skills.'
                 : 'नेपाली उद्यमी र व्यवसायीहरूलाई व्यावहारिक मार्केटिङ सीपका साथ सशक्त बनाउँदै।'}
@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Social Icons */}
             <div className="pt-2">
-              <p className="text-xs font-bold uppercase tracking-wider text-[#f6b996] mb-3">
+              <p className="text-xs font-extrabold uppercase tracking-wider text-[#f97316] mb-3">
                 {currentLang === 'en' ? 'Follow Us' : 'हामीलाई फलो गर्नुहोस्'}
               </p>
               <div className="flex items-center gap-3">
@@ -99,10 +99,10 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6b996]">
+            <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#f97316]">
               {currentLang === 'en' ? 'Programs' : 'कार्यक्रमहरू'}
             </h4>
-            <ul className="space-y-2 text-xs text-[#c5c6cf]">
+            <ul className="space-y-2 text-xs text-slate-400">
               <li>
                 <button onClick={() => onNavigate('programs')} className="hover:text-white transition-colors">
                   {navT.programs[currentLang]}
@@ -128,20 +128,20 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Contact Details */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6b996]">
+            <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#f97316]">
               {currentLang === 'en' ? 'Kathmandu Hub' : 'काठमाडौँ हब'}
             </h4>
-            <ul className="space-y-2 text-xs text-[#c5c6cf]">
+            <ul className="space-y-2.5 text-xs text-slate-400">
               <li className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#265cb3]" />
+                <MapPin className="w-3.5 h-3.5 text-[#0284c7]" />
                 <span>Baneshwor, Kathmandu, Nepal</span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#265cb3]" />
+                <Phone className="w-3.5 h-3.5 text-[#0284c7]" />
                 <span>+977 980-8193078</span>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#265cb3]" />
+                <Mail className="w-3.5 h-3.5 text-[#0284c7]" />
                 <span>hello@byom.com.np</span>
               </li>
             </ul>
@@ -149,14 +149,14 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Language Switcher */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6b996]">
+            <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#f97316]">
               {currentLang === 'en' ? 'Language' : 'भाषा'}
             </h4>
             <div className="inline-flex p-1 bg-white/10 rounded-xl border border-white/20">
               <button
                 onClick={() => onLanguageChange('en')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                  currentLang === 'en' ? 'bg-white text-[#091b3b]' : 'text-white/70 hover:text-white'
+                  currentLang === 'en' ? 'bg-white text-[#0f172a]' : 'text-white/70 hover:text-white'
                 }`}
               >
                 English
@@ -164,7 +164,7 @@ export const Footer: React.FC<FooterProps> = ({
               <button
                 onClick={() => onLanguageChange('np')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                  currentLang === 'np' ? 'bg-[#265cb3] text-white' : 'text-white/70 hover:text-white'
+                  currentLang === 'np' ? 'bg-[#0284c7] text-white' : 'text-white/70 hover:text-white'
                 }`}
               >
                 नेपाली
@@ -175,7 +175,7 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8e8f99] gap-4">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>{t.tagline[currentLang]}</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-white transition-colors">{t.privacy[currentLang]}</a>
@@ -188,3 +188,4 @@ export const Footer: React.FC<FooterProps> = ({
     </footer>
   );
 };
+

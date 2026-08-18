@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
+import { sendContactEmails } from '@/lib/mailer';
 
 export async function POST(req: Request) {
   try {
@@ -12,10 +13,13 @@ export async function POST(req: Request) {
       );
     }
 
+    const trimmedEmail = email.toLowerCase().trim();
+
+    // 1. Save to Database
     const submission = await db.contactSubmission.create({
       data: {
         name,
-        email: email.toLowerCase().trim(),
+        email: trimmedEmail,
         phone: phone || null,
         subject: subject || 'General Inquiry',
         message,
@@ -23,8 +27,19 @@ export async function POST(req: Request) {
       },
     });
 
+    // 2. Send email using Nodemailer (sender: chelseasilverman7@gmail.com, receiver: user's provided email)
+    await sendContactEmails({
+      name,
+      email: trimmedEmail,
+      phone,
+      subject,
+      message,
+    }).catch((mailErr) => {
+      console.error('Failed to dispatch contact email via Nodemailer:', mailErr);
+    });
+
     return NextResponse.json({
-      message: 'Thank you for reaching out! We have received your message.',
+      message: 'Thank you for reaching out! We have received your message and sent a confirmation email.',
       id: submission.id,
     });
   } catch (error: any) {
@@ -35,3 +50,4 @@ export async function POST(req: Request) {
     );
   }
 }
+

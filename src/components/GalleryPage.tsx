@@ -48,18 +48,18 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
   });
 
   return (
-    <div className="py-12 md:py-20 bg-[#fcf9f8]">
+    <div className="py-12 md:py-20 bg-[#f8fafc]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20">
+          <span className="text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20">
             {currentLang === 'en' ? 'Life at BYOM' : 'BYOM का गतिविधिहरू'}
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#091b3b] font-heading tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0f172a] font-heading tracking-tight">
             {t.headerTitle[currentLang]}
           </h1>
-          <p className="text-base text-[#5c5d63] leading-relaxed">
+          <p className="text-base text-[#64748b] leading-relaxed">
             {t.headerSub[currentLang]}
           </p>
         </div>
@@ -72,8 +72,8 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
               onClick={() => setActiveFilter(tab.id)}
               className={`px-5 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeFilter === tab.id
-                  ? 'bg-[#091b3b] text-white shadow-sm'
-                  : 'bg-white text-[#5c5d63] border border-[#e2dedc] hover:bg-[#ebe7e5]'
+                  ? 'bg-[#0284c7] text-white shadow-md shadow-sky-500/20'
+                  : 'bg-white text-[#475569] border border-slate-200 hover:bg-slate-50'
               }`}
             >
               {tab.label}
@@ -91,7 +91,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               onClick={() => setSelectedMedia(item)}
-              className="group relative bg-white rounded-3xl overflow-hidden border border-[#e2dedc] shadow-sm hover:shadow-xl transition-all cursor-pointer h-72"
+              className="group relative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer h-72"
             >
               <img
                 src={item.image}
@@ -101,7 +101,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#091b3b]/90 via-transparent to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080e1a]/90 via-[#080e1a]/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
 
               {/* Video Badge */}
               {item.videoUrl && (
@@ -112,7 +112,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
 
               {/* Caption Bottom Overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white space-y-1">
-                <div className="flex items-center gap-1.5 text-[11px] text-[#f6b996] font-bold">
+                <div className="flex items-center gap-1.5 text-[11px] text-amber-300 font-bold">
                   <Calendar className="w-3 h-3" />
                   <span>{item.date}</span>
                 </div>
@@ -167,16 +167,16 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
                   </div>
                 )}
 
-                <div className="p-6 bg-white flex items-center justify-between border-t border-[#e2dedc]">
+                <div className="p-6 bg-white flex items-center justify-between border-t border-slate-200">
                   <div>
-                    <span className="text-xs font-bold text-[#265cb3] uppercase">
+                    <span className="text-xs font-bold text-[#0284c7] uppercase">
                       {selectedMedia.category}
                     </span>
-                    <h3 className="text-xl font-bold text-[#091b3b] font-heading mt-0.5">
+                    <h3 className="text-xl font-bold text-[#0f172a] font-heading mt-0.5">
                       {selectedMedia.title[currentLang]}
                     </h3>
                   </div>
-                  <span className="text-xs font-semibold text-[#8e8f99]">
+                  <span className="text-xs font-semibold text-[#64748b]">
                     {selectedMedia.date}
                   </span>
                 </div>
@@ -189,3 +189,4 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ currentLang }) => {
     </div>
   );
 };
+

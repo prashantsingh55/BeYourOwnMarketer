@@ -68,8 +68,8 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#fcf9f8] flex items-center justify-center">
-        <div className="w-8 h-8 border-4 border-[#265cb3]/30 border-t-[#265cb3] rounded-full animate-spin" />
+      <div className="min-h-screen bg-[#f8fafc] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-[#0284c7]/30 border-t-[#0284c7] rounded-full animate-spin" />
       </div>
     );
   }
@@ -78,23 +78,23 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="py-12 md:py-20 bg-[#fcf9f8] min-h-screen"
+      className="py-12 md:py-20 bg-[#f8fafc] min-h-screen"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-xs font-bold text-[#265cb3] uppercase tracking-wider bg-[#265cb3]/10 px-3 py-1.5 rounded-full border border-[#265cb3]/20">
+            <span className="text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20">
               {currentLang === 'en' ? 'Student Portal' : 'विद्यार्थी पोर्टल'}
             </span>
-            <h1 className="text-3xl font-extrabold text-[#091b3b] font-heading mt-2">
+            <h1 className="text-3xl font-extrabold text-[#0f172a] font-heading mt-2">
               {currentLang === 'en' ? `Welcome back${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!` : `पुनः स्वागत छ${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!`}
             </h1>
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl border border-[#e2dedc] text-[#5c5d63] hover:bg-[#ebe7e5] text-xs font-bold transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-100 text-xs font-bold transition-colors"
           >
             <LogOut className="w-4 h-4" />
             {currentLang === 'en' ? 'Sign Out' : 'साइन आउट'}
@@ -102,63 +102,63 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
         </div>
 
         {/* Profile Card */}
-        <div className="bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-8">
-          <h2 className="text-base font-extrabold text-[#091b3b] mb-6 pb-3 border-b border-[#e2dedc]">
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8">
+          <h2 className="text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200">
             {currentLang === 'en' ? 'Your Profile' : 'तपाईंको प्रोफाइल'}
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center">
-                <User className="w-5 h-5 text-[#265cb3]" />
+              <div className="w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center">
+                <User className="w-5 h-5 text-[#0284c7]" />
               </div>
               <div>
-                <span className="block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider">
+                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {currentLang === 'en' ? 'Full Name' : 'पूरा नाम'}
                 </span>
-                <span className="font-bold text-[#091b3b] text-sm">
+                <span className="font-bold text-[#0f172a] text-sm">
                   {userData?.name || '—'}
                 </span>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center">
-                <Mail className="w-5 h-5 text-[#265cb3]" />
+              <div className="w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center">
+                <Mail className="w-5 h-5 text-[#0284c7]" />
               </div>
               <div>
-                <span className="block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider">
+                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {currentLang === 'en' ? 'Email Address' : 'इमेल ठेगाना'}
                 </span>
-                <span className="font-bold text-[#091b3b] text-sm">
+                <span className="font-bold text-[#0f172a] text-sm">
                   {userData?.email || '—'}
                 </span>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center">
-                <Phone className="w-5 h-5 text-[#265cb3]" />
+              <div className="w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center">
+                <Phone className="w-5 h-5 text-[#0284c7]" />
               </div>
               <div>
-                <span className="block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider">
+                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {currentLang === 'en' ? 'Phone Number' : 'फोन नम्बर'}
                 </span>
-                <span className="font-bold text-[#091b3b] text-sm">
-                  {userData?.phone || currentLang === 'en' ? '—' : '—'}
+                <span className="font-bold text-[#0f172a] text-sm">
+                  {userData?.phone || '—'}
                 </span>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#265cb3]/10 flex items-center justify-center">
-                <Ticket className="w-5 h-5 text-[#265cb3]" />
+              <div className="w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center">
+                <Ticket className="w-5 h-5 text-[#0284c7]" />
               </div>
               <div>
-                <span className="block text-[10px] font-bold text-[#8e8f99] uppercase tracking-wider">
+                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {currentLang === 'en' ? 'Account Type' : 'खाता प्रकार'}
                 </span>
-                <span className="font-bold text-[#091b3b] text-sm capitalize">
+                <span className="font-bold text-[#0f172a] text-sm capitalize">
                   {userData?.role || 'Student'}
                 </span>
               </div>
@@ -167,21 +167,21 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
         </div>
 
         {/* Bookings */}
-        <div className="bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-8">
-          <h2 className="text-base font-extrabold text-[#091b3b] mb-6 pb-3 border-b border-[#e2dedc] flex items-center gap-2">
-            <Calendar className="w-4 h-4 text-[#265cb3]" />
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8">
+          <h2 className="text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200 flex items-center gap-2">
+            <Calendar className="w-4 h-4 text-[#0284c7]" />
             {currentLang === 'en' ? 'Your Bookings' : 'तपाईंका बुकिङहरू'}
           </h2>
 
           {bookings.length === 0 ? (
             <div className="text-center py-12 space-y-4">
-              <div className="w-16 h-16 rounded-full bg-[#f0eded] flex items-center justify-center mx-auto">
-                <Ticket className="w-8 h-8 text-[#c5c6cf]" />
+              <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mx-auto">
+                <Ticket className="w-8 h-8 text-slate-400" />
               </div>
-              <p className="text-sm text-[#5c5d63] font-semibold">
+              <p className="text-sm text-slate-600 font-semibold">
                 {currentLang === 'en' ? 'No bookings yet' : 'अहिलेसम्म कुनै बुकिङ छैन'}
               </p>
-              <p className="text-xs text-[#8e8f99]">
+              <p className="text-xs text-slate-400">
                 {currentLang === 'en'
                   ? 'Reserve your seat in the upcoming cohort'
                   : 'आगामी ब्याचमा आफ्नो सिट सुरक्षित गर्नुहोस्'}
@@ -190,17 +190,17 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
           ) : (
             <div className="space-y-4">
               {bookings.map((booking) => (
-                <div key={booking.id} className="p-5 rounded-2xl border border-[#e2dedc] bg-[#fcf9f8] flex items-start justify-between gap-4">
+                <div key={booking.id} className="p-5 rounded-2xl border border-slate-200 bg-[#f8fafc] flex items-start justify-between gap-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-[#265cb3]" />
-                      <span className="font-bold text-sm text-[#091b3b]">{booking.city}</span>
+                      <MapPin className="w-4 h-4 text-[#0284c7]" />
+                      <span className="font-bold text-sm text-[#0f172a]">{booking.city}</span>
                     </div>
-                    <p className="text-xs text-[#5c5d63]">{booking.batch}</p>
-                    <div className="flex items-center gap-3 text-xs text-[#8e8f99]">
-                      <span>Seat: <strong className="text-[#265cb3]">{booking.seatId}</strong></span>
+                    <p className="text-xs text-slate-600">{booking.batch}</p>
+                    <div className="flex items-center gap-3 text-xs text-slate-400">
+                      <span>Seat: <strong className="text-[#0284c7]">{booking.seatId}</strong></span>
                       {booking.depositAmount && (
-                        <span>Deposit: <strong className="text-[#091b3b]">Rs. {booking.depositAmount.toLocaleString()}</strong></span>
+                        <span>Deposit: <strong className="text-[#0f172a]">Rs. {booking.depositAmount.toLocaleString()}</strong></span>
                       )}
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
         </div>
 
         {/* Payment Info */}
-        <div className="bg-[#091b3b] text-white rounded-3xl p-8 space-y-4">
+        <div className="bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white rounded-3xl p-8 space-y-4 border border-slate-800 shadow-xl">
           <h3 className="font-extrabold text-base border-b border-white/10 pb-3">
             {currentLang === 'en' ? 'Fee Payment Summary' : 'शुल्क भुक्तानी सारांश'}
           </h3>
@@ -229,9 +229,9 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
               { label: currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरुपछि', value: 'Rs. 10,000', sub: '' },
             ].map((item, i) => (
               <div key={i} className="bg-white/5 rounded-2xl p-4 border border-white/10 space-y-1">
-                <p className="text-xs text-[#c5c6cf]">{item.label}</p>
-                <p className="text-xl font-extrabold text-[#f6b996]">{item.value}</p>
-                {item.sub && <p className="text-[10px] text-[#8e9ab0]">{item.sub}</p>}
+                <p className="text-xs text-slate-400">{item.label}</p>
+                <p className="text-xl font-extrabold text-amber-300">{item.value}</p>
+                {item.sub && <p className="text-[10px] text-slate-400">{item.sub}</p>}
               </div>
             ))}
           </div>
@@ -241,3 +241,4 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({ currentLang, onLog
     </motion.div>
   );
 };
+

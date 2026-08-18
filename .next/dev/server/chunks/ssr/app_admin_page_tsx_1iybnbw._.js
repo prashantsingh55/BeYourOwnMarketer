@@ -316,10 +316,10 @@ function AdminDashboardPage() {
     });
     const totalRevenue = bookings.filter((b)=>b.paymentStatus === 'completed').reduce((sum, b)=>sum + b.amount, 0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-[#091b3b]/5 text-[#091b3b]",
+        className: "min-h-screen bg-[#f8fafc] text-[#0f172a]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-                className: "bg-[#091b3b] text-white py-4 px-6 sticky top-0 z-40 shadow-lg",
+                className: "bg-[#080e1a] text-white py-4 px-6 sticky top-0 z-40 shadow-lg border-b border-slate-800",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto flex items-center justify-between",
                     children: [
@@ -327,7 +327,7 @@ function AdminDashboardPage() {
                             className: "flex items-center gap-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-9 h-9 bg-[#265cb3] rounded-xl flex items-center justify-center text-white font-black text-lg",
+                                    className: "w-10 h-10 bg-gradient-to-br from-[#0284c7] to-[#0369a1] rounded-2xl flex items-center justify-center text-white font-black text-lg shadow-md shadow-sky-500/20",
                                     children: "B"
                                 }, void 0, false, {
                                     fileName: "[project]/app/admin/page.tsx",
@@ -345,7 +345,7 @@ function AdminDashboardPage() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[11px] text-[#8e8f99]",
+                                            className: "text-[11px] text-slate-400",
                                             children: "Seat Bookings & Content Management Studio"
                                         }, void 0, false, {
                                             fileName: "[project]/app/admin/page.tsx",
@@ -368,7 +368,7 @@ function AdminDashboardPage() {
                             className: "flex items-center gap-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "flex items-center gap-2 text-xs font-bold text-[#c5c6cf] hover:text-white transition-colors bg-white/10 px-3.5 py-2 rounded-xl",
+                                className: "flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-white transition-colors bg-white/10 px-4 py-2 rounded-xl hover:bg-white/15",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
                                         className: "w-3.5 h-3.5"
@@ -407,10 +407,10 @@ function AdminDashboardPage() {
                         className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white p-6 rounded-3xl border border-[#e2dedc] shadow-sm space-y-1",
+                                className: "bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between text-[#8e8f99]",
+                                        className: "flex items-center justify-between text-slate-400",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xs font-bold uppercase tracking-wider",
@@ -421,7 +421,7 @@ function AdminDashboardPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
-                                                className: "w-5 h-5 text-[#265cb3]"
+                                                className: "w-5 h-5 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
                                                 lineNumber: 360,
@@ -434,7 +434,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-3xl font-extrabold font-heading text-[#091b3b]",
+                                        className: "text-3xl font-extrabold font-heading text-[#0f172a]",
                                         children: bookings.length
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -442,7 +442,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-[#10b981] font-semibold",
+                                        className: "text-xs text-emerald-600 font-semibold",
                                         children: "Physical Seat Reservations"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -456,10 +456,10 @@ function AdminDashboardPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white p-6 rounded-3xl border border-[#e2dedc] shadow-sm space-y-1",
+                                className: "bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between text-[#8e8f99]",
+                                        className: "flex items-center justify-between text-slate-400",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xs font-bold uppercase tracking-wider",
@@ -470,7 +470,7 @@ function AdminDashboardPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"], {
-                                                className: "w-5 h-5 text-[#10b981]"
+                                                className: "w-5 h-5 text-emerald-600"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
                                                 lineNumber: 369,
@@ -483,7 +483,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-3xl font-extrabold font-heading text-[#091b3b]",
+                                        className: "text-3xl font-extrabold font-heading text-[#0f172a]",
                                         children: [
                                             "NPR ",
                                             totalRevenue.toLocaleString()
@@ -494,8 +494,8 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-[#8e8f99] font-semibold",
-                                        children: "Verified eSewa & Khalti"
+                                        className: "text-xs text-slate-500 font-semibold",
+                                        children: "Verified Fonepay & Deposits"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
                                         lineNumber: 374,
@@ -508,10 +508,10 @@ function AdminDashboardPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white p-6 rounded-3xl border border-[#e2dedc] shadow-sm space-y-1",
+                                className: "bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between text-[#8e8f99]",
+                                        className: "flex items-center justify-between text-slate-400",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xs font-bold uppercase tracking-wider",
@@ -522,7 +522,7 @@ function AdminDashboardPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
-                                                className: "w-5 h-5 text-[#ac7859]"
+                                                className: "w-5 h-5 text-[#f97316]"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
                                                 lineNumber: 380,
@@ -535,7 +535,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-3xl font-extrabold font-heading text-[#091b3b]",
+                                        className: "text-3xl font-extrabold font-heading text-[#0f172a]",
                                         children: blogs.length
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -543,7 +543,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-[#265cb3] font-semibold",
+                                        className: "text-xs text-[#0284c7] font-semibold",
                                         children: "Active Knowledge Base"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -557,10 +557,10 @@ function AdminDashboardPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white p-6 rounded-3xl border border-[#e2dedc] shadow-sm space-y-1",
+                                className: "bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between text-[#8e8f99]",
+                                        className: "flex items-center justify-between text-slate-400",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-xs font-bold uppercase tracking-wider",
@@ -584,7 +584,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-3xl font-extrabold font-heading text-[#091b3b]",
+                                        className: "text-3xl font-extrabold font-heading text-[#0f172a]",
                                         children: gallery.length
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -592,7 +592,7 @@ function AdminDashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-[#8e8f99] font-semibold",
+                                        className: "text-xs text-slate-500 font-semibold",
                                         children: "Photos & Videos"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -612,7 +612,7 @@ function AdminDashboardPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex border-b border-[#d6d0cc] space-x-4",
+                        className: "flex border-b border-slate-200 space-x-4",
                         children: [
                             {
                                 id: 'bookings',
@@ -639,7 +639,7 @@ function AdminDashboardPage() {
                             const isSel = activeTab === tab.id;
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveTab(tab.id),
-                                className: `flex items-center gap-2 pb-3 pt-2 text-sm font-extrabold border-b-2 transition-all ${isSel ? 'border-[#091b3b] text-[#091b3b]' : 'border-transparent text-[#8e8f99] hover:text-[#091b3b]'}`,
+                                className: `flex items-center gap-2 pb-3.5 pt-2 text-sm font-extrabold border-b-2 transition-all ${isSel ? 'border-[#0284c7] text-[#0284c7]' : 'border-transparent text-slate-400 hover:text-[#0f172a]'}`,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                         className: "w-4 h-4"
@@ -668,16 +668,16 @@ function AdminDashboardPage() {
                         columnNumber: 9
                     }, this),
                     activeTab === 'sessions' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 sm:p-8 space-y-8",
+                        className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "border-b border-[#e2dedc] pb-4",
+                                className: "border-b border-slate-200 pb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-2xl font-extrabold text-[#091b3b] font-heading flex items-center gap-2",
+                                        className: "text-2xl font-extrabold text-[#0f172a] font-heading flex items-center gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                className: "w-6 h-6 text-[#265cb3]"
+                                                className: "w-6 h-6 text-[#0284c7]"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
                                                 lineNumber: 428,
@@ -691,7 +691,7 @@ function AdminDashboardPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-[#5c5d63] mt-1",
+                                        className: "text-xs text-slate-500 mt-1",
                                         children: "Update the start and end dates for each cohort — these appear live on the website."
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -725,7 +725,7 @@ function AdminDashboardPage() {
                                 className: "space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-extrabold uppercase tracking-wider text-[#5c5d63]",
+                                        className: "text-sm font-extrabold uppercase tracking-wider text-slate-500",
                                         children: "Active Sessions"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -733,7 +733,7 @@ function AdminDashboardPage() {
                                         columnNumber: 15
                                     }, this),
                                     sessions.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-[#8e8f99] italic",
+                                        className: "text-sm text-slate-400 italic",
                                         children: "No sessions found. Create one below."
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -743,7 +743,7 @@ function AdminDashboardPage() {
                                         const localStart = s.startDate || '';
                                         const localEnd = s.endDate || '';
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-[#fcf9f8] border border-[#e2dedc] rounded-2xl p-5 space-y-4",
+                                            className: "bg-[#f8fafc] border border-slate-200 rounded-3xl p-6 space-y-4 shadow-sm",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "flex items-start justify-between gap-4",
@@ -751,7 +751,7 @@ function AdminDashboardPage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "font-extrabold text-[#091b3b] text-sm",
+                                                                    className: "font-extrabold text-[#0f172a] text-sm",
                                                                     children: s.nameEn
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -759,7 +759,7 @@ function AdminDashboardPage() {
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-xs text-[#5c5d63] mt-0.5",
+                                                                    className: "text-xs text-[#64748b] mt-0.5",
                                                                     children: [
                                                                         s.city,
                                                                         " · ",
@@ -778,7 +778,7 @@ function AdminDashboardPage() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                             onClick: ()=>handleDeleteSession(s.id),
-                                                            className: "text-red-400 hover:text-red-600 p-1 rounded-lg hover:bg-red-50 transition-colors",
+                                                            className: "text-rose-400 hover:text-rose-600 p-1.5 rounded-xl hover:bg-rose-50 transition-colors",
                                                             title: "Deactivate session",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
                                                                 className: "w-4 h-4"
@@ -821,10 +821,10 @@ function AdminDashboardPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "border-t border-[#e2dedc] pt-6 space-y-4",
+                                className: "border-t border-slate-200 pt-6 space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-sm font-extrabold uppercase tracking-wider text-[#5c5d63]",
+                                        className: "text-sm font-extrabold uppercase tracking-wider text-slate-500",
                                         children: "Add New Session"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -837,7 +837,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                        className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                         children: "Session Name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -851,7 +851,7 @@ function AdminDashboardPage() {
                                                                     ...p,
                                                                     nameEn: e.target.value
                                                                 })),
-                                                        className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] text-sm font-semibold outline-none focus:border-[#265cb3]"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 485,
@@ -866,7 +866,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                        className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                         children: "Start Date"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -880,7 +880,7 @@ function AdminDashboardPage() {
                                                                     ...p,
                                                                     startDate: e.target.value
                                                                 })),
-                                                        className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] text-sm font-semibold outline-none focus:border-[#265cb3]"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 494,
@@ -895,7 +895,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-xs font-bold text-[#091b3b] mb-1.5",
+                                                        className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                         children: "End Date"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -909,7 +909,7 @@ function AdminDashboardPage() {
                                                                     ...p,
                                                                     endDate: e.target.value
                                                                 })),
-                                                        className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] text-sm font-semibold outline-none focus:border-[#265cb3]"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 503,
@@ -929,7 +929,7 @@ function AdminDashboardPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: handleCreateSession,
-                                        className: "flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#091b3b] text-white text-sm font-extrabold hover:opacity-90 transition-opacity",
+                                        className: "flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white text-sm font-extrabold transition-colors shadow-sm",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
                                                 className: "w-4 h-4"
@@ -958,15 +958,15 @@ function AdminDashboardPage() {
                         columnNumber: 11
                     }, this),
                     activeTab === 'bookings' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 sm:p-8 space-y-6",
+                        className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#e2dedc] pb-4",
+                                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-2xl font-extrabold text-[#091b3b] font-heading",
+                                                className: "text-2xl font-extrabold text-[#0f172a] font-heading",
                                                 children: "Physical Classroom Bookings"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -974,8 +974,8 @@ function AdminDashboardPage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-[#5c5d63]",
-                                                children: "Real-time seat reservations with eSewa & Khalti payment verification"
+                                                className: "text-xs text-[#64748b]",
+                                                children: "Real-time seat reservations with Fonepay QR deposit verification"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
                                                 lineNumber: 530,
@@ -994,7 +994,7 @@ function AdminDashboardPage() {
                                                 className: "relative",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                                        className: "w-4 h-4 text-[#8e8f99] absolute left-3 top-3"
+                                                        className: "w-4 h-4 text-slate-400 absolute left-3 top-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 538,
@@ -1005,7 +1005,7 @@ function AdminDashboardPage() {
                                                         value: searchBooking,
                                                         onChange: (e)=>setSearchBooking(e.target.value),
                                                         placeholder: "Search name, phone, ref ID...",
-                                                        className: "pl-9 pr-4 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                                                        className: "pl-9 pr-4 py-2 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 539,
@@ -1020,7 +1020,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                 value: filterCity,
                                                 onChange: (e)=>setFilterCity(e.target.value),
-                                                className: "px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-bold outline-none text-[#091b3b]",
+                                                className: "px-3 py-2 rounded-xl border border-slate-200 text-xs font-bold outline-none text-[#0f172a] bg-white focus:border-[#0284c7]",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "all",
@@ -1081,14 +1081,14 @@ function AdminDashboardPage() {
                                 columnNumber: 13
                             }, this),
                             loadingBookings ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "py-12 text-center text-sm font-semibold text-[#8e8f99]",
+                                className: "py-12 text-center text-sm font-semibold text-slate-400",
                                 children: "Loading seat bookings..."
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
                                 lineNumber: 563,
                                 columnNumber: 15
                             }, this) : filteredBookings.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "py-12 text-center text-sm text-[#8e8f99]",
+                                className: "py-12 text-center text-sm text-slate-400",
                                 children: "No bookings found matching your search."
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
@@ -1101,7 +1101,7 @@ function AdminDashboardPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                className: "border-b border-[#e2dedc] text-xs font-bold uppercase text-[#8e8f99]",
+                                                className: "border-b border-slate-200 text-xs font-bold uppercase text-slate-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                         className: "py-3 px-4",
@@ -1171,15 +1171,15 @@ function AdminDashboardPage() {
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
-                                            className: "divide-y divide-[#f0ece9] text-xs font-semibold",
+                                            className: "divide-y divide-slate-100 text-xs font-semibold",
                                             children: filteredBookings.map((b)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                                    className: "hover:bg-[#fcf9f8] transition-colors",
+                                                    className: "hover:bg-slate-50 transition-colors",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                             className: "py-4 px-4",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "font-extrabold text-[#091b3b] text-sm",
+                                                                    className: "font-extrabold text-[#0f172a] text-sm",
                                                                     children: b.fullName
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -1187,7 +1187,7 @@ function AdminDashboardPage() {
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-[#5c5d63]",
+                                                                    className: "text-[#64748b]",
                                                                     children: b.phone
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -1195,7 +1195,7 @@ function AdminDashboardPage() {
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-[#8e8f99] text-[11px]",
+                                                                    className: "text-slate-400 text-[11px]",
                                                                     children: b.email
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -1212,7 +1212,7 @@ function AdminDashboardPage() {
                                                             className: "py-4 px-4",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "font-bold text-[#091b3b]",
+                                                                    className: "font-bold text-[#0f172a]",
                                                                     children: b.city
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -1220,7 +1220,7 @@ function AdminDashboardPage() {
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-[#8e8f99] text-[11px] max-w-[150px] truncate",
+                                                                    className: "text-slate-400 text-[11px] max-w-[150px] truncate",
                                                                     children: b.batch
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/admin/page.tsx",
@@ -1234,7 +1234,7 @@ function AdminDashboardPage() {
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                            className: "py-4 px-4 font-mono font-bold text-[#265cb3]",
+                                                            className: "py-4 px-4 font-mono font-bold text-[#0284c7]",
                                                             children: b.seatNumber
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/admin/page.tsx",
@@ -1242,7 +1242,7 @@ function AdminDashboardPage() {
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                            className: "py-4 px-4 font-extrabold text-[#091b3b]",
+                                                            className: "py-4 px-4 font-extrabold text-[#0f172a]",
                                                             children: [
                                                                 "NPR ",
                                                                 b.amount.toLocaleString()
@@ -1255,7 +1255,7 @@ function AdminDashboardPage() {
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                             className: "py-4 px-4",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "uppercase font-extrabold text-[11px] px-2.5 py-1 rounded-md bg-[#ebe7e5] text-[#091b3b]",
+                                                                className: "uppercase font-extrabold text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-[#0f172a]",
                                                                 children: b.paymentMethod
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1273,7 +1273,7 @@ function AdminDashboardPage() {
                                                                 className: "flex flex-col space-y-1",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: `inline-flex items-center gap-1 font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-full w-max ${b.paymentStatus === 'completed' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`,
+                                                                        className: `inline-flex items-center gap-1 font-extrabold text-[10px] uppercase px-2.5 py-0.5 rounded-full w-max ${b.paymentStatus === 'completed' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-amber-50 text-amber-700 border border-amber-200'}`,
                                                                         children: [
                                                                             b.paymentStatus === 'completed' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
                                                                                 className: "w-3 h-3"
@@ -1290,7 +1290,7 @@ function AdminDashboardPage() {
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "font-mono text-[11px] text-[#5c5d63]",
+                                                                        className: "font-mono text-[11px] text-[#64748b]",
                                                                         children: b.refId
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1309,7 +1309,7 @@ function AdminDashboardPage() {
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                            className: "py-4 px-4 text-[#8e8f99] text-[11px]",
+                                                            className: "py-4 px-4 text-slate-400 text-[11px]",
                                                             children: new Date(b.createdAt).toLocaleDateString()
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/admin/page.tsx",
@@ -1348,13 +1348,13 @@ function AdminDashboardPage() {
                         className: "grid grid-cols-1 lg:grid-cols-12 gap-8 items-start",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "lg:col-span-7 bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 sm:p-8 space-y-6",
+                                className: "lg:col-span-7 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "border-b border-[#e2dedc] pb-4",
+                                        className: "border-b border-slate-200 pb-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-2xl font-extrabold text-[#091b3b] font-heading",
+                                                className: "text-2xl font-extrabold text-[#0f172a] font-heading",
                                                 children: "Publish New Blog Post"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1362,7 +1362,7 @@ function AdminDashboardPage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-[#5c5d63]",
+                                                className: "text-xs text-[#64748b]",
                                                 children: "Post educational marketing content directly to the knowledge base"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1390,7 +1390,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Article Title (English) *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1406,7 +1406,7 @@ function AdminDashboardPage() {
                                                                 titleEn: e.target.value
                                                             }),
                                                         placeholder: "e.g. Master Meta Ads for Local Business Growth in Nepal",
-                                                        className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none focus:border-[#265cb3] text-sm"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 660,
@@ -1421,7 +1421,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Article Title (Nepali)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1436,7 +1436,7 @@ function AdminDashboardPage() {
                                                                 titleNp: e.target.value
                                                             }),
                                                         placeholder: "उदा: नेपालमा स्थानीय व्यापार प्रवर्द्धनका लागि मेटा विज्ञापन",
-                                                        className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none focus:border-[#265cb3] text-sm"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 672,
@@ -1454,7 +1454,7 @@ function AdminDashboardPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                className: "block font-bold text-[#091b3b] mb-1",
+                                                                className: "block font-bold text-[#0f172a] mb-1",
                                                                 children: "Category"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1477,7 +1477,7 @@ function AdminDashboardPage() {
                                                                         categoryEn: labelEnMap[val] || 'Digital Marketing'
                                                                     });
                                                                 },
-                                                                className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs font-bold",
+                                                                className: "w-full px-3 py-2.5 rounded-xl border border-slate-200 outline-none text-xs font-bold focus:border-[#0284c7]",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                         value: "facebook-ads",
@@ -1526,7 +1526,7 @@ function AdminDashboardPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                className: "block font-bold text-[#091b3b] mb-1",
+                                                                className: "block font-bold text-[#0f172a] mb-1",
                                                                 children: "Read Time"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1541,7 +1541,7 @@ function AdminDashboardPage() {
                                                                         readTime: e.target.value
                                                                     }),
                                                                 placeholder: "5 min read",
-                                                                className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs font-semibold"
+                                                                className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none text-xs font-semibold focus:border-[#0284c7]"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                 lineNumber: 711,
@@ -1562,7 +1562,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Short Summary (English) *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1578,7 +1578,7 @@ function AdminDashboardPage() {
                                                                 summaryEn: e.target.value
                                                             }),
                                                         placeholder: "Brief intro preview for article card...",
-                                                        className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none text-xs focus:border-[#0284c7]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 723,
@@ -1593,7 +1593,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Full Article Body (English) *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1609,7 +1609,7 @@ function AdminDashboardPage() {
                                                                 contentEn: e.target.value
                                                             }),
                                                         placeholder: "Write detailed blog article content here...",
-                                                        className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none text-xs focus:border-[#0284c7]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 735,
@@ -1624,7 +1624,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Cover Image *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1643,7 +1643,7 @@ function AdminDashboardPage() {
                                                                         image: e.target.value
                                                                     }),
                                                                 placeholder: "https://images.unsplash.com/... OR upload file below",
-                                                                className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs"
+                                                                className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none text-xs focus:border-[#0284c7]"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                 lineNumber: 749,
@@ -1652,7 +1652,7 @@ function AdminDashboardPage() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex items-center gap-2",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    className: "cursor-pointer py-2 px-4 bg-[#ebe7e5] hover:bg-[#d6d0cc] text-[#091b3b] rounded-xl text-xs font-bold flex items-center gap-2",
+                                                                    className: "cursor-pointer py-2 px-4 bg-slate-100 hover:bg-slate-200 text-[#0f172a] rounded-xl text-xs font-bold flex items-center gap-2 transition-colors",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$upload$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Upload$3e$__["Upload"], {
                                                                             className: "w-3.5 h-3.5"
@@ -1712,7 +1712,7 @@ function AdminDashboardPage() {
                                                                 ...blogFormData,
                                                                 featured: e.target.checked
                                                             }),
-                                                        className: "w-4 h-4 rounded text-[#091b3b]"
+                                                        className: "w-4 h-4 rounded text-[#0284c7]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 773,
@@ -1720,7 +1720,7 @@ function AdminDashboardPage() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "featured",
-                                                        className: "font-bold text-[#091b3b] text-xs",
+                                                        className: "font-bold text-[#0f172a] text-xs",
                                                         children: "Mark as Featured Article on Top Banner"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1736,7 +1736,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "submit",
                                                 disabled: publishingBlog,
-                                                className: "w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm shadow-md hover:bg-[#122b5e] transition-all disabled:opacity-50",
+                                                className: "w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25 transition-all disabled:opacity-50",
                                                 children: publishingBlog ? 'Publishing...' : 'Publish Article'
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1756,10 +1756,10 @@ function AdminDashboardPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "lg:col-span-5 bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 space-y-4",
+                                className: "lg:col-span-5 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-bold text-[#091b3b] font-heading border-b border-[#e2dedc] pb-3",
+                                        className: "text-xl font-bold text-[#0f172a] font-heading border-b border-slate-200 pb-3",
                                         children: [
                                             "Published Articles (",
                                             blogs.length,
@@ -1771,7 +1771,7 @@ function AdminDashboardPage() {
                                         columnNumber: 15
                                     }, this),
                                     loadingBlogs ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "py-8 text-center text-xs text-[#8e8f99]",
+                                        className: "py-8 text-center text-xs text-slate-400",
                                         children: "Loading blogs..."
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -1780,13 +1780,13 @@ function AdminDashboardPage() {
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-3 max-h-[600px] overflow-y-auto pr-1",
                                         children: blogs.map((blog)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "p-4 rounded-2xl border border-[#e2dedc] bg-[#fcf9f8] flex items-start justify-between gap-3",
+                                                className: "p-4 rounded-2xl border border-slate-200 bg-[#f8fafc] flex items-start justify-between gap-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "space-y-1",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] font-bold uppercase text-[#265cb3] bg-[#265cb3]/10 px-2 py-0.5 rounded-full",
+                                                                className: "text-[10px] font-extrabold uppercase text-[#0284c7] bg-[#0284c7]/10 px-2 py-0.5 rounded-full",
                                                                 children: blog.category?.en || 'Blog'
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1794,7 +1794,7 @@ function AdminDashboardPage() {
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "font-bold text-xs text-[#091b3b] line-clamp-2",
+                                                                className: "font-bold text-xs text-[#0f172a] line-clamp-2",
                                                                 children: blog.title?.en
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1802,7 +1802,7 @@ function AdminDashboardPage() {
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-[11px] text-[#8e8f99]",
+                                                                className: "text-[11px] text-slate-400",
                                                                 children: blog.date
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1858,13 +1858,13 @@ function AdminDashboardPage() {
                         className: "grid grid-cols-1 lg:grid-cols-12 gap-8 items-start",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "lg:col-span-6 bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 sm:p-8 space-y-6",
+                                className: "lg:col-span-6 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "border-b border-[#e2dedc] pb-4",
+                                        className: "border-b border-slate-200 pb-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-2xl font-extrabold text-[#091b3b] font-heading",
+                                                className: "text-2xl font-extrabold text-[#0f172a] font-heading",
                                                 children: "Post Gallery Image / Video"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1872,7 +1872,7 @@ function AdminDashboardPage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-xs text-[#5c5d63]",
+                                                className: "text-xs text-[#64748b]",
                                                 children: "Add workshop photos, student moments, and training highlights"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1900,7 +1900,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Title (English) *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -1916,7 +1916,7 @@ function AdminDashboardPage() {
                                                                 titleEn: e.target.value
                                                             }),
                                                         placeholder: "e.g. Kathmandu Intensive Ad Workshop 2026",
-                                                        className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none focus:border-[#265cb3] text-sm"
+                                                        className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm transition-all"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
                                                         lineNumber: 858,
@@ -1934,7 +1934,7 @@ function AdminDashboardPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                className: "block font-bold text-[#091b3b] mb-1",
+                                                                className: "block font-bold text-[#0f172a] mb-1",
                                                                 children: "Category"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -1947,7 +1947,7 @@ function AdminDashboardPage() {
                                                                         ...galleryFormData,
                                                                         category: e.target.value
                                                                     }),
-                                                                className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs font-bold",
+                                                                className: "w-full px-3 py-2.5 rounded-xl border border-slate-200 outline-none text-xs font-bold focus:border-[#0284c7]",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                         value: "workshops",
@@ -2004,7 +2004,7 @@ function AdminDashboardPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                className: "block font-bold text-[#091b3b] mb-1",
+                                                                className: "block font-bold text-[#0f172a] mb-1",
                                                                 children: "Aspect Ratio"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -2017,7 +2017,7 @@ function AdminDashboardPage() {
                                                                         ...galleryFormData,
                                                                         aspect: e.target.value
                                                                     }),
-                                                                className: "w-full px-3 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs font-bold",
+                                                                className: "w-full px-3 py-2.5 rounded-xl border border-slate-200 outline-none text-xs font-bold focus:border-[#0284c7]",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                         value: "landscape",
@@ -2064,7 +2064,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block font-bold text-[#091b3b] mb-1",
+                                                        className: "block font-bold text-[#0f172a] mb-1",
                                                         children: "Image URL / File *"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/admin/page.tsx",
@@ -2083,14 +2083,14 @@ function AdminDashboardPage() {
                                                                         image: e.target.value
                                                                     }),
                                                                 placeholder: "https://images.unsplash.com/... OR upload file",
-                                                                className: "w-full px-4 py-2.5 rounded-xl border border-[#d6d0cc] outline-none text-xs"
+                                                                className: "w-full px-4 py-2.5 rounded-xl border border-slate-200 outline-none text-xs focus:border-[#0284c7]"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
                                                                 lineNumber: 901,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                className: "cursor-pointer py-2 px-4 bg-[#ebe7e5] hover:bg-[#d6d0cc] text-[#091b3b] rounded-xl text-xs font-bold flex items-center gap-2 w-max",
+                                                                className: "cursor-pointer py-2 px-4 bg-slate-100 hover:bg-slate-200 text-[#0f172a] rounded-xl text-xs font-bold flex items-center gap-2 w-max transition-colors",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$upload$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Upload$3e$__["Upload"], {
                                                                         className: "w-3.5 h-3.5"
@@ -2137,7 +2137,7 @@ function AdminDashboardPage() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "submit",
                                                 disabled: postingGallery,
-                                                className: "w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm shadow-md hover:bg-[#122b5e] transition-all disabled:opacity-50",
+                                                className: "w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25 transition-all disabled:opacity-50",
                                                 children: postingGallery ? 'Posting...' : 'Post Gallery Item'
                                             }, void 0, false, {
                                                 fileName: "[project]/app/admin/page.tsx",
@@ -2157,10 +2157,10 @@ function AdminDashboardPage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "lg:col-span-6 bg-white rounded-3xl border border-[#e2dedc] shadow-sm p-6 space-y-4",
+                                className: "lg:col-span-6 bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-bold text-[#091b3b] font-heading border-b border-[#e2dedc] pb-3",
+                                        className: "text-xl font-bold text-[#0f172a] font-heading border-b border-slate-200 pb-3",
                                         children: [
                                             "Current Gallery (",
                                             gallery.length,
@@ -2172,7 +2172,7 @@ function AdminDashboardPage() {
                                         columnNumber: 15
                                     }, this),
                                     loadingGallery ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "py-8 text-center text-xs text-[#8e8f99]",
+                                        className: "py-8 text-center text-xs text-slate-400",
                                         children: "Loading gallery..."
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/page.tsx",
@@ -2181,7 +2181,7 @@ function AdminDashboardPage() {
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid grid-cols-2 gap-4 max-h-[600px] overflow-y-auto pr-1",
                                         children: gallery.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative group rounded-2xl overflow-hidden border border-[#e2dedc] bg-slate-100",
+                                                className: "relative group rounded-2xl overflow-hidden border border-slate-200 bg-slate-100",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                         src: item.image,
@@ -2196,7 +2196,7 @@ function AdminDashboardPage() {
                                                         className: "p-3 bg-white",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "font-bold text-xs text-[#091b3b] truncate",
+                                                                className: "font-bold text-xs text-[#0f172a] truncate",
                                                                 children: item.title?.en
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -2204,7 +2204,7 @@ function AdminDashboardPage() {
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] font-bold text-[#8e8f99] uppercase",
+                                                                className: "text-[10px] font-bold text-slate-400 uppercase",
                                                                 children: item.category
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/admin/page.tsx",
@@ -2292,7 +2292,7 @@ function AdminDashboardPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                className: "block text-xs font-bold text-[#0f172a] mb-1",
                                 children: "Cohort Name"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
@@ -2303,7 +2303,7 @@ function AdminDashboardPage() {
                                 type: "text",
                                 value: localName,
                                 onChange: (e)=>setLocalName(e.target.value),
-                                className: "w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                                className: "w-full px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
                                 lineNumber: 1005,
@@ -2318,7 +2318,7 @@ function AdminDashboardPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                className: "block text-xs font-bold text-[#0f172a] mb-1",
                                 children: "Start Date"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
@@ -2329,7 +2329,7 @@ function AdminDashboardPage() {
                                 type: "date",
                                 value: localStart,
                                 onChange: (e)=>setLocalStart(e.target.value),
-                                className: "w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                                className: "w-full px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
                                 lineNumber: 1014,
@@ -2344,7 +2344,7 @@ function AdminDashboardPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                className: "block text-xs font-bold text-[#091b3b] mb-1",
+                                className: "block text-xs font-bold text-[#0f172a] mb-1",
                                 children: "End Date"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
@@ -2355,7 +2355,7 @@ function AdminDashboardPage() {
                                 type: "date",
                                 value: localEnd,
                                 onChange: (e)=>setLocalEnd(e.target.value),
-                                className: "w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                                className: "w-full px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/page.tsx",
                                 lineNumber: 1023,
@@ -2380,7 +2380,7 @@ function AdminDashboardPage() {
                         endDate: localEnd,
                         nameEn: localName
                     }),
-                className: "flex items-center gap-1.5 px-5 py-2 rounded-xl bg-[#265cb3] text-white text-xs font-extrabold hover:opacity-90 transition-opacity disabled:opacity-50",
+                className: "flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-extrabold transition-colors disabled:opacity-50 shadow-sm",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
                         className: "w-3.5 h-3.5"

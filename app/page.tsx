@@ -162,18 +162,18 @@ export default function Home() {
               />
 
               {/* Testimonials Section */}
-              <section className="py-20 bg-[#f4eee9] border-y border-[#e2dedc]">
+              <section className="py-20 bg-gradient-to-b from-[#f8fafc] via-[#f0f9ff]/30 to-[#f8fafc] border-y border-slate-200/80">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
                   <div className="text-center max-w-2xl mx-auto space-y-3">
-                    <span className="text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1 rounded-full border border-[#ac7859]/30">
+                    <span className="text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1.5 rounded-full border border-[#fed7aa] shadow-sm">
                       {currentLang === 'en' ? '★ Real Student Stories' : '★ वास्तविक विद्यार्थीका अनुभव'}
                     </span>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-[#091b3b] font-heading">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f172a] font-heading">
                       {currentLang === 'en'
                         ? 'What Our Graduates Say'
                         : 'हाम्रा स्नातकहरूको भनाइ'}
                     </h2>
-                    <p className="text-sm text-[#5c5d63] max-w-xl mx-auto">
+                    <p className="text-sm text-[#64748b] max-w-xl mx-auto">
                       {currentLang === 'en'
                         ? 'Over 200+ entrepreneurs and professionals have transformed their marketing with BYOM.'
                         : '२०० भन्दा बढी उद्यमी र व्यवसायीहरूले BYOM मार्फत आफ्नो मार्केटिङ रूपान्तरण गरेका छन्।'}
@@ -249,31 +249,31 @@ export default function Home() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: idx * 0.08 }}
                         viewport={{ once: true }}
-                        className="bg-white p-6 rounded-2xl border border-[#e2dedc] shadow-sm space-y-4 flex flex-col justify-between hover:shadow-md transition-shadow"
+                        className="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-4 flex flex-col justify-between hover:shadow-lg transition-all"
                       >
                         <div className="space-y-3">
-                          <div className="flex items-center space-x-1 text-[#f59e0b]">
+                          <div className="flex items-center space-x-1 text-amber-400">
                             {[...Array(story.stars)].map((_, i) => (
                               <Star key={i} className="w-4 h-4 fill-current" />
                             ))}
                           </div>
-                          <Quote className="w-7 h-7 text-[#f6b996] opacity-50" />
-                          <p className="text-xs sm:text-sm text-[#3c3e44] leading-relaxed italic">
+                          <Quote className="w-7 h-7 text-[#f97316]/40" />
+                          <p className="text-xs sm:text-sm text-[#334155] leading-relaxed italic">
                             "{story.text[currentLang]}"
                           </p>
                         </div>
 
-                        <div className="flex items-center space-x-3 pt-4 border-t border-[#e2dedc]">
+                        <div className="flex items-center space-x-3 pt-4 border-t border-slate-100">
                           <img
                             src={story.avatar}
                             alt={story.name}
-                            className="w-10 h-10 rounded-full object-cover"
+                            className="w-10 h-10 rounded-full object-cover ring-2 ring-slate-100"
                           />
                           <div>
-                            <span className="block font-bold text-xs text-[#091b3b]">
+                            <span className="block font-bold text-xs text-[#0f172a]">
                               {story.name}
                             </span>
-                            <span className="text-[11px] text-[#5c5d63]">
+                            <span className="text-[11px] text-[#64748b]">
                               {story.role}
                             </span>
                           </div>
@@ -285,29 +285,32 @@ export default function Home() {
               </section>
 
               {/* Bottom CTA Section */}
-              <section className="py-16 bg-[#091b3b] text-white text-center">
-                <div className="max-w-4xl mx-auto px-4 space-y-6">
-                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[#f6b996] text-xs font-bold uppercase">
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>{currentLang === 'en' ? 'Limited Capacity' : 'सीमित स्थान'}</span>
+              <section className="py-20 bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0284c7] text-white text-center relative overflow-hidden">
+                <div className="absolute top-0 right-1/3 w-80 h-80 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none" />
+                <div className="max-w-4xl mx-auto px-4 space-y-6 relative z-10">
+                  <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 text-amber-200 text-xs font-extrabold uppercase tracking-wide backdrop-blur-sm">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                    <span>{currentLang === 'en' ? 'Limited Capacity • Only 25 Seats' : 'सीमित स्थान • केवल २५ सिट'}</span>
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold font-heading">
+                  <h2 className="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight">
                     {currentLang === 'en'
                       ? 'Ready to Become Your Own Marketer?'
                       : 'के तपाईं आफैँ मार्केटर बन्न तयार हुनुहुन्छ?'}
                   </h2>
-                  <p className="text-sm sm:text-base text-[#c5c6cf] max-w-xl mx-auto">
+                  <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
                     {currentLang === 'en'
                       ? 'Reserve your seat for the upcoming 7-day physical cohort in Kathmandu.'
                       : 'काठमाडौँमा हुने आगामी ७-दिने भौतिक टोलीका लागि आफ्नो सिट सुरक्षित गर्नुहोस्।'}
                   </p>
-                  <button
-                    onClick={() => handleNavigate('book')}
-                    className="px-8 py-4 rounded-xl bg-[#f6b996] text-[#321300] font-extrabold text-base btn-hover shadow-lg inline-flex items-center gap-2"
-                  >
-                    <span>{currentLang === 'en' ? 'Book Your Spot Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'}</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </button>
+                  <div className="pt-2">
+                    <button
+                      onClick={() => handleNavigate('book')}
+                      className="px-9 py-4 rounded-2xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-base btn-orange-hover shadow-2xl shadow-orange-500/30 inline-flex items-center gap-2 transition-all"
+                    >
+                      <span>{currentLang === 'en' ? 'Book Your Spot Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'}</span>
+                      <ArrowRight className="w-5 h-5 text-amber-200" />
+                    </button>
+                  </div>
                 </div>
               </section>
             </motion.div>

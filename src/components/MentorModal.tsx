@@ -39,7 +39,7 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
       >
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-xl text-[#091b3b] hover:bg-[#ebe7e5]"
+          className="absolute top-5 right-5 p-2 rounded-xl text-[#0f172a] hover:bg-slate-100 transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -47,13 +47,13 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
         {!scheduled ? (
           <>
             <div className="space-y-1">
-              <span className="text-xs font-bold text-[#ac7859] uppercase tracking-wider bg-[#f6b996]/30 px-3 py-1 rounded-full">
+              <span className="text-xs font-extrabold text-[#ea580c] uppercase tracking-wider bg-[#fff7ed] px-3.5 py-1 rounded-full border border-[#fed7aa]">
                 1-on-1 Consultation
               </span>
-              <h3 className="text-2xl font-extrabold text-[#091b3b] font-heading pt-2">
+              <h3 className="text-2xl font-extrabold text-[#0f172a] font-heading pt-2">
                 {currentLang === 'en' ? 'Talk to a BYOM Mentor' : 'BYOM मेन्टरसँग कुरा गर्नुहोस्'}
               </h3>
-              <p className="text-xs text-[#5c5d63]">
+              <p className="text-xs text-[#64748b]">
                 {currentLang === 'en'
                   ? 'Get personalized marketing career or business growth advice.'
                   : 'व्यक्तिगत मार्केटिङ करियर वा व्यापार वृद्धिका लागि सल्लाह लिनुहोस्।'}
@@ -62,7 +62,7 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
 
             {/* Select Mentor */}
             <div className="space-y-3">
-              <label className="block text-xs font-bold text-[#091b3b]">
+              <label className="block text-xs font-bold text-[#0f172a]">
                 {currentLang === 'en' ? 'Select Mentor' : 'मेन्टर छान्नुहोस्'}
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -74,8 +74,8 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
                       onClick={() => setSelectedMentor(m.id)}
                       className={`p-3 rounded-2xl border text-center transition-all ${
                         isSel
-                          ? 'border-[#265cb3] bg-[#265cb3]/5 ring-2 ring-[#265cb3]/30'
-                          : 'border-[#e2dedc] bg-[#fcf9f8]'
+                          ? 'border-[#0284c7] bg-[#0284c7]/5 ring-2 ring-[#0284c7]/30 shadow-sm'
+                          : 'border-slate-200 bg-slate-50 hover:bg-slate-100/70'
                       }`}
                     >
                       <img
@@ -83,8 +83,8 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
                         alt={m.name}
                         className="w-12 h-12 rounded-full mx-auto mb-2 object-cover"
                       />
-                      <span className="block font-bold text-xs text-[#091b3b]">{m.name}</span>
-                      <span className="block text-[10px] text-[#5c5d63] line-clamp-1">{m.role[currentLang]}</span>
+                      <span className="block font-bold text-xs text-[#0f172a]">{m.name}</span>
+                      <span className="block text-[10px] text-[#64748b] line-clamp-1">{m.role[currentLang]}</span>
                     </button>
                   );
                 })}
@@ -92,28 +92,28 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
             </div>
 
             {/* Mentor Bio Box */}
-            <div className="p-4 rounded-2xl bg-[#fcf9f8] border border-[#d6d0cc] space-y-2">
-              <span className="text-xs font-bold text-[#091b3b]">{mentorObj.name} Bio</span>
-              <p className="text-xs text-[#5c5d63]">{mentorObj.bio[currentLang]}</p>
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
+              <span className="text-xs font-bold text-[#0f172a]">{mentorObj.name} Bio</span>
+              <p className="text-xs text-[#475569] leading-relaxed">{mentorObj.bio[currentLang]}</p>
             </div>
 
             <form onSubmit={handleSchedule} className="space-y-4">
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-bold text-[#091b3b] mb-1">
+                  <label className="block text-xs font-bold text-[#0f172a] mb-1">
                     {currentLang === 'en' ? 'Preferred Date' : 'मनपर्ने मिति'}
                   </label>
                   <input
                     type="date"
                     required
-                    className="w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]"
+                    className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-[#091b3b] mb-1">
+                  <label className="block text-xs font-bold text-[#0f172a] mb-1">
                     {currentLang === 'en' ? 'Preferred Time' : 'मनपर्ने समय'}
                   </label>
-                  <select className="w-full px-3 py-2 rounded-xl border border-[#d6d0cc] text-xs font-semibold outline-none focus:border-[#265cb3]">
+                  <select className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all">
                     <option>10:00 AM - 10:30 AM</option>
                     <option>2:00 PM - 2:30 PM</option>
                     <option>5:00 PM - 5:30 PM</option>
@@ -123,20 +123,20 @@ export const MentorModal: React.FC<MentorModalProps> = ({ isOpen, onClose, curre
 
               <button
                 type="submit"
-                className="w-full py-3 rounded-xl bg-[#091b3b] text-white font-extrabold text-sm btn-hover flex items-center justify-center gap-2 shadow-md"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover flex items-center justify-center gap-2 shadow-lg shadow-orange-500/25 transition-all"
               >
-                <PhoneCall className="w-4 h-4 text-[#f6b996]" />
+                <PhoneCall className="w-4 h-4 text-amber-200" />
                 <span>{currentLang === 'en' ? 'Book 15-Min Free Call' : '१५-मिनेटको नि:शुल्क कल बुक गर्नुहोस्'}</span>
               </button>
             </form>
           </>
         ) : (
           <div className="py-8 text-center space-y-3">
-            <CheckCircle2 className="w-12 h-12 text-[#10b981] mx-auto" />
-            <h4 className="text-xl font-bold text-[#091b3b]">
+            <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
+            <h4 className="text-xl font-bold text-[#0f172a]">
               {currentLang === 'en' ? 'Call Scheduled!' : 'कल निश्चित भयो!'}
             </h4>
-            <p className="text-xs text-[#5c5d63]">
+            <p className="text-xs text-[#64748b]">
               {currentLang === 'en'
                 ? `A Google Meet invitation with ${mentorObj.name} has been sent to your calendar.`
                 : `गूगल मिटको निमन्त्रणा इमेल पठाइएको छ।`}
