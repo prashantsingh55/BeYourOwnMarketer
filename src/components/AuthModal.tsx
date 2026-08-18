@@ -3,8 +3,9 @@
 import React, { useState } from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
-import { X, Mail, Lock, User, CheckCircle2 } from 'lucide-react';
+import { X, Mail, Lock, User, Phone, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { isValidGmail, isValidNepalPhone } from '../lib/validation';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -29,12 +30,49 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
     setErrorMsg('');
+
+    const cleanEmail = email.trim().toLowerCase();
+    if (!isValidGmail(cleanEmail)) {
+      setErrorMsg(
+        currentLang === 'en'
+          ? 'Please enter a valid Gmail address (must end with @gmail.com)'
+          : 'कृपया मान्य Gmail ठेगाना प्रविष्ट गर्नुहोस् (@gmail.com आवश्यक)'
+      );
+      return;
+    }
+
+    if (activeTab === 'register') {
+      if (!fullName.trim()) {
+        setErrorMsg(currentLang === 'en' ? 'Full Name is required' : 'पूरा नाम आवश्यक छ');
+        return;
+      }
+      if (!phone.trim()) {
+        setErrorMsg(
+          currentLang === 'en'
+            ? 'Nepal phone number is required (e.g. 98XXXXXXXX or 97XXXXXXXX)'
+            : 'नेपाली फोन नम्बर आवश्यक छ (उदा. ९८XXXXXXXX वा ९७XXXXXXXX)'
+        );
+        return;
+      }
+      if (!isValidNepalPhone(phone)) {
+        setErrorMsg(
+          currentLang === 'en'
+            ? 'Please enter a valid 10-digit Nepal mobile number starting with 98 or 97'
+            : 'कृपया मान्य १०-अङ्कको नेपाली मोबाइल नम्बर प्रविष्ट गर्नुहोस् (९८ वा ९७ बाट सुरु)'
+        );
+        return;
+      }
+    }
+
+    setLoading(true);
 
     try {
       const endpoint = activeTab === 'login' ? '/api/auth/login' : '/api/auth/register';
-      const body = activeTab === 'login' ? { email, password } : { name: fullName, email, password, phone };
+      const body =
+        activeTab === 'login'
+          ? { email: cleanEmail, password }
+          : { name: fullName.trim(), email: cleanEmail, password, phone: phone.trim() };
 
       const res = await fetch(endpoint, {
         method: 'POST',
@@ -70,7 +108,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        className="bg-white max-w-md w-full rounded-3xl shadow-2xl overflow-hidden relative p-8 space-y-6"
+        className="bg-white max-w-md w-full rounded-3xl shadow-2xl overflow-hidden relative p-8 space-y-6 max-h-[90vh] overflow-y-auto"
       >
         {/* Close Button */}
         <button
@@ -123,7 +161,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
               {activeTab === 'register' && (
                 <div>
                   <label className="block text-xs font-bold text-[#0f172a] mb-1">
-                    Full Name
+                    {currentLang === 'en' ? 'Full Name' : 'पूरा नाम'}
                   </label>
                   <div className="relative">
                     <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
@@ -140,9 +178,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
               )}
 
               <div>
-                <label className="block text-xs font-bold text-[#0f172a] mb-1">
-                  {t.emailLabel[currentLang]}
-                </label>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="block text-xs font-bold text-[#0f172a]">
+                    {t.emailLabel[currentLang]}
+                  </label>
+                  <span className="text-[10px] font-bold text-sky-600 bg-sky-50 px-2 py-0.5 rounded-md border border-sky-200">
+                    @gmail.com
+                  </span>
+                </div>
                 <div className="relative">
                   <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
                   <input
@@ -150,11 +193,36 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="student@byom.com.np"
+                    placeholder="yourname@gmail.com"
                     className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
                   />
                 </div>
               </div>
+
+              {activeTab === 'register' && (
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block text-xs font-bold text-[#0f172a]">
+                      {currentLang === 'en' ? 'Nepal Phone Number' : 'नेपाली फोन नम्बर'}
+                    </label>
+                    <span className="text-[10px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-md border border-orange-200">
+                      🇳🇵 98 / 97 (10 digits)
+                    </span>
+                  </div>
+                  <div className="relative">
+                    <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
+                    <input
+                      type="tel"
+                      required
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      placeholder="98XXXXXXXX"
+                      maxLength={14}
+                      className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 transition-all"
+                    />
+                  </div>
+                </div>
+              )}
 
               <div>
                 <label className="block text-xs font-bold text-[#0f172a] mb-1">
@@ -218,18 +286,23 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, currentLa
             </a>
           </>
         ) : (
-          <div className="py-8 text-center space-y-3">
-            <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
-            <h4 className="text-xl font-bold text-[#0f172a]">
-              {currentLang === 'en' ? 'Welcome Back!' : 'पुनः स्वागत छ!'}
-            </h4>
-            <p className="text-xs text-[#64748b]">
-              {currentLang === 'en' ? 'Redirecting to your student dashboard...' : 'तपाईंको ड्यासबोर्डमा लाँदैछ...'}
-            </p>
+          <div className="py-12 text-center space-y-4">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto"
+            >
+              <CheckCircle2 className="w-8 h-8" />
+            </motion.div>
+            <div className="space-y-1">
+              <h3 className="text-xl font-extrabold text-[#0f172a]">
+                {activeTab === 'login' ? 'Signed in successfully!' : 'Account created successfully!'}
+              </h3>
+              <p className="text-xs text-slate-500">Welcome to BYOM Academy.</p>
+            </div>
           </div>
         )}
       </motion.div>
     </div>
   );
 };
-

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { sendContactEmails } from '@/lib/mailer';
+import { isValidGmail, isValidNepalPhone, normalizeNepalPhone } from '@/lib/validation';
 
 export async function POST(req: Request) {
   try {
@@ -14,15 +15,30 @@ export async function POST(req: Request) {
     }
 
     const trimmedEmail = email.toLowerCase().trim();
+    if (!isValidGmail(trimmedEmail)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid Gmail address (must end with @gmail.com)' },
+        { status: 400 }
+      );
+    }
+
+    if (phone && !isValidNepalPhone(phone)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid Nepal mobile number (e.g. 98XXXXXXXX or 97XXXXXXXX)' },
+        { status: 400 }
+      );
+    }
+
+    const normalizedPhone = phone ? normalizeNepalPhone(phone) : null;
 
     // 1. Save to Database
     const submission = await db.contactSubmission.create({
       data: {
-        name,
+        name: name.trim(),
         email: trimmedEmail,
-        phone: phone || null,
+        phone: normalizedPhone,
         subject: subject || 'General Inquiry',
-        message,
+        message: message.trim(),
         status: 'new',
       },
     });

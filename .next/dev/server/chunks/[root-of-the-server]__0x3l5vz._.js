@@ -175,7 +175,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$mailer$2e$ts__
 async function POST(req) {
     try {
         const body = await req.json();
-        const { city, batch, selectedSeatId, fullName, email, phone, organization, paymentMethod, depositAmount } = body;
+        const { city, batch, selectedSeatId, fullName, email, phone, organization, paymentMethod, depositAmount, sessionDate, sessionName } = body;
         if (!city || !batch || !selectedSeatId || !fullName || !phone || !paymentMethod) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: 'Missing required booking details'
@@ -183,8 +183,83 @@ async function POST(req) {
                 status: 400
             });
         }
-        const authUser = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAuthUser"])();
-        // Check seat status in DB
+        const trimmedEmail = (email || '').toLowerCase().trim();
+        if (!trimmedEmail) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                error: 'Valid email address is required for booking confirmation'
+            }, {
+                status: 400
+            });
+        }
+        // 1. Resolve Session Dates
+        let resolvedSessionDate = sessionDate;
+        let resolvedSessionName = sessionName;
+        if (!resolvedSessionDate) {
+            // Find active class session for this city or batch
+            const activeSession = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].classSession.findFirst({
+                where: {
+                    city: {
+                        contains: city.split(' ')[0]
+                    },
+                    isActive: true
+                },
+                orderBy: {
+                    createdAt: 'desc'
+                }
+            });
+            if (activeSession && activeSession.startDate && activeSession.endDate) {
+                resolvedSessionDate = `${activeSession.startDate} to ${activeSession.endDate}`;
+                resolvedSessionName = activeSession.nameEn;
+            } else {
+                resolvedSessionDate = 'Sept 1, 2026 – Sept 7, 2026';
+                resolvedSessionName = '7-Day Marketing Mastery Cohort';
+            }
+        }
+        // 2. Resolve User Account (Auto-create if user doesn't exist)
+        let authUser = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAuthUser"])();
+        let targetUser = null;
+        if (authUser && authUser.email.toLowerCase() === trimmedEmail) {
+            targetUser = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].user.findUnique({
+                where: {
+                    id: authUser.userId
+                }
+            });
+        }
+        if (!targetUser) {
+            // Look up by email
+            targetUser = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].user.findUnique({
+                where: {
+                    email: trimmedEmail
+                }
+            });
+            if (targetUser) {
+                // Update user phone if empty
+                if (!targetUser.phone && phone) {
+                    targetUser = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].user.update({
+                        where: {
+                            id: targetUser.id
+                        },
+                        data: {
+                            phone
+                        }
+                    });
+                }
+            } else {
+                // Automatically create account for user
+                const autoPassword = `Byom@${Math.random().toString(36).slice(-6)}`;
+                const passwordHash = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["hashPassword"])(autoPassword);
+                targetUser = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].user.create({
+                    data: {
+                        name: fullName,
+                        email: trimmedEmail,
+                        phone: phone || null,
+                        passwordHash,
+                        role: 'user'
+                    }
+                });
+            }
+        }
+        // 3. Check seat status in DB
         const compositeSeatId = `${city}-${batch}-${selectedSeatId}`;
         const dbSeat = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].seat.findUnique({
             where: {
@@ -201,24 +276,26 @@ async function POST(req) {
         const totalAmount = dbSeat ? dbSeat.priceNpr : 15000;
         const deposit = depositAmount || 5000;
         const remaining = totalAmount - deposit;
-        // Create booking record
+        // 4. Create booking record
         const booking = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].booking.create({
             data: {
-                userId: authUser?.userId || null,
+                userId: targetUser?.id || null,
                 seatId: dbSeat?.id || null,
                 city,
                 batch,
                 selectedSeatId,
                 fullName,
-                email: email || '',
+                email: trimmedEmail,
                 phone,
-                organization: organization || '',
+                organization: organization || null,
+                sessionDate: resolvedSessionDate,
+                sessionName: resolvedSessionName,
                 amount: totalAmount,
                 paymentMethod,
                 paymentStatus: 'pending'
             }
         });
-        // Update seat to reserved
+        // 5. Update seat to reserved
         if (dbSeat) {
             await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].seat.update({
                 where: {
@@ -229,30 +306,52 @@ async function POST(req) {
                 }
             });
         }
-        // Send confirmation email (graceful — does not break booking if mail fails)
-        if (email) {
-            try {
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$mailer$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendBookingConfirmationEmail"])({
-                    toEmail: email,
-                    toName: fullName,
-                    bookingId: booking.id,
-                    city,
-                    batch,
-                    seatId: selectedSeatId,
-                    depositAmount: deposit,
-                    remainingAmount: remaining,
-                    totalAmount
-                });
-            } catch (mailErr) {
-                console.error('[Mailer] Failed to send confirmation email:', mailErr);
-            // Do NOT rethrow — booking still succeeds
-            }
+        // 6. Send confirmation email (graceful — does not break booking if mail fails)
+        try {
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$mailer$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendBookingConfirmationEmail"])({
+                toEmail: trimmedEmail,
+                toName: fullName,
+                bookingId: booking.id,
+                city,
+                batch,
+                seatId: selectedSeatId,
+                sessionDate: resolvedSessionDate,
+                depositAmount: deposit,
+                remainingAmount: remaining,
+                totalAmount
+            });
+        } catch (mailErr) {
+            console.error('[Mailer] Failed to send confirmation email:', mailErr);
         }
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            message: 'Booking created successfully',
-            bookingId: booking.id,
-            booking
+        // 7. Generate auth token and attach cookie so user is auto-logged in
+        const token = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["signJwtToken"])({
+            userId: targetUser.id,
+            email: targetUser.email,
+            name: targetUser.name,
+            role: targetUser.role,
+            avatar: targetUser.avatar || undefined
         });
+        const response = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            message: 'Booking created successfully and account configured.',
+            bookingId: booking.id,
+            booking,
+            user: {
+                id: targetUser.id,
+                name: targetUser.name,
+                email: targetUser.email,
+                phone: targetUser.phone,
+                role: targetUser.role,
+                avatar: targetUser.avatar
+            }
+        });
+        response.cookies.set((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAuthTokenName"])(), token, {
+            httpOnly: true,
+            secure: ("TURBOPACK compile-time value", "development") === 'production',
+            sameSite: 'lax',
+            path: '/',
+            maxAge: 7 * 24 * 60 * 60
+        });
+        return response;
     } catch (error) {
         console.error('Error creating booking:', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
@@ -274,7 +373,14 @@ async function GET(req) {
         }
         const bookings = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].booking.findMany({
             where: {
-                userId: authUser.userId
+                OR: [
+                    {
+                        userId: authUser.userId
+                    },
+                    {
+                        email: authUser.email.toLowerCase().trim()
+                    }
+                ]
             },
             orderBy: {
                 createdAt: 'desc'
@@ -388,7 +494,7 @@ const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
     }
 });
 async function sendBookingConfirmationEmail(params) {
-    const { toEmail, toName, bookingId, city, batch, seatId, depositAmount, remainingAmount, totalAmount } = params;
+    const { toEmail, toName, bookingId, city, batch, seatId, sessionDate, depositAmount, remainingAmount, totalAmount } = params;
     const htmlBody = `
 <!DOCTYPE html>
 <html>
@@ -397,24 +503,24 @@ async function sendBookingConfirmationEmail(params) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BYOM Booking Confirmation</title>
 </head>
-<body style="margin:0;padding:0;background:#f4eee9;font-family:'Helvetica Neue',Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4eee9;padding:40px 0;">
+<body style="margin:0;padding:0;background:#f8fafc;font-family:'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;padding:40px 0;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.06);border:1px solid #e2e8f0;">
           
           <!-- Header -->
           <tr>
-            <td style="background:#091b3b;padding:32px 40px;text-align:center;">
+            <td style="background:#080e1a;padding:32px 40px;text-align:center;">
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="center">
                     <div style="display:inline-block;">
-                      <span style="background:#2196F3;color:white;font-weight:900;font-size:20px;padding:10px 16px;border-radius:12px;">B</span>
+                      <span style="background:#0284c7;color:white;font-weight:900;font-size:20px;padding:10px 16px;border-radius:12px;">B</span>
                       <span style="color:white;font-size:18px;font-weight:800;margin-left:8px;">BE YOUR OWN</span>
-                      <span style="color:#f6b996;font-size:18px;font-weight:800;"> MARKETER</span>
+                      <span style="color:#f97316;font-size:18px;font-weight:800;"> MARKETER</span>
                     </div>
-                    <p style="color:#c5c6cf;font-size:12px;margin-top:8px;">7-Day Physical Marketing Cohort · Kathmandu, Nepal</p>
+                    <p style="color:#94a3b8;font-size:12px;margin-top:8px;">7-Day Physical Marketing Cohort · Kathmandu, Nepal</p>
                   </td>
                 </tr>
               </table>
@@ -424,38 +530,43 @@ async function sendBookingConfirmationEmail(params) {
           <!-- Confirmation Badge -->
           <tr>
             <td style="padding:40px 40px 0;text-align:center;">
-              <div style="display:inline-block;background:#10b981;border-radius:50%;width:64px;height:64px;line-height:64px;text-align:center;font-size:32px;margin-bottom:16px;">✓</div>
-              <h1 style="color:#091b3b;font-size:26px;font-weight:800;margin:0 0 8px;">Booking Confirmed!</h1>
-              <p style="color:#5c5d63;font-size:14px;margin:0;">Your seat has been reserved at BYOM. Here are your details:</p>
+              <div style="display:inline-block;background:#10b981;border-radius:50%;width:64px;height:64px;line-height:64px;text-align:center;font-size:32px;color:white;margin-bottom:16px;">✓</div>
+              <h1 style="color:#0f172a;font-size:26px;font-weight:800;margin:0 0 8px;">Booking Confirmed!</h1>
+              <p style="color:#64748b;font-size:14px;margin:0;">Your seat has been reserved at BYOM. Here are your details:</p>
             </td>
           </tr>
 
           <!-- Booking Details -->
           <tr>
             <td style="padding:32px 40px;">
-              <table width="100%" cellpadding="0" cellspacing="0" style="background:#fcf9f8;border-radius:12px;padding:24px;border:1px solid #e2dedc;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;border-radius:16px;padding:24px;border:1px solid #e2e8f0;">
                 <tr>
-                  <td colspan="2" style="border-bottom:1px solid #e2dedc;padding-bottom:12px;margin-bottom:12px;">
-                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#8e8f99;">BOOKING REFERENCE</span><br/>
-                    <span style="font-size:16px;font-weight:800;color:#265cb3;font-family:monospace;">#${bookingId.slice(-8).toUpperCase()}</span>
+                  <td colspan="2" style="border-bottom:1px solid #e2e8f0;padding-bottom:12px;margin-bottom:12px;">
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;">BOOKING REFERENCE</span><br/>
+                    <span style="font-size:16px;font-weight:800;color:#0284c7;font-family:monospace;">#${bookingId.slice(-8).toUpperCase()}</span>
                   </td>
                 </tr>
                 <tr><td height="12"></td></tr>
                 <tr>
-                  <td style="font-size:12px;color:#5c5d63;padding:6px 0;font-weight:700;width:40%;">Student Name</td>
-                  <td style="font-size:13px;color:#091b3b;font-weight:700;padding:6px 0;">${toName}</td>
+                  <td style="font-size:12px;color:#64748b;padding:6px 0;font-weight:700;width:40%;">Student Name</td>
+                  <td style="font-size:13px;color:#0f172a;font-weight:700;padding:6px 0;">${toName}</td>
+                </tr>
+                ${sessionDate ? `
+                <tr>
+                  <td style="font-size:12px;color:#64748b;padding:6px 0;font-weight:700;">Cohort Dates</td>
+                  <td style="font-size:13px;color:#0284c7;font-weight:800;padding:6px 0;">${sessionDate}</td>
+                </tr>` : ''}
+                <tr>
+                  <td style="font-size:12px;color:#64748b;padding:6px 0;font-weight:700;">Campus</td>
+                  <td style="font-size:13px;color:#0f172a;font-weight:700;padding:6px 0;">${city}</td>
                 </tr>
                 <tr>
-                  <td style="font-size:12px;color:#5c5d63;padding:6px 0;font-weight:700;">Campus</td>
-                  <td style="font-size:13px;color:#091b3b;font-weight:700;padding:6px 0;">${city}</td>
+                  <td style="font-size:12px;color:#64748b;padding:6px 0;font-weight:700;">Batch</td>
+                  <td style="font-size:13px;color:#0f172a;font-weight:700;padding:6px 0;">${batch}</td>
                 </tr>
                 <tr>
-                  <td style="font-size:12px;color:#5c5d63;padding:6px 0;font-weight:700;">Batch</td>
-                  <td style="font-size:13px;color:#091b3b;font-weight:700;padding:6px 0;">${batch}</td>
-                </tr>
-                <tr>
-                  <td style="font-size:12px;color:#5c5d63;padding:6px 0;font-weight:700;">Assigned Seat</td>
-                  <td style="font-size:13px;color:#265cb3;font-weight:800;padding:6px 0;">Seat ${seatId}</td>
+                  <td style="font-size:12px;color:#64748b;padding:6px 0;font-weight:700;">Assigned Seat</td>
+                  <td style="font-size:13px;color:#0284c7;font-weight:800;padding:6px 0;">Seat ${seatId}</td>
                 </tr>
               </table>
             </td>
@@ -464,26 +575,26 @@ async function sendBookingConfirmationEmail(params) {
           <!-- Fee Summary -->
           <tr>
             <td style="padding:0 40px 32px;">
-              <table width="100%" cellpadding="0" cellspacing="0" style="background:#091b3b;border-radius:12px;padding:24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background:#080e1a;border-radius:16px;padding:24px;border:1px solid #1e293b;">
                 <tr>
                   <td colspan="2" style="border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:12px;margin-bottom:12px;">
-                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#c5c6cf;">PAYMENT SUMMARY</span>
+                    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94a3b8;">PAYMENT SUMMARY</span>
                   </td>
                 </tr>
                 <tr><td height="12"></td></tr>
                 <tr>
-                  <td style="font-size:12px;color:#c5c6cf;padding:5px 0;">Total Program Fee</td>
-                  <td align="right" style="font-size:12px;color:#c5c6cf;padding:5px 0;">Rs. ${totalAmount.toLocaleString()}</td>
+                  <td style="font-size:12px;color:#cbd5e1;padding:5px 0;">Total Program Fee</td>
+                  <td align="right" style="font-size:12px;color:#cbd5e1;padding:5px 0;">Rs. ${totalAmount.toLocaleString()}</td>
                 </tr>
                 <tr>
-                  <td style="font-size:13px;color:#f6b996;font-weight:700;padding:5px 0;">✓ Deposit Paid (Fonepay)</td>
-                  <td align="right" style="font-size:13px;color:#f6b996;font-weight:700;padding:5px 0;">Rs. ${depositAmount.toLocaleString()}</td>
+                  <td style="font-size:13px;color:#f97316;font-weight:700;padding:5px 0;">✓ Deposit Paid (Fonepay)</td>
+                  <td align="right" style="font-size:13px;color:#f97316;font-weight:700;padding:5px 0;">Rs. ${depositAmount.toLocaleString()}</td>
                 </tr>
                 <tr>
                   <td colspan="2" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:10px;margin-top:5px;">
                     <table width="100%" cellpadding="0" cellspacing="0">
                       <tr>
-                        <td style="font-size:12px;color:#8e9ab0;">Remaining (due after session starts)</td>
+                        <td style="font-size:12px;color:#94a3b8;">Remaining (due after session starts)</td>
                         <td align="right" style="font-size:14px;color:white;font-weight:800;">Rs. ${remainingAmount.toLocaleString()}</td>
                       </tr>
                     </table>
@@ -496,22 +607,22 @@ async function sendBookingConfirmationEmail(params) {
           <!-- CTA -->
           <tr>
             <td style="padding:0 40px 32px;text-align:center;">
-              <p style="color:#5c5d63;font-size:13px;line-height:1.6;">
+              <p style="color:#64748b;font-size:13px;line-height:1.6;">
                 Please bring a valid photo ID and your booking reference on the first day.<br/>
-                Our team will contact you on WhatsApp to confirm the venue details.
+                Our team will contact you on WhatsApp (+977 980-8193078) to confirm the classroom details.
               </p>
-              <a href="https://wa.me/9779808193078" style="display:inline-block;margin-top:16px;background:#25D366;color:white;font-weight:700;font-size:13px;padding:12px 28px;border-radius:10px;text-decoration:none;">
-                💬 Chat on WhatsApp
+              <a href="https://wa.me/9779808193078" style="display:inline-block;margin-top:16px;background:#25D366;color:white;font-weight:700;font-size:13px;padding:12px 28px;border-radius:12px;text-decoration:none;">
+                💬 Chat on WhatsApp (+977 980-8193078)
               </a>
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="background:#f4eee9;padding:20px 40px;text-align:center;border-top:1px solid #e2dedc;">
-              <p style="color:#8e8f99;font-size:11px;margin:0;">
-                © 2026 Be Your Own Marketer · Kathmandu, Nepal<br/>
-                If you have questions, reply to this email or WhatsApp us.
+            <td style="background:#f8fafc;padding:20px 40px;text-align:center;border-top:1px solid #e2e8f0;">
+              <p style="color:#94a3b8;font-size:11px;margin:0;">
+                © ${new Date().getFullYear()} Be Your Own Marketer (BYOM) · Kathmandu, Nepal<br/>
+                If you have questions, reply to this email or contact us at hello@byom.com.np
               </p>
             </td>
           </tr>

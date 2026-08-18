@@ -186,35 +186,6 @@ function Home() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                     mode: "wait",
                     children: [
-                        currentPage === 'dashboard' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
-                            initial: {
-                                opacity: 0
-                            },
-                            animate: {
-                                opacity: 1
-                            },
-                            exit: {
-                                opacity: 0
-                            },
-                            transition: {
-                                duration: 0.3
-                            },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UserDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UserDashboard"], {
-                                currentLang: currentLang,
-                                onLogout: ()=>{
-                                    setAuthUser(null);
-                                    setCurrentPage('home');
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.tsx",
-                                lineNumber: 138,
-                                columnNumber: 15
-                            }, this)
-                        }, "dashboard", false, {
-                            fileName: "[project]/app/page.tsx",
-                            lineNumber: 131,
-                            columnNumber: 13
-                        }, this),
                         currentPage === 'home' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
                             initial: {
                                 opacity: 0
@@ -234,7 +205,7 @@ function Home() {
                                     onNavigate: handleNavigate
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$BentoGrid$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BentoGrid"], {
@@ -242,7 +213,7 @@ function Home() {
                                     onNavigate: handleNavigate
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 143,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -258,7 +229,7 @@ function Home() {
                                                         children: currentLang === 'en' ? '★ Real Student Stories' : '★ वास्तविक विद्यार्थीका अनुभव'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 152,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -266,7 +237,7 @@ function Home() {
                                                         children: currentLang === 'en' ? 'What Our Graduates Say' : 'हाम्रा स्नातकहरूको भनाइ'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 171,
+                                                        lineNumber: 155,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -274,13 +245,13 @@ function Home() {
                                                         children: currentLang === 'en' ? 'Over 200+ entrepreneurs and professionals have transformed their marketing with BYOM.' : '२०० भन्दा बढी उद्यमी र व्यवसायीहरूले BYOM मार्फत आफ्नो मार्केटिङ रूपान्तरण गरेका छन्।'
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 160,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 167,
+                                                lineNumber: 151,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -374,19 +345,19 @@ function Home() {
                                                                                 className: "w-4 h-4 fill-current"
                                                                             }, i, false, {
                                                                                 fileName: "[project]/app/page.tsx",
-                                                                                lineNumber: 257,
+                                                                                lineNumber: 241,
                                                                                 columnNumber: 31
                                                                             }, this))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/page.tsx",
-                                                                        lineNumber: 255,
+                                                                        lineNumber: 239,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
                                                                         className: "w-7 h-7 text-[#f97316]/40"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/page.tsx",
-                                                                        lineNumber: 260,
+                                                                        lineNumber: 244,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -398,13 +369,13 @@ function Home() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/page.tsx",
-                                                                        lineNumber: 261,
+                                                                        lineNumber: 245,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 254,
+                                                                lineNumber: 238,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -416,7 +387,7 @@ function Home() {
                                                                         className: "w-10 h-10 rounded-full object-cover ring-2 ring-slate-100"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/page.tsx",
-                                                                        lineNumber: 267,
+                                                                        lineNumber: 251,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -426,7 +397,7 @@ function Home() {
                                                                                 children: story.name
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/page.tsx",
-                                                                                lineNumber: 273,
+                                                                                lineNumber: 257,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -434,41 +405,41 @@ function Home() {
                                                                                 children: story.role
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/page.tsx",
-                                                                                lineNumber: 276,
+                                                                                lineNumber: 260,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/page.tsx",
-                                                                        lineNumber: 272,
+                                                                        lineNumber: 256,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 266,
+                                                                lineNumber: 250,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, idx, true, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 246,
+                                                        lineNumber: 230,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 183,
+                                                lineNumber: 167,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 150,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 149,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -478,7 +449,7 @@ function Home() {
                                             className: "absolute top-0 right-1/3 w-80 h-80 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 289,
+                                            lineNumber: 273,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -491,20 +462,20 @@ function Home() {
                                                             className: "w-3.5 h-3.5 text-amber-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 292,
+                                                            lineNumber: 276,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: currentLang === 'en' ? 'Limited Capacity • Only 25 Seats' : 'सीमित स्थान • केवल २५ सिट'
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.tsx",
-                                                            lineNumber: 293,
+                                                            lineNumber: 277,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 291,
+                                                    lineNumber: 275,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -512,7 +483,7 @@ function Home() {
                                                     children: currentLang === 'en' ? 'Ready to Become Your Own Marketer?' : 'के तपाईं आफैँ मार्केटर बन्न तयार हुनुहुन्छ?'
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 295,
+                                                    lineNumber: 279,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -520,7 +491,7 @@ function Home() {
                                                     children: currentLang === 'en' ? 'Reserve your seat for the upcoming 7-day physical cohort in Kathmandu.' : 'काठमाडौँमा हुने आगामी ७-दिने भौतिक टोलीका लागि आफ्नो सिट सुरक्षित गर्नुहोस्।'
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 284,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -533,43 +504,43 @@ function Home() {
                                                                 children: currentLang === 'en' ? 'Book Your Spot Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 310,
+                                                                lineNumber: 294,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                                 className: "w-5 h-5 text-amber-200"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
-                                                                lineNumber: 311,
+                                                                lineNumber: 295,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/page.tsx",
-                                                        lineNumber: 306,
+                                                        lineNumber: 290,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
-                                                    lineNumber: 305,
+                                                    lineNumber: 289,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 290,
+                                            lineNumber: 274,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 288,
+                                    lineNumber: 272,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, "home", true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 147,
+                            lineNumber: 131,
                             columnNumber: 13
                         }, this),
                         currentPage === 'programs' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -591,12 +562,12 @@ function Home() {
                                 onSelectCourseEnroll: handleSelectCourseEnroll
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 328,
+                                lineNumber: 312,
                                 columnNumber: 15
                             }, this)
                         }, "programs", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 321,
+                            lineNumber: 305,
                             columnNumber: 13
                         }, this),
                         currentPage === 'book' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -613,15 +584,19 @@ function Home() {
                                 duration: 0.3
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SeatBooking$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SeatBooking"], {
-                                currentLang: currentLang
+                                currentLang: currentLang,
+                                onNavigate: handleNavigate,
+                                onBookingSuccess: (user)=>{
+                                    setAuthUser(user);
+                                }
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 345,
+                                lineNumber: 329,
                                 columnNumber: 15
                             }, this)
                         }, "book", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 338,
+                            lineNumber: 322,
                             columnNumber: 13
                         }, this),
                         currentPage === 'contact' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -642,12 +617,12 @@ function Home() {
                                 onOpenMentorModal: ()=>setMentorModalOpen(true)
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 358,
+                                lineNumber: 348,
                                 columnNumber: 15
                             }, this)
                         }, "contact", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 351,
+                            lineNumber: 341,
                             columnNumber: 13
                         }, this),
                         currentPage === 'blog' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -667,12 +642,12 @@ function Home() {
                                 currentLang: currentLang
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 374,
+                                lineNumber: 364,
                                 columnNumber: 15
                             }, this)
                         }, "blog", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 367,
+                            lineNumber: 357,
                             columnNumber: 13
                         }, this),
                         currentPage === 'gallery' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
@@ -692,12 +667,42 @@ function Home() {
                                 currentLang: currentLang
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 387,
+                                lineNumber: 377,
                                 columnNumber: 15
                             }, this)
                         }, "gallery", false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 380,
+                            lineNumber: 370,
+                            columnNumber: 13
+                        }, this),
+                        currentPage === 'dashboard' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
+                            initial: {
+                                opacity: 0
+                            },
+                            animate: {
+                                opacity: 1
+                            },
+                            exit: {
+                                opacity: 0
+                            },
+                            transition: {
+                                duration: 0.3
+                            },
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$UserDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UserDashboard"], {
+                                currentLang: currentLang,
+                                onLogout: ()=>{
+                                    setAuthUser(null);
+                                    handleNavigate('home');
+                                },
+                                onNavigate: handleNavigate
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 390,
+                                columnNumber: 15
+                            }, this)
+                        }, "dashboard", false, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 383,
                             columnNumber: 13
                         }, this)
                     ]
@@ -717,7 +722,7 @@ function Home() {
                 onLanguageChange: setCurrentLang
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 395,
+                lineNumber: 405,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AuthModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AuthModal"], {
@@ -727,7 +732,7 @@ function Home() {
                 onLoginSuccess: handleLoginSuccess
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 402,
+                lineNumber: 412,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MentorModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MentorModal"], {
@@ -736,7 +741,7 @@ function Home() {
                 currentLang: currentLang
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 409,
+                lineNumber: 419,
                 columnNumber: 7
             }, this)
         ]
@@ -3002,7 +3007,7 @@ const ContactPage = ({ currentLang, onOpenMentorModal })=>{
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-[#64748b] max-w-md mx-auto leading-relaxed",
-                                        children: currentLang === 'en' ? `A confirmation email has been sent to ${formData.email}. Our team will review your message and reach out shortly.` : `${formData.email} मा पुष्टिकरण इमेल पठाइएको छ। हाम्रो टोलीले चाँडै सम्पर्क गर्नेछ।`
+                                        children: currentLang === 'en' ? `A confirmation email has been sent to our team. Our team will review your message and reach out shortly.` : `पुष्टिकरण इमेल पठाइएको छ। हाम्रो टोलीले चाँडै सम्पर्क गर्नेछ।`
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ContactPage.tsx",
                                         lineNumber: 205,
@@ -6878,6 +6883,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/ticket.js [app-client] (ecmascript) <export default as Ticket>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$printer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Printer$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/printer.js [app-client] (ecmascript) <export default as Printer>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/motion/dist/es/react.mjs [app-client] (ecmascript) <locals>");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -6887,7 +6895,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const SeatBooking = ({ currentLang })=>{
+const SeatBooking = ({ currentLang, onNavigate, onBookingSuccess })=>{
     _s();
     const t = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$translations$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["translations"].booking;
     const [activeStep, setActiveStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
@@ -6895,50 +6903,99 @@ const SeatBooking = ({ currentLang })=>{
     const [selectedBatch, setSelectedBatch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('Daytime / Afternoon (12:00 PM - 3:00 PM)');
     const [seats, setSeats] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["initialSeatData"]);
     const [selectedSeatId, setSelectedSeatId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('B4');
+    // Active Sessions / Dates from backend
+    const [sessions, setSessions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [currentSessionDate, setCurrentSessionDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('Sept 1, 2026 – Sept 7, 2026');
+    const [currentSessionName, setCurrentSessionName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('7-Day Marketing Mastery Cohort');
     // Contact Details
     const [fullName, setFullName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [phone, setPhone] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [organization, setOrganization] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
-    // Payment State — Fonepay only
+    // Payment & Booking Confirmation State
     const [paymentMethod, setPaymentMethod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('fonepay');
     const [isCompleted, setIsCompleted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isProcessing, setIsProcessing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [errorMsg, setErrorMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [confirmedBooking, setConfirmedBooking] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     // Fee split constants
     const DEPOSIT_AMOUNT = 5000;
     const REMAINING_AMOUNT = 10000;
     const TOTAL_FEE = 15000;
-    const [createdBookingId, setCreatedBookingId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
-    // Fetch seats dynamically from backend whenever city or batch changes
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useEffect({
+    // Fetch live upcoming sessions to display exact updated dates
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SeatBooking.useEffect": ()=>{
-            async function fetchSeats() {
+            async function fetchSessions() {
                 try {
-                    const res = await fetch(`/api/seats?city=${encodeURIComponent(selectedCity)}&batch=${encodeURIComponent(selectedBatch)}`);
-                    const data = await res.json();
-                    if (res.ok && data.seats && data.seats.length > 0) {
-                        setSeats(data.seats);
-                        // Set first available seat if current selected is invalid
-                        const found = data.seats.find({
-                            "SeatBooking.useEffect.fetchSeats.found": (s)=>s.id === selectedSeatId
-                        }["SeatBooking.useEffect.fetchSeats.found"]);
-                        if (!found || found.status === 'booked') {
-                            const avail = data.seats.find({
-                                "SeatBooking.useEffect.fetchSeats.avail": (s)=>s.status === 'available' || s.status === 'vip'
-                            }["SeatBooking.useEffect.fetchSeats.avail"]);
-                            if (avail) setSelectedSeatId(avail.id);
+                    const res = await fetch('/api/sessions');
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data.sessions && data.sessions.length > 0) {
+                            setSessions(data.sessions);
                         }
                     }
                 } catch (err) {
-                    console.error('Failed to fetch dynamic seats:', err);
+                    console.error('Failed to load session dates:', err);
                 }
             }
+            fetchSessions();
+        }
+    }["SeatBooking.useEffect"], []);
+    // Update active session dates when city or batch changes
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SeatBooking.useEffect": ()=>{
+            const matched = sessions.find({
+                "SeatBooking.useEffect.matched": (s)=>s.city.includes(selectedCity.split(' ')[0]) && s.isActive !== false
+            }["SeatBooking.useEffect.matched"]);
+            if (matched && matched.startDate && matched.endDate) {
+                setCurrentSessionDate(`${matched.startDate} to ${matched.endDate}`);
+                setCurrentSessionName(matched.nameEn || '7-Day Marketing Mastery Cohort');
+            } else {
+                setCurrentSessionDate('Sept 1, 2026 – Sept 7, 2026');
+                setCurrentSessionName('7-Day Marketing Mastery Cohort');
+            }
+        }
+    }["SeatBooking.useEffect"], [
+        selectedCity,
+        selectedBatch,
+        sessions
+    ]);
+    // Fetch seats dynamically from backend whenever city, batch, or sessionDate changes
+    const fetchSeats = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useCallback({
+        "SeatBooking.useCallback[fetchSeats]": async ()=>{
+            try {
+                const res = await fetch(`/api/seats?city=${encodeURIComponent(selectedCity)}&batch=${encodeURIComponent(selectedBatch)}&sessionDate=${encodeURIComponent(currentSessionDate)}`);
+                const data = await res.json();
+                if (res.ok && data.seats && data.seats.length > 0) {
+                    setSeats(data.seats);
+                    const currentSelected = data.seats.find({
+                        "SeatBooking.useCallback[fetchSeats].currentSelected": (s)=>s.id === selectedSeatId || s.seatLabel === selectedSeatId
+                    }["SeatBooking.useCallback[fetchSeats].currentSelected"]);
+                    if (!currentSelected || currentSelected.status === 'booked' || currentSelected.status === 'reserved') {
+                        const avail = data.seats.find({
+                            "SeatBooking.useCallback[fetchSeats].avail": (s)=>s.status === 'available' || s.status === 'vip'
+                        }["SeatBooking.useCallback[fetchSeats].avail"]);
+                        if (avail) setSelectedSeatId(avail.seatLabel || avail.id);
+                    }
+                }
+            } catch (err) {
+                console.error('Failed to fetch dynamic seats:', err);
+            }
+        }
+    }["SeatBooking.useCallback[fetchSeats]"], [
+        selectedCity,
+        selectedBatch,
+        currentSessionDate,
+        selectedSeatId
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SeatBooking.useEffect": ()=>{
             fetchSeats();
         }
     }["SeatBooking.useEffect"], [
         selectedCity,
-        selectedBatch
+        selectedBatch,
+        currentSessionDate
     ]);
     const cities = [
         {
@@ -6970,23 +7027,24 @@ const SeatBooking = ({ currentLang })=>{
             slots: '3 Seats Left'
         }
     ];
-    const selectedSeatObj = seats.find((s)=>s.id === selectedSeatId);
+    const selectedSeatObj = seats.find((s)=>s.id === selectedSeatId || s.seatLabel === selectedSeatId);
     const totalAmount = selectedSeatObj ? selectedSeatObj.priceNpr : TOTAL_FEE;
     const depositAmount = selectedSeatObj?.isVip ? 6000 : DEPOSIT_AMOUNT;
     const handleSeatClick = (seat)=>{
-        if (seat.status === 'booked') return;
+        if (seat.status === 'booked' || seat.status === 'reserved') return;
+        const seatIdToSelect = seat.seatLabel || seat.id;
         setSeats((prev)=>prev.map((s)=>{
-                if (s.id === seat.id) return {
+                if (s.id === seat.id || s.seatLabel === seatIdToSelect) return {
                     ...s,
                     status: 'selected'
                 };
-                if (s.id === selectedSeatId) return {
+                if (s.id === selectedSeatId || s.seatLabel === selectedSeatId) return {
                     ...s,
                     status: s.isVip ? 'vip' : 'available'
                 };
                 return s;
             }));
-        setSelectedSeatId(seat.id);
+        setSelectedSeatId(seatIdToSelect);
     };
     const handleProceedToPayment = (e)=>{
         e.preventDefault();
@@ -7000,7 +7058,8 @@ const SeatBooking = ({ currentLang })=>{
         setIsProcessing(true);
         setErrorMsg('');
         try {
-            // Create Pending Booking Record in Backend DB (Fonepay — manual verification)
+            const cleanSeatToSend = selectedSeatObj?.seatLabel || (selectedSeatId.includes('-') ? selectedSeatId.split('-').pop() : selectedSeatId);
+            // Create Booking Record in Backend DB & auto create/link user account
             const bookingRes = await fetch('/api/bookings', {
                 method: 'POST',
                 headers: {
@@ -7009,11 +7068,13 @@ const SeatBooking = ({ currentLang })=>{
                 body: JSON.stringify({
                     city: selectedCity,
                     batch: selectedBatch,
-                    selectedSeatId,
+                    selectedSeatId: cleanSeatToSend,
                     fullName,
                     email,
                     phone,
                     organization,
+                    sessionDate: currentSessionDate,
+                    sessionName: currentSessionName,
                     paymentMethod: 'fonepay',
                     depositAmount
                 })
@@ -7022,7 +7083,17 @@ const SeatBooking = ({ currentLang })=>{
             if (!bookingRes.ok) {
                 throw new Error(bookingData.error || 'Failed to create booking');
             }
-            setCreatedBookingId(bookingData.bookingId);
+            setConfirmedBooking(bookingData.booking || {
+                id: bookingData.bookingId,
+                sessionDate: currentSessionDate,
+                createdAt: new Date().toISOString()
+            });
+            // Update parent auth state if user was auto-created or logged in
+            if (bookingData.user && onBookingSuccess) {
+                onBookingSuccess(bookingData.user);
+            }
+            // Refresh seats to ensure booked seat is immediately locked on the grid
+            await fetchSeats();
             setIsCompleted(true);
         } catch (err) {
             console.error('Booking error:', err);
@@ -7030,6 +7101,9 @@ const SeatBooking = ({ currentLang })=>{
         } finally{
             setIsProcessing(false);
         }
+    };
+    const handlePrintTicket = ()=>{
+        window.print();
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "py-12 md:py-20 bg-[#f8fafc]",
@@ -7044,7 +7118,7 @@ const SeatBooking = ({ currentLang })=>{
                             children: currentLang === 'en' ? 'Physical Classroom Reservation' : 'भौतिक कक्षाकोठा आरक्षण'
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 158,
+                            lineNumber: 249,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -7052,7 +7126,7 @@ const SeatBooking = ({ currentLang })=>{
                             children: t.headerTitle[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 161,
+                            lineNumber: 252,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7060,13 +7134,13 @@ const SeatBooking = ({ currentLang })=>{
                             children: t.headerSub[currentLang]
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 164,
+                            lineNumber: 255,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SeatBooking.tsx",
-                    lineNumber: 157,
+                    lineNumber: 248,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7078,7 +7152,7 @@ const SeatBooking = ({ currentLang })=>{
                                 className: "absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-slate-200 -z-10"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SeatBooking.tsx",
-                                lineNumber: 172,
+                                lineNumber: 263,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             [
@@ -7116,12 +7190,12 @@ const SeatBooking = ({ currentLang })=>{
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 198,
+                                                lineNumber: 289,
                                                 columnNumber: 31
                                             }, ("TURBOPACK compile-time value", void 0)) : step.num
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 280,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7129,25 +7203,25 @@ const SeatBooking = ({ currentLang })=>{
                                             children: step.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 200,
+                                            lineNumber: 291,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, step.num, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 274,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0));
                             })
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/SeatBooking.tsx",
-                        lineNumber: 171,
+                        lineNumber: 262,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/SeatBooking.tsx",
-                    lineNumber: 170,
+                    lineNumber: 261,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 !isCompleted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7160,18 +7234,43 @@ const SeatBooking = ({ currentLang })=>{
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-slate-200 pb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#0f172a] font-heading",
-                                                children: currentLang === 'en' ? 'Step 1: Choose City & Campus' : 'चरण १: शहर र क्याम्पस छान्नुहोस्'
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 220,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                            className: "border-b border-slate-200 pb-4 flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
+                                                    children: currentLang === 'en' ? 'Step 1: Choose City & Campus' : 'चरण १: शहर र क्याम्पस छान्नुहोस्'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 311,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-1.5 text-xs font-bold text-[#0284c7] bg-[#0284c7]/10 px-3 py-1 rounded-xl",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                            className: "w-3.5 h-3.5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 315,
+                                                            columnNumber: 23
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: currentSessionDate
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 316,
+                                                            columnNumber: 23
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 314,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 219,
+                                            lineNumber: 310,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7192,20 +7291,20 @@ const SeatBooking = ({ currentLang })=>{
                                                                     children: c.name
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 243,
+                                                                    lineNumber: 338,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
                                                                     className: `w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 244,
+                                                                    lineNumber: 339,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 242,
+                                                            lineNumber: 337,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7213,7 +7312,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: c.address
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 246,
+                                                            lineNumber: 341,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         !isKathmandu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7221,19 +7320,19 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: "Coming Soon"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 248,
+                                                            lineNumber: 343,
                                                             columnNumber: 29
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, c.name, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 325,
                                                     columnNumber: 25
                                                 }, ("TURBOPACK compile-time value", void 0));
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 320,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7244,36 +7343,46 @@ const SeatBooking = ({ currentLang })=>{
                                                 children: currentLang === 'en' ? 'Next: Choose Batch' : 'अर्को: ब्याच छान्नुहोस्'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 258,
+                                                lineNumber: 353,
                                                 columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 257,
+                                            lineNumber: 352,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 218,
+                                    lineNumber: 309,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 activeStep === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-b border-slate-200 pb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#0f172a] font-heading",
-                                                children: currentLang === 'en' ? 'Step 2: Select Preferred Batch Time' : 'चरण २: मनपर्ने ब्याच समय छान्नुहोस्'
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 272,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                            className: "border-b border-slate-200 pb-4 flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
+                                                    children: currentLang === 'en' ? 'Step 2: Select Preferred Batch Time' : 'चरण २: मनपर्ने ब्याच समय छान्नुहोस्'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 367,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-xs font-bold text-[#f97316] bg-[#fff7ed] px-3 py-1 rounded-xl border border-[#fed7aa]",
+                                                    children: "7-Day Program"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 370,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 271,
+                                            lineNumber: 366,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7291,7 +7400,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     className: `w-5 h-5 ${isSel ? 'text-[#0284c7]' : 'text-slate-400'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 389,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7299,13 +7408,13 @@ const SeatBooking = ({ currentLang })=>{
                                                                     children: b.label
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 292,
+                                                                    lineNumber: 390,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 388,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7313,19 +7422,19 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: b.slots
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 294,
+                                                            lineNumber: 392,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, b.id, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 281,
+                                                    lineNumber: 379,
                                                     columnNumber: 25
                                                 }, ("TURBOPACK compile-time value", void 0));
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 277,
+                                            lineNumber: 375,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7337,7 +7446,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 303,
+                                                    lineNumber: 401,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -7346,19 +7455,19 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: currentLang === 'en' ? 'Next: Pick Seat' : 'अर्को: सिट छान्नुहोस्'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 309,
+                                                    lineNumber: 407,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 302,
+                                            lineNumber: 400,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 270,
+                                    lineNumber: 365,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 activeStep === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7366,198 +7475,187 @@ const SeatBooking = ({ currentLang })=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "border-b border-slate-200 pb-4 flex items-center justify-between",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
-                                                    children: t.selectSeatTitle[currentLang]
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 323,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xs text-[#64748b] font-semibold",
-                                                    children: currentLang === 'en' ? 'Capacity: 25 Seats' : 'क्षमता: २५ सिट'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 326,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 322,
-                                            columnNumber: 19
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-full bg-[#0b132b] text-amber-200 py-2.5 rounded-2xl text-center text-xs font-extrabold uppercase tracking-widest shadow-inner",
-                                            children: t.stageLabel[currentLang]
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: "text-xl font-bold text-[#0f172a] font-heading",
+                                                        children: currentLang === 'en' ? 'Step 3: Select Your Physical Seat' : 'चरण ३: आफ्नो भौतिक सिट छान्नुहोस्'
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SeatBooking.tsx",
+                                                        lineNumber: 422,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-xs text-[#64748b] mt-0.5",
+                                                        children: currentLang === 'en' ? 'Kathmandu Hub • 25 Capacity Classroom' : 'काठमाडौँ हब • २५ क्षमताको कक्षाकोठा'
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/SeatBooking.tsx",
+                                                        lineNumber: 425,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/SeatBooking.tsx",
+                                                lineNumber: 421,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 332,
+                                            lineNumber: 420,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-[#f8fafc] p-5 rounded-3xl border border-slate-200 space-y-4",
-                                            children: [
-                                                'A',
-                                                'B',
-                                                'C',
-                                                'D',
-                                                'E'
-                                            ].map((rowLetter)=>{
-                                                const rowSeats = seats.filter((s)=>s.row === rowLetter);
-                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-center gap-2 sm:gap-3",
+                                            className: "w-full py-3 bg-[#080e1a] text-white rounded-2xl text-center shadow-inner border border-slate-800",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-xs font-extrabold uppercase tracking-widest text-[#38bdf8]",
+                                                children: currentLang === 'en' ? '🖥️ TRAINER STAGE & LIVE SCREEN' : '🖥️ प्रशिक्षक स्टेज र स्क्रिन'
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/SeatBooking.tsx",
+                                                lineNumber: 433,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 432,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-5 gap-3 max-w-md mx-auto p-4 bg-slate-100/60 rounded-3xl border border-slate-200",
+                                            children: seats.map((seat)=>{
+                                                const isSelected = seat.id === selectedSeatId || seat.seatLabel === selectedSeatId;
+                                                const isBooked = seat.status === 'booked' || seat.status === 'reserved';
+                                                const isVip = seat.isVip;
+                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>handleSeatClick(seat),
+                                                    disabled: isBooked,
+                                                    className: `h-12 sm:h-14 rounded-2xl font-black text-xs sm:text-sm flex flex-col items-center justify-center transition-all ${isBooked ? 'bg-slate-300 text-slate-500 cursor-not-allowed opacity-50' : isSelected ? 'bg-gradient-to-br from-[#ff6b00] to-[#ea580c] text-white shadow-lg shadow-orange-500/30 scale-105 ring-4 ring-orange-500/20' : isVip ? 'bg-[#f0f9ff] text-[#0284c7] border-2 border-[#0284c7] hover:bg-[#e0f2fe]' : 'bg-white text-[#0f172a] border border-slate-200 hover:border-[#0284c7] hover:shadow-sm'}`,
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "w-5 text-xs font-bold text-[#64748b] text-center flex-shrink-0",
-                                                            children: rowLetter
+                                                            children: seat.seatLabel || seat.id
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 342,
+                                                            lineNumber: 460,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex gap-2 sm:gap-3",
-                                                            children: rowSeats.map((seat)=>{
-                                                                const isSel = selectedSeatId === seat.id;
-                                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                    onClick: ()=>handleSeatClick(seat),
-                                                                    disabled: seat.status === 'booked',
-                                                                    title: seat.isVip ? `VIP – Rs.${seat.priceNpr.toLocaleString()}` : `Rs.${seat.priceNpr.toLocaleString()}`,
-                                                                    className: `seat-btn w-11 h-11 sm:w-12 sm:h-12 rounded-xl text-xs font-bold flex flex-col items-center justify-center border shadow-sm transition-all ${seat.status === 'booked' ? 'booked' : isSel ? 'selected ring-2 ring-[#ea580c]' : seat.isVip ? 'bg-[#f0f9ff] border-2 border-[#0284c7] text-[#0369a1] hover:bg-[#e0f2fe]' : 'bg-white border-slate-200 text-[#0f172a] hover:bg-[#f0f9ff] hover:border-[#0284c7] hover:text-[#0284c7]'}`,
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[11px] font-extrabold leading-none",
-                                                                        children: seat.seatLabel || `${seat.row}${seat.number}`
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                        lineNumber: 362,
-                                                                        columnNumber: 35
-                                                                    }, ("TURBOPACK compile-time value", void 0))
-                                                                }, seat.id, false, {
-                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 347,
-                                                                    columnNumber: 33
-                                                                }, ("TURBOPACK compile-time value", void 0));
-                                                            })
+                                                        isVip && !isSelected && !isBooked && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[9px] font-bold text-[#ea580c]",
+                                                            children: "VIP"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 343,
-                                                            columnNumber: 27
+                                                            lineNumber: 462,
+                                                            columnNumber: 29
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
-                                                }, rowLetter, true, {
+                                                }, seat.id, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 341,
+                                                    lineNumber: 446,
                                                     columnNumber: 25
                                                 }, ("TURBOPACK compile-time value", void 0));
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 337,
+                                            lineNumber: 439,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-[#64748b] pt-2",
+                                            className: "flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-[#64748b] pt-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
+                                                    className: "flex items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded-md bg-white border border-slate-300"
+                                                            className: "w-3.5 h-3.5 rounded-md bg-white border border-slate-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 377,
+                                                            lineNumber: 472,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: t.legendAvailable[currentLang]
+                                                            children: currentLang === 'en' ? 'Available' : 'उपलब्ध'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 378,
+                                                            lineNumber: 473,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 376,
+                                                    lineNumber: 471,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
+                                                    className: "flex items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded-md bg-gradient-to-r from-[#ff6b00] to-[#f97316] border border-[#ea580c]"
+                                                            className: "w-3.5 h-3.5 rounded-md bg-[#f0f9ff] border-2 border-[#0284c7]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 381,
+                                                            lineNumber: 476,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[#ea580c] font-bold",
-                                                            children: t.legendSelected[currentLang]
+                                                            children: currentLang === 'en' ? 'Front Row VIP' : 'अघिल्लो सिट VIP'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 382,
+                                                            lineNumber: 477,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 380,
+                                                    lineNumber: 475,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
+                                                    className: "flex items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded-md bg-[#1e293b]"
+                                                            className: "w-3.5 h-3.5 rounded-md bg-gradient-to-r from-[#ff6b00] to-[#ea580c]"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 385,
+                                                            lineNumber: 480,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: t.legendBooked[currentLang]
+                                                            children: currentLang === 'en' ? 'Selected' : 'छानिएको'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 386,
+                                                            lineNumber: 481,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 384,
+                                                    lineNumber: 479,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
+                                                    className: "flex items-center gap-1.5",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-4 h-4 rounded-md bg-[#f0f9ff] border-2 border-[#0284c7]"
+                                                            className: "w-3.5 h-3.5 rounded-md bg-slate-300 opacity-50"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 389,
+                                                            lineNumber: 484,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: t.legendVip[currentLang]
+                                                            children: currentLang === 'en' ? 'Reserved' : 'आरक्षित'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 390,
+                                                            lineNumber: 485,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 388,
+                                                    lineNumber: 483,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 375,
+                                            lineNumber: 470,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7569,28 +7667,28 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 395,
+                                                    lineNumber: 490,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>setActiveStep(4),
                                                     className: "px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm",
-                                                    children: currentLang === 'en' ? 'Next: Enter Details' : 'अर्को: विवरण भर्नुहोस्'
+                                                    children: currentLang === 'en' ? 'Next: Contact Info' : 'अर्को: सम्पर्क विवरण'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 496,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 394,
+                                            lineNumber: 489,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 321,
+                                    lineNumber: 419,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 activeStep === 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -7599,17 +7697,27 @@ const SeatBooking = ({ currentLang })=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "border-b border-slate-200 pb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#0f172a] font-heading",
-                                                children: currentLang === 'en' ? 'Step 4: Contact & Student Information' : 'चरण ४: सम्पर्क तथा विद्यार्थी विवरण'
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 415,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
+                                                    children: currentLang === 'en' ? 'Step 4: Student Details & Ticket Registration' : 'चरण ४: विद्यार्थी विवरण र टिकट दर्ता'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 510,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-xs text-[#64748b] mt-0.5",
+                                                    children: currentLang === 'en' ? 'An account will automatically be created so you can access your dashboard and ticket anytime.' : 'तपाईंको खाता स्वचालित रूपमा सिर्जना हुनेछ जसले गर्दा तपाईं जुनसुकै बेला ड्यासबोर्ड र टिकट हेर्न सक्नुहुन्छ।'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 513,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 414,
+                                            lineNumber: 509,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7622,7 +7730,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: currentLang === 'en' ? 'Full Name *' : 'पूरा नाम *'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 422,
+                                                            lineNumber: 522,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7632,7 +7740,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                     className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 426,
+                                                                    lineNumber: 526,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -7640,23 +7748,23 @@ const SeatBooking = ({ currentLang })=>{
                                                                     required: true,
                                                                     value: fullName,
                                                                     onChange: (e)=>setFullName(e.target.value),
-                                                                    placeholder: "e.g. Ramesh Bikram Thapa",
+                                                                    placeholder: "e.g. Ramesh Thapa",
                                                                     className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 427,
+                                                                    lineNumber: 527,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 425,
+                                                            lineNumber: 525,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 421,
+                                                    lineNumber: 521,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7666,54 +7774,10 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                     className: "block text-xs font-bold text-[#0f172a] mb-1.5",
-                                                                    children: currentLang === 'en' ? 'Phone Number *' : 'फोन नम्बर *'
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 440,
-                                                                    columnNumber: 25
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "relative",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                                            className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                            lineNumber: 444,
-                                                                            columnNumber: 27
-                                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                            type: "tel",
-                                                                            required: true,
-                                                                            value: phone,
-                                                                            onChange: (e)=>setPhone(e.target.value),
-                                                                            placeholder: "9800000000",
-                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                            lineNumber: 445,
-                                                                            columnNumber: 27
-                                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 443,
-                                                                    columnNumber: 25
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 439,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                                    className: "block text-xs font-bold text-[#0f172a] mb-1.5",
                                                                     children: currentLang === 'en' ? 'Email Address *' : 'इमेल ठेगाना *'
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 457,
+                                                                    lineNumber: 540,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7723,7 +7787,7 @@ const SeatBooking = ({ currentLang })=>{
                                                                             className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                            lineNumber: 461,
+                                                                            lineNumber: 544,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -7735,35 +7799,79 @@ const SeatBooking = ({ currentLang })=>{
                                                                             className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                            lineNumber: 462,
+                                                                            lineNumber: 545,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 460,
+                                                                    lineNumber: 543,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 456,
+                                                            lineNumber: 539,
+                                                            columnNumber: 23
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                                                    className: "block text-xs font-bold text-[#0f172a] mb-1.5",
+                                                                    children: currentLang === 'en' ? 'Mobile / WhatsApp *' : 'मोबाइल / ह्वाट्सएप *'
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                    lineNumber: 557,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "relative",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                                            className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 561,
+                                                                            columnNumber: 27
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                            type: "tel",
+                                                                            required: true,
+                                                                            value: phone,
+                                                                            onChange: (e)=>setPhone(e.target.value),
+                                                                            placeholder: "9801234567",
+                                                                            className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 562,
+                                                                            columnNumber: 27
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                    lineNumber: 560,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 556,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 438,
+                                                    lineNumber: 538,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                             className: "block text-xs font-bold text-[#0f172a] mb-1.5",
-                                                            children: currentLang === 'en' ? 'Business / Brand Name (Optional)' : 'व्यापार / ब्रान्डको नाम (ऐच्छिक)'
+                                                            children: currentLang === 'en' ? 'Business or Organization (Optional)' : 'व्यवसाय वा संस्था (वैकल्पिक)'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 475,
+                                                            lineNumber: 575,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7773,36 +7881,36 @@ const SeatBooking = ({ currentLang })=>{
                                                                     className: "w-4 h-4 text-slate-400 absolute left-3.5 top-3.5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 479,
+                                                                    lineNumber: 579,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                                     type: "text",
                                                                     value: organization,
                                                                     onChange: (e)=>setOrganization(e.target.value),
-                                                                    placeholder: "e.g. Everest Handicrafts",
+                                                                    placeholder: "e.g. Kathmandu Apparel Co.",
                                                                     className: "w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 480,
+                                                                    lineNumber: 580,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 478,
+                                                            lineNumber: 578,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 474,
+                                                    lineNumber: 574,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 420,
+                                            lineNumber: 520,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7815,28 +7923,28 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 492,
+                                                    lineNumber: 592,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "submit",
-                                                    className: "px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25",
-                                                    children: t.proceedPayBtn[currentLang]
+                                                    className: "px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm",
+                                                    children: currentLang === 'en' ? 'Proceed to Payment' : 'भुक्तानीमा जानुहोस्'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 499,
+                                                    lineNumber: 599,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 491,
+                                            lineNumber: 591,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 413,
+                                    lineNumber: 508,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 activeStep === 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7844,215 +7952,162 @@ const SeatBooking = ({ currentLang })=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "border-b border-slate-200 pb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xl font-bold text-[#0f172a] font-heading",
-                                                children: currentLang === 'en' ? 'Step 5: Pay via Fonepay QR' : 'चरण ५: Fonepay QR बाट भुक्तानी गर्नुहोस्'
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                lineNumber: 513,
-                                                columnNumber: 21
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl font-bold text-[#0f172a] font-heading",
+                                                    children: currentLang === 'en' ? 'Step 5: Confirm Deposit via Fonepay QR' : 'चरण ५: Fonepay QR मार्फत डिपोजिट पुष्टि'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 613,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-xs text-[#64748b] mt-0.5",
+                                                    children: currentLang === 'en' ? 'Pay Rs. 5,000 deposit to secure your seat. Remaining fee is due after session starts.' : 'आफ्नो सिट सुरक्षित गर्न Rs. ५,००० डिपोजिट तिर्नुहोस्। बाँकी शुल्क सत्र सुरु भएपछि बुझाउनुहोस्।'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 616,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 512,
+                                            lineNumber: 612,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-gradient-to-br from-[#e63329]/5 to-[#e63329]/10 border-2 border-[#e63329]/30 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-sm",
+                                            className: "p-6 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center gap-6",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-center gap-2 mb-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-8 h-8 rounded-full bg-[#e63329] flex items-center justify-center",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-white font-extrabold text-xs",
-                                                                children: "F"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                lineNumber: 522,
-                                                                columnNumber: 25
-                                                            }, ("TURBOPACK compile-time value", void 0))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 521,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-extrabold text-lg text-[#0f172a]",
-                                                            children: "Fonepay"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 524,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 520,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mx-auto w-48 h-48 bg-white rounded-3xl border-2 border-[#e63329]/30 flex items-center justify-center shadow-md",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-center space-y-2",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-32 h-32 bg-[#0b132b] rounded-xl mx-auto flex items-center justify-center",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "grid grid-cols-5 gap-1 p-2",
-                                                                    children: Array.from({
-                                                                        length: 25
-                                                                    }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: `w-4 h-4 rounded-sm ${[
-                                                                                0,
-                                                                                1,
-                                                                                2,
-                                                                                5,
-                                                                                10,
-                                                                                12,
-                                                                                14,
-                                                                                19,
-                                                                                22,
-                                                                                23,
-                                                                                24
-                                                                            ].includes(i) ? 'bg-white' : 'bg-transparent'}`
-                                                                        }, i, false, {
-                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                            lineNumber: 534,
-                                                                            columnNumber: 31
-                                                                        }, ("TURBOPACK compile-time value", void 0)))
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                    lineNumber: 532,
-                                                                    columnNumber: 27
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                lineNumber: 530,
-                                                                columnNumber: 25
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] text-[#64748b] font-bold tracking-wider uppercase",
-                                                                children: "Scan QR Code"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/SeatBooking.tsx",
-                                                                lineNumber: 538,
-                                                                columnNumber: 25
-                                                            }, ("TURBOPACK compile-time value", void 0))
-                                                        ]
-                                                    }, void 0, true, {
+                                                    className: "p-3 bg-white rounded-2xl border border-slate-200 shadow-sm flex-shrink-0",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/fonepay-qr.png",
+                                                        alt: "Fonepay QR Code",
+                                                        className: "w-44 h-44 object-contain rounded-xl"
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/SeatBooking.tsx",
-                                                        lineNumber: 529,
+                                                        lineNumber: 626,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 528,
+                                                    lineNumber: 625,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "space-y-1 pt-2",
+                                                    className: "space-y-3 text-left",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs font-bold text-[#64748b] uppercase tracking-wider",
-                                                            children: currentLang === 'en' ? 'Deposit Amount Due' : 'भुक्तानी डिपोजिट रकम'
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[11px] font-extrabold uppercase tracking-wider bg-rose-50 text-rose-700 px-3 py-1 rounded-full border border-rose-200 inline-block",
+                                                            children: "Fonepay Official Merchant"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 543,
+                                                            lineNumber: 634,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-3xl sm:text-4xl font-extrabold text-[#e63329]",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                            className: "text-base font-extrabold text-[#0f172a]",
+                                                            children: "BE YOUR OWN MARKETER"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 637,
+                                                            columnNumber: 23
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-1 text-xs text-slate-600",
                                                             children: [
-                                                                "Rs. ",
-                                                                depositAmount.toLocaleString()
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "Merchant:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 641,
+                                                                            columnNumber: 28
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        " BYOM Academy Pvt. Ltd."
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                    lineNumber: 641,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "Session:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 642,
+                                                                            columnNumber: 28
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        " ",
+                                                                        currentSessionDate
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                    lineNumber: 642,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            children: "Amount:"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 643,
+                                                                            columnNumber: 28
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        " ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-lg font-black text-[#0f172a]",
+                                                                            children: [
+                                                                                "Rs. ",
+                                                                                depositAmount.toLocaleString()
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                            lineNumber: 643,
+                                                                            columnNumber: 53
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                                    lineNumber: 643,
+                                                                    columnNumber: 25
+                                                                }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 546,
+                                                            lineNumber: 640,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs text-[#64748b]",
-                                                            children: currentLang === 'en' ? 'Scan with any mobile banking or Fonepay app' : 'जुनसुकै बैंकिङ वा Fonepay एपबाट स्क्यान गर्नुहोस्'
+                                                            className: "text-[11px] text-[#64748b]",
+                                                            children: currentLang === 'en' ? 'Scan with any mobile banking or Fonepay app to complete deposit.' : 'जुनसुकै मोबाइल बैंकिङ वा Fonepay एपबाट स्क्यान गरी डिपोजिट तिर्नुहोस्।'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 549,
+                                                            lineNumber: 645,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 542,
+                                                    lineNumber: 633,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 519,
-                                            columnNumber: 19
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs font-extrabold text-[#0f172a] uppercase tracking-wider",
-                                                    children: currentLang === 'en' ? '📋 Payment Instructions:' : '📋 भुक्तानी निर्देशनहरू:'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 559,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
-                                                    className: "text-xs text-[#475569] space-y-1.5 list-decimal list-inside font-medium",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: currentLang === 'en' ? `Scan the QR and pay Rs. ${depositAmount.toLocaleString()} deposit` : `QR स्क्यान गरी Rs. ${depositAmount.toLocaleString()} डिपोजिट तिर्नुहोस्`
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 563,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: currentLang === 'en' ? 'Take a screenshot of the payment receipt' : 'भुक्तानी रसिदको स्क्रिनसट लिनुहोस्'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 564,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: currentLang === 'en' ? 'Click "I have Paid" to submit your booking' : '"मैले तिरें" थिचेर बुकिङ पेश गर्नुहोस्'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 565,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                            children: currentLang === 'en' ? 'Remaining Rs. 10,000 is due after session starts' : 'बाँकी Rs. 10,000 सत्र सुरु भएपछि तिर्नुहोस्'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 566,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 562,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 558,
+                                            lineNumber: 624,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         errorMsg && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "p-3 text-xs bg-rose-50 border border-rose-200 text-rose-600 rounded-xl text-center font-bold",
+                                            className: "p-3.5 text-xs bg-rose-50 border border-rose-200 text-rose-600 rounded-xl text-center font-bold",
                                             children: errorMsg
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 571,
+                                            lineNumber: 654,
                                             columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8065,50 +8120,50 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: currentLang === 'en' ? 'Back' : 'पछाडि'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 577,
+                                                    lineNumber: 660,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: handleConfirmPay,
                                                     disabled: isProcessing,
-                                                    className: "px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all",
+                                                    className: "px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 589,
+                                                            lineNumber: 672,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: isProcessing ? currentLang === 'en' ? 'Submitting...' : 'पेश गर्दैछ...' : currentLang === 'en' ? 'I have Paid — Confirm Booking' : 'मैले तिरें — बुकिङ पुष्टि गर्नुहोस्'
+                                                            children: isProcessing ? currentLang === 'en' ? 'Confirming Ticket…' : 'पुष्टि गर्दैछ…' : currentLang === 'en' ? 'I Have Paid — Confirm Booking' : 'मैले तिरें — बुकिङ पुष्टि गर्नुहोस्'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 590,
+                                                            lineNumber: 673,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 584,
+                                                    lineNumber: 667,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 576,
+                                            lineNumber: 659,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 511,
+                                    lineNumber: 611,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 214,
+                            lineNumber: 305,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8122,7 +8177,7 @@ const SeatBooking = ({ currentLang })=>{
                                             children: t.summaryTitle[currentLang]
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 601,
+                                            lineNumber: 688,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8130,18 +8185,58 @@ const SeatBooking = ({ currentLang })=>{
                                             children: "7-Day Mastery"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 604,
+                                            lineNumber: 691,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 600,
+                                    lineNumber: 687,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-4 text-sm",
                                     children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-1.5 text-xs text-amber-300 font-extrabold uppercase tracking-wider",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                            className: "w-3.5 h-3.5"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 701,
+                                                            columnNumber: 21
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "Cohort Schedule"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                                            lineNumber: 702,
+                                                            columnNumber: 21
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 700,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "font-extrabold text-white text-sm",
+                                                    children: currentSessionDate
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 704,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 699,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center justify-between",
                                             children: [
@@ -8150,7 +8245,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: t.campus[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 611,
+                                                    lineNumber: 708,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8158,13 +8253,13 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: selectedCity
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 612,
+                                                    lineNumber: 709,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 610,
+                                            lineNumber: 707,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8175,7 +8270,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: t.batch[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 616,
+                                                    lineNumber: 713,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8183,13 +8278,13 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: selectedBatch
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 617,
+                                                    lineNumber: 714,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 615,
+                                            lineNumber: 712,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8200,7 +8295,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: t.selectedSeat[currentLang]
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 621,
+                                                    lineNumber: 718,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8212,13 +8307,13 @@ const SeatBooking = ({ currentLang })=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 622,
+                                                    lineNumber: 719,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 620,
+                                            lineNumber: 717,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8231,7 +8326,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: currentLang === 'en' ? 'Total Program Fee' : 'कुल कार्यक्रम शुल्क'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 629,
+                                                            lineNumber: 726,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8241,13 +8336,13 @@ const SeatBooking = ({ currentLang })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 630,
+                                                            lineNumber: 727,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 628,
+                                                    lineNumber: 725,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8258,7 +8353,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: currentLang === 'en' ? '✓ Pay Now (Deposit)' : '✓ अहिले तिर्नुहोस् (डिपोजिट)'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 633,
+                                                            lineNumber: 730,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8269,13 +8364,13 @@ const SeatBooking = ({ currentLang })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 634,
+                                                            lineNumber: 731,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 632,
+                                                    lineNumber: 729,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8285,7 +8380,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरु भएपछि'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 637,
+                                                            lineNumber: 734,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8295,43 +8390,19 @@ const SeatBooking = ({ currentLang })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 638,
+                                                            lineNumber: 735,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 636,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between text-xs text-slate-400",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: currentLang === 'en' ? 'Course Kit & Workbook' : 'पाठ्यक्रम किट र पुस्तक'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 641,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-emerald-400 font-bold",
-                                                            children: "Included"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 642,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 640,
+                                                    lineNumber: 733,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 627,
+                                            lineNumber: 724,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8345,7 +8416,7 @@ const SeatBooking = ({ currentLang })=>{
                                                             children: currentLang === 'en' ? 'Due Now' : 'अहिले तिर्नुपर्ने'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 648,
+                                                            lineNumber: 741,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8356,33 +8427,33 @@ const SeatBooking = ({ currentLang })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                                            lineNumber: 649,
+                                                            lineNumber: 742,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 647,
+                                                    lineNumber: 740,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-[10px] text-slate-400",
-                                                    children: currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि`
+                                                    children: currentLang === 'en' ? `Rs. ${(totalAmount - depositAmount).toLocaleString()} payable after session starts` : `Rs. ${(totalAmount - depositAmount).toLocaleString()} सत्रपछि भुक्तान`
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 653,
+                                                    lineNumber: 746,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 646,
+                                            lineNumber: 739,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 609,
+                                    lineNumber: 696,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8392,32 +8463,32 @@ const SeatBooking = ({ currentLang })=>{
                                             className: "w-5 h-5 text-amber-300 flex-shrink-0"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 658,
+                                            lineNumber: 753,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: currentLang === 'en' ? 'Includes 1-on-1 mentor guidance & graduation certificate.' : '१-मा-१ मेन्टर मार्गदर्शन र दीक्षान्त प्रमाण पत्र समावेश छ।'
+                                            children: currentLang === 'en' ? 'Includes physical kit, 1-on-1 mentor guidance & certificate.' : 'भौतिक किट, १-मा-१ मेन्टरसिप र प्रमाणपत्र समावेश छ।'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 659,
+                                            lineNumber: 754,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 657,
+                                    lineNumber: 752,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 599,
+                            lineNumber: 686,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SeatBooking.tsx",
-                    lineNumber: 211,
+                    lineNumber: 302,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)) : /* Confirmation State / Printable Digital Receipt Ticket */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
                     initial: {
@@ -8428,49 +8499,57 @@ const SeatBooking = ({ currentLang })=>{
                         opacity: 1,
                         scale: 1
                     },
-                    className: "max-w-2xl mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-2xl text-center space-y-6",
+                    className: "max-w-2xl mx-auto bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-2xl text-center space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-20 h-20 rounded-full bg-emerald-50 text-emerald-600 mx-auto flex items-center justify-center",
+                            className: "w-20 h-20 rounded-full bg-emerald-50 text-emerald-600 mx-auto flex items-center justify-center shadow-inner",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                                 className: "w-10 h-10"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SeatBooking.tsx",
-                                lineNumber: 676,
+                                lineNumber: 771,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 675,
+                            lineNumber: 770,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-2",
                             children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-xs font-extrabold text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200 uppercase tracking-wider",
+                                    children: "✓ Account Created & Ticket Confirmed"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                    lineNumber: 775,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-3xl font-extrabold text-[#0f172a] font-heading",
                                     children: t.successMsg[currentLang]
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 680,
+                                    lineNumber: 778,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-sm text-[#64748b]",
-                                    children: t.successDesc[currentLang]
+                                    children: currentLang === 'en' ? `Your ticket has been issued and linked to your new student profile (${email}).` : `तपाईंको टिकट जारी गरिएको छ र तपाईंको नयाँ विद्यार्थी खाता (${email}) मा सुरक्षित छ।`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 683,
+                                    lineNumber: 781,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 679,
+                            lineNumber: 774,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-[#f8fafc] p-6 rounded-3xl border border-slate-200 text-left space-y-4 relative overflow-hidden",
+                            className: "bg-[#f8fafc] p-6 rounded-3xl border border-slate-200 text-left space-y-4 relative overflow-hidden shadow-sm",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center justify-between border-b border-slate-200 pb-3",
@@ -8482,35 +8561,71 @@ const SeatBooking = ({ currentLang })=>{
                                                     className: "w-5 h-5 text-[#0284c7]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 692,
+                                                    lineNumber: 792,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-extrabold text-sm text-[#0f172a]",
-                                                    children: "BYOM DIGITAL TICKET"
+                                                    children: "BYOM OFFICIAL ADMISSION PASS"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 693,
+                                                    lineNumber: 793,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 691,
+                                            lineNumber: 791,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-xs font-mono font-bold text-[#ea580c]",
-                                            children: "#BYOM-8924"
-                                        }, void 0, false, {
+                                            children: [
+                                                "#BYOM-",
+                                                (confirmedBooking?.id || '8924').slice(-8).toUpperCase()
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 695,
+                                            lineNumber: 795,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 690,
+                                    lineNumber: 790,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-3 rounded-xl bg-[#0284c7]/10 border border-[#0284c7]/20 flex items-center gap-2 text-xs font-bold text-[#0284c7]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 802,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: [
+                                                currentLang === 'en' ? 'Cohort Dates: ' : 'कक्षा मिति: ',
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    className: "text-[#0f172a] font-extrabold",
+                                                    children: confirmedBooking?.sessionDate || currentSessionDate
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 805,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 803,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                    lineNumber: 801,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8520,34 +8635,34 @@ const SeatBooking = ({ currentLang })=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "block text-[10px] text-slate-400 uppercase",
-                                                    children: "Student"
+                                                    children: "Student Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 700,
+                                                    lineNumber: 813,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-bold text-[#0f172a] text-sm",
-                                                    children: fullName || 'Ramesh Thapa'
+                                                    children: fullName || 'Student'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 701,
+                                                    lineNumber: 814,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 699,
+                                            lineNumber: 812,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "block text-[10px] text-slate-400 uppercase",
-                                                    children: "Campus"
+                                                    children: "Campus Venue"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 704,
+                                                    lineNumber: 817,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8555,13 +8670,13 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: selectedCity
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 705,
+                                                    lineNumber: 818,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 703,
+                                            lineNumber: 816,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8571,7 +8686,7 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: "Batch Time"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 708,
+                                                    lineNumber: 821,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8579,13 +8694,13 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: selectedBatch
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 709,
+                                                    lineNumber: 822,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 707,
+                                            lineNumber: 820,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8595,66 +8710,185 @@ const SeatBooking = ({ currentLang })=>{
                                                     children: "Assigned Seat"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 712,
+                                                    lineNumber: 825,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-extrabold text-[#0284c7] text-sm",
-                                                    children: selectedSeatId
-                                                }, void 0, false, {
+                                                    children: [
+                                                        "Seat ",
+                                                        selectedSeatId
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                                    lineNumber: 713,
+                                                    lineNumber: 826,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SeatBooking.tsx",
-                                            lineNumber: 711,
+                                            lineNumber: 824,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "block text-[10px] text-slate-400 uppercase",
+                                                    children: "Deposit Paid"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 829,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "font-bold text-emerald-700",
+                                                    children: [
+                                                        "Rs. ",
+                                                        depositAmount.toLocaleString(),
+                                                        " (Fonepay QR)"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 830,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 828,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "block text-[10px] text-slate-400 uppercase",
+                                                    children: "Time of Purchase"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 833,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "font-bold text-[#0f172a]",
+                                                    children: new Date().toLocaleString('en-US', {
+                                                        month: 'short',
+                                                        day: 'numeric',
+                                                        year: 'numeric',
+                                                        hour: '2-digit',
+                                                        minute: '2-digit',
+                                                        hour12: true
+                                                    })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                                    lineNumber: 834,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 832,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SeatBooking.tsx",
-                                    lineNumber: 698,
+                                    lineNumber: 811,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 689,
+                            lineNumber: 789,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>{
-                                setIsCompleted(false);
-                                setActiveStep(1);
-                            },
-                            className: "px-8 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors",
-                            children: currentLang === 'en' ? 'Book Another Seat' : 'अर्को सिट बुक गर्नुहोस्'
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col sm:flex-row items-center justify-center gap-3 pt-2",
+                            children: [
+                                onNavigate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>onNavigate('dashboard'),
+                                    className: "w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm btn-orange-hover shadow-lg shadow-orange-500/25 flex items-center justify-center gap-2 transition-all",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: currentLang === 'en' ? 'View in Student Dashboard' : 'विद्यार्थी ड्यासबोर्डमा हेर्नुहोस्'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 855,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 856,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                    lineNumber: 851,
+                                    columnNumber: 17
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: handlePrintTicket,
+                                    className: "w-full sm:w-auto px-6 py-3.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50 flex items-center justify-center gap-2 transition-colors",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$printer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Printer$3e$__["Printer"], {
+                                            className: "w-4 h-4 text-[#0284c7]"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 864,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: currentLang === 'en' ? 'Print Ticket' : 'टिकट प्रिन्ट'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/SeatBooking.tsx",
+                                            lineNumber: 865,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                    lineNumber: 860,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>{
+                                        setIsCompleted(false);
+                                        setActiveStep(1);
+                                    },
+                                    className: "w-full sm:w-auto px-5 py-3.5 rounded-xl border border-transparent text-slate-500 font-semibold text-xs hover:text-[#0f172a] transition-colors",
+                                    children: currentLang === 'en' ? 'Book Another' : 'अर्को बुकिङ'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/SeatBooking.tsx",
+                                    lineNumber: 868,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/SeatBooking.tsx",
-                            lineNumber: 718,
+                            lineNumber: 849,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SeatBooking.tsx",
-                    lineNumber: 670,
+                    lineNumber: 765,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SeatBooking.tsx",
-            lineNumber: 154,
+            lineNumber: 245,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/SeatBooking.tsx",
-        lineNumber: 153,
+        lineNumber: 244,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(SeatBooking, "z0NYSVzngK4ZETzVcstgHJ2nQHc=");
+_s(SeatBooking, "+cNuhoxhSCR+uCuGxgimTPu7qYU=");
 _c = SeatBooking;
 var _c;
 __turbopack_context__.k.register(_c, "SeatBooking");
@@ -8680,6 +8914,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$printer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Printer$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/printer.js [app-client] (ecmascript) <export default as Printer>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/motion/dist/es/react.mjs [app-client] (ecmascript) <locals>");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -8687,27 +8925,31 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const UserDashboard = ({ currentLang, onLogout })=>{
+const UserDashboard = ({ currentLang, onLogout, onNavigate })=>{
     _s();
     const [userData, setUserData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [bookings, setBookings] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [selectedTicket, setSelectedTicket] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "UserDashboard.useEffect": ()=>{
-            async function fetchProfile() {
+            async function fetchProfileAndBookings() {
                 try {
                     const res = await fetch('/api/auth/me');
                     if (res.ok) {
                         const data = await res.json();
                         setUserData(data.user);
+                        if (data.bookings) {
+                            setBookings(data.bookings);
+                        }
                     }
-                } catch  {
-                // Silent fail
+                } catch (err) {
+                    console.error('Failed to fetch user profile:', err);
                 } finally{
                     setLoading(false);
                 }
             }
-            fetchProfile();
+            fetchProfileAndBookings();
         }
     }["UserDashboard.useEffect"], []);
     const handleLogout = async ()=>{
@@ -8715,39 +8957,52 @@ const UserDashboard = ({ currentLang, onLogout })=>{
             await fetch('/api/auth/logout', {
                 method: 'POST'
             });
-        } catch  {}
+        } catch  {
+        /* ignore */ }
         onLogout();
     };
-    const statusColor = (status)=>{
-        switch(status){
-            case 'confirmed':
-                return 'bg-emerald-50 text-emerald-700 border-emerald-200';
-            case 'pending':
-                return 'bg-amber-50 text-amber-700 border-amber-200';
-            default:
-                return 'bg-[#f0eded] text-[#5c5d63] border-[#d6d0cc]';
-        }
+    const handlePrintTicket = ()=>{
+        window.print();
     };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "min-h-screen bg-[#f8fafc] flex items-center justify-center",
+            className: "min-h-[70vh] bg-[#f8fafc] flex items-center justify-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-8 h-8 border-4 border-[#0284c7]/30 border-t-[#0284c7] rounded-full animate-spin"
-            }, void 0, false, {
+                className: "flex flex-col items-center gap-3",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-10 h-10 border-4 border-[#0284c7]/30 border-t-[#0284c7] rounded-full animate-spin"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/UserDashboard.tsx",
+                        lineNumber: 104,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-xs font-bold text-slate-500",
+                        children: currentLang === 'en' ? 'Loading Student Portal…' : 'विद्यार्थी पोर्टल खुल्दैछ…'
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/UserDashboard.tsx",
+                        lineNumber: 105,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/components/UserDashboard.tsx",
-                lineNumber: 72,
+                lineNumber: 103,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/UserDashboard.tsx",
-            lineNumber: 71,
+            lineNumber: 102,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0));
     }
+    // Derive latest booking details for quick overview
+    const latestBooking = bookings[0] || null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2f$dist$2f$es$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["motion"].div, {
         initial: {
             opacity: 0,
-            y: 20
+            y: 16
         },
         animate: {
             opacity: 1,
@@ -8755,206 +9010,72 @@ const UserDashboard = ({ currentLang, onLogout })=>{
         },
         className: "py-12 md:py-20 bg-[#f8fafc] min-h-screen",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8",
+            className: "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center justify-between",
+                    className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-4",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs font-extrabold text-[#0284c7] uppercase tracking-wider bg-[#0284c7]/10 px-3.5 py-1.5 rounded-full border border-[#0284c7]/20",
-                                    children: currentLang === 'en' ? 'Student Portal' : 'विद्यार्थी पोर्टल'
+                                userData?.avatar ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: userData.avatar,
+                                    alt: userData.name,
+                                    referrerPolicy: "no-referrer",
+                                    className: "w-16 h-16 rounded-2xl object-cover ring-4 ring-[#0284c7]/20 shadow-md"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 88,
-                                    columnNumber: 13
+                                    lineNumber: 128,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0284c7] to-[#0369a1] text-white flex items-center justify-center text-2xl font-black shadow-md shadow-sky-500/20",
+                                    children: userData?.name ? userData.name.slice(0, 2).toUpperCase() : 'B'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 135,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-3xl font-extrabold text-[#0f172a] font-heading mt-2",
-                                    children: currentLang === 'en' ? `Welcome back${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!` : `पुनः स्वागत छ${userData?.name ? `, ${userData.name.split(' ')[0]}` : ''}!`
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 91,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 87,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: handleLogout,
-                            className: "flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-100 text-xs font-bold transition-colors",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
-                                    className: "w-4 h-4"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 99,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                currentLang === 'en' ? 'Sign Out' : 'साइन आउट'
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 95,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/UserDashboard.tsx",
-                    lineNumber: 86,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-8",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200",
-                            children: currentLang === 'en' ? 'Your Profile' : 'तपाईंको प्रोफाइल'
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 106,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 sm:grid-cols-2 gap-5",
-                            children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                className: "w-5 h-5 text-[#0284c7]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 113,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 112,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
-                                                    children: currentLang === 'en' ? 'Full Name' : 'पूरा नाम'
+                                                    className: "text-[11px] font-extrabold uppercase tracking-wider text-[#0284c7] bg-[#0284c7]/10 px-3 py-1 rounded-full border border-[#0284c7]/20",
+                                                    children: currentLang === 'en' ? 'Student Portal' : 'विद्यार्थी पोर्टल'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 141,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#0f172a] text-sm",
-                                                    children: userData?.name || '—'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 119,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 115,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 111,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                className: "w-5 h-5 text-[#0284c7]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 127,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 126,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
-                                                    children: currentLang === 'en' ? 'Email Address' : 'इमेल ठेगाना'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 130,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#0f172a] text-sm",
-                                                    children: userData?.email || '—'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 133,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 129,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 125,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                className: "w-5 h-5 text-[#0284c7]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 141,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 140,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
-                                                    children: currentLang === 'en' ? 'Phone Number' : 'फोन नम्बर'
+                                                    className: "text-[11px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200",
+                                                    children: currentLang === 'en' ? 'Active Member' : 'सक्रिय सदस्य'
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
                                                     lineNumber: 144,
                                                     columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#0f172a] text-sm",
-                                                    children: userData?.phone || '—'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 147,
-                                                    columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 140,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading mt-1",
+                                            children: currentLang === 'en' ? `Welcome, ${userData?.name || 'Student'}!` : `स्वागत छ, ${userData?.name || 'विद्यार्थी'}!`
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 148,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-slate-500",
+                                            children: currentLang === 'en' ? 'Access your classroom tickets, cohort dates, and admission details.' : 'आफ्नो कक्षा टिकट, समूह मिति र भर्ना विवरणहरू हेर्नुहोस्।'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -8962,359 +9083,1078 @@ const UserDashboard = ({ currentLang, onLogout })=>{
                                     fileName: "[project]/src/components/UserDashboard.tsx",
                                     lineNumber: 139,
                                     columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-3",
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/UserDashboard.tsx",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-2 self-start sm:self-auto",
+                            children: [
+                                onNavigate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>onNavigate('book'),
+                                    className: "flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white text-xs font-extrabold transition-colors shadow-sm",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-2xl bg-[#0284c7]/10 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                                className: "w-5 h-5 text-[#0284c7]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 155,
-                                                columnNumber: 17
-                                            }, ("TURBOPACK compile-time value", void 0))
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
+                                            className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 167,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: currentLang === 'en' ? 'Book Another Seat' : 'नयाँ सिट बुक'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 168,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 163,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: handleLogout,
+                                    className: "flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-100 text-xs font-bold transition-colors",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 175,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "block text-[10px] font-bold text-slate-400 uppercase tracking-wider",
-                                                    children: currentLang === 'en' ? 'Account Type' : 'खाता प्रकार'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 158,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "font-bold text-[#0f172a] text-sm capitalize",
-                                                    children: userData?.role || 'Student'
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 161,
-                                                    columnNumber: 17
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            children: currentLang === 'en' ? 'Sign Out' : 'साइन आउट'
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 176,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 171,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 110,
+                            lineNumber: 161,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/UserDashboard.tsx",
-                    lineNumber: 105,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-8",
+                    className: "bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-base font-extrabold text-[#0f172a] mb-6 pb-3 border-b border-slate-200 flex items-center gap-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                    className: "w-4 h-4 text-[#0284c7]"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 172,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                currentLang === 'en' ? 'Your Bookings' : 'तपाईंका बुकिङहरू'
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 171,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        bookings.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center py-12 space-y-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mx-auto",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                        className: "w-8 h-8 text-slate-400"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between border-b border-slate-200 pb-4",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-lg font-extrabold text-[#0f172a] font-heading",
+                                        children: currentLang === 'en' ? 'Your Personal & Contact Information' : 'व्यक्तिगत तथा सम्पर्क विवरण'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/UserDashboard.tsx",
-                                        lineNumber: 179,
-                                        columnNumber: 17
+                                        lineNumber: 185,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs text-slate-500",
+                                        children: currentLang === 'en' ? 'All details provided during registration and classroom reservations' : 'दर्ता र कक्षा बुकिङको क्रममा प्रदान गरिएका विवरणहरू'
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/UserDashboard.tsx",
+                                        lineNumber: 188,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
-                                }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/UserDashboard.tsx",
+                                lineNumber: 184,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/UserDashboard.tsx",
+                            lineNumber: 183,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-2xl bg-[#f8fafc] border border-slate-200 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 text-slate-400 text-xs font-bold uppercase",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 199,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: currentLang === 'en' ? 'Full Name' : 'पूरा नाम'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 200,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 198,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm font-extrabold text-[#0f172a]",
+                                            children: userData?.name || '—'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 202,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 178,
-                                    columnNumber: 15
+                                    lineNumber: 197,
+                                    columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-slate-600 font-semibold",
-                                    children: currentLang === 'en' ? 'No bookings yet' : 'अहिलेसम्म कुनै बुकिङ छैन'
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-2xl bg-[#f8fafc] border border-slate-200 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 text-slate-400 text-xs font-bold uppercase",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 207,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: currentLang === 'en' ? 'Email Address' : 'इमेल'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 208,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 206,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm font-extrabold text-[#0f172a] truncate",
+                                            children: userData?.email || '—'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 210,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 181,
-                                    columnNumber: 15
+                                    lineNumber: 205,
+                                    columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-slate-400",
-                                    children: currentLang === 'en' ? 'Reserve your seat in the upcoming cohort' : 'आगामी ब्याचमा आफ्नो सिट सुरक्षित गर्नुहोस्'
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-2xl bg-[#f8fafc] border border-slate-200 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 text-slate-400 text-xs font-bold uppercase",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 215,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: currentLang === 'en' ? 'Phone Number' : 'फोन नम्बर'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 216,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 214,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm font-extrabold text-[#0f172a]",
+                                            children: userData?.phone || latestBooking?.phone || '—'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 218,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 184,
-                                    columnNumber: 15
+                                    lineNumber: 213,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-4 rounded-2xl bg-[#f8fafc] border border-slate-200 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 text-slate-400 text-xs font-bold uppercase",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"], {
+                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 225,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: currentLang === 'en' ? 'Organization / Brand' : 'संस्था / ब्रान्ड'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 226,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 224,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm font-extrabold text-[#0f172a] truncate",
+                                            children: latestBooking?.organization || (currentLang === 'en' ? 'Independent Learner' : 'स्वतन्त्र विद्यार्थी')
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 228,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 223,
+                                    columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 177,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-4",
-                            children: bookings.map((booking)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-5 rounded-2xl border border-slate-200 bg-[#f8fafc] flex items-start justify-between gap-4",
+                            lineNumber: 196,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/UserDashboard.tsx",
+                    lineNumber: 182,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "space-y-6",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-2",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-xl font-extrabold text-[#0f172a] font-heading flex items-center gap-2",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                            className: "w-4 h-4 text-[#0284c7]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                                            lineNumber: 196,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold text-sm text-[#0f172a]",
-                                                            children: booking.city
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                                            lineNumber: 197,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 195,
-                                                    columnNumber: 21
-                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs text-slate-600",
-                                                    children: booking.batch
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
+                                                    className: "w-5 h-5 text-[#f97316]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 199,
-                                                    columnNumber: 21
+                                                    lineNumber: 240,
+                                                    columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: currentLang === 'en' ? 'Purchased Tickets & Classroom Seats' : 'खरिद गरिएका टिकट तथा सिटहरू'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 241,
+                                                    columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 239,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-slate-500 mt-0.5",
+                                            children: currentLang === 'en' ? 'Your official BYOM physical cohort admission passes' : 'तपाईंका आधिकारिक BYOM भौतिक कक्षा प्रवेश पत्रहरू'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 243,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 238,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-xs font-bold text-[#0284c7] bg-[#0284c7]/10 px-3 py-1 rounded-full",
+                                    children: [
+                                        bookings.length,
+                                        " ",
+                                        bookings.length === 1 ? 'Ticket' : 'Tickets'
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 249,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/UserDashboard.tsx",
+                            lineNumber: 237,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        bookings.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white rounded-3xl border border-slate-200 p-12 text-center space-y-4 shadow-sm",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mx-auto text-slate-400",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
+                                        className: "w-8 h-8"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/UserDashboard.tsx",
+                                        lineNumber: 257,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 256,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-base font-extrabold text-[#0f172a]",
+                                            children: currentLang === 'en' ? 'No Classroom Tickets Purchased Yet' : 'अहिलेसम्म कुनै टिकट खरिद गरिएको छैन'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 260,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-slate-500 max-w-md mx-auto",
+                                            children: currentLang === 'en' ? 'Reserve your seat in the upcoming 7-day marketing cohort in Kathmandu and get your digital admission pass.' : 'काठमाडौँमा हुने आगामी ७-दिने भौतिक टोलीमा आफ्नो सिट सुरक्षित गरी प्रवेश पत्र प्राप्त गर्नुहोस्।'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 263,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 259,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                onNavigate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>onNavigate('book'),
+                                    className: "px-7 py-3 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white text-xs font-extrabold btn-orange-hover shadow-lg shadow-orange-500/25 transition-all",
+                                    children: currentLang === 'en' ? 'Book Classroom Seat Now' : 'अहिले सिट सुरक्षित गर्नुहोस्'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 270,
+                                    columnNumber: 17
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/UserDashboard.tsx",
+                            lineNumber: 255,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 gap-6",
+                            children: bookings.map((booking)=>{
+                                const depositPaid = 5000;
+                                const remainingDue = (booking.amount || 15000) - depositPaid;
+                                const sessionDisplayDate = booking.sessionDate || 'Sept 1, 2026 – Sept 7, 2026';
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white rounded-3xl border border-slate-200 shadow-md hover:shadow-xl transition-all overflow-hidden",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-[#080e1a] text-white px-6 sm:px-8 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800",
+                                            children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-3 text-xs text-slate-400",
+                                                    className: "flex items-center gap-3",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-8 h-8 rounded-xl bg-gradient-to-br from-[#0284c7] to-[#0369a1] flex items-center justify-center text-white font-black text-sm",
+                                                            children: "B"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 293,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
-                                                                "Seat: ",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                    className: "text-[#0284c7]",
-                                                                    children: booking.seatId
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider block",
+                                                                    children: "BE YOUR OWN MARKETER"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                                                    lineNumber: 201,
-                                                                    columnNumber: 35
-                                                                }, ("TURBOPACK compile-time value", void 0))
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                                            lineNumber: 201,
-                                                            columnNumber: 23
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        booking.depositAmount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: [
-                                                                "Deposit: ",
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                                    className: "text-[#0f172a]",
-                                                                    children: [
-                                                                        "Rs. ",
-                                                                        booking.depositAmount.toLocaleString()
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    lineNumber: 297,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-sm font-extrabold text-white",
+                                                                    children: booking.sessionName || '7-Day Marketing Mastery Cohort'
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                                                    lineNumber: 203,
-                                                                    columnNumber: 40
+                                                                    lineNumber: 300,
+                                                                    columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                                            lineNumber: 203,
+                                                            lineNumber: 296,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                                    lineNumber: 200,
-                                                    columnNumber: 21
+                                                    lineNumber: 292,
+                                                    columnNumber: 23
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs font-mono font-bold text-amber-300 bg-amber-400/10 px-3 py-1 rounded-xl border border-amber-400/20",
+                                                            children: [
+                                                                "#BYOM-",
+                                                                booking.id.slice(-8).toUpperCase()
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 307,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[11px] font-extrabold uppercase px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                                    className: "w-3 h-3"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 311,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                currentLang === 'en' ? 'Confirmed Pass' : 'पुष्टि भएको पास'
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 310,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 306,
+                                                    columnNumber: 23
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 194,
-                                            columnNumber: 19
+                                            lineNumber: 291,
+                                            columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: `text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full border ${statusColor(booking.status)}`,
-                                            children: booking.status === 'confirmed' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "flex items-center gap-1",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                        className: "w-3 h-3"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/UserDashboard.tsx",
-                                                        lineNumber: 209,
-                                                        columnNumber: 65
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    " Confirmed"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 209,
-                                                columnNumber: 23
-                                            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "flex items-center gap-1",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                        className: "w-3 h-3"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/UserDashboard.tsx",
-                                                        lineNumber: 211,
-                                                        columnNumber: 65
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    " Pending"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/UserDashboard.tsx",
-                                                lineNumber: 211,
-                                                columnNumber: 23
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "lg:col-span-8 space-y-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "p-4 rounded-2xl bg-[#0284c7]/5 border border-[#0284c7]/20 flex items-start gap-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                                    className: "w-5 h-5 text-[#0284c7] flex-shrink-0 mt-0.5"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 325,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "block text-[11px] font-extrabold uppercase tracking-wider text-[#0284c7]",
+                                                                            children: currentLang === 'en' ? '📅 Cohort Schedule & Dates' : '📅 समूह तालिका र मितिहरू'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 327,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            className: "text-base font-extrabold text-[#0f172a] mt-0.5",
+                                                                            children: sessionDisplayDate
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 330,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            className: "text-xs text-slate-500 mt-0.5",
+                                                                            children: currentLang === 'en' ? '7 Days of Intensive Physical Hands-on Training & Mentorship' : '७ दिनको गहन भौतिक तालिम र मेन्टरसिप'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 333,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 326,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 324,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold text-slate-600",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "space-y-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider block",
+                                                                            children: currentLang === 'en' ? 'Classroom Venue' : 'कक्षाकोठा स्थान'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 344,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "flex items-center gap-1.5 font-bold text-[#0f172a] text-sm",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 348,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    children: booking.city
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 349,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 347,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[11px] text-slate-400",
+                                                                            children: "Tech Park, Baneshwor"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 351,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 343,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "space-y-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider block",
+                                                                            children: currentLang === 'en' ? 'Shift / Batch Time' : 'ब्याच समय'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 355,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "flex items-center gap-1.5 font-bold text-[#0f172a] text-sm",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                                    className: "w-4 h-4 text-[#0284c7]"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 359,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    children: booking.batch.split('(')[0].trim()
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 360,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 358,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[11px] text-slate-400",
+                                                                            children: booking.batch.includes('(') ? `(${booking.batch.split('(')[1]}` : 'Standard Batch'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 362,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 354,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "space-y-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[10px] font-bold text-slate-400 uppercase tracking-wider block",
+                                                                            children: currentLang === 'en' ? 'Reserved Seat' : 'सुरक्षित सिट'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 368,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] text-white font-black text-sm shadow-sm",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                                                                    className: "w-3.5 h-3.5 text-amber-200"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 372,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    children: [
+                                                                                        "Seat ",
+                                                                                        booking.selectedSeatId
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 373,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 371,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 367,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 342,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between text-[11px] text-slate-400",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "flex items-center gap-1.5",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                            className: "w-3.5 h-3.5 text-[#0284c7]"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 381,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            children: [
+                                                                                currentLang === 'en' ? 'Time of Purchase: ' : 'खरिद समय: ',
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                                    className: "text-slate-700 font-bold",
+                                                                                    children: new Date(booking.createdAt).toLocaleString('en-US', {
+                                                                                        month: 'short',
+                                                                                        day: 'numeric',
+                                                                                        year: 'numeric',
+                                                                                        hour: '2-digit',
+                                                                                        minute: '2-digit',
+                                                                                        hour12: true
+                                                                                    })
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                                    lineNumber: 384,
+                                                                                    columnNumber: 31
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 382,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 380,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    children: [
+                                                                        currentLang === 'en' ? 'Payment: ' : 'भुक्तानी: ',
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                                            className: "text-emerald-700 font-bold uppercase",
+                                                                            children: [
+                                                                                booking.paymentMethod,
+                                                                                " QR (Rs. ",
+                                                                                depositPaid.toLocaleString(),
+                                                                                " Deposit)"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 398,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 396,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 379,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 321,
+                                                    columnNumber: 23
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "lg:col-span-4 bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "space-y-2 text-xs",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center justify-between text-slate-500",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            children: currentLang === 'en' ? 'Total Program Fee' : 'कुल शुल्क'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 409,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-bold text-[#0f172a]",
+                                                                            children: [
+                                                                                "Rs. ",
+                                                                                (booking.amount || 15000).toLocaleString()
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 410,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 408,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center justify-between text-emerald-700 font-bold bg-emerald-50 p-2 rounded-xl border border-emerald-200",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            children: currentLang === 'en' ? '✓ Deposit Paid' : '✓ डिपोजिट भुक्तान'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 415,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            children: [
+                                                                                "Rs. ",
+                                                                                depositPaid.toLocaleString()
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 416,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 414,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center justify-between text-slate-500",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            children: currentLang === 'en' ? 'Due at Classroom' : 'कक्षामा बुझाउनुपर्ने'
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 419,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-extrabold text-[#0f172a]",
+                                                                            children: [
+                                                                                "Rs. ",
+                                                                                remainingDue.toLocaleString()
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                            lineNumber: 420,
+                                                                            columnNumber: 29
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                    lineNumber: 418,
+                                                                    columnNumber: 27
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 407,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "pt-2 border-t border-slate-200 flex flex-col gap-2",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                onClick: handlePrintTicket,
+                                                                className: "w-full py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-[#0f172a] font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow-sm",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$printer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Printer$3e$__["Printer"], {
+                                                                        className: "w-3.5 h-3.5 text-[#0284c7]"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                        lineNumber: 431,
+                                                                        columnNumber: 29
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: currentLang === 'en' ? 'Print / Save Ticket PDF' : 'टिकट प्रिन्ट वा सुरक्षित गर्नुहोस्'
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                        lineNumber: 432,
+                                                                        columnNumber: 29
+                                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/UserDashboard.tsx",
+                                                                lineNumber: 427,
+                                                                columnNumber: 27
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                                            lineNumber: 426,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                                    lineNumber: 406,
+                                                    columnNumber: 23
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 207,
-                                            columnNumber: 19
+                                            lineNumber: 318,
+                                            columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, booking.id, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 193,
-                                    columnNumber: 17
-                                }, ("TURBOPACK compile-time value", void 0)))
+                                    lineNumber: 286,
+                                    columnNumber: 19
+                                }, ("TURBOPACK compile-time value", void 0));
+                            })
                         }, void 0, false, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 191,
+                            lineNumber: 279,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/UserDashboard.tsx",
-                    lineNumber: 170,
+                    lineNumber: 236,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white rounded-3xl p-8 space-y-4 border border-slate-800 shadow-xl",
+                    className: "bg-gradient-to-br from-[#080e1a] via-[#0b132b] to-[#0f172a] text-white rounded-3xl p-8 space-y-6 border border-slate-800 shadow-xl",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "font-extrabold text-base border-b border-white/10 pb-3",
-                            children: currentLang === 'en' ? 'Fee Payment Summary' : 'शुल्क भुक्तानी सारांश'
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-between border-b border-white/10 pb-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-lg font-extrabold font-heading text-white",
+                                            children: currentLang === 'en' ? 'Classroom Inclusion Checklist' : 'कक्षा समावेशी चेकलिस्ट'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 449,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-slate-400",
+                                            children: currentLang === 'en' ? 'All items provided upon arrival at Kathmandu Hub' : 'काठमाडौँ हबमा आगमनमा उपलब्ध गराइने सामग्रीहरू'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 452,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 448,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                    className: "w-6 h-6 text-emerald-400"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 458,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 222,
+                            lineNumber: 447,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 sm:grid-cols-3 gap-4",
+                            className: "grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold",
                             children: [
-                                {
-                                    label: currentLang === 'en' ? 'Total Program Fee' : 'कुल शुल्क',
-                                    value: 'Rs. 15,000',
-                                    sub: ''
-                                },
-                                {
-                                    label: currentLang === 'en' ? 'Deposit (Pay Now)' : 'डिपोजिट (अहिले)',
-                                    value: 'Rs. 5,000',
-                                    sub: currentLang === 'en' ? 'via Fonepay QR' : 'Fonepay QR बाट'
-                                },
-                                {
-                                    label: currentLang === 'en' ? 'After Session Starts' : 'सत्र सुरुपछि',
-                                    value: 'Rs. 10,000',
-                                    sub: ''
-                                }
-                            ].map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "bg-white/5 rounded-2xl p-4 border border-white/10 space-y-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-slate-400",
-                                            children: item.label
+                                            className: "text-amber-300 font-extrabold text-sm",
+                                            children: "📦 Physical Workbooks & Kit"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 232,
-                                            columnNumber: 17
+                                            lineNumber: 463,
+                                            columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xl font-extrabold text-amber-300",
-                                            children: item.value
+                                            className: "text-slate-300 text-[11px] leading-relaxed",
+                                            children: currentLang === 'en' ? 'Official BYOM course workbook, templates, and high-converting Nepali copy frameworks.' : 'आधिकारिक BYOM अभ्यास पुस्तिका र नेपाली कपी टेम्प्लेटहरू।'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 233,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        item.sub && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[10px] text-slate-400",
-                                            children: item.sub
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/UserDashboard.tsx",
-                                            lineNumber: 234,
-                                            columnNumber: 30
+                                            lineNumber: 464,
+                                            columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
-                                }, i, true, {
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/UserDashboard.tsx",
-                                    lineNumber: 231,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)))
-                        }, void 0, false, {
+                                    lineNumber: 462,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white/5 rounded-2xl p-4 border border-white/10 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-[#38bdf8] font-extrabold text-sm",
+                                            children: "🎯 1-on-1 Ad Audit Session"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 472,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-slate-300 text-[11px] leading-relaxed",
+                                            children: currentLang === 'en' ? 'Direct review of your live Facebook & Instagram ad campaigns with lead mentor Anish Sharma.' : 'प्रमुख प्रशिक्षक अनीश शर्मासँग प्रत्यक्ष विज्ञापन अडिट।'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 473,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 471,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white/5 rounded-2xl p-4 border border-white/10 space-y-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-emerald-300 font-extrabold text-sm",
+                                            children: "🎓 BYOM Verified Certificate"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 481,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-slate-300 text-[11px] leading-relaxed",
+                                            children: currentLang === 'en' ? 'Accredited physical certificate presented during graduation day.' : 'दीक्षान्त समारोहमा प्रदान गरिने आधिकारिक प्रमाणपत्र।'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/UserDashboard.tsx",
+                                            lineNumber: 482,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/UserDashboard.tsx",
+                                    lineNumber: 480,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/UserDashboard.tsx",
-                            lineNumber: 225,
+                            lineNumber: 461,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/UserDashboard.tsx",
-                    lineNumber: 221,
+                    lineNumber: 446,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/UserDashboard.tsx",
-            lineNumber: 83,
+            lineNumber: 122,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/UserDashboard.tsx",
-        lineNumber: 78,
+        lineNumber: 117,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(UserDashboard, "eW4WSFn2B1AlMrM01wwdfsW40lw=");
+_s(UserDashboard, "ek8E43EGhHlgvmf+SSKX4EUb5RQ=");
 _c = UserDashboard;
 var _c;
 __turbopack_context__.k.register(_c, "UserDashboard");

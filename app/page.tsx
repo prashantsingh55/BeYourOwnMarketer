@@ -126,22 +126,6 @@ export default function Home() {
       <main className="flex-grow">
         <AnimatePresence mode="wait">
           
-          {/* USER DASHBOARD */}
-          {currentPage === ('dashboard' as PageRoute) && (
-            <motion.div
-              key="dashboard"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <UserDashboard
-                currentLang={currentLang}
-                onLogout={() => { setAuthUser(null); setCurrentPage('home'); }}
-              />
-            </motion.div>
-          )}
-
           {/* HOME PAGE */}
           {currentPage === 'home' && (
             <motion.div
@@ -342,7 +326,13 @@ export default function Home() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <SeatBooking currentLang={currentLang} />
+              <SeatBooking
+                currentLang={currentLang}
+                onNavigate={handleNavigate}
+                onBookingSuccess={(user) => {
+                  setAuthUser(user);
+                }}
+              />
             </motion.div>
           )}
 
@@ -385,6 +375,26 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <GalleryPage currentLang={currentLang} />
+            </motion.div>
+          )}
+
+          {/* STUDENT DASHBOARD / USER PORTAL */}
+          {currentPage === 'dashboard' && (
+            <motion.div
+              key="dashboard"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <UserDashboard
+                currentLang={currentLang}
+                onLogout={() => {
+                  setAuthUser(null);
+                  handleNavigate('home');
+                }}
+                onNavigate={handleNavigate}
+              />
             </motion.div>
           )}
 

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { hashPassword, signJwtToken, getAuthTokenName } from '@/lib/auth';
+import { isValidGmail, isValidNepalPhone, normalizeNepalPhone } from '@/lib/validation';
 
 export async function POST(req: Request) {
   try {
@@ -13,8 +14,23 @@ export async function POST(req: Request) {
       );
     }
 
+    const trimmedEmail = email.toLowerCase().trim();
+    if (!isValidGmail(trimmedEmail)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid Gmail address (must end with @gmail.com)' },
+        { status: 400 }
+      );
+    }
+
+    if (phone && !isValidNepalPhone(phone)) {
+      return NextResponse.json(
+        { error: 'Please enter a valid Nepal mobile number (e.g. 98XXXXXXXX or 97XXXXXXXX)' },
+        { status: 400 }
+      );
+    }
+
     const existingUser = await db.user.findUnique({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: trimmedEmail },
     });
 
     if (existingUser) {
@@ -25,13 +41,14 @@ export async function POST(req: Request) {
     }
 
     const passwordHash = await hashPassword(password);
+    const normalizedPhone = phone ? normalizeNepalPhone(phone) : null;
 
     const user = await db.user.create({
       data: {
-        name,
-        email: email.toLowerCase().trim(),
+        name: name.trim(),
+        email: trimmedEmail,
         passwordHash,
-        phone: phone || null,
+        phone: normalizedPhone,
       },
     });
 

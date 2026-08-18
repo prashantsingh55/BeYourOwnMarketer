@@ -101,7 +101,8 @@ async function GET() {
         const authUser = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getAuthUser"])();
         if (!authUser) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                user: null
+                user: null,
+                bookings: []
             }, {
                 status: 200
             });
@@ -120,12 +121,38 @@ async function GET() {
                 createdAt: true
             }
         });
+        if (!user) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                user: null,
+                bookings: []
+            }, {
+                status: 200
+            });
+        }
+        // Fetch all bookings for this user by userId OR by matching email
+        const bookings = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].booking.findMany({
+            where: {
+                OR: [
+                    {
+                        userId: user.id
+                    },
+                    {
+                        email: user.email.toLowerCase().trim()
+                    }
+                ]
+            },
+            orderBy: {
+                createdAt: 'desc'
+            }
+        });
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            user
+            user,
+            bookings
         });
     } catch (error) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            user: null
+            user: null,
+            bookings: []
         }, {
             status: 200
         });

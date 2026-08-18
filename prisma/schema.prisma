@@ -69,6 +69,8 @@ model Booking {
   email          String
   phone          String
   organization   String?
+  sessionDate    String?  // e.g. "2026-09-01 to 2026-09-07" or "Sept 1 - Sept 7, 2026"
+  sessionName    String?  // e.g. "7-Day Marketing Mastery Cohort"
   amount         Float
   paymentMethod  String   // "esewa" | "khalti" | "fonepay" | "bank"
   paymentStatus  String   @default("pending") // "pending" | "completed" | "failed"

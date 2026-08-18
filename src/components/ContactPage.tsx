@@ -5,6 +5,7 @@ import { Language } from '../types';
 import { translations } from '../data/translations';
 import { MapPin, Mail, Phone, Clock, Send, MessageSquare, CheckCircle2, UserCheck } from 'lucide-react';
 import { motion } from 'motion/react';
+import { isValidGmail, isValidNepalPhone } from '../lib/validation';
 
 interface ContactPageProps {
   currentLang: Language;
@@ -29,21 +30,42 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.phone || !formData.email) {
-      alert(currentLang === 'en' ? 'Please fill in all required fields.' : 'कृपया आवश्यक विवरण भर्नुहोस्।');
+    setErrorMsg('');
+
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim()) {
+      setErrorMsg(currentLang === 'en' ? 'Please fill in all required fields.' : 'कृपया आवश्यक विवरण भर्नुहोस्।');
       return;
     }
+
+    const cleanEmail = formData.email.trim().toLowerCase();
+    if (!isValidGmail(cleanEmail)) {
+      setErrorMsg(
+        currentLang === 'en'
+          ? 'Please enter a valid Gmail address (must end with @gmail.com)'
+          : 'कृपया मान्य Gmail ठेगाना प्रविष्ट गर्नुहोस् (@gmail.com आवश्यक)'
+      );
+      return;
+    }
+
+    if (!isValidNepalPhone(formData.phone)) {
+      setErrorMsg(
+        currentLang === 'en'
+          ? 'Please enter a valid 10-digit Nepal mobile number starting with 98 or 97'
+          : 'कृपया मान्य १०-अङ्कको नेपाली मोबाइल नम्बर प्रविष्ट गर्नुहोस् (९८ वा ९७ बाट सुरु)'
+      );
+      return;
+    }
+
     setLoading(true);
-    setErrorMsg('');
 
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
+          name: formData.name.trim(),
+          email: cleanEmail,
+          phone: formData.phone.trim(),
           subject: formData.org ? `Inquiry from ${formData.org}` : 'General Inquiry',
           message: formData.message || 'Contact request from website',
         }),
@@ -111,29 +133,40 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
-                      {t.emailAddress[currentLang]} *
-                    </label>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <label className="block text-xs font-bold text-[#0f172a]">
+                        {t.emailAddress[currentLang]} *
+                      </label>
+                      <span className="text-[10px] font-bold text-sky-600 bg-sky-50 px-2 py-0.5 rounded-md border border-sky-200">
+                        @gmail.com
+                      </span>
+                    </div>
                     <input
                       type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="anish@gmail.com"
+                      placeholder="yourname@gmail.com"
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#0f172a] mb-1.5">
-                      {t.phoneNumber[currentLang]} *
-                    </label>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <label className="block text-xs font-bold text-[#0f172a]">
+                        {t.phoneNumber[currentLang]} *
+                      </label>
+                      <span className="text-[10px] font-bold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-md border border-orange-200">
+                        🇳🇵 98 / 97 (10 digits)
+                      </span>
+                    </div>
                     <input
                       type="tel"
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="9801234567"
+                      placeholder="98XXXXXXXX"
+                      maxLength={14}
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#0284c7] focus:ring-2 focus:ring-[#0284c7]/20 text-sm font-semibold outline-none transition-all"
                     />
                   </div>
@@ -204,8 +237,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
                 </h3>
                 <p className="text-sm text-[#64748b] max-w-md mx-auto leading-relaxed">
                   {currentLang === 'en'
-                    ? `A confirmation email has been sent to ${formData.email}. Our team will review your message and reach out shortly.`
-                    : `${formData.email} मा पुष्टिकरण इमेल पठाइएको छ। हाम्रो टोलीले चाँडै सम्पर्क गर्नेछ।`}
+                    ? `A confirmation email has been sent to our team. Our team will review your message and reach out shortly.`
+                    : `पुष्टिकरण इमेल पठाइएको छ। हाम्रो टोलीले चाँडै सम्पर्क गर्नेछ।`}
                 </p>
                 <button
                   onClick={() => {
