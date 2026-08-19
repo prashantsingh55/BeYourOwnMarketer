@@ -189,8 +189,8 @@ export default function Home() {
         </svg>
       </a>
 
-      {/* Floating Social Media Links on Right Edge */}
-      <FloatingSocials />
+      {/* Floating Social Media Links on Right Edge (hidden on mobile when viewing workshop/booking pages) */}
+      <FloatingSocials currentPage={currentPage} />
 
       {/* Main View Router */}
       <main className="flex-grow">

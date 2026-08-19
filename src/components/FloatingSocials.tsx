@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { PageRoute } from '../types';
 
 interface SocialLinkItem {
   name: string;
@@ -10,7 +11,14 @@ interface SocialLinkItem {
   icon: React.ReactNode;
 }
 
-export const FloatingSocials: React.FC = () => {
+interface FloatingSocialsProps {
+  currentPage?: PageRoute;
+}
+
+export const FloatingSocials: React.FC<FloatingSocialsProps> = ({ currentPage }) => {
+  // Hide floating socials on mobile screens for workshop/booking pages to avoid blocking UI
+  const isWorkshop = currentPage === 'book' || currentPage === 'programs';
+
   const socials: SocialLinkItem[] = [
     {
       name: 'Facebook',
@@ -59,7 +67,11 @@ export const FloatingSocials: React.FC = () => {
   ];
 
   return (
-    <div className="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-1.5 sm:gap-2 pointer-events-auto items-end">
+    <div
+      className={`fixed right-0 top-1/2 -translate-y-1/2 z-40 ${
+        isWorkshop ? 'hidden sm:flex' : 'flex'
+      } flex-col gap-1.5 sm:gap-2 pointer-events-auto items-end`}
+    >
       {socials.map((social) => (
         <a
           key={social.name}

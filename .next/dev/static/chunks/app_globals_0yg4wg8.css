@@ -4037,6 +4037,10 @@
       color: #0369a1;
     }
 
+    .hover\:text-\[\#E06A29\]:hover {
+      color: #e06a29;
+    }
+
     .hover\:text-\[\#ea580c\]:hover {
       color: #ea580c;
     }
@@ -4655,6 +4659,48 @@
       flex-direction: row;
     }
 
+    .md\:border-slate-800 {
+      border-color: var(--color-slate-800);
+    }
+
+    .md\:border-white\/10 {
+      border-color: #ffffff1a;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .md\:border-white\/10 {
+        border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+
+    .md\:bg-\[\#0b132b\] {
+      background-color: #0b132b;
+    }
+
+    .md\:bg-white\/5 {
+      background-color: #ffffff0d;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .md\:bg-white\/5 {
+        background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+      }
+    }
+
+    .md\:bg-white\/10 {
+      background-color: #ffffff1a;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .md\:bg-white\/10 {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+
+    .md\:bg-none {
+      background-image: none;
+    }
+
     .md\:py-20 {
       padding-block: calc(var(--spacing) * 20);
     }
@@ -4674,6 +4720,86 @@
     .md\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+
+    .md\:text-\[\#f97316\] {
+      color: #f97316;
+    }
+
+    .md\:text-slate-300 {
+      color: var(--color-slate-300);
+    }
+
+    .md\:text-slate-400 {
+      color: var(--color-slate-400);
+    }
+
+    @media (hover: hover) {
+      .md\:group-hover\:border-white\/20:is(:where(.group):hover *) {
+        border-color: #fff3;
+      }
+
+      @supports (color: color-mix(in lab, red, red)) {
+        .md\:group-hover\:border-white\/20:is(:where(.group):hover *) {
+          border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+        }
+      }
+
+      .md\:group-hover\:bg-white\/15:is(:where(.group):hover *) {
+        background-color: #ffffff26;
+      }
+
+      @supports (color: color-mix(in lab, red, red)) {
+        .md\:group-hover\:bg-white\/15:is(:where(.group):hover *) {
+          background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+        }
+      }
+
+      .md\:group-hover\:bg-white\/20:is(:where(.group):hover *) {
+        background-color: #fff3;
+      }
+
+      @supports (color: color-mix(in lab, red, red)) {
+        .md\:group-hover\:bg-white\/20:is(:where(.group):hover *) {
+          background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+        }
+      }
+
+      .md\:group-hover\:text-amber-200:is(:where(.group):hover *) {
+        color: var(--color-amber-200);
+      }
+
+      .md\:group-hover\:text-white:is(:where(.group):hover *) {
+        color: var(--color-white);
+      }
+
+      .md\:group-hover\:text-white\/80:is(:where(.group):hover *) {
+        color: #fffc;
+      }
+
+      @supports (color: color-mix(in lab, red, red)) {
+        .md\:group-hover\:text-white\/80:is(:where(.group):hover *) {
+          color: color-mix(in oklab, var(--color-white) 80%, transparent);
+        }
+      }
+
+      .md\:group-hover\:text-white\/90:is(:where(.group):hover *) {
+        color: #ffffffe6;
+      }
+
+      @supports (color: color-mix(in lab, red, red)) {
+        .md\:group-hover\:text-white\/90:is(:where(.group):hover *) {
+          color: color-mix(in oklab, var(--color-white) 90%, transparent);
+        }
+      }
+
+      .md\:hover\:border-\[\#2D9EDE\]:hover {
+        border-color: #2d9ede;
+      }
+
+      .md\:hover\:bg-\[\#2D9EDE\]:hover {
+        background-color: #2d9ede;
+      }
     }
   }
 

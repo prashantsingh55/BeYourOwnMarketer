@@ -175,11 +175,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Bottom: Visible White Bar Strip just below the curved blue bar (Increased vertical height) */}
+          {/* Bottom: Visible White Bar Strip just below the curved blue bar (Interactive button redirecting to book page) */}
           <div className="py-1.5 sm:py-2.5 bg-white flex items-center justify-end px-3.5 sm:px-4">
-            <span className="text-[10px] sm:text-[11px] font-black text-[#EF7B3A] tracking-wider uppercase">
-              {currentLang === 'en' ? '✦ ADMISSIONS OPEN 2026' : '✦ भर्ना खुला २०२६'}
-            </span>
+            <button
+              onClick={() => handleNavClick('book')}
+              className="text-[10px] sm:text-[11px] font-black text-[#EF7B3A] hover:text-[#E06A29] active:scale-95 tracking-wider uppercase transition-all flex items-center gap-1 focus:outline-none cursor-pointer"
+            >
+              <span>{currentLang === 'en' ? '✦ ADMISSIONS OPEN 2026 →' : '✦ भर्ना खुला २०२६ →'}</span>
+            </button>
           </div>
 
         </div>
