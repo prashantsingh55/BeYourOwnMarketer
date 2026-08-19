@@ -98,22 +98,22 @@ export const Navbar: React.FC<NavbarProps> = ({
       
       {/* ════════════════════════════════════════════════════════════════════════════
           1. MOBILE & TABLET NAVBAR (< lg / < 1024px)
-          - Left: Full-height Logo Area
+          - Left: Full-height Logo Area (flush top alignment)
           - Right: Upper Curved Blue Bar with White Bar seen just below
          ════════════════════════════════════════════════════════════════════════════ */}
       <div className="lg:hidden flex items-stretch">
         
-        {/* Left: Full-height Logo Corner */}
-        <div className="flex items-center pl-3 sm:pl-4 pr-2 sm:pr-3 py-1.5 flex-shrink-0 bg-white z-10">
+        {/* Left: Full-height Logo Corner (Flush Top-Edge Alignment) */}
+        <div className="flex items-start pl-3 sm:pl-4 pr-2 sm:pr-3 pt-0 pb-1 flex-shrink-0 bg-white z-10">
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center focus:outline-none"
+            className="flex items-start focus:outline-none"
             aria-label="Be Your Own Marketer"
           >
             <img
               src="/byom-logo.png"
               alt="Be Your Own Marketer"
-              className="h-11 sm:h-13 w-auto object-contain"
+              className="h-14 sm:h-17 w-auto object-contain -mt-1.5 sm:-mt-2"
             />
           </button>
         </div>
@@ -189,24 +189,24 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* ════════════════════════════════════════════════════════════════════════════
           2. DESKTOP TWO-TIER INTERTWINED NAVBAR (>= lg / >= 1024px)
-          - Full-height logo block on top-left corner
+          - Full-height logo block on top-left corner (flush top alignment)
           - Master Mobile Videography gradient curved bar on top right
           - Seamless white navigation bar directly below with active underline
          ════════════════════════════════════════════════════════════════════════════ */}
       <div className="hidden lg:block max-w-[1440px] mx-auto px-6 lg:px-8">
         <div className="flex items-stretch">
 
-          {/* ── LOGO CORNER (Spans top to bottom on left) ── */}
-          <div className="flex items-center pr-4 lg:pr-6 py-2 flex-shrink-0 z-20">
+          {/* ── LOGO CORNER (Spans top to bottom on left, flush top edge) ── */}
+          <div className="flex items-start pr-4 lg:pr-6 pt-0 pb-1 flex-shrink-0 z-20">
             <button
               onClick={() => handleNavClick('home')}
-              className="flex items-center focus:outline-none group"
+              className="flex items-start focus:outline-none group"
               aria-label="Be Your Own Marketer"
             >
               <img
                 src="/byom-logo.png"
                 alt="Be Your Own Marketer"
-                className="h-16 lg:h-[76px] w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+                className="h-20 lg:h-[88px] w-auto object-contain -mt-2 lg:-mt-2.5 transition-transform duration-200 group-hover:scale-105"
               />
             </button>
           </div>
