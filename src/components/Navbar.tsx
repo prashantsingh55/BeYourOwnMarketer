@@ -113,7 +113,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <img
               src="/byom-logo.png"
               alt="Be Your Own Marketer"
-              className="h-14 sm:h-17 w-auto object-contain -mt-1.5 sm:-mt-2"
+              className="h-12 sm:h-15 w-auto object-contain -mt-1 sm:-mt-1.5"
             />
           </button>
         </div>
@@ -206,7 +206,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <img
                 src="/byom-logo.png"
                 alt="Be Your Own Marketer"
-                className="h-20 lg:h-[88px] w-auto object-contain -mt-2 lg:-mt-2.5 transition-transform duration-200 group-hover:scale-105"
+                className="h-16 lg:h-[78px] xl:h-[82px] w-auto object-contain -mt-1 lg:-mt-1.5 transition-transform duration-200 group-hover:scale-105"
               />
             </button>
           </div>

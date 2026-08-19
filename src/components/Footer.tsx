@@ -206,10 +206,10 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>{t.tagline[currentLang]}</p>
           <div className="flex space-x-4">
-            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">{t.contactUs[currentLang]}</button>
-            <a href="#" className="hover:text-white transition-colors">{t.privacy[currentLang]}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.terms[currentLang]}</a>
-            <a href="#" className="hover:text-white transition-colors">{t.helpCenter[currentLang]}</a>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">{t.contactUs[currentLang]}</button>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">{t.privacy[currentLang]}</button>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">{t.terms[currentLang]}</button>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">{t.helpCenter[currentLang]}</button>
           </div>
         </div>
 

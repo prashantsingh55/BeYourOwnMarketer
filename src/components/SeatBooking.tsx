@@ -43,6 +43,17 @@ interface ClassSessionItem {
   isActive: boolean;
 }
 
+function parseStepFromUrl(): number {
+  if (typeof window === 'undefined') return 1;
+  const hash = window.location.hash.toLowerCase();
+  const match = hash.match(/step[-_=/]?([1-5])/);
+  if (match && match[1]) {
+    const stepNum = parseInt(match[1], 10);
+    if (stepNum >= 1 && stepNum <= 5) return stepNum;
+  }
+  return 1;
+}
+
 export const SeatBooking: React.FC<SeatBookingProps> = ({
   currentLang,
   onNavigate,
@@ -50,11 +61,70 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
 }) => {
   const t = translations.booking;
 
-  const [activeStep, setActiveStep] = useState<number>(1);
+  const [activeStep, setActiveStep] = useState<number>(() => {
+    return typeof window !== 'undefined' ? parseStepFromUrl() : 1;
+  });
   const [selectedCity, setSelectedCity] = useState<string>('Kathmandu Hub');
   const [selectedBatch, setSelectedBatch] = useState<string>('Daytime / Afternoon (12:00 PM - 3:00 PM)');
   const [seats, setSeats] = useState<Seat[]>(initialSeatData);
   const [selectedSeatId, setSelectedSeatId] = useState<string>('B4');
+
+  // Multi-step browser history navigation helper
+  const goToStep = (stepNumber: number, replace = false) => {
+    if (stepNumber < 1 || stepNumber > 5) return;
+    if (stepNumber === activeStep) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const newHash = stepNumber === 1 ? '#book' : `#book/step-${stepNumber}`;
+    if (replace) {
+      window.history.replaceState({ page: 'book', step: stepNumber }, '', newHash);
+    } else {
+      window.history.pushState({ page: 'book', step: stepNumber }, '', newHash);
+    }
+
+    setActiveStep(stepNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Browser History & Swipe-Back / Forward listener for booking steps
+  useEffect(() => {
+    const initialStep = parseStepFromUrl();
+    if (!window.history.state?.step && window.location.hash.startsWith('#book')) {
+      window.history.replaceState(
+        { page: 'book', step: initialStep },
+        '',
+        initialStep === 1 ? '#book' : `#book/step-${initialStep}`
+      );
+    }
+
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state?.page === 'book' || window.location.hash.startsWith('#book')) {
+        const targetStep = (typeof event.state?.step === 'number' && event.state.step >= 1 && event.state.step <= 5)
+          ? event.state.step
+          : parseStepFromUrl();
+        setActiveStep(targetStep);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+
+    const handleHashChange = () => {
+      if (window.location.hash.startsWith('#book')) {
+        const targetStep = parseStepFromUrl();
+        setActiveStep(targetStep);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   // Active Sessions / Dates from backend
   const [sessions, setSessions] = useState<ClassSessionItem[]>([]);
@@ -212,7 +282,7 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
     }
 
     setFieldErrors({});
-    setActiveStep(5);
+    goToStep(5);
   };
 
   const handleConfirmPay = async () => {
@@ -306,9 +376,9 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
               return (
                 <button
                   key={step.num}
-                  onClick={() => !isCompleted && setActiveStep(step.num)}
+                  onClick={() => !isCompleted && goToStep(step.num)}
                   disabled={isCompleted}
-                  className="flex flex-col items-center gap-1.5 focus:outline-none"
+                  className="flex flex-col items-center gap-1.5 focus:outline-none cursor-pointer"
                 >
                   <div
                     className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full font-bold text-sm flex items-center justify-center transition-all ${
@@ -384,8 +454,8 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
 
                   <div className="pt-4 flex justify-end">
                     <button
-                      onClick={() => setActiveStep(2)}
-                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
+                      onClick={() => goToStep(2)}
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Next: Choose Batch' : 'अर्को: ब्याच छान्नुहोस्'}
                     </button>
@@ -432,14 +502,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
 
                   <div className="pt-4 flex justify-between">
                     <button
-                      onClick={() => setActiveStep(1)}
-                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
+                      onClick={() => goToStep(1)}
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50 cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
-                      onClick={() => setActiveStep(3)}
-                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
+                      onClick={() => goToStep(3)}
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Next: Pick Seat' : 'अर्को: सिट छान्नुहोस्'}
                     </button>
@@ -521,14 +591,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
 
                   <div className="pt-4 flex justify-between">
                     <button
-                      onClick={() => setActiveStep(2)}
-                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
+                      onClick={() => goToStep(2)}
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50 cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
-                      onClick={() => setActiveStep(4)}
-                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
+                      onClick={() => goToStep(4)}
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Next: Contact Info' : 'अर्को: सम्पर्क विवरण'}
                     </button>
@@ -682,14 +752,14 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
                   <div className="pt-4 flex justify-between">
                     <button
                       type="button"
-                      onClick={() => setActiveStep(3)}
-                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50"
+                      onClick={() => goToStep(3)}
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm hover:bg-slate-50 cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       type="submit"
-                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm"
+                      className="px-7 py-3.5 rounded-xl bg-[#0f172a] hover:bg-[#0284c7] text-white font-extrabold text-sm btn-hover transition-colors shadow-sm cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Proceed to Payment' : 'भुक्तानीमा जानुहोस्'}
                     </button>
@@ -749,16 +819,16 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
 
                   <div className="pt-4 flex justify-between">
                     <button
-                      onClick={() => setActiveStep(4)}
+                      onClick={() => goToStep(4)}
                       disabled={isProcessing}
-                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm disabled:opacity-50 hover:bg-slate-50"
+                      className="px-5 py-2.5 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-sm disabled:opacity-50 hover:bg-slate-50 cursor-pointer"
                     >
                       {currentLang === 'en' ? 'Back' : 'पछाडि'}
                     </button>
                     <button
                       onClick={handleConfirmPay}
                       disabled={isProcessing}
-                      className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all"
+                      className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-extrabold text-sm btn-hover shadow-lg flex items-center gap-2 disabled:opacity-50 transition-all cursor-pointer"
                     >
                       <ShieldCheck className="w-4 h-4" />
                       <span>

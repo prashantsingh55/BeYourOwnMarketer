@@ -93,6 +93,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentSlideIndex((prev) => (prev + 1) % HERO_SLIDES.length);
@@ -101,6 +103,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
   const prevSlide = useCallback(() => {
     setCurrentSlideIndex((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
   }, []);
+
+  // Touch swipe detection for mobile screens
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEndX(null);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    const minSwipeDistance = 40;
+    if (distance > minSwipeDistance) {
+      nextSlide(); // Swiped left -> next
+    } else if (distance < -minSwipeDistance) {
+      prevSlide(); // Swiped right -> prev
+    }
+  };
 
   // Autoplay slideshow every 4.5 seconds (paused on hover)
   useEffect(() => {
@@ -128,7 +151,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
   const activeSlide = HERO_SLIDES[currentSlideIndex];
 
   return (
-    <section className="relative overflow-hidden pt-10 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-[#f0f9ff]/60 via-[#f8fafc] to-[#fff7ed]/50">
+    <section className="relative overflow-hidden pt-6 pb-14 md:pt-16 md:pb-24 bg-gradient-to-b from-[#f0f9ff]/60 via-[#f8fafc] to-[#fff7ed]/50">
       {/* Soft Background Blur Blobs */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#0ea5e9]/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#f97316]/10 rounded-full blur-3xl pointer-events-none" />
@@ -154,22 +177,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-[#0f172a] tracking-tight leading-[1.12]">
               <span className="block">{t.headingPart1[currentLang]}</span>
               <span className="block text-[#0284c7]">{t.headingPart2[currentLang]}</span>
               <span className="block text-[#f97316]">{t.headingPart3[currentLang]}</span>
             </h1>
 
             {/* Description */}
-            <p className="text-base sm:text-lg text-[#475569] max-w-xl font-normal leading-relaxed">
+            <p className="text-sm sm:text-lg text-[#475569] max-w-xl font-normal leading-relaxed">
               {t.description[currentLang]}
             </p>
 
             {/* Action Buttons */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={() => onNavigate('book')}
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-base btn-orange-hover flex items-center justify-center gap-3 shadow-lg shadow-orange-500/25"
+                className="px-7 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white font-extrabold text-sm sm:text-base btn-orange-hover flex items-center justify-center gap-3 shadow-lg shadow-orange-500/25"
               >
                 <span>{t.ctaBook[currentLang]}</span>
                 <ArrowRight className="w-5 h-5 text-amber-200" />
@@ -177,14 +200,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
 
               <button
                 onClick={() => onNavigate('programs')}
-                className="px-7 py-4 rounded-xl bg-white text-[#0f172a] border-2 border-slate-200 hover:border-[#0284c7] hover:text-[#0284c7] font-bold text-base transition-all flex items-center justify-center gap-2 shadow-sm"
+                className="px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl bg-white text-[#0f172a] border-2 border-slate-200 hover:border-[#0284c7] hover:text-[#0284c7] font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-sm"
               >
                 <span>{t.ctaPrograms[currentLang]}</span>
               </button>
             </div>
 
             {/* Trust Badges */}
-            <div className="pt-4 flex items-center gap-6 text-xs font-semibold text-[#64748b]">
+            <div className="pt-2 sm:pt-4 flex flex-wrap items-center gap-4 sm:gap-6 text-xs font-semibold text-[#64748b]">
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-[#10b981]" />
                 <span>{currentLang === 'en' ? 'Live Campaign Practice' : 'लाइभ क्याम्पेन अभ्यास'}</span>
@@ -196,19 +219,24 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
             </div>
           </motion.div>
 
-          {/* Right Column: Hero Visual 5-Photo Carousel Card (Enlarged) */}
+          {/* Right Column: Hero Visual 5-Photo Carousel Card with Touch Gestures */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-6 relative"
+            className="lg:col-span-6 relative mt-4 lg:mt-0"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="relative mx-auto w-full rounded-[32px] overflow-hidden shadow-2xl border-[5px] border-white bg-[#080e1a] ring-1 ring-slate-900/10 group">
+            <div
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              className="relative mx-auto w-full rounded-2xl sm:rounded-[32px] overflow-hidden shadow-2xl border-[3px] sm:border-[5px] border-white bg-[#080e1a] ring-1 ring-slate-900/10 group select-none touch-pan-y"
+            >
               
               {/* Slide Images with Smooth Crossfade Transitions */}
-              <div className="relative h-[440px] sm:h-[520px] lg:h-[580px] w-full overflow-hidden">
+              <div className="relative h-[360px] xs:h-[400px] sm:h-[500px] lg:h-[580px] w-full overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={activeSlide.id}
@@ -217,9 +245,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
                     initial={{ opacity: 0, scale: 1.06 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.98 }}
-                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                    transition={{ duration: 0.45, ease: 'easeOut' }}
                     className="w-full h-full object-cover object-center absolute inset-0"
                     referrerPolicy="no-referrer"
+                    draggable={false}
                   />
                 </AnimatePresence>
 
@@ -228,56 +257,56 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent pointer-events-none" />
 
                 {/* Top Badge: Slide Counter */}
-                <div className="absolute top-5 right-5 z-20 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-xs font-mono font-extrabold shadow-md">
+                <div className="absolute top-3.5 right-3.5 sm:top-5 sm:right-5 z-20 flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-[11px] sm:text-xs font-mono font-extrabold shadow-md">
                   <span>{currentSlideIndex + 1}</span>
                   <span className="text-slate-400">/</span>
                   <span className="text-slate-400">{HERO_SLIDES.length}</span>
                 </div>
 
-                {/* Navigation Arrows */}
+                {/* Navigation Arrows (Optimized for Mobile and Desktop touch) */}
                 <button
                   onClick={prevSlide}
                   aria-label="Previous slide"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/80 text-white backdrop-blur-md border border-white/25 flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 active:scale-95 shadow-xl"
+                  className="absolute left-2.5 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-md border border-white/25 flex items-center justify-center transition-all opacity-85 hover:opacity-100 active:scale-90 shadow-xl"
                 >
-                  <ChevronLeft className="w-6 h-6" />
+                  <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 <button
                   onClick={nextSlide}
                   aria-label="Next slide"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/80 text-white backdrop-blur-md border border-white/25 flex items-center justify-center transition-all opacity-80 hover:opacity-100 hover:scale-110 active:scale-95 shadow-xl"
+                  className="absolute right-2.5 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-md border border-white/25 flex items-center justify-center transition-all opacity-85 hover:opacity-100 active:scale-90 shadow-xl"
                 >
-                  <ChevronRight className="w-6 h-6" />
+                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
                 {/* Bottom Card Content Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 z-20 text-white space-y-2.5">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0284c7]/90 text-white text-xs sm:text-sm font-extrabold uppercase tracking-wider backdrop-blur-md shadow-md">
-                    <MapPin className="w-3.5 h-3.5 text-sky-200" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8 z-20 text-white space-y-2 sm:space-y-2.5">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#0284c7]/90 text-white text-[10px] sm:text-xs font-extrabold uppercase tracking-wider backdrop-blur-md shadow-md">
+                    <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sky-200" />
                     <span>{activeSlide.tag[currentLang]}</span>
                   </div>
 
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeSlide.id}
-                      initial={{ opacity: 0, y: 12 }}
+                      initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -12 }}
-                      transition={{ duration: 0.3 }}
-                      className="space-y-1.5"
+                      exit={{ opacity: 0, y: -8 }}
+                      transition={{ duration: 0.25 }}
+                      className="space-y-1 sm:space-y-1.5"
                     >
-                      <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading leading-tight drop-shadow-md">
+                      <h3 className="text-lg xs:text-xl sm:text-3xl font-extrabold text-white font-heading leading-tight drop-shadow-md">
                         {activeSlide.title[currentLang]}
                       </h3>
-                      <p className="text-sm sm:text-base text-slate-200 line-clamp-2 leading-relaxed">
+                      <p className="text-xs sm:text-base text-slate-200 line-clamp-2 leading-relaxed">
                         {activeSlide.desc[currentLang]}
                       </p>
                     </motion.div>
                   </AnimatePresence>
 
                   {/* Bullet Navigation Dots */}
-                  <div className="pt-2 flex items-center gap-2">
+                  <div className="pt-1 sm:pt-2 flex items-center gap-1.5 sm:gap-2">
                     {HERO_SLIDES.map((slide, idx) => {
                       const isActive = idx === currentSlideIndex;
                       return (
@@ -285,10 +314,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
                           key={slide.id}
                           onClick={() => setCurrentSlideIndex(idx)}
                           aria-label={`Go to slide ${idx + 1}`}
-                          className={`h-2.5 rounded-full transition-all duration-300 ${
+                          className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
                             isActive
-                              ? 'w-10 bg-gradient-to-r from-[#ff6b00] to-[#f97316] shadow-md shadow-orange-500/60'
-                              : 'w-2.5 bg-white/40 hover:bg-white/75'
+                              ? 'w-7 sm:w-10 bg-gradient-to-r from-[#ff6b00] to-[#f97316] shadow-md shadow-orange-500/60'
+                              : 'w-2 sm:w-2.5 bg-white/40 hover:bg-white/75'
                           }`}
                         />
                       );
@@ -301,18 +330,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
 
             {/* Floating Batch Info Pill */}
             <motion.div
-              animate={{ y: [0, -8, 0] }}
+              animate={{ y: [0, -6, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-              className="absolute -top-4 -left-4 sm:-left-6 bg-white p-4 sm:p-4.5 rounded-2xl shadow-2xl border border-slate-100 flex items-center gap-3 z-30"
+              className="hidden sm:flex absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 sm:p-4.5 rounded-2xl shadow-2xl border border-slate-100 items-center gap-3 z-30"
             >
-              <div className="w-11 h-11 rounded-xl bg-[#fff7ed] flex items-center justify-center">
-                <Calendar className="w-6 h-6 text-[#f97316]" />
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#fff7ed] flex items-center justify-center">
+                <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-[#f97316]" />
               </div>
               <div>
-                <p className="text-xs font-bold text-[#64748b] uppercase tracking-wider">
+                <p className="text-[11px] sm:text-xs font-bold text-[#64748b] uppercase tracking-wider">
                   {currentLang === 'en' ? 'Next Cohort' : 'अर्को टोली'}
                 </p>
-                <p className="text-sm sm:text-base font-extrabold text-[#0f172a]">
+                <p className="text-xs sm:text-base font-extrabold text-[#0f172a]">
                   {currentLang === 'en' ? 'Limited Seats Open' : 'सीमित सिटहरू बाँकी'}
                 </p>
               </div>

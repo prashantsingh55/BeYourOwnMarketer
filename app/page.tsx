@@ -21,6 +21,18 @@ import { Sparkles, ArrowRight, Star, Quote } from 'lucide-react';
 // User type for auth state
 type AuthUser = { id: string; name: string; email: string; avatar?: string | null; role: string } | null;
 
+const VALID_PAGES: PageRoute[] = ['home', 'programs', 'book', 'contact', 'blog', 'gallery', 'dashboard'];
+
+function parseRouteFromUrl(): PageRoute {
+  if (typeof window === 'undefined') return 'home';
+  const rawHash = window.location.hash.replace(/^#\/?/, '').trim().toLowerCase();
+  const baseRoute = rawHash.split('/')[0].split('?')[0];
+  if (VALID_PAGES.includes(baseRoute as PageRoute)) {
+    return baseRoute as PageRoute;
+  }
+  return 'home';
+}
+
 export default function Home() {
   const [currentLang, setCurrentLang] = useState<Language>('en');
   const [currentPage, setCurrentPage] = useState<PageRoute>('home');
@@ -32,6 +44,47 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.lang = currentLang;
   }, [currentLang]);
+
+  // Browser History & Swipe-Back / Forward Synchronization
+  useEffect(() => {
+    // 1. Determine initial page from URL hash (e.g., /#programs, /#book)
+    const initialPage = parseRouteFromUrl();
+    if (initialPage !== 'home') {
+      setCurrentPage(initialPage);
+      if (!window.history.state?.page) {
+        window.history.replaceState({ page: initialPage }, '', `#${initialPage}`);
+      }
+    } else {
+      if (!window.history.state?.page) {
+        window.history.replaceState({ page: 'home' }, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    // 2. Handle Browser Back & Forward buttons / Mobile swipe-back gestures
+    const handlePopState = (event: PopStateEvent) => {
+      const targetPage = (event.state?.page && VALID_PAGES.includes(event.state.page))
+        ? (event.state.page as PageRoute)
+        : parseRouteFromUrl();
+
+      setCurrentPage(targetPage);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // 3. Handle direct hashchange events
+    const handleHashChange = () => {
+      const targetPage = parseRouteFromUrl();
+      setCurrentPage(targetPage);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
 
   // Persistent auth check — runs on every page mount/refresh
   // The JWT httpOnly cookie persists across browser refreshes (7-day expiry)
@@ -54,11 +107,11 @@ export default function Home() {
         .then(d => {
           if (d.user) {
             setAuthUser(d.user);
-            setCurrentPage('dashboard' as PageRoute);
+            handleNavigate('dashboard' as PageRoute, true);
           }
         })
         .catch(() => {});
-      window.history.replaceState({}, '', '/');
+      window.history.replaceState({ page: 'dashboard' }, '', '#dashboard');
     }
 
     if (authError) {
@@ -71,18 +124,32 @@ export default function Home() {
         google_redirect_mismatch: `Google OAuth: Redirect URI mismatch.\n\nPlease add this exact URI to your Google Cloud Console:\n${redirectUri || 'http://localhost:3000/api/auth/google/callback'}\n\nGo to: console.cloud.google.com → APIs & Services → Credentials → OAuth Client → Authorized redirect URIs`,
       };
       alert(messages[authError] || 'Authentication error. Please try again.');
-      window.history.replaceState({}, '', '/');
+      window.history.replaceState({ page: 'home' }, '', window.location.pathname);
     }
   }, []);
 
-  const handleNavigate = (page: PageRoute) => {
+  const handleNavigate = (page: PageRoute, replace = false) => {
+    if (page === currentPage) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const newUrl = page === 'home'
+      ? window.location.pathname + window.location.search
+      : `#${page}`;
+
+    if (replace) {
+      window.history.replaceState({ page }, '', newUrl);
+    } else {
+      window.history.pushState({ page }, '', newUrl);
+    }
+
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSelectCourseEnroll = (course: OnlineCourse) => {
-    setCurrentPage('book');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    handleNavigate('book');
   };
 
   const handleLoginSuccess = () => {
@@ -92,8 +159,7 @@ export default function Home() {
       .then(d => { if (d.user) setAuthUser(d.user); })
       .catch(() => {});
     setAuthModalOpen(false);
-    setCurrentPage('dashboard' as PageRoute);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    handleNavigate('dashboard' as PageRoute);
   };
 
   return (
@@ -107,7 +173,7 @@ export default function Home() {
         onNavigate={handleNavigate}
         onOpenAuth={() => setAuthModalOpen(true)}
         authUser={authUser}
-        onLogout={() => { setAuthUser(null); setCurrentPage('home'); }}
+        onLogout={() => { setAuthUser(null); handleNavigate('home'); }}
       />
 
       {/* Sticky WhatsApp Button */}
