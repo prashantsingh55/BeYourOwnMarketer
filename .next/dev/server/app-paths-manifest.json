@@ -1,13 +1,4 @@
 {
-  "/admin/login/page": "app/admin/login/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/api/admin/bookings/route": "app/api/admin/bookings/route.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js",
   "/api/auth/me/route": "app/api/auth/me/route.js",
-  "/api/blogs/route": "app/api/blogs/route.js",
-  "/api/bookings/route": "app/api/bookings/route.js",
-  "/api/gallery/route": "app/api/gallery/route.js",
-  "/api/seats/route": "app/api/seats/route.js",
-  "/api/sessions/route": "app/api/sessions/route.js",
   "/page": "app/page.js"
 }
