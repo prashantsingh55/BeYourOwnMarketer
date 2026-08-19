@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
-import { MapPin, Mail, Phone, Clock, Send, MessageSquare, CheckCircle2, UserCheck } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Send, MessageSquare, CheckCircle2, UserCheck, MessageCircle, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
 import { isValidGmail, isValidNepalPhone } from '../lib/validation';
+import { mentors } from '../data/content';
 
 interface ContactPageProps {
   currentLang: Language;
@@ -256,19 +257,19 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
           {/* Contact Info & Office Hours Column */}
           <div className="lg:col-span-5 space-y-6">
             
-            {/* Contact Info Card */}
-            <div className="bg-[#080e1a] text-white p-8 rounded-3xl shadow-xl border border-slate-800 space-y-6">
-              <h3 className="text-xl font-bold font-heading border-b border-white/10 pb-4">
+            {/* Contact Info Card (Hover transitions to light blue #2D9EDE) */}
+            <div className="bg-[#080e1a] hover:bg-[#2D9EDE] text-white p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-[#2D9EDE]/30 border border-slate-800 hover:border-[#2D9EDE] space-y-6 transition-all duration-300 group">
+              <h3 className="text-xl font-bold font-heading border-b border-white/10 group-hover:border-white/20 pb-4 transition-colors">
                 {t.contactInfoTitle[currentLang]}
               </h3>
 
               <div className="space-y-5 text-sm">
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-2xl bg-white/10 text-amber-200">
+                  <div className="p-3 rounded-2xl bg-white/10 group-hover:bg-white/20 text-amber-200 flex items-center justify-center transition-colors">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="block text-xs font-bold text-slate-400 uppercase">
+                    <span className="block text-xs font-bold text-slate-400 group-hover:text-white/80 uppercase transition-colors">
                       {t.officeAddressLabel[currentLang]}
                     </span>
                     <p className="font-semibold text-white whitespace-pre-line mt-1">
@@ -278,11 +279,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-2xl bg-white/10 text-amber-200">
+                  <div className="p-3 rounded-2xl bg-white/10 group-hover:bg-white/20 text-amber-200 flex items-center justify-center transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="block text-xs font-bold text-slate-400 uppercase">
+                    <span className="block text-xs font-bold text-slate-400 group-hover:text-white/80 uppercase transition-colors">
                       {t.emailLabel[currentLang]}
                     </span>
                     <p className="font-semibold text-white mt-1">{t.emailValue[currentLang]}</p>
@@ -290,11 +291,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 rounded-2xl bg-white/10 text-amber-200">
+                  <div className="p-3 rounded-2xl bg-white/10 group-hover:bg-white/20 text-amber-200 flex items-center justify-center transition-colors">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="block text-xs font-bold text-slate-400 uppercase">
+                    <span className="block text-xs font-bold text-slate-400 group-hover:text-white/80 uppercase transition-colors">
                       {t.phoneLabel[currentLang]}
                     </span>
                     <p className="font-semibold text-white mt-1">{t.phoneValue[currentLang]}</p>
@@ -320,10 +321,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
                 </p>
                 <button
                   onClick={onOpenMentorModal}
-                  className="w-full py-3.5 rounded-xl bg-[#0284c7] hover:bg-[#0369a1] text-white text-xs font-extrabold transition-colors shadow-md shadow-sky-500/20 flex items-center justify-center gap-2"
+                  className="w-full py-3.5 rounded-2xl bg-[#2D9EDE] hover:bg-[#2387BF] text-white text-xs font-black transition-all shadow-md shadow-[#2D9EDE]/25 flex items-center justify-center gap-2"
                 >
-                  <UserCheck className="w-4 h-4" />
-                  <span>{t.talkToMentorBtn[currentLang]}</span>
+                  <MessageCircle className="w-4 h-4" />
+                  <span>{currentLang === 'en' ? 'Chat with Curriculum Mentors' : 'पाठ्यक्रम मेन्टरहरूसँग कुरा गर्नुहोस्'}</span>
                 </button>
               </div>
             </div>
@@ -331,6 +332,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ currentLang, onOpenMen
           </div>
 
         </div>
+
       </div>
     </div>
   );

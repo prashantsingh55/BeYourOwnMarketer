@@ -160,4 +160,5 @@ export interface Mentor {
     en: string;
     np: string;
   };
+  whatsappNumber?: string;
 }

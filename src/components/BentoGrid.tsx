@@ -88,25 +88,25 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
             </div>
           </motion.div>
 
-          {/* Card 2 - Video Editing */}
+          {/* Card 2 - Video Editing (Hover transitions to light blue #2D9EDE) */}
           <motion.div
             whileHover={{ y: -4 }}
-            className="bg-[#0b132b] text-white p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-md hover:shadow-2xl transition-all flex flex-col justify-between relative overflow-hidden"
+            className="bg-[#0b132b] hover:bg-[#2D9EDE] text-white p-8 sm:p-10 rounded-3xl border border-slate-800 hover:border-[#2D9EDE] shadow-md hover:shadow-2xl hover:shadow-[#2D9EDE]/30 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group"
           >
             <div className="space-y-4 relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 text-[#f97316] flex items-center justify-center backdrop-blur-md">
+              <div className="w-12 h-12 rounded-2xl bg-white/10 group-hover:bg-white/20 text-[#f97316] group-hover:text-amber-200 flex items-center justify-center backdrop-blur-md transition-colors">
                 <Video className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold font-heading text-white">
                 {t.card2Title[currentLang]}
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm text-slate-300 group-hover:text-white/90 leading-relaxed transition-colors">
                 {t.card2Desc[currentLang]}
               </p>
 
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+              <div className="p-4 rounded-2xl bg-white/5 group-hover:bg-white/15 border border-white/10 group-hover:border-white/20 space-y-2 transition-colors">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-[#f97316] font-bold">CapCut & Premiere</span>
+                  <span className="text-[#f97316] group-hover:text-amber-200 font-bold transition-colors">CapCut & Premiere</span>
                   <Play className="w-3.5 h-3.5 text-white" />
                 </div>
                 <div className="w-full bg-white/20 h-2 rounded-full overflow-hidden">
@@ -115,9 +115,9 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ currentLang, onNavigate })
               </div>
             </div>
 
-            <div className="pt-6 mt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <div className="pt-6 mt-6 border-t border-white/10 group-hover:border-white/20 flex items-center justify-between text-xs text-slate-400 group-hover:text-white/80 transition-colors">
               <span>{currentLang === 'en' ? 'Module 02' : 'मोड्युल ०२'}</span>
-              <span className="font-bold text-[#f97316]">{currentLang === 'en' ? 'Vertical Reels & TikTok' : 'रिल्स र टिकटक भिडियो'}</span>
+              <span className="font-bold text-[#f97316] group-hover:text-white transition-colors">{currentLang === 'en' ? 'Vertical Reels & TikTok' : 'रिल्स र टिकटक भिडियो'}</span>
             </div>
           </motion.div>
 

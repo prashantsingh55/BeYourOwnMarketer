@@ -4,12 +4,24 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Language, PageRoute } from '../types';
 import { translations } from '../data/translations';
 import {
-  Globe, Menu, X, User, Sparkles, ChevronRight, FileText,
-  LogOut, LayoutDashboard, ChevronDown,
+  Globe,
+  Menu,
+  X,
+  User,
+  Sparkles,
+  LayoutDashboard,
+  LogOut,
+  ChevronDown,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-type AuthUser = { id: string; name: string; email: string; avatar?: string | null; role: string } | null;
+type AuthUser = {
+  id: string;
+  name: string;
+  email: string;
+  avatar?: string | null;
+  role: string;
+} | null;
 
 interface NavbarProps {
   currentLang: Language;
@@ -35,12 +47,20 @@ export const Navbar: React.FC<NavbarProps> = ({
   const dropdownRef = useRef<HTMLDivElement>(null);
   const t = translations.nav;
 
-  const navItems: { route: PageRoute; label: string }[] = [
-    { route: 'programs', label: t.programs[currentLang] },
-    { route: 'book', label: t.workshops[currentLang] },
-    { route: 'blog', label: t.blog[currentLang] },
-    { route: 'gallery', label: t.gallery[currentLang] },
-    { route: 'contact', label: t.contactUs[currentLang] },
+  // ── Top-bar Sub-zones (Left inside the curved blue bar)
+  const topZones = [
+    { label: currentLang === 'en' ? 'PRACTICAL COHORT' : 'व्यावहारिक टोली', route: 'programs' as PageRoute },
+    { label: currentLang === 'en' ? 'CREATIVE LABS' : 'क्रिएटिभ ल्याब', route: 'gallery' as PageRoute },
+  ];
+
+  // ── Main nav items (Exact content on bottom white row)
+  const navItems = [
+    { route: 'home' as PageRoute, label: { en: 'HOME', np: 'गृहपृष्ठ' } },
+    { route: 'programs' as PageRoute, label: { en: 'PROGRAMS', np: 'कार्यक्रमहरू' } },
+    { route: 'book' as PageRoute, label: { en: 'WORKSHOPS', np: 'कार्यशालाहरू' } },
+    { route: 'blog' as PageRoute, label: { en: 'BLOG', np: 'ब्लग' } },
+    { route: 'gallery' as PageRoute, label: { en: 'GALLERY', np: 'ग्यालरी' } },
+    { route: 'contact' as PageRoute, label: { en: 'CONTACT US', np: 'सम्पर्क' } },
   ];
 
   const handleNavClick = (route: PageRoute) => {
@@ -49,7 +69,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     setProfileDropdownOpen(false);
   };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -62,13 +81,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const handleLogout = async () => {
     setProfileDropdownOpen(false);
-    try {
-      await fetch('/api/auth/logout', { method: 'POST' });
-    } catch (_) {}
+    try { await fetch('/api/auth/logout', { method: 'POST' }); } catch (_) {}
     if (onLogout) onLogout();
   };
 
-  // Get initials for fallback avatar
   const getInitials = (name: string) => {
     const parts = name.trim().split(' ');
     return parts.length >= 2
@@ -77,328 +93,281 @@ export const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full glass-nav border-b border-[#e2dedc]/80 transition-all duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm border-b border-slate-200/90">
+      <div className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8">
+        
+        {/* ════════════════════════════════════════════════════════════════════════════
+            TWO-TIER SEAMLESS INTERTWINED STRUCTURE:
+            - Full-height logo block on top-left corner
+            - Blue curved bar starting to the right of logo with rounded left curvature
+            - Seamless white navigation bar directly below holding nav items & accent
+           ════════════════════════════════════════════════════════════════════════════ */}
+        <div className="flex items-stretch">
 
-          {/* Brand Logo */}
-          <button
-            onClick={() => handleNavClick('home')}
-            className="flex items-center focus:outline-none group"
-            aria-label="BE YOUR OWN MARKETER Home"
-          >
-            <img
-              src="/byom-logo.png"
-              alt="Be Your Own Marketer"
-              className="h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
-            />
-          </button>
+          {/* ── 1. LOGO CORNER (Occupies full top-to-bottom left corner) ── */}
+          <div className="flex items-center pr-2 sm:pr-4 lg:pr-5 py-1.5 flex-shrink-0 z-20">
+            <button
+              onClick={() => handleNavClick('home')}
+              className="flex items-center focus:outline-none group"
+              aria-label="Be Your Own Marketer"
+            >
+              <img
+                src="/byom-logo.png"
+                alt="Be Your Own Marketer"
+                className="h-14 sm:h-[68px] lg:h-[76px] w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              />
+            </button>
+          </div>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {navItems.map((item) => {
-              const isActive = currentPage === item.route;
-              return (
-                <button
-                  key={item.route}
-                  onClick={() => handleNavClick(item.route)}
-                  className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all relative ${
-                    isActive
-                      ? 'text-[#0284c7] bg-[#0284c7]/10 font-bold'
-                      : 'text-[#475569] hover:text-[#0f172a] hover:bg-slate-100'
-                  }`}
-                >
-                  {item.label}
-                  {isActive && (
-                    <motion.div
-                      layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#0284c7] rounded-full"
-                    />
+          {/* ── 2. RIGHT AREA (Top Curved Blue Bar + Bottom White Nav Bar) ── */}
+          <div className="flex-1 flex flex-col justify-between min-w-0">
+
+            {/* ── TOP TIER: Gradient Curved Bar (Master Mobile Videography Color Combination: #0284c7 -> #0369a1 -> #0b132b) ── */}
+            <div>
+              <div className="bg-gradient-to-r from-[#0284c7] via-[#0369a1] to-[#0b132b] text-white rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-2xl sm:rounded-bl-3xl lg:rounded-bl-[36px] px-5 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between shadow-md">
+                
+                {/* Left inside curved blue bar: Category Zones */}
+                <div className="hidden md:flex items-center space-x-5 lg:space-x-8">
+                  {topZones.map((zone, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleNavClick(zone.route)}
+                      className="text-xs font-black uppercase tracking-wider text-white/90 hover:text-white transition-colors focus:outline-none"
+                    >
+                      {zone.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Mobile tagline */}
+                <div className="md:hidden flex items-center gap-1 text-[11px] font-bold text-white/95 truncate">
+                  <span>✦ 25 Seats Cohort 2026</span>
+                </div>
+
+                {/* Right inside blue bar: Language Toggle + Login + Orange CTA */}
+                <div className="flex items-center space-x-3 sm:space-x-4 flex-shrink-0">
+                  
+                  {/* Language Selector Pill */}
+                  <div className="flex items-center bg-white/20 rounded-full p-1 border border-white/30 backdrop-blur-xs">
+                    <button
+                      onClick={() => onLanguageChange('en')}
+                      className={`px-3.5 sm:px-4 py-1 rounded-full text-[11px] font-black transition-all ${
+                        currentLang === 'en'
+                          ? 'bg-white text-[#2D9EDE] shadow-xs'
+                          : 'text-white/85 hover:text-white'
+                      }`}
+                    >
+                      EN
+                    </button>
+                    <button
+                      onClick={() => onLanguageChange('np')}
+                      className={`px-3.5 sm:px-4 py-1 rounded-full text-[11px] font-black transition-all flex items-center gap-1 ${
+                        currentLang === 'np'
+                          ? 'bg-white text-[#2D9EDE] shadow-xs'
+                          : 'text-white/85 hover:text-white'
+                      }`}
+                    >
+                      <Globe className="w-3 h-3" />
+                      <span>नेपाली</span>
+                    </button>
+                  </div>
+
+                  {/* Login / Profile Button */}
+                  {authUser ? (
+                    <div className="relative" ref={dropdownRef}>
+                      <button
+                        onClick={() => setProfileDropdownOpen((p) => !p)}
+                        className="flex items-center gap-2 pl-1.5 pr-3.5 py-1 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 text-white text-xs font-bold transition-all"
+                        aria-label="Open profile menu"
+                      >
+                        {authUser.avatar ? (
+                          <img
+                            src={authUser.avatar}
+                            alt={authUser.name}
+                            referrerPolicy="no-referrer"
+                            className="w-5 h-5 rounded-full object-cover ring-1 ring-white"
+                          />
+                        ) : (
+                          <div className="w-5 h-5 rounded-full bg-[#EF7B3A] flex items-center justify-center text-white text-[9px] font-black">
+                            {getInitials(authUser.name)}
+                          </div>
+                        )}
+                        <span className="hidden sm:block max-w-[70px] truncate">{authUser.name.split(' ')[0]}</span>
+                        <ChevronDown className={`w-3.5 h-3.5 text-white/90 transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      <AnimatePresence>
+                        {profileDropdownOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 4, scale: 0.96 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            exit={{ opacity: 0, y: 4, scale: 0.96 }}
+                            transition={{ duration: 0.15 }}
+                            className="absolute right-0 top-full mt-2 w-54 bg-white rounded-2xl border border-slate-200 shadow-2xl overflow-hidden z-50 text-slate-900"
+                          >
+                            <div className="px-4 py-2.5 border-b border-slate-100 bg-[#F5F9FC]">
+                              <p className="text-xs font-black text-[#172033] truncate">{authUser.name}</p>
+                              <p className="text-[11px] text-slate-500 truncate">{authUser.email}</p>
+                            </div>
+                            <div className="py-1">
+                              <button
+                                onClick={() => handleNavClick('dashboard' as PageRoute)}
+                                className="w-full flex items-center gap-2 px-4 py-2 text-xs font-bold text-[#172033] hover:bg-[#F5F9FC] text-left transition-colors"
+                              >
+                                <LayoutDashboard className="w-3.5 h-3.5 text-[#2D9EDE]" />
+                                <span>{currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'}</span>
+                              </button>
+                              <button
+                                onClick={handleLogout}
+                                className="w-full flex items-center gap-2 px-4 py-2 text-xs font-bold text-rose-600 hover:bg-rose-50 text-left transition-colors"
+                              >
+                                <LogOut className="w-3.5 h-3.5" />
+                                <span>{currentLang === 'en' ? 'Sign Out' : 'साइन आउट'}</span>
+                              </button>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={onOpenAuth}
+                      className="px-4 sm:px-5 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-white text-xs font-black tracking-wide border border-white/25 transition-all flex items-center gap-1.5 shadow-xs"
+                    >
+                      <User className="w-3.5 h-3.5 text-white" />
+                      <span className="hidden sm:block">MyBYOM Login</span>
+                      <span className="sm:hidden">Login</span>
+                    </button>
                   )}
-                </button>
-              );
-            })}
-          </nav>
 
-          {/* Controls: Language Toggle + Auth + CTA */}
-          <div className="hidden md:flex items-center space-x-3">
+                  {/* Primary Orange CTA Pill (Matches CONTACT US in reference screenshot) */}
+                  <button
+                    onClick={() => handleNavClick('book')}
+                    className="px-5 sm:px-6 py-1.5 sm:py-2 rounded-full bg-[#EF7B3A] hover:bg-[#E06A29] text-white text-xs font-black uppercase tracking-wider transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95 flex items-center gap-1.5"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-amber-100" />
+                    <span>{currentLang === 'en' ? 'Book Seat' : 'सिट बुक'}</span>
+                  </button>
 
-            {/* Dual Language Toggle Button */}
-            <div className="relative bg-slate-100 p-1 rounded-xl flex items-center border border-slate-200">
-              <button
-                onClick={() => onLanguageChange('en')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${
-                  currentLang === 'en'
-                    ? 'bg-white text-[#0f172a] shadow-sm'
-                    : 'text-[#64748b] hover:text-[#0f172a]'
-                }`}
-                aria-label="Switch to English"
-              >
-                <span>English</span>
-              </button>
-              <button
-                onClick={() => onLanguageChange('np')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1 ${
-                  currentLang === 'np'
-                    ? 'bg-[#0284c7] text-white shadow-sm'
-                    : 'text-[#64748b] hover:text-[#0f172a]'
-                }`}
-                aria-label="नेपालीमा फेर्नुहोस्"
-              >
-                <Globe className="w-3 h-3" />
-                <span>नेपाली</span>
-              </button>
+                  {/* Mobile Hamburger toggle */}
+                  <button
+                    onClick={() => setMobileMenuOpen((p) => !p)}
+                    className="lg:hidden w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center transition-colors border border-white/20 ml-0.5"
+                    aria-label="Toggle Navigation"
+                  >
+                    {mobileMenuOpen ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
+                  </button>
+                </div>
+
+              </div>
             </div>
 
-            {/* Admin Portal Link */}
-         
-
-            {/* ── Logged IN: Profile Avatar Dropdown ── */}
-            {authUser ? (
-              <div className="relative" ref={dropdownRef}>
-                <button
-                  onClick={() => setProfileDropdownOpen((p) => !p)}
-                  className="flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200/80 border border-slate-200 transition-all group"
-                  aria-label="Open profile menu"
-                >
-                  {/* Avatar */}
-                  {authUser.avatar ? (
-                    <img
-                      src={authUser.avatar}
-                      alt={authUser.name}
-                      referrerPolicy="no-referrer"
-                      className="w-8 h-8 rounded-full object-cover ring-2 ring-white"
-                    />
-                  ) : (
-                    <div className="w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold shadow-sm">
-                      {getInitials(authUser.name)}
-                    </div>
-                  )}
-                  <span className="text-sm font-semibold text-[#0f172a] max-w-[100px] truncate">
-                    {authUser.name.split(' ')[0]}
-                  </span>
-                  <ChevronDown
-                    className={`w-3.5 h-3.5 text-[#64748b] transition-transform ${profileDropdownOpen ? 'rotate-180' : ''}`}
-                  />
-                </button>
-
-                {/* Dropdown Menu */}
-                <AnimatePresence>
-                  {profileDropdownOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 6, scale: 0.96 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 6, scale: 0.96 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden z-50"
+            {/* ── BOTTOM TIER: Seamless White Row with Nav Links + Right Orange Accent ── */}
+            <div className="flex items-center justify-between py-2.5 sm:py-3 pl-3 sm:pl-6">
+              
+              {/* Center/Left Desktop Navigation Links */}
+              <nav className="hidden lg:flex items-center space-x-3 xl:space-x-6">
+                {navItems.map((item) => {
+                  const isActive = currentPage === item.route;
+                  return (
+                    <button
+                      key={item.route}
+                      onClick={() => handleNavClick(item.route)}
+                      className={`relative px-3.5 sm:px-4 py-1.5 text-xs font-black tracking-wider uppercase transition-colors focus:outline-none ${
+                        isActive
+                          ? 'text-[#2D9EDE]'
+                          : 'text-[#172033] hover:text-[#2D9EDE]'
+                      }`}
                     >
-                      {/* User Info Header */}
-                      <div className="px-4 py-3 border-b border-slate-100 bg-slate-50">
-                        <div className="flex items-center gap-3">
-                          {authUser.avatar ? (
-                            <img
-                              src={authUser.avatar}
-                              alt={authUser.name}
-                              referrerPolicy="no-referrer"
-                              className="w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
-                            />
-                          ) : (
-                            <div className="w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
-                              {getInitials(authUser.name)}
-                            </div>
-                          )}
-                          <div className="min-w-0">
-                            <p className="text-sm font-extrabold text-[#0f172a] truncate">{authUser.name}</p>
-                            <p className="text-[11px] text-[#64748b] truncate">{authUser.email}</p>
-                          </div>
-                        </div>
-                      </div>
+                      {item.label[currentLang]}
+                      {/* Active underline bar (matching Southwestern blue underline) */}
+                      {isActive && (
+                        <motion.div
+                          layoutId="byomActiveBar"
+                          className="absolute -bottom-1.5 left-2 right-2 h-[3px] bg-[#2D9EDE] rounded-full"
+                        />
+                      )}
+                    </button>
+                  );
+                })}
+              </nav>
 
-                      {/* Menu Items */}
-                      <div className="py-1.5">
-                        <button
-                          onClick={() => { handleNavClick('dashboard' as PageRoute); }}
-                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-[#0f172a] hover:bg-slate-50 transition-colors text-left"
-                        >
-                          <LayoutDashboard className="w-4 h-4 text-[#0284c7]" />
-                          {currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'}
-                        </button>
-
-                        <button
-                          onClick={handleLogout}
-                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm font-semibold text-rose-600 hover:bg-rose-50 transition-colors text-left"
-                        >
-                          <LogOut className="w-4 h-4" />
-                          {currentLang === 'en' ? 'Sign Out' : 'साइन आउट'}
-                        </button>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+              {/* Right Side: Orange Accent Bar (matching RESEARCH & INNOVATION in screenshot) */}
+              <div className="hidden lg:flex items-center">
+                <button
+                  onClick={() => handleNavClick('book')}
+                  className="flex items-center border-l-2 border-[#EF7B3A] pl-4 sm:pl-6 py-1 group focus:outline-none text-left"
+                >
+                  <span className="text-[11px] font-black text-[#EF7B3A] uppercase tracking-widest group-hover:text-[#E06A29] transition-colors">
+                    {currentLang === 'en' ? 'ADMISSIONS OPEN 2026 →' : 'भर्ना खुला २०२६ →'}
+                  </span>
+                </button>
               </div>
-            ) : (
-              /* ── Logged OUT: Login Button ── */
-              <button
-                onClick={onOpenAuth}
-                className="px-4 py-2 text-sm font-semibold text-[#0f172a] hover:bg-slate-100 rounded-xl transition-colors flex items-center gap-1.5"
-              >
-                <User className="w-4 h-4 text-[#0284c7]" />
-                <span>{t.login[currentLang]}</span>
-              </button>
-            )}
 
-            {/* Book Seat Primary CTA — Vibrant Orange Gradient with Sky highlight */}
-            <button
-              onClick={() => handleNavClick('book')}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] hover:from-[#ea580c] hover:to-[#ea580c] text-white text-sm font-bold btn-orange-hover flex items-center gap-2 shadow-md shadow-orange-500/20"
-            >
-              <Sparkles className="w-4 h-4 text-amber-200" />
-              <span>{t.bookSeat[currentLang]}</span>
-            </button>
+            </div>
+
           </div>
 
-          {/* Mobile Menu & Language Toggle Bar */}
-          <div className="flex md:hidden items-center space-x-2">
-
-            {/* Mobile: Show avatar if logged in */}
-            {authUser && (
-              <button
-                onClick={() => handleNavClick('dashboard' as PageRoute)}
-                className="mr-1"
-                aria-label="Go to dashboard"
-              >
-                {authUser.avatar ? (
-                  <img
-                    src={authUser.avatar}
-                    alt={authUser.name}
-                    referrerPolicy="no-referrer"
-                    className="w-8 h-8 rounded-full object-cover ring-2 ring-[#0284c7]"
-                  />
-                ) : (
-                  <div className="w-8 h-8 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-xs font-extrabold">
-                    {getInitials(authUser.name)}
-                  </div>
-                )}
-              </button>
-            )}
-
-            {/* Compact Mobile Language Switcher */}
-            <button
-              onClick={() => onLanguageChange(currentLang === 'en' ? 'np' : 'en')}
-              className="px-2.5 py-1.5 rounded-lg bg-slate-100 text-xs font-bold text-[#0f172a] border border-slate-200 flex items-center gap-1"
-            >
-              <Globe className="w-3.5 h-3.5 text-[#0284c7]" />
-              <span>{currentLang === 'en' ? 'नेपाली' : 'EN'}</span>
-            </button>
-
-            {/* Hamburger Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-[#0f172a] hover:bg-slate-100 focus:outline-none"
-              aria-label="Toggle Navigation Menu"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
         </div>
+
       </div>
 
-      {/* Mobile Drawer Navigation */}
+      {/* ── Mobile Menu Drawer ── */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl space-y-3"
+            className="lg:hidden bg-white border-b border-slate-200 shadow-xl overflow-hidden"
           >
-            <div className="flex flex-col space-y-1">
-              <button
-                onClick={() => handleNavClick('home')}
-                className={`text-left px-4 py-3 rounded-xl text-base font-bold transition-colors ${
-                  currentPage === 'home'
-                    ? 'bg-[#0284c7]/10 text-[#0284c7]'
-                    : 'text-[#0f172a] hover:bg-slate-50'
-                }`}
-              >
-                Home
-              </button>
-              {navItems.map((item) => {
-                const isActive = currentPage === item.route;
-                return (
+            <div className="px-5 py-5 space-y-3">
+              
+              {/* Category Quick Zones */}
+              <div className="grid grid-cols-3 gap-1.5 pb-2 border-b border-slate-100 text-center">
+                {topZones.map((zone, idx) => (
                   <button
-                    key={item.route}
-                    onClick={() => handleNavClick(item.route)}
-                    className={`text-left px-4 py-3 rounded-xl text-base font-semibold transition-colors flex items-center justify-between ${
-                      isActive
-                        ? 'bg-[#0284c7]/10 text-[#0284c7] font-bold'
-                        : 'text-[#475569] hover:bg-slate-50'
-                    }`}
+                    key={idx}
+                    onClick={() => handleNavClick(zone.route)}
+                    className="py-1.5 px-1 bg-[#F5F9FC] hover:bg-[#EBF6FD] rounded-lg text-[10px] font-black text-[#2D9EDE] uppercase border border-[#E2EEF7]"
                   >
-                    <span>{item.label}</span>
-                    <ChevronRight className="w-4 h-4 opacity-50" />
+                    {zone.label}
                   </button>
-                );
-              })}
-            </div>
+                ))}
+              </div>
 
-            <div className="pt-2 border-t border-slate-200 space-y-2">
-              {authUser ? (
-                <>
-                  {/* Mobile: User Info */}
-                  <div className="flex items-center gap-3 px-4 py-3 bg-slate-50 rounded-xl border border-slate-200">
-                    {authUser.avatar ? (
-                      <img
-                        src={authUser.avatar}
-                        alt={authUser.name}
-                        referrerPolicy="no-referrer"
-                        className="w-10 h-10 rounded-full object-cover ring-2 ring-[#0284c7]/20"
-                      />
-                    ) : (
-                      <div className="w-10 h-10 rounded-full bg-[#0284c7] flex items-center justify-center text-white text-sm font-extrabold flex-shrink-0">
-                        {getInitials(authUser.name)}
-                      </div>
-                    )}
-                    <div className="min-w-0">
-                      <p className="text-sm font-extrabold text-[#0f172a] truncate">{authUser.name}</p>
-                      <p className="text-[11px] text-[#64748b] truncate">{authUser.email}</p>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => handleNavClick('dashboard' as PageRoute)}
-                    className="w-full py-3 rounded-xl border border-[#0284c7]/30 bg-[#0284c7]/5 text-[#0284c7] font-bold text-center flex items-center justify-center gap-2"
-                  >
-                    <LayoutDashboard className="w-4 h-4" />
-                    {currentLang === 'en' ? 'My Dashboard' : 'मेरो ड्यासबोर्ड'}
-                  </button>
-                  <button
-                    onClick={handleLogout}
-                    className="w-full py-3 rounded-xl border border-rose-200 text-rose-600 font-bold text-center flex items-center justify-center gap-2 hover:bg-rose-50"
-                  >
-                    <LogOut className="w-4 h-4" />
-                    {currentLang === 'en' ? 'Sign Out' : 'साइन आउट'}
-                  </button>
-                </>
-              ) : (
+              {/* Main Nav Items */}
+              <div className="space-y-0.5">
+                {navItems.map((item) => {
+                  const isActive = currentPage === item.route;
+                  return (
+                    <button
+                      key={item.route}
+                      onClick={() => handleNavClick(item.route)}
+                      className={`w-full text-left px-3.5 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all flex items-center justify-between ${
+                        isActive
+                          ? 'bg-[#EBF6FD] text-[#2D9EDE]'
+                          : 'text-[#172033] hover:bg-slate-50'
+                      }`}
+                    >
+                      <span>{item.label[currentLang]}</span>
+                      {isActive && <div className="w-2 h-2 rounded-full bg-[#2D9EDE]" />}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Mobile CTA */}
+              <div className="pt-2 border-t border-slate-100">
                 <button
-                  onClick={() => {
-                    onOpenAuth();
-                    setMobileMenuOpen(false);
-                  }}
-                  className="w-full py-3 rounded-xl border border-slate-200 text-[#0f172a] font-bold text-center flex items-center justify-center gap-2 hover:bg-slate-50"
+                  onClick={() => handleNavClick('book')}
+                  className="w-full py-3 rounded-full bg-[#EF7B3A] hover:bg-[#E06A29] text-white font-black text-xs uppercase tracking-wider shadow-md shadow-[#EF7B3A]/25 flex items-center justify-center gap-1.5"
                 >
-                  <User className="w-4 h-4 text-[#0284c7]" />
-                  <span>{t.login[currentLang]}</span>
+                  <Sparkles className="w-3.5 h-3.5 text-amber-100" />
+                  <span>{t.bookSeat[currentLang]}</span>
                 </button>
-              )}
+              </div>
 
-              <button
-                onClick={() => handleNavClick('book')}
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ff6b00] to-[#f97316] text-white font-bold text-center shadow-md flex items-center justify-center gap-2"
-              >
-                <Sparkles className="w-4 h-4 text-amber-200" />
-                <span>{t.bookSeat[currentLang]}</span>
-              </button>
             </div>
           </motion.div>
         )}

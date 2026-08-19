@@ -844,8 +844,8 @@ export const SeatBooking: React.FC<SeatBookingProps> = ({
                 <Sparkles className="w-5 h-5 text-amber-300 flex-shrink-0" />
                 <span>
                   {currentLang === 'en'
-                    ? 'Includes physical kit, 1-on-1 mentor guidance & certificate.'
-                    : 'भौतिक किट, १-मा-१ मेन्टरसिप र प्रमाणपत्र समावेश छ।'}
+                    ? 'Includes 1-on-1 mentor guidance & certificate.'
+                    : '१-मा-१ मेन्टरसिप र प्रमाणपत्र समावेश छ।'}
                 </span>
               </div>
             </div>

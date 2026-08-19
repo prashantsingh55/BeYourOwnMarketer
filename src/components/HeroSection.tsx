@@ -320,31 +320,100 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ currentLang, onNavigat
           </motion.div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="mt-16 pt-10 border-t border-slate-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat, idx) => {
-              const Icon = statIcons[idx].icon;
-              return (
-                <div
-                  key={idx}
-                  className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow flex items-center space-x-4"
-                >
-                  <div className={`p-3 rounded-xl ${statIcons[idx].bg}`}>
-                    <Icon className={`w-6 h-6 ${statIcons[idx].color}`} />
-                  </div>
-                  <div>
-                    <span className="block text-2xl sm:text-3xl font-extrabold text-[#0f172a] font-heading">
-                      {stat.count}
-                    </span>
-                    <span className="text-xs sm:text-sm font-semibold text-[#64748b]">
-                      {stat.label[currentLang]}
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
+        {/* ── WHY PEOPLE CHOOSE US ? ── */}
+        <div id="why-choose-us" className="mt-20 pt-12 border-t border-slate-200 text-center space-y-8 scroll-mt-28">
+          
+          {/* Big Bold Headline */}
+          <div className="space-y-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#172033] tracking-tight uppercase font-heading">
+              {currentLang === 'en' ? 'WHY PEOPLE CHOOSE US ?' : 'हामीलाई किन रोज्नुहुन्छ ?'}
+            </h2>
+            <div className="w-16 h-1.5 bg-[#EF7B3A] mx-auto rounded-full" />
           </div>
+
+          {/* 4 Separate Stat Cards matching screenshot reference */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto text-left">
+            
+            {/* Card 1: 600+ Students Trained */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex items-center gap-4">
+              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#e0f2fe] flex items-center justify-center flex-shrink-0">
+                <Users className="w-6 h-6 text-[#0284c7]" />
+              </div>
+              <div>
+                <span className="block text-2xl sm:text-3xl font-black text-[#0f172a] font-heading tracking-tight">
+                  600+
+                </span>
+                <span className="block text-xs sm:text-sm font-semibold text-[#64748b] mt-0.5">
+                  {currentLang === 'en' ? 'Students Trained' : 'प्रशिक्षित विद्यार्थी'}
+                </span>
+              </div>
+            </div>
+
+            {/* Card 2: 4 Cities Across Nepal */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex items-center gap-4">
+              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#ffedd5] flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-6 h-6 text-[#f97316]" />
+              </div>
+              <div>
+                <span className="block text-2xl sm:text-3xl font-black text-[#0f172a] font-heading tracking-tight">
+                  4 Cities
+                </span>
+                <span className="block text-xs sm:text-sm font-semibold text-[#64748b] mt-0.5">
+                  {currentLang === 'en' ? 'Across Nepal' : 'नेपालभरका शहरहरू'}
+                </span>
+              </div>
+            </div>
+
+            {/* Card 3: 7 Days Hands-on Program */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex items-center gap-4">
+              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#e0f2fe] flex items-center justify-center flex-shrink-0">
+                <Calendar className="w-6 h-6 text-[#0284c7]" />
+              </div>
+              <div>
+                <span className="block text-2xl sm:text-3xl font-black text-[#0f172a] font-heading tracking-tight">
+                  7 Days
+                </span>
+                <span className="block text-xs sm:text-sm font-semibold text-[#64748b] mt-0.5">
+                  {currentLang === 'en' ? 'Hands-on Program' : 'व्यावहारिक कार्यक्रम'}
+                </span>
+              </div>
+            </div>
+
+            {/* Card 4: 95% Satisfaction Rate */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex items-center gap-4">
+              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#dcfce7] flex items-center justify-center flex-shrink-0">
+                <Award className="w-6 h-6 text-[#10b981]" />
+              </div>
+              <div>
+                <span className="block text-2xl sm:text-3xl font-black text-[#0f172a] font-heading tracking-tight">
+                  95%
+                </span>
+                <span className="block text-xs sm:text-sm font-semibold text-[#64748b] mt-0.5">
+                  {currentLang === 'en' ? 'Satisfaction Rate' : 'सन्तुष्टि दर'}
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Mission Tagline */}
+          <p className="text-sm sm:text-base text-[#64748b] font-medium max-w-2xl mx-auto leading-relaxed">
+            {currentLang === 'en'
+              ? 'To empower Nepali entrepreneurs, creators & marketers with real-world campaign execution without agency reliance.'
+              : 'नेपाली उद्यमी, सिर्जनाकर्ता र मार्केटरहरूलाई एजेन्सी निर्भरता बिना प्रत्यक्ष क्याम्पेन सञ्चालन गर्न सक्षम बनाउने।'}
+          </p>
+
+          {/* Action Button (Discover Why BYOM Matters) */}
+          <div>
+            <button
+              onClick={() => onNavigate('programs')}
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#172033] hover:bg-[#2D9EDE] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-slate-900/15 transition-all hover:scale-105 active:scale-95"
+            >
+              <span>{currentLang === 'en' ? 'DISCOVER WHY BYOM MATTERS' : 'BYOM किन महत्त्वपूर्ण छ बुझ्नुहोस्'}</span>
+              <ArrowRight className="w-4 h-4 text-[#EF7B3A]" />
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
